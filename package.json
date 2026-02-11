@@ -1,7 +1,7 @@
 {
-  "name": "prompttest",
+  "name": "chefs-connect",
   "version": "1.0.0",
-  "description": "",
+  "description": "Chefs Connect - Premium Horecapersoneel & Evenement Catering Website",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -9,9 +9,10 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["horeca", "catering", "events", "chefs", "restaurant", "personnel"],
+  "author": "Dynique Agency",
+  "license": "UNLICENSED",
+  "private": true,
   "dependencies": {
     "@studio-freight/react-lenis": "^0.0.47",
     "clsx": "^2.1.1",
