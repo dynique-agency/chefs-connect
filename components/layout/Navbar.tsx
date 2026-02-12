@@ -17,9 +17,7 @@ export default function Navbar({ onMenuToggle, isMenuOpen }: NavbarProps) {
 
   return (
     <motion.nav
-      className="fixed top-0 left-0 right-0 z-50 px-6 py-6 md:py-8 
-                 backdrop-blur-md backdrop-saturate-150
-                 transition-all duration-500"
+      className="fixed top-0 left-0 right-0 z-50 px-6 py-6 md:py-8"
       initial={false}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
