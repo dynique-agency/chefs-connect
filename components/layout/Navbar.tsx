@@ -1,7 +1,5 @@
 'use client';
 
-import { useState } from 'react';
-import { useScroll, useMotionValueEvent } from 'framer-motion';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,24 +11,18 @@ interface NavbarProps {
 }
 
 export default function Navbar({ onMenuToggle, isMenuOpen }: NavbarProps) {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const { scrollY } = useScroll();
-
-  useMotionValueEvent(scrollY, 'change', (latest) => {
-    setIsScrolled(latest > 50);
-  });
-
   const handleMenuClick = () => {
     onMenuToggle(!isMenuOpen);
   };
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-50 px-6 py-6 md:py-8 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-brown-medium/90 backdrop-blur-md'
-          : 'bg-transparent backdrop-blur-none'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 px-6 py-6 md:py-8 
+                 bg-gradient-to-b from-brown-medium/30 via-brown-medium/20 to-transparent 
+                 backdrop-blur-xl backdrop-saturate-150
+                 border-b border-gold/10
+                 shadow-[0_8px_32px_0_rgba(0,0,0,0.12)]
+                 transition-all duration-500"
       initial={false}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
