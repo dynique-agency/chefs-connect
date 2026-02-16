@@ -91,7 +91,7 @@ export default function OverOnsPage() {
                 className="relative aspect-[4/5] overflow-hidden shadow-2xl"
               >
                 <Image
-                  src="/choice-dining.png"
+                  src="/team-founders.jpg"
                   alt="ChefsConnect Premium Service"
                   fill
                   className="object-cover"
