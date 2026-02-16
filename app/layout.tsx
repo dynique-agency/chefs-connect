@@ -7,6 +7,7 @@ import Footer from '@/components/layout/Footer';
 import LoadingScreen from '@/components/ui/LoadingScreen';
 import CustomCursor from '@/components/ui/CustomCursor';
 import FloatingCTA from '@/components/ui/FloatingCTA';
+import CookieBanner from '@/components/ui/CookieBanner';
 import { MenuProvider } from '@/contexts/MenuContext';
 
 const playfair = Playfair_Display({
@@ -63,6 +64,7 @@ export default function RootLayout({
           <LenisScroll>{children}</LenisScroll>
           <Footer />
           <FloatingCTA />
+          <CookieBanner />
         </MenuProvider>
       </body>
     </html>

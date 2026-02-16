@@ -139,6 +139,15 @@ export default function Footer() {
                 >
                   Cookies
                 </Link>
+                <button
+                  onClick={() => {
+                    localStorage.removeItem('cookieConsent');
+                    window.location.reload();
+                  }}
+                  className="font-inter text-xs text-cream/50 hover:text-gold transition-colors duration-300"
+                >
+                  Cookie voorkeuren
+                </button>
                 <Link
                   href="/terms"
                   className="font-inter text-xs text-cream/50 hover:text-gold transition-colors duration-300"
