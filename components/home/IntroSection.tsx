@@ -244,14 +244,14 @@ export default function IntroSection() {
                 ref={paragraph2Ref}
                 className="font-inter text-base sm:text-lg md:text-xl text-brown-medium leading-relaxed"
                 style={{ 
-                  wordBreak: 'normal',
-                  overflowWrap: 'break-word',
-                  hyphens: 'auto',
-                  WebkitHyphens: 'auto',
+                  wordBreak: 'keep-all',
+                  overflowWrap: 'normal',
+                  hyphens: 'manual',
+                  WebkitHyphens: 'manual',
                   textWrap: 'pretty'
                 }}
               >
-                Bij Chefs Connect versterken wij horecazaken<br className="md:hidden" /> met <span className="text-gold font-medium">ervaren chefs</span> en <span className="text-gold font-medium">professionele bediening</span><br className="md:hidden" /> die direct het verschil maken.<br className="md:hidden" /> Van private dining tot grootschalige events<br className="md:hidden" /> zorgen wij  dat elke service staat met<br className="md:hidden" /> aandacht, vakmanschap en een feilloze uitvoering.
+                Bij Chefs Connect versterken wij<br className="md:hidden" /> horecazaken met <span className="text-gold font-medium">ervaren chefs</span><br className="md:hidden" /> en <span className="text-gold font-medium">professionele bediening</span><br className="md:hidden" /> die direct het verschil maken.<br className="md:hidden" /> Van private dining tot<br className="md:hidden" /> grootschalige events zorgen wij<br className="md:hidden" /> dat elke service staat met<br className="md:hidden" /> aandacht, vakmanschap en<br className="md:hidden" /> een feilloze uitvoering.
               </p>
 
               {/* Premium CTA Button */}
