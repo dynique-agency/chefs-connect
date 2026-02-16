@@ -208,7 +208,7 @@ export default function HeroSection() {
             className="font-playfair text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-light text-cream leading-relaxed text-center px-6 max-w-6xl absolute w-full"
             style={{ opacity: 0, lineHeight: '1.6' }}
           >
-            Wij leveren <span className="text-gold italic">chefs en bediening</span>, snel en professioneel
+            Wij leveren <span className="text-gold italic">chefs en bediening</span>,<br className="md:hidden" /> snel en professioneel
             <br />
             <span className="block mt-4 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-cream/90">
               Van <span className="text-gold italic">private dining</span> tot <span className="text-gold italic">grote events</span>
