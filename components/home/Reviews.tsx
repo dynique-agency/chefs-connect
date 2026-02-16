@@ -1,9 +1,9 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import Image from 'next/image';
-import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { Star, CheckCircle2, ChevronLeft, ChevronRight, ExternalLink, PenLine } from 'lucide-react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { Star, CheckCircle2, ExternalLink, PenLine } from 'lucide-react';
 
 const reviews = [
   {
@@ -71,8 +71,6 @@ function HighlightedText({ text }: { text: string }) {
 
 export default function Reviews() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
 
   // Parallax for background image
   const { scrollYProgress } = useScroll({
@@ -82,32 +80,8 @@ export default function Reviews() {
 
   const bgY = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
-  const nextReview = () => {
-    setDirection(1);
-    setCurrentIndex((prev) => (prev + 1) % reviews.length);
-  };
-
-  const prevReview = () => {
-    setDirection(-1);
-    setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
-  };
-
-  const slideVariants = {
-    enter: (direction: number) => ({
-      x: direction > 0 ? 1000 : -1000,
-      opacity: 0,
-    }),
-    center: {
-      zIndex: 1,
-      x: 0,
-      opacity: 1,
-    },
-    exit: (direction: number) => ({
-      zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
-      opacity: 0,
-    }),
-  };
+  // Duplicate reviews for seamless infinite scroll
+  const duplicatedReviews = [...reviews, ...reviews, ...reviews];
 
   return (
     <section ref={containerRef} className="relative py-24 md:py-32 overflow-hidden bg-cream">
@@ -165,85 +139,38 @@ export default function Reviews() {
           </div>
         </motion.div>
 
-        {/* Mobile: Carousel | Desktop: Grid */}
-        
-        {/* MOBILE CAROUSEL (visible only on mobile) */}
-        <div className="md:hidden relative mb-12">
-          <div className="relative h-[400px] flex items-center justify-center">
-            <AnimatePresence initial={false} custom={direction}>
-              <motion.div
-                key={currentIndex}
-                custom={direction}
-                variants={slideVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{
-                  x: { type: 'spring', stiffness: 300, damping: 30 },
-                  opacity: { duration: 0.2 },
-                }}
-                className="absolute w-full px-4"
-              >
-                <MobileReviewCard review={reviews[currentIndex]} />
-              </motion.div>
-            </AnimatePresence>
-          </div>
+        {/* Auto-scrolling Reviews - All Devices */}
+        <div className="relative mb-12">
+          {/* Gradient Fades on sides */}
+          <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-r from-cream to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-l from-cream to-transparent z-10 pointer-events-none" />
 
-          {/* Navigation Arrows */}
-          <div className="flex items-center justify-center gap-4 mt-6">
-            <button
-              onClick={prevReview}
-              className="w-12 h-12 rounded-full border-2 border-gold/30 bg-white/80 backdrop-blur-sm flex items-center justify-center hover:border-gold hover:bg-gold/10 transition-all duration-300 active:scale-95"
-              aria-label="Vorige review"
-            >
-              <ChevronLeft className="w-5 h-5 text-gold" />
-            </button>
-
-            {/* Dots */}
-            <div className="flex gap-2">
-              {reviews.map((_, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    setDirection(idx > currentIndex ? 1 : -1);
-                    setCurrentIndex(idx);
-                  }}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    idx === currentIndex ? 'w-8 bg-gold' : 'w-2 bg-gold/30'
-                  }`}
-                  aria-label={`Ga naar review ${idx + 1}`}
-                />
-              ))}
-            </div>
-
-            <button
-              onClick={nextReview}
-              className="w-12 h-12 rounded-full border-2 border-gold/30 bg-white/80 backdrop-blur-sm flex items-center justify-center hover:border-gold hover:bg-gold/10 transition-all duration-300 active:scale-95"
-              aria-label="Volgende review"
-            >
-              <ChevronRight className="w-5 h-5 text-gold" />
-            </button>
-          </div>
-        </div>
-
-        {/* DESKTOP GRID (visible only on desktop) */}
-        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {reviews.slice(0, 6).map((review, index) => (
+          {/* Infinite Scroll Container */}
+          <div className="overflow-hidden">
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="flex gap-4 md:gap-6"
+              animate={{
+                x: ['0%', '-33.333%'],
+              }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: 'loop',
+                  duration: 40,
+                  ease: 'linear',
+                },
+              }}
             >
-              <DesktopReviewCard review={review} />
+              {duplicatedReviews.map((review, index) => (
+                <AutoScrollReviewCard key={index} review={review} />
+              ))}
             </motion.div>
-          ))}
+          </div>
         </div>
 
         {/* Bottom CTA Buttons */}
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -276,108 +203,56 @@ export default function Reviews() {
   );
 }
 
-// Mobile Review Card - Full width, optimized for reading
-function MobileReviewCard({ review }: { review: typeof reviews[0] }) {
+// Auto-scrolling Review Card - Works on all devices
+function AutoScrollReviewCard({ review }: { review: typeof reviews[0] }) {
   return (
-    <div className="h-full bg-white/90 backdrop-blur-md border-2 border-brown/10 p-6 relative overflow-hidden shadow-xl">
-      {/* Decorative corner accents */}
-      <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-gold/40" />
-      <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-gold/40" />
+    <div className="flex-shrink-0 w-[300px] sm:w-[350px] md:w-[400px] lg:w-[420px] group">
+      <div className="h-full bg-white/80 backdrop-blur-md border border-brown/10 p-6 md:p-8 relative overflow-hidden hover:border-gold/50 hover:bg-white transition-all duration-500 shadow-lg hover:shadow-xl">
+        {/* Hover Glow */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-      {/* Content */}
-      <div className="relative z-10 flex flex-col h-full">
-        {/* Stars and Verified Badge */}
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex gap-1">
-            {[...Array(review.stars)].map((_, i) => (
-              <Star key={i} className="w-4 h-4 fill-gold text-gold" />
-            ))}
+        {/* Decorative corner accents */}
+        <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-gold/30" />
+        <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-gold/30" />
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col">
+          {/* Stars and Verified Badge */}
+          <div className="flex items-center justify-between mb-5">
+            <div className="flex gap-1">
+              {[...Array(review.stars)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 fill-gold text-gold" />
+              ))}
+            </div>
+
+            {/* Google Verified Badge */}
+            <div className="flex items-center gap-1.5 px-3 py-1 bg-gold/10 border border-gold/30">
+              <CheckCircle2 className="w-3.5 h-3.5 text-gold" />
+              <span className="font-inter text-[10px] uppercase tracking-wider text-gold">
+                Verified
+              </span>
+            </div>
           </div>
 
-          {/* Google Verified Badge */}
-          <div className="flex items-center gap-1.5 px-3 py-1 bg-gold/10 border border-gold/30">
-            <CheckCircle2 className="w-3.5 h-3.5 text-gold" />
-            <span className="font-inter text-[10px] uppercase tracking-wider text-gold">
-              Verified
-            </span>
+          {/* Review Text with Highlights */}
+          <div className="mb-6 min-h-[140px]">
+            <p className="font-inter text-sm md:text-base text-brown-medium leading-relaxed">
+              "<HighlightedText text={review.text} />"
+            </p>
+          </div>
+
+          {/* Name */}
+          <div className="flex items-center justify-between pt-4 border-t border-brown/10">
+            <p className="font-inter text-sm text-brown uppercase font-bold tracking-wider">
+              {review.name}
+            </p>
+            <div className="text-gold/30 text-5xl leading-none font-playfair">"</div>
           </div>
         </div>
 
-        {/* Review Text - Larger for readability */}
-        <div className="flex-1 mb-4">
-          <p className="font-inter text-base leading-relaxed text-brown-medium">
-            "<HighlightedText text={review.text} />"
-          </p>
-        </div>
-
-        {/* Name */}
-        <div className="flex items-center justify-between pt-4 border-t border-brown/10">
-          <p className="font-inter text-sm text-brown uppercase font-bold tracking-wider">
-            {review.name}
-          </p>
-          <div className="text-gold/30 text-4xl leading-none font-playfair">"</div>
-        </div>
+        {/* Premium accent line */}
+        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-gold via-gold/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       </div>
-
-      {/* Premium accent line */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-gold via-gold/50 to-transparent" />
     </div>
-  );
-}
-
-// Desktop Review Card - Compact grid layout
-function DesktopReviewCard({ review }: { review: typeof reviews[0] }) {
-  return (
-    <motion.div
-      className="h-full bg-white/80 backdrop-blur-md border border-brown/10 p-6 relative overflow-hidden group hover:border-gold/50 hover:bg-white transition-all duration-500 shadow-lg hover:shadow-xl"
-      whileHover={{ y: -5 }}
-      transition={{ duration: 0.3 }}
-    >
-      {/* Hover Glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-      {/* Content */}
-      <div className="relative z-10 flex flex-col h-full">
-        {/* Stars and Verified Badge */}
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex gap-1">
-            {[...Array(review.stars)].map((_, i) => (
-              <Star key={i} className="w-4 h-4 fill-gold text-gold" />
-            ))}
-          </div>
-
-          {/* Google Verified Badge */}
-          <div className="flex items-center gap-1.5 px-2 py-1 bg-gold/10 border border-gold/30">
-            <CheckCircle2 className="w-3 h-3 text-gold" />
-            <span className="font-inter text-[9px] uppercase tracking-wider text-gold">
-              Verified
-            </span>
-          </div>
-        </div>
-
-        {/* Review Text with Highlights */}
-        <div className="flex-1 mb-4">
-          <p className="font-inter text-sm text-brown-medium leading-relaxed">
-            "<HighlightedText text={review.text} />"
-          </p>
-        </div>
-
-        {/* Name */}
-        <div className="flex items-center justify-between pt-3 border-t border-brown/10">
-          <p className="font-inter text-xs text-brown uppercase font-bold tracking-wider">
-            {review.name}
-          </p>
-          <div className="text-gold/30 text-4xl leading-none font-playfair">"</div>
-        </div>
-      </div>
-
-      {/* Premium accent line */}
-      <motion.div
-        className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-gold to-transparent"
-        initial={{ width: 0 }}
-        whileHover={{ width: '100%' }}
-        transition={{ duration: 0.5 }}
-      />
-    </motion.div>
   );
 }
