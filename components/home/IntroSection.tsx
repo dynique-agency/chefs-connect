@@ -320,7 +320,7 @@ export default function IntroSection() {
                 }}
               >
                 <Image
-                  src="/intro-image.png"
+                  src="/chef-action.png"
                   alt="Premium culinary craftsmanship"
                   fill
                   className="object-cover brightness-[0.85]"
