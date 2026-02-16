@@ -2,39 +2,26 @@
 
 import { motion } from 'framer-motion';
 import { Instagram, ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 
-// Instagram posts - Update deze URLs met de daadwerkelijke post/reel links
-// Voorbeeld: https://www.instagram.com/p/POST_ID/ voor posts
-// of https://www.instagram.com/reel/REEL_ID/ voor reels
+// Instagram posts
 const instagramPosts = [
   {
     id: 1,
-    url: 'https://www.instagram.com/chefsconnectnl/', // Vervang met daadwerkelijke post URL
+    image: '/instagram/reel1.png',
+    url: 'https://www.instagram.com/chefsconnectnl/', // Vervang met daadwerkelijke reel URL
     type: 'reel' as const,
   },
   {
     id: 2,
-    url: 'https://www.instagram.com/chefsconnectnl/',
-    type: 'post' as const,
+    image: '/instagram/reel2.png',
+    url: 'https://www.instagram.com/chefsconnectnl/', // Vervang met daadwerkelijke reel URL
+    type: 'reel' as const,
   },
   {
     id: 3,
-    url: 'https://www.instagram.com/chefsconnectnl/',
-    type: 'reel' as const,
-  },
-  {
-    id: 4,
-    url: 'https://www.instagram.com/chefsconnectnl/',
-    type: 'post' as const,
-  },
-  {
-    id: 5,
-    url: 'https://www.instagram.com/chefsconnectnl/',
-    type: 'reel' as const,
-  },
-  {
-    id: 6,
-    url: 'https://www.instagram.com/chefsconnectnl/',
+    image: '/instagram/post1.png',
+    url: 'https://www.instagram.com/chefsconnectnl/', // Vervang met daadwerkelijke post URL
     type: 'post' as const,
   },
 ];
@@ -94,30 +81,36 @@ export default function InstagramFeed() {
         </motion.div>
 
         {/* Instagram Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-12 max-w-5xl mx-auto">
           {instagramPosts.map((post, index) => (
             <motion.a
               key={post.id}
               href={post.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative aspect-square overflow-hidden bg-cream"
+              className="group relative aspect-square overflow-hidden bg-cream shadow-xl"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.03 }}
             >
-              {/* Placeholder gradient - replace with actual Instagram images */}
-              <div className="absolute inset-0 bg-gradient-to-br from-gold/20 via-brown/10 to-cream flex items-center justify-center">
-                <Instagram className="w-16 h-16 text-brown/20" />
+              {/* Instagram Image */}
+              <div className="absolute inset-0">
+                <Image
+                  src={post.image}
+                  alt={`Instagram ${post.type === 'reel' ? 'Reel' : 'Post'} ${post.id}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
               </div>
 
               {/* Hover overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#E1306C]/90 via-[#C13584]/90 to-[#833AB4]/90 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#E1306C]/90 via-[#C13584]/90 to-[#833AB4]/90 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center z-20">
                 <div className="text-center text-white">
-                  <Instagram className="w-10 h-10 mx-auto mb-2" />
-                  <p className="font-inter text-sm uppercase tracking-wider">
+                  <Instagram className="w-12 h-12 mx-auto mb-3" />
+                  <p className="font-inter text-sm uppercase tracking-wider font-medium">
                     {post.type === 'reel' ? 'Bekijk Reel' : 'Bekijk Post'}
                   </p>
                 </div>
@@ -125,10 +118,10 @@ export default function InstagramFeed() {
 
               {/* Reel indicator */}
               {post.type === 'reel' && (
-                <div className="absolute top-3 right-3 z-10">
-                  <div className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center">
+                <div className="absolute top-4 right-4 z-30">
+                  <div className="w-10 h-10 rounded-full bg-white/95 backdrop-blur-sm flex items-center justify-center shadow-lg">
                     <svg
-                      className="w-4 h-4 text-brown"
+                      className="w-5 h-5 text-brown"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -139,7 +132,7 @@ export default function InstagramFeed() {
               )}
 
               {/* Corner accent */}
-              <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-gold/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-0 left-0 w-16 h-16 border-b-4 border-l-4 border-gold opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
             </motion.a>
           ))}
         </div>
