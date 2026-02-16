@@ -135,7 +135,7 @@ export default function OverOnsPage() {
           </h2>
           <p className="text-cream/80 text-lg md:text-xl mb-12 leading-relaxed">
             Of je nu op zoek bent naar toptalent voor jouw zaak, of als chef de volgende stap 
-            wilt zetten — wij staan klaar om te verbinden.
+            wilt zetten, wij staan klaar om te verbinden.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

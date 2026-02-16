@@ -216,7 +216,7 @@ export default function HorecaSpecialistPage() {
             <div className="bg-cream/5 backdrop-blur-sm border border-cream/10 p-8 flex flex-col justify-center">
               <Calendar className="w-16 h-16 text-gold mb-6" />
               <p className="font-inter text-lg text-cream/90 leading-relaxed">
-                Of je nu <span className="text-gold font-semibold">extra opdrachten zoekt</span>, seizoenswerk wilt draaien of <span className="text-gold font-semibold">langdurige freelance samenwerkingen</span> ambieert — wij helpen je aan de juiste match.
+                Of je nu <span className="text-gold font-semibold">extra opdrachten zoekt</span>, seizoenswerk wilt draaien of <span className="text-gold font-semibold">langdurige freelance samenwerkingen</span> ambieert, wij helpen je aan de juiste match.
               </p>
             </div>
           </motion.div>
@@ -266,7 +266,7 @@ export default function HorecaSpecialistPage() {
                 {
                   number: '03',
                   title: 'Toegang tot ons systeem',
-                  description: 'Schrijf je in op opdrachten die passen bij jouw agenda en tarief.'
+                  description: 'Schrijf je in op opdrachten die passen bij jouw agenda.'
                 },
                 {
                   number: '04',
@@ -481,7 +481,7 @@ export default function HorecaSpecialistPage() {
             transition={{ duration: 0.8 }}
             className="font-inter text-xl text-cream/90 text-center leading-relaxed"
           >
-            Wij helpen je niet alleen aan opdrachten — wij helpen je bouwen aan een <span className="font-semibold text-gold">stabiele en succesvolle freelance carrière</span> in de horeca.
+            Wij helpen je niet alleen aan opdrachten, wij helpen je bouwen aan een <span className="font-semibold text-gold">stabiele en succesvolle freelance carrière</span> in de horeca.
           </motion.p>
         </div>
       </section>

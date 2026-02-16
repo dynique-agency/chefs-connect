@@ -199,7 +199,7 @@ export default function AboutSection() {
                   Onder zijn leiding combineren wij gastronomie, gastvrijheid en perfectie in uitvoering.
                 </p>
                 <div className="inline-flex items-center gap-2 bg-cream/10 px-4 py-2 border border-gold/20">
-                  <span className="font-inter text-xs text-cream/70">Meer dan 40 jaar gastronomische excellentie</span>
+                  <span className="font-inter text-xs text-cream/70">Al 20 jaar gastronomisch topniveau</span>
                 </div>
               </div>
             </div>

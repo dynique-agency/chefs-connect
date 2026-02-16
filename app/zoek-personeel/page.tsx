@@ -18,7 +18,6 @@ export default function ZoekPersoneelPage() {
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
   const textRef1 = useRef<HTMLParagraphElement>(null);
-  const textRef2 = useRef<HTMLParagraphElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -29,7 +28,7 @@ export default function ZoekPersoneelPage() {
 
   // GSAP Scroll Reveal
   useEffect(() => {
-    const elements = [textRef1.current, textRef2.current].filter(Boolean);
+    const elements = [textRef1.current].filter(Boolean);
     
     elements.forEach((element) => {
       if (!element) return;
@@ -116,7 +115,7 @@ export default function ZoekPersoneelPage() {
                 <p ref={textRef1}>
                   Ben je horecaondernemer en denk je: <span className="font-semibold text-brown">ik zoek horecapersoneel, en snel ook?</span> Dan wil je geen gedoe, geen mismatches en geen lange procedures. Je wilt kwaliteit, betrouwbaarheid en iemand die begrijpt hoe de horeca écht werkt.
                 </p>
-                <p ref={textRef2} className="text-xl font-medium text-gold">
+                <p className="text-xl font-medium text-gold">
                   Bij ChefsConnect regelen we dat voor je.
                 </p>
                 <p>
@@ -173,10 +172,10 @@ export default function ZoekPersoneelPage() {
             <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light text-cream mb-8">
               Snel horecapersoneel nodig?
               <br />
-              <span className="text-gold italic">Vaak binnen 24 uur geregeld</span>
+              <span className="text-gold italic">vaak snel geregeld</span>
             </h2>
             <p className="font-inter text-lg md:text-xl text-cream/80 max-w-3xl mx-auto leading-relaxed">
-              Personeelstekort in de horeca vraagt om directe actie. Dankzij ons netwerk van meer dan <span className="font-semibold text-gold">150+ ervaren horeca­professionals</span> kunnen wij vaak al binnen 24 uur de juiste medewerker voorstellen.
+              Personeelstekort in de horeca vraagt om directe actie. Dankzij ons netwerk van meer dan <span className="font-semibold text-gold">150+ ervaren horeca­professionals</span> kunnen wij vaak snel de juiste medewerker voorstellen.
             </p>
           </motion.div>
 
@@ -218,7 +217,7 @@ export default function ZoekPersoneelPage() {
             <div className="bg-cream/5 backdrop-blur-sm border border-cream/10 p-8 flex flex-col justify-center">
               <ChefHat className="w-16 h-16 text-gold mb-6" />
               <p className="font-inter text-lg text-cream/90 leading-relaxed">
-                Of het nu gaat om <span className="text-gold font-semibold">ziekte, seizoensdrukte, een nieuw concept</span> of <span className="text-gold font-semibold">structurele versterking</span> — wij schakelen snel en doeltreffend.
+                Of het nu gaat om <span className="text-gold font-semibold">ziekte, seizoensdrukte, een nieuw concept</span> of <span className="text-gold font-semibold">structurele versterking</span>, wij schakelen snel en doeltreffend.
               </p>
             </div>
           </motion.div>
@@ -246,7 +245,7 @@ export default function ZoekPersoneelPage() {
               <div className="bg-brown/5 border border-brown/10 p-8 mb-8">
                 <h3 className="font-playfair text-2xl text-brown mb-6">Wat ons onderscheidt?</h3>
                 <p className="font-inter text-base text-brown-medium leading-relaxed mb-6">
-                  Wij hebben zelf meer dan <span className="font-semibold text-gold">20 jaar ervaring</span> als head chef in verschillende keukens. Wij kennen de druk van de service, de uitdagingen van personeelsplanning en het belang van een sterk team.
+                  Wij hebben zelf meer dan <span className="font-semibold text-gold">30 jaar ervaring</span> als head chef in verschillende keukens. Wij kennen de druk van de service, de uitdagingen van personeelsplanning en het belang van een sterk team.
                 </p>
                 
                 <div className="space-y-3">
@@ -441,8 +440,8 @@ export default function ZoekPersoneelPage() {
           >
             {[
               { icon: Users, text: '200+ professionals in ons netwerk' },
-              { icon: Clock, text: 'Snelle plaatsing (vaak binnen 24 uur)' },
-              { icon: Award, text: '20+ jaar praktijkervaring in de keuken' },
+              { icon: Clock, text: 'Snelle plaatsing, vaak snel' },
+              { icon: Award, text: '30+ jaar praktijkervaring in de keuken' },
               { icon: CheckCircle2, text: 'Persoonlijke aanpak' },
               { icon: CheckCircle2, text: 'Eerlijke en transparante werkwijze' },
               { icon: CheckCircle2, text: 'Complete ontzorging' }
@@ -485,7 +484,7 @@ export default function ZoekPersoneelPage() {
           >
             <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light text-brown mb-8 leading-tight">
               Ik zoek horecapersoneel en ik wil het{' '}
-              <span className="text-gold italic">goed geregeld</span> hebben
+              <span className="text-gold italic">goed geregeld</span> hebben.
             </h2>
             <p className="font-inter text-lg md:text-xl text-brown-medium leading-relaxed max-w-3xl mx-auto">
               Ben je klaar met last-minute stress, onderbezetting en constante wisselingen?

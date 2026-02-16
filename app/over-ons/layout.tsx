@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Over Ons - ChefsConnect | De Mensen Achter Premium Horeca',
-  description: 'Ontmoet het team achter ChefsConnect. Met meer dan 20 jaar ervaring verbinden wij de beste chefs met toprestaurants in Nederland en België.',
+  description: 'Ontmoet het team achter ChefsConnect. Met 30 jaar ervaring verbinden wij de beste chefs met toprestaurants in Nederland en België.',
   keywords: ['ChefsConnect team', 'horeca professionals', 'chef bemiddeling', 'gastronomie expertise', 'over ons'],
   openGraph: {
     title: 'Over Ons - ChefsConnect',

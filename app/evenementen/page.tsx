@@ -178,7 +178,7 @@ export default function EvenementenPage() {
 
               <div className="space-y-6 font-inter text-base md:text-lg text-brown-medium leading-relaxed">
                 <p ref={textRef1}>
-                  Sta je aan de vooravond van een bijzonder evenement? Of het nu gaat om een <span className="font-semibold text-brown">bedrijfsfeest, bruiloft, zakelijke lunch, healthy brunch</span> of een exclusieve <span className="font-semibold text-gold">private dining</span> — met Connect Event & Dining kies je voor een culinaire totaalbeleving van het hoogste niveau.
+                  Sta je aan de vooravond van een bijzonder evenement? Of het nu gaat om een <span className="font-semibold text-brown">bedrijfsfeest, bruiloft, zakelijke lunch, healthy brunch</span> of een exclusieve <span className="font-semibold text-gold">private dining</span>, met Connect Event & Dining kies je voor een culinaire totaalbeleving van het hoogste niveau.
                 </p>
                 <p ref={textRef2}>
                   Wij combineren <span className="font-semibold text-gold">gastronomie, gastvrijheid en perfectie</span> in uitvoering, zodat jij zorgeloos kunt genieten samen met je gasten.
@@ -230,7 +230,7 @@ export default function EvenementenPage() {
               <span className="text-gold italic">op topniveau</span>
             </h2>
             <p className="font-inter text-lg md:text-xl text-cream/80 max-w-4xl mx-auto leading-relaxed mb-6">
-              Met meer dan <span className="font-semibold text-gold">40 jaar ervaring</span> in de top van de gastronomie brengen wij restaurantkwaliteit naar jouw locatie. Geen standaard catering, maar een verfijnde ervaring waarin smaak, presentatie en service samenkomen.
+              Met meer dan <span className="font-semibold text-gold">30 jaar ervaring</span> in de top van de gastronomie brengen wij restaurantkwaliteit naar jouw locatie. Geen standaard catering, maar een verfijnde ervaring waarin smaak, presentatie en service samenkomen.
             </p>
           </motion.div>
 
@@ -318,7 +318,7 @@ export default function EvenementenPage() {
                     </p>
                     <div className="inline-flex items-center gap-3 bg-cream/10 px-4 py-2 border border-gold/20">
                       <ChefHat className="w-5 h-5 text-gold" />
-                      <span className="font-inter text-sm text-cream/80">Meer dan 40 jaar gastronomische excellentie</span>
+                      <span className="font-inter text-sm text-cream/80">Al 20 jaar gastronomisch topniveau</span>
                     </div>
                   </div>
                 </div>
@@ -403,7 +403,6 @@ export default function EvenementenPage() {
               'Zakelijke lunches',
               'Luxe broodjeslunches',
               'Healthy brunches',
-              'Private dining aan huis of op locatie',
               'Executive dinners',
               'VIP-events'
             ].map((item, index) => (
@@ -428,7 +427,7 @@ export default function EvenementenPage() {
             transition={{ duration: 0.8 }}
             className="font-playfair text-2xl md:text-3xl text-gold italic text-center"
           >
-            Of het nu gaat om tien gasten of een compleet gezelschap — wij creëren een ervaring die past bij het moment.
+            Of het nu gaat om twintig gasten of een compleet gezelschap, wij creëren een ervaring die past bij het moment.
           </motion.p>
         </div>
       </section>
@@ -521,7 +520,7 @@ export default function EvenementenPage() {
             className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
           >
             {[
-              { icon: Award, text: 'Meer dan 40 jaar ervaring in de topgastronomie' },
+              { icon: Award, text: '30 jaar ervaring in de topgastronomie' },
               { icon: Star, text: 'Bekroonde chef en culinair team' },
               { icon: Sparkles, text: 'Fine dining op locatie' },
               { icon: CheckCircle2, text: 'Alleen premium ingrediënten' },
