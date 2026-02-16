@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Star, CheckCircle2, ExternalLink, PenLine } from 'lucide-react';
@@ -71,6 +71,18 @@ function HighlightedText({ text }: { text: string }) {
 
 export default function Reviews() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if mobile on mount and resize
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   // Parallax for background image
   const { scrollYProgress } = useScroll({
@@ -82,6 +94,9 @@ export default function Reviews() {
 
   // Duplicate reviews for seamless infinite scroll
   const duplicatedReviews = [...reviews, ...reviews, ...reviews];
+  
+  // Faster scroll on mobile (20s), slower on desktop (40s)
+  const scrollDuration = isMobile ? 20 : 40;
 
   return (
     <section ref={containerRef} className="relative py-24 md:py-32 overflow-hidden bg-cream">
@@ -156,7 +171,7 @@ export default function Reviews() {
                 x: {
                   repeat: Infinity,
                   repeatType: 'loop',
-                  duration: 40,
+                  duration: scrollDuration,
                   ease: 'linear',
                 },
               }}
