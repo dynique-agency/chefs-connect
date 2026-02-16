@@ -88,7 +88,7 @@ export default function InstagramFeed() {
               href={post.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative aspect-square overflow-hidden bg-cream shadow-xl"
+              className="group relative aspect-[3/4] overflow-hidden bg-cream shadow-xl"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: '-50px' }}
