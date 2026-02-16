@@ -251,7 +251,7 @@ export default function IntroSection() {
                   textWrap: 'pretty'
                 }}
               >
-                Bij Chefs Connect versterken wij horecazaken met <span className="text-gold font-medium">ervaren chefs</span> en <span className="text-gold font-medium">professionele bediening</span> die direct het verschil maken. Van private dining tot grootschalige events zorgen wij dat elke service staat met aandacht, vakmanschap en een feilloze uitvoering.
+                Bij Chefs Connect versterken wij<br className="md:hidden" /> horecazaken met <span className="text-gold font-medium">ervaren chefs</span> en <span className="text-gold font-medium">professionele bediening</span> die direct<br className="md:hidden" /> het verschil maken.<br className="md:hidden" /> Van private dining tot<br className="md:hidden" /> grootschalige events zorgen wij<br className="md:hidden" /> dat elke service staat met<br className="md:hidden" /> aandacht, vakmanschap en<br className="md:hidden" /> een feilloze uitvoering.
               </p>
 
               {/* Premium CTA Button */}
