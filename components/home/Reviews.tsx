@@ -95,8 +95,8 @@ export default function Reviews() {
   // Duplicate reviews for seamless infinite scroll
   const duplicatedReviews = [...reviews, ...reviews, ...reviews];
   
-  // Faster scroll on mobile (20s), slower on desktop (40s)
-  const scrollDuration = isMobile ? 20 : 40;
+  // Much faster scroll on mobile (7s), slower on desktop (40s)
+  const scrollDuration = isMobile ? 7 : 40;
 
   return (
     <section ref={containerRef} className="relative py-24 md:py-32 overflow-hidden bg-cream">
