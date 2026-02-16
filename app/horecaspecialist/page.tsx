@@ -138,7 +138,7 @@ export default function HorecaSpecialistPage() {
                 style={{ y: imageY }}
               >
                 <Image
-                  src="/choice-kitchen.png"
+                  src="/horecaspecialist-hero.png"
                   alt="Horeca professional"
                   fill
                   className="object-cover brightness-[0.85]"
