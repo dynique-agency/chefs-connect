@@ -43,14 +43,6 @@ export default function PhilosophyFocus() {
       {/* Premium background texture */}
       <div className="absolute inset-0 bg-gradient-to-b from-brown via-brown-medium to-brown opacity-40" />
 
-      {/* Subtle grid pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(#C9A961 1px, transparent 1px), linear-gradient(90deg, #C9A961 1px, transparent 1px)`,
-          backgroundSize: '40px 40px',
-        }} />
-      </div>
-
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header Section */}
         <motion.div
