@@ -126,7 +126,7 @@ export default function Footer() {
               <p className="font-inter text-xs text-cream/50">
                 © {new Date().getFullYear()} Chefs Connect. Alle rechten voorbehouden.
               </p>
-              <div className="flex gap-6">
+              <div className="flex flex-wrap gap-4 md:gap-6 justify-center md:justify-end">
                 <Link
                   href="/privacy"
                   className="font-inter text-xs text-cream/50 hover:text-gold transition-colors duration-300"
@@ -134,7 +134,13 @@ export default function Footer() {
                   Privacy
                 </Link>
                 <Link
-                  href="/algemene-voorwaarden"
+                  href="/cookies"
+                  className="font-inter text-xs text-cream/50 hover:text-gold transition-colors duration-300"
+                >
+                  Cookies
+                </Link>
+                <Link
+                  href="/terms"
                   className="font-inter text-xs text-cream/50 hover:text-gold transition-colors duration-300"
                 >
                   Voorwaarden
