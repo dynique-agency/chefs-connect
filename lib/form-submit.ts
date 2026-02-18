@@ -250,9 +250,21 @@ export async function submitToWeb3Forms(
     // Check response status
     if (!response.ok) {
       if (response.status === 429) {
-        throw new RateLimitError('Te veel aanvragen. Probeer het later opnieuw.');
+        return {
+          success: false,
+          error: 'Te veel aanvragen. Probeer het later opnieuw.'
+        };
       }
-      throw new NetworkError(`Server error: ${response.status}`);
+      if (response.status === 400) {
+        return {
+          success: false,
+          error: 'Er is een probleem met de formuliergegevens. Controleer of alle velden correct zijn ingevuld.'
+        };
+      }
+      return {
+        success: false,
+        error: `Er is een fout opgetreden (${response.status}). Probeer het later opnieuw.`
+      };
     }
 
     const result = await response.json();
@@ -263,37 +275,26 @@ export async function submitToWeb3Forms(
         message: 'Bedankt! We nemen zo snel mogelijk contact met je op.' 
       };
     } else {
-      throw new Error(result.message || 'Formulier kon niet worden verzonden');
+      return {
+        success: false,
+        error: result.message || 'Formulier kon niet worden verzonden. Probeer het later opnieuw.'
+      };
     }
   } catch (error) {
     console.error('Form submission error:', error);
 
-    // Handle different error types
-    if (error instanceof FormValidationError) {
+    // Handle network timeout or other unexpected errors
+    if (error instanceof Error && error.name === 'AbortError') {
       return {
         success: false,
-        error: error.message
+        error: 'De verbinding duurde te lang. Controleer je internetverbinding en probeer het opnieuw.'
       };
     }
 
-    if (error instanceof RateLimitError) {
-      return {
-        success: false,
-        error: error.message
-      };
-    }
-
-    if (error instanceof NetworkError) {
-      return {
-        success: false,
-        error: 'Netwerkfout. Controleer je internetverbinding en probeer het opnieuw.'
-      };
-    }
-
-    // Generic error
+    // Generic error for any other unexpected issues
     return {
       success: false,
-      error: 'Er is een onverwachte fout opgetreden. Probeer het later opnieuw of neem contact op via telefoon.'
+      error: 'Er is een onverwachte fout opgetreden. Probeer het later opnieuw of neem contact op via telefoon: +31 6 41875803'
     };
   }
 }
@@ -365,12 +366,27 @@ export async function submitToWeb3FormsWithFiles(
     // Check response status
     if (!response.ok) {
       if (response.status === 429) {
-        throw new RateLimitError('Te veel aanvragen. Probeer het later opnieuw.');
+        return {
+          success: false,
+          error: 'Te veel aanvragen. Probeer het later opnieuw.'
+        };
       }
       if (response.status === 413) {
-        throw new FormValidationError('Bestand is te groot. Maximale grootte is 5MB.');
+        return {
+          success: false,
+          error: 'Bestand is te groot. Maximale grootte is 5MB.'
+        };
       }
-      throw new NetworkError(`Server error: ${response.status}`);
+      if (response.status === 400) {
+        return {
+          success: false,
+          error: 'Er is een probleem met de formuliergegevens. Controleer of alle velden correct zijn ingevuld.'
+        };
+      }
+      return {
+        success: false,
+        error: `Er is een fout opgetreden (${response.status}). Probeer het later opnieuw.`
+      };
     }
 
     const result = await response.json();
@@ -381,34 +397,23 @@ export async function submitToWeb3FormsWithFiles(
         message: 'Bedankt voor je aanmelding! We nemen zo snel mogelijk contact met je op.' 
       };
     } else {
-      throw new Error(result.message || 'Formulier kon niet worden verzonden');
+      return {
+        success: false,
+        error: result.message || 'Formulier kon niet worden verzonden. Probeer het later opnieuw.'
+      };
     }
   } catch (error) {
     console.error('Form submission error:', error);
 
-    // Handle different error types
-    if (error instanceof FormValidationError) {
+    // Handle network timeout or other unexpected errors
+    if (error instanceof Error && error.name === 'AbortError') {
       return {
         success: false,
-        error: error.message
+        error: 'De verbinding duurde te lang. Controleer je internetverbinding en probeer het opnieuw.'
       };
     }
 
-    if (error instanceof RateLimitError) {
-      return {
-        success: false,
-        error: error.message
-      };
-    }
-
-    if (error instanceof NetworkError) {
-      return {
-        success: false,
-        error: 'Netwerkfout. Controleer je internetverbinding en probeer het opnieuw.'
-      };
-    }
-
-    // Generic error
+    // Generic error for any other unexpected issues
     return {
       success: false,
       error: 'Er is een onverwachte fout opgetreden. Probeer het later opnieuw of neem contact op via telefoon: +31 6 41875803'
