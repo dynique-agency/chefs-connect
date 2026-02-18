@@ -230,28 +230,48 @@ export default function IntroSection() {
                 ref={paragraph1Ref}
                 className="font-inter text-base sm:text-lg md:text-xl text-brown-medium leading-relaxed"
                 style={{ 
-                  wordBreak: 'normal',
-                  overflowWrap: 'break-word',
-                  hyphens: 'auto',
-                  WebkitHyphens: 'auto',
+                  wordBreak: 'keep-all',
+                  overflowWrap: 'normal',
+                  hyphens: 'manual',
+                  WebkitHyphens: 'manual',
                   textWrap: 'pretty'
                 }}
               >
-                Kwaliteit ontstaat wanneer de <span className="text-gold font-medium">juiste mensen</span><br className="sm:hidden" /> op het juiste moment samenkomen.
+                Kwaliteit ontstaat wanneer de{' '}
+                <span className="text-gold font-medium whitespace-nowrap">juiste mensen</span>
+                <br className="md:hidden" />{' '}
+                op het juiste moment samenkomen.
               </p>
 
               <p
                 ref={paragraph2Ref}
                 className="font-inter text-base sm:text-lg md:text-xl text-brown-medium leading-relaxed"
                 style={{ 
-                  wordBreak: 'normal',
-                  overflowWrap: 'break-word',
-                  hyphens: 'auto',
-                  WebkitHyphens: 'auto',
+                  wordBreak: 'keep-all',
+                  overflowWrap: 'normal',
+                  hyphens: 'manual',
+                  WebkitHyphens: 'manual',
                   textWrap: 'pretty'
                 }}
               >
-                Bij Chefs Connect versterken wij horecazaken<br className="sm:hidden" /> met <span className="text-gold font-medium">ervaren chefs</span> en <span className="text-gold font-medium">professionele bediening</span><br className="md:hidden" /> die direct het verschil maken.<br className="sm:hidden" /> Van <span className="text-gold font-medium">private dining</span> tot <span className="text-gold font-medium">grootschalige events</span><br className="md:hidden" /> zorgen wij dat elke service staat<br className="sm:hidden" /> met aandacht, vakmanschap<br className="sm:hidden" /> en een feilloze uitvoering.
+                Bij <span className="whitespace-nowrap">Chefs Connect</span> versterken wij{' '}
+                <br className="md:hidden" />
+                horecazaken met{' '}
+                <span className="text-gold font-medium whitespace-nowrap">ervaren chefs</span> en{' '}
+                <br className="md:hidden" />
+                <span className="text-gold font-medium whitespace-nowrap">professionele bediening</span> die direct{' '}
+                <br className="md:hidden" />
+                het verschil maken. Van{' '}
+                <span className="text-gold font-medium whitespace-nowrap">private dining</span> tot{' '}
+                <br className="md:hidden" />
+                <span className="text-gold font-medium whitespace-nowrap">grootschalige events</span>{' '}
+                zorgen wij dat{' '}
+                <br className="md:hidden" />
+                elke service staat met aandacht,{' '}
+                <br className="md:hidden" />
+                vakmanschap en een{' '}
+                <br className="md:hidden" />
+                feilloze uitvoering.
               </p>
 
               {/* Premium CTA Button */}
