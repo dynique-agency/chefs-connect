@@ -9,6 +9,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 import { submitToWeb3Forms } from '@/lib/form-submit';
+import FormNotification from '@/components/ui/FormNotification';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -16,6 +17,7 @@ if (typeof window !== 'undefined') {
 
 export default function ZoekPersoneelPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [notification, setNotification] = useState<{ type: 'success' | 'error'; title: string; messages: string[] } | null>(null);
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -46,13 +48,28 @@ export default function ZoekPersoneelPage() {
     if (result.success) {
       router.push('/bedankt');
     } else {
-      alert(result.error || 'Er is een fout opgetreden. Probeer het later opnieuw.');
+      const errorMessages = result.error?.split('\n') || ['Er is een fout opgetreden. Probeer het later opnieuw.'];
+      setNotification({
+        type: 'error',
+        title: 'Controleer je gegevens',
+        messages: errorMessages
+      });
       setIsSubmitting(false);
     }
   };
 
   return (
     <main className="min-h-screen bg-cream">
+      {/* Notification */}
+      {notification && (
+        <FormNotification
+          type={notification.type}
+          title={notification.title}
+          messages={notification.messages}
+          onClose={() => setNotification(null)}
+        />
+      )}
+      
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center px-6 py-32">
         <div className="max-w-7xl mx-auto w-full">

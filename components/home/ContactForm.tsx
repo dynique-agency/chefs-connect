@@ -6,9 +6,11 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Send } from 'lucide-react';
 import { submitToWeb3Forms } from '@/lib/form-submit';
+import FormNotification from '@/components/ui/FormNotification';
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [notification, setNotification] = useState<{ type: 'success' | 'error'; title: string; messages: string[] } | null>(null);
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -21,7 +23,18 @@ export default function ContactForm() {
   const image2Y = useTransform(scrollYProgress, [0, 1], [-30, 30]);
 
   return (
-    <section id="contact" className="relative py-24 md:py-32 lg:py-40 px-6 bg-cream overflow-hidden">
+    <>
+      {/* Notification */}
+      {notification && (
+        <FormNotification
+          type={notification.type}
+          title={notification.title}
+          messages={notification.messages}
+          onClose={() => setNotification(null)}
+        />
+      )}
+      
+      <section id="contact" className="relative py-24 md:py-32 lg:py-40 px-6 bg-cream overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left: Content + Form */}
@@ -65,7 +78,12 @@ export default function ContactForm() {
                   if (result.success) {
                     router.push('/bedankt');
                   } else {
-                    alert(result.error || 'Er is een fout opgetreden. Probeer het later opnieuw.');
+                    const errorMessages = result.error?.split('\n') || ['Er is een fout opgetreden. Probeer het later opnieuw.'];
+                    setNotification({
+                      type: 'error',
+                      title: 'Controleer je gegevens',
+                      messages: errorMessages
+                    });
                     setIsSubmitting(false);
                   }
                 }}
@@ -197,5 +215,6 @@ export default function ContactForm() {
         </div>
       </div>
     </section>
+    </>
   );
 }

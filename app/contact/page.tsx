@@ -6,9 +6,11 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Send, Mail, Phone, MapPin } from 'lucide-react';
 import { submitToWeb3Forms } from '@/lib/form-submit';
+import FormNotification from '@/components/ui/FormNotification';
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [notification, setNotification] = useState<{ type: 'success' | 'error'; title: string; messages: string[] } | null>(null);
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -33,13 +35,27 @@ export default function ContactPage() {
     if (result.success) {
       router.push('/bedankt');
     } else {
-      alert(result.error || 'Er is een fout opgetreden. Probeer het later opnieuw.');
+      const errorMessages = result.error?.split('\n') || ['Er is een fout opgetreden. Probeer het later opnieuw.'];
+      setNotification({
+        type: 'error',
+        title: 'Controleer je gegevens',
+        messages: errorMessages
+      });
       setIsSubmitting(false);
     }
   };
 
   return (
     <main className="min-h-screen bg-cream">
+      {/* Notification */}
+      {notification && (
+        <FormNotification
+          type={notification.type}
+          title={notification.title}
+          messages={notification.messages}
+          onClose={() => setNotification(null)}
+        />
+      )}
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center px-6 py-32 bg-brown">
         <div className="max-w-7xl mx-auto w-full text-center">
