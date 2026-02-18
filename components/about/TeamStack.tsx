@@ -69,6 +69,21 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 4,
+    name: 'Robin de Neijs',
+    age: '32 jaar',
+    role: 'Headchef',
+    specialty: 'Connect Events & Dining',
+    quote: 'Passie voor het vak, oog voor detail, professionele werkhouding.',
+    story: [
+      'Ik ben een ervaren chef met een brede achtergrond in bistro, restaurant, fine dining en high-end catering. In mijn loopbaan heb ik gewerkt als chef kok en (junior) sous chef, waarbij ik verantwoordelijk was voor kwaliteit, organisatie en het aansturen van keukenteams.',
+      'Ik deed ervaring op bij onder andere Restaurant Moon, EYE Filmbar & Restaurant, Bar Bistro Leijten en Hotel New York, waar ik mij heb ontwikkeld tot een zelfstandige, stressbestendige en flexibele professional. Ik pas mij snel aan in nieuwe keukens en lever altijd constante kwaliteit.',
+      'Met passie voor het vak, oog voor detail en een professionele werkhouding sta ik klaar voor nieuwe opdrachten en uitdagingen.'
+    ],
+    image: '/chef-action.png',
+    imageAvailable: true
+  },
+  {
+    id: 5,
     name: 'Marcel',
     age: '23 jaar',
     role: 'Horeca Planner',
