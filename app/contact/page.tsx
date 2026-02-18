@@ -26,20 +26,30 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const formData = new FormData(e.currentTarget);
+    try {
+      const formData = new FormData(e.currentTarget);
 
-    const result = await submitToWeb3Forms(formData, {
-      subject: 'Chefs Connect: Contact Aanvraag',
-    });
+      const result = await submitToWeb3Forms(formData, {
+        subject: 'Chefs Connect: Contact Aanvraag',
+      });
 
-    if (result.success) {
-      router.push('/bedankt');
-    } else {
-      const errorMessages = result.error?.split('\n') || ['Er is een fout opgetreden. Probeer het later opnieuw.'];
+      if (result.success) {
+        router.push('/bedankt');
+      } else {
+        const errorMessages = result.error?.split('\n') || ['Er is een fout opgetreden. Probeer het later opnieuw.'];
+        setNotification({
+          type: 'error',
+          title: 'Controleer je gegevens',
+          messages: errorMessages
+        });
+        setIsSubmitting(false);
+      }
+    } catch (error) {
+      console.error('Unexpected form error:', error);
       setNotification({
         type: 'error',
-        title: 'Controleer je gegevens',
-        messages: errorMessages
+        title: 'Er is iets misgegaan',
+        messages: ['Er is een onverwachte fout opgetreden. Probeer het opnieuw of neem contact op via telefoon: +31 6 41875803']
       });
       setIsSubmitting(false);
     }

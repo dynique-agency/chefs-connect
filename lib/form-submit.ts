@@ -338,29 +338,47 @@ export async function submitToWeb3FormsWithFiles(
       };
     }
 
-    // Validate files
-    const files = formData.getAll('cv');
-    for (const file of files) {
-      if (file instanceof File) {
-        const fileValidation = validateFile(file);
+    // Create new FormData to avoid conflicts
+    const submitData = new FormData();
+
+    // Add Web3Forms required fields first
+    submitData.append('access_key', WEB3FORMS_ACCESS_KEY);
+    submitData.append('subject', options.subject);
+    submitData.append('to', 'info@chefsconnect.nl');
+    submitData.append('from_name', 'Chefs Connect Website');
+    
+    // Collect form data for validation
+    const validationData: Record<string, any> = {};
+    
+    // Copy all form fields to submitData
+    formData.forEach((value, key) => {
+      // Skip botcheck (honeypot)
+      if (key === 'botcheck') {
+        return;
+      }
+      
+      // Handle files
+      if (value instanceof File && value.size > 0) {
+        // Validate file
+        const fileValidation = validateFile(value);
         if (!fileValidation.valid) {
+          // Store error to return later
           return {
             success: false,
             error: fileValidation.error || 'Ongeldig bestand'
           };
         }
-      }
-    }
-
-    // Validate text fields
-    const data: Record<string, any> = {};
-    formData.forEach((value, key) => {
-      if (!(value instanceof File)) {
-        data[key] = value;
+        submitData.append(key, value, value.name);
+      } else if (!(value instanceof File)) {
+        // Handle text fields
+        const sanitizedValue = sanitizeInput(value as string);
+        submitData.append(key, sanitizedValue);
+        validationData[key] = sanitizedValue;
       }
     });
 
-    const validation = validateFormData(data);
+    // Validate text fields
+    const validation = validateFormData(validationData);
     if (!validation.valid) {
       return {
         success: false,
@@ -368,20 +386,18 @@ export async function submitToWeb3FormsWithFiles(
       };
     }
 
-    // Add Web3Forms required fields
-    formData.append('access_key', WEB3FORMS_ACCESS_KEY);
-    formData.append('subject', sanitizeInput(options.subject));
-    formData.append('to', 'info@chefsconnect.nl');
-    formData.append('from_name', 'Chefs Connect Website');
-    formData.append('redirect', 'https://chefsconnect.nl/bedankt');
-    formData.append('botcheck', 'false');
+    // Debug logging (only in development)
+    if (process.env.NODE_ENV === 'development') {
+      console.log('Submitting form with file upload...');
+      console.log('Fields:', Array.from(submitData.keys()));
+    }
 
     // Submit to Web3Forms with timeout
     const fetchResult = await fetchWithTimeout(
       WEB3FORMS_ENDPOINT,
       {
         method: 'POST',
-        body: formData,
+        body: submitData, // Use the new submitData instead of original formData
       },
       FORM_TIMEOUT
     );
@@ -436,9 +452,17 @@ export async function submitToWeb3FormsWithFiles(
       };
     }
   } catch (error) {
-    console.error('Form submission error:', error);
+    console.error('Form submission with files error:', error);
 
-    // Handle network timeout or other unexpected errors
+    // Handle file validation errors
+    if (error instanceof Error && error.message.includes('bestand')) {
+      return {
+        success: false,
+        error: error.message
+      };
+    }
+
+    // Handle network errors
     if (error instanceof Error && error.name === 'AbortError') {
       return {
         success: false,
@@ -446,7 +470,15 @@ export async function submitToWeb3FormsWithFiles(
       };
     }
 
-    // Generic error for any other unexpected issues
+    // Handle any other errors gracefully
+    if (error instanceof Error) {
+      return {
+        success: false,
+        error: 'Er is een probleem opgetreden bij het uploaden. Probeer het opnieuw of neem contact op via telefoon: +31 6 41875803'
+      };
+    }
+
+    // Generic error
     return {
       success: false,
       error: 'Er is een onverwachte fout opgetreden. Probeer het later opnieuw of neem contact op via telefoon: +31 6 41875803'
