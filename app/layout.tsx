@@ -23,15 +23,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Chefs Connect | Premium Horecapersoneel & Evenement Catering',
+  title: 'Chefs Connect | Premium Horecafreelancers & Evenement Catering',
   description: 'Chefs Connect bemiddelt ervaren horecaprofessionals en verzorgt exclusieve evenementen. Snel, betrouwbaar en professioneel. Van private dining tot grootschalige events in België en Nederland.',
   icons: {
     icon: '/faviconchefsconnect.png',
   },
-  keywords: ['horeca personeel', 'chef bemiddeling', 'evenement catering', 'private dining', 'horecaprofessionals', 'fine dining catering'],
+  keywords: ['horeca freelancers', 'chef bemiddeling', 'evenement catering', 'private dining', 'horecaprofessionals', 'fine dining catering'],
   authors: [{ name: 'Chefs Connect' }],
   openGraph: {
-    title: 'Chefs Connect | Premium Horecapersoneel & Evenement Catering',
+    title: 'Chefs Connect | Premium Horecafreelancers & Evenement Catering',
     description: 'Ervaren chefs en bediening voor uw horecazaak. Exclusieve catering voor evenementen.',
     type: 'website',
     locale: 'nl_NL',

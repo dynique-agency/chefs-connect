@@ -11,7 +11,7 @@ interface FullScreenMenuProps {
 }
 
 const menuItems = [
-  { label: 'Ik zoek horeca personeel', href: '/zoek-personeel' },
+  { label: 'Ik zoek horeca freelancers', href: '/zoek-personeel' },
   { label: 'Ik ben een horecaspecialist', href: '/horecaspecialist' },
   { label: 'Ik organiseer een evenement', href: '/evenementen' },
   { label: 'Over ons', href: '/over-ons' },

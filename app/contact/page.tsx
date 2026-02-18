@@ -53,7 +53,7 @@ export default function ContactPage() {
             </h1>
             <div className="h-px bg-gold/30 w-32 mx-auto mb-8" />
             <p className="font-inter text-lg md:text-xl text-cream/80 max-w-2xl mx-auto leading-relaxed">
-              We helpen je graag verder met al je vragen over personeel, freelance opdrachten of evenementen
+              We helpen je graag verder met al je vragen over freelancers, opdrachten of evenementen
             </p>
           </motion.div>
         </div>
@@ -135,7 +135,7 @@ export default function ContactPage() {
                     className="w-full bg-transparent border-0 border-b-2 border-brown/20 focus:border-gold focus:outline-none py-3 font-inter text-brown transition-colors"
                   >
                     <option value="">Selecteer een onderwerp</option>
-                    <option value="Ik zoek horeca personeel">Ik zoek horeca personeel</option>
+                    <option value="Ik zoek horeca freelancers">Ik zoek horeca freelancers</option>
                     <option value="Ik ben een horecaspecialist">Ik ben een horecaspecialist</option>
                     <option value="Ik organiseer een evenement">Ik organiseer een evenement</option>
                     <option value="Algemene vraag">Algemene vraag</option>
@@ -224,7 +224,7 @@ export default function ContactPage() {
                     <div>
                       <p className="font-inter text-xs uppercase tracking-wider text-brown/60 mb-1">Locatie</p>
                       <p className="font-inter text-base text-brown">
-                        Energielaan 10a, Rotum (België)
+                        Gasthuisstraat 3.1 Lanaken
                       </p>
                     </div>
                   </div>
@@ -238,7 +238,7 @@ export default function ContactPage() {
                   className="absolute top-0 left-0 w-2/3 h-64 overflow-hidden"
                 >
                   <Image
-                    src="/about-team.png"
+                    src="/team-founders.jpg"
                     alt="Chefs Connect Team"
                     fill
                     className="object-cover"
@@ -252,10 +252,10 @@ export default function ContactPage() {
                   className="absolute bottom-0 right-0 w-2/3 h-64 overflow-hidden"
                 >
                   <Image
-                    src="/choice-dining.png"
-                    alt="Culinaire Ervaring"
+                    src="/contact-service.png"
+                    alt="Professional Service"
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brown/20 to-transparent" />

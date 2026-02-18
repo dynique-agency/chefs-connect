@@ -145,7 +145,7 @@ export default function OverOnsPage() {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-gold text-brown font-inter uppercase tracking-wider hover:bg-gold-dark transition-colors duration-300 shadow-xl"
             >
-              Ik zoek personeel
+              Ik zoek freelancers
             </motion.a>
             
             <motion.a

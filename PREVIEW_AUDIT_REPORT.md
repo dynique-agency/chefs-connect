@@ -27,7 +27,7 @@
 - ✅ Contactgegevens correct:
   - Email: info@chefsconnect.nl
   - Telefoon: +31 6 41875803
-  - Adres: Energielaan 10a, Rotum (België)
+  - Adres: Gasthuisstraat 3.1 Lanaken
 - ✅ Alle pagina's hebben unieke content
 - ✅ Geen Lorem Ipsum of placeholder tekst
 
@@ -48,7 +48,7 @@ src="/menu.jpg"     // ❌ Bestaat niet in /public
 **Huidig:** "Editorial magazine for culinary professionals"  
 **Impact:** Verkeerde SEO focus, niet representatief voor het bedrijf  
 **Oplossing:** Vervang door specifieke beschrijving zoals:
-- "Chefs Connect - Premium horecapersoneel & evenement catering in België"
+- "Chefs Connect - Premium horecafreelancers & evenement catering in België"
 
 ### 3. **Web3Forms API Key in Client Code** 🟡
 **Locatie:** Meerdere bestanden

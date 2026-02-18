@@ -1,8 +1,8 @@
 # 🍽️ Chefs Connect
 
-**Premium Horecapersoneel & Evenement Catering Website**
+**Premium Horecafreelancers & Evenement Catering Website**
 
-Een moderne, professionele website gebouwd met Next.js 16, die diensten aanbiedt voor horecapersoneel bemiddeling en exclusieve evenement catering in België en Nederland.
+Een moderne, professionele website gebouwd met Next.js 16, die diensten aanbiedt voor horecafreelancer bemiddeling en exclusieve evenement catering in België en Nederland.
 
 ---
 
@@ -31,7 +31,7 @@ Een moderne, professionele website gebouwd met Next.js 16, die diensten aanbiedt
 ## 📄 Pagina's
 
 1. **Homepage** - Hero, Intro, About, Philosophy, Contact
-2. **Ik zoek horeca personeel** - Bemiddeling van horecapersoneel
+2. **Ik zoek horeca freelancers** - Bemiddeling van horecafreelancers
 3. **Ik ben een horecaspecialist** - Voor freelance professionals
 4. **Ik organiseer een evenement** - Connect Events & Dining catering
 5. **Contact** - Contactformulier en bedrijfsinformatie
@@ -114,7 +114,7 @@ chefs-connect/
 │   ├── contact/           # Contact page
 │   ├── evenementen/       # Events page
 │   ├── horecaspecialist/  # Specialist page
-│   ├── zoek-personeel/    # Personnel page
+│   ├── zoek-personeel/    # Freelancers page
 │   └── bedankt/           # Thank you page
 ├── components/
 │   ├── home/              # Homepage components
@@ -180,7 +180,7 @@ chefs-connect/
 **Chefs Connect**
 - Email: info@chefsconnect.nl
 - Telefoon: +31 6 41875803
-- Adres: Energielaan 10a, Rotum (België)
+- Adres: Gasthuisstraat 3.1 Lanaken
 
 ---
 

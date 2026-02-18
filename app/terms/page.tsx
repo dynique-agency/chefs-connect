@@ -88,7 +88,7 @@ function FreelancerTerms() {
           <span className="text-gold">Artikel 1</span> – Definities
         </h3>
         <div className="space-y-3 font-inter text-brown/80">
-          <p><strong>ChefsConnect:</strong> CHEFS CONNECT BV, gevestigd te Rotum (België), die horeca-opdrachtgevers en zelfstandige professionals met elkaar in contact brengt en opdrachten faciliteert.</p>
+          <p><strong>ChefsConnect:</strong> CHEFS CONNECT BV, gevestigd te Lanaken, die horeca-opdrachtgevers en zelfstandige professionals met elkaar in contact brengt en opdrachten faciliteert.</p>
           <p><strong>Freelancer / Dienstverlener:</strong> de zelfstandige natuurlijke persoon of rechtspersoon die via ChefsConnect opdrachten uitvoert.</p>
           <p><strong>Opdrachtgever:</strong> de horecaonderneming of andere klant waarvoor de Freelancer werkzaamheden verricht.</p>
           <p><strong>Overeenkomst:</strong> de individuele freelance-overeenkomst gesloten tussen ChefsConnect en de Freelancer.</p>
@@ -306,8 +306,8 @@ function ClientTerms() {
           <span className="text-gold">Artikel 1</span> – Definities
         </h3>
         <div className="space-y-3 font-inter text-brown/80">
-          <p><strong>ChefsConnect:</strong> CHEFS CONNECT BV, gevestigd te Rotum (België), die horeca-opdrachtgevers en zelfstandige professionals met elkaar in contact brengt.</p>
-          <p><strong>Opdrachtgever:</strong> de horecaonderneming, evenementenorganisatie of andere klant die via ChefsConnect personeel inzet.</p>
+          <p><strong>ChefsConnect:</strong> CHEFS CONNECT BV, gevestigd te Lanaken, die horeca-opdrachtgevers en zelfstandige professionals met elkaar in contact brengt.</p>
+          <p><strong>Opdrachtgever:</strong> de horecaonderneming, evenementenorganisatie of andere klant die via ChefsConnect freelancers inzet.</p>
           <p><strong>Freelancer:</strong> de zelfstandige professional die door ChefsConnect wordt ingezet bij de Opdrachtgever.</p>
           <p><strong>Diensten:</strong> het bemiddelen tussen Opdrachtgever en Freelancers voor culinaire en hospitality werkzaamheden.</p>
         </div>
@@ -370,11 +370,8 @@ function ClientTerms() {
           <span className="text-gold">Artikel 6</span> – Annulering
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
-          <li>• Bij annulering meer dan 7 dagen voor aanvang: geen kosten</li>
-          <li>• Bij annulering tussen 7 en 3 dagen voor aanvang: 50% van de afgesproken vergoeding</li>
-          <li>• Bij annulering binnen 3 dagen voor aanvang: 75% van de afgesproken vergoeding</li>
-          <li>• Bij annulering binnen 24 uur voor aanvang: 100% van de afgesproken vergoeding</li>
-          <li>• Bij aantoonbare overmacht kan hiervan worden afgeweken in overleg.</li>
+          <li>• Nadat ChefsConnect haar Diensten voor de betreffende opdracht heeft aangevat en de opdracht is binnen de termijn van 7 dagen, is er een vergoeding verschuldigd van 50% van de geschatte waarde van de opdracht, met een minimum van € 150,00, onverminderd het recht van ChefsConnect om hogere werkelijk geleden schade te bewijzen en te eisen van de Opdrachtgever.</li>
+          <li>• Nadat ChefsConnect haar Diensten voor de betreffende opdracht heeft aangevat en de dienst valt binnen 48 uur voor aanvang, is er een vergoeding verschuldigd van 90% van de geschatte waarde van de opdracht, met een minimum van € 250,00, onverminderd het recht van ChefsConnect om hogere werkelijk geleden schade te bewijzen en te eisen van de Opdrachtgever.</li>
         </ul>
       </div>
 

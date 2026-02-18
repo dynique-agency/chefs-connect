@@ -80,7 +80,7 @@ export default function Footer() {
                 </a>
                 <div className="flex items-center gap-3 font-inter text-sm text-cream/80">
                   <MapPin className="w-4 h-4" />
-                  <span>Energielaan 10a, Rotum (België)</span>
+                  <span>Gasthuisstraat 3.1 Lanaken</span>
                 </div>
               </div>
             </div>

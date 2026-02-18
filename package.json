@@ -1,7 +1,7 @@
 {
   "name": "chefs-connect",
   "version": "1.0.0",
-  "description": "Chefs Connect - Premium Horecapersoneel & Evenement Catering Website",
+  "description": "Chefs Connect - Premium Horecafreelancers & Evenement Catering Website",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",

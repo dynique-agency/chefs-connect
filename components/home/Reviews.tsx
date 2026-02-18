@@ -18,7 +18,7 @@ const reviews = [
   },
   {
     name: "Stijn Antens",
-    text: "Met alleen het leveren van goed personeel onderscheid je jezelf niet meer, de jongens van chefsconnect onderscheiden zich met een {super service} en zorgen altijd voor een {oplossing wanneer nodig}. Zeer tevreden!",
+    text: "Met alleen het leveren van goede freelancers onderscheid je jezelf niet meer, de jongens van chefsconnect onderscheiden zich met een {super service} en zorgen altijd voor een {oplossing wanneer nodig}. Zeer tevreden!",
     stars: 5,
   },
   {

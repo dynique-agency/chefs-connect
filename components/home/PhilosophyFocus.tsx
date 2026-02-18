@@ -20,7 +20,7 @@ const choices = [
     title: 'Ik ben een horeca professional',
     subtitle: 'Voor Professionals',
     description: 'Ontdek jouw volgende culinaire avontuur',
-    image: '/horecaspecialist-hero.png',
+    image: '/team-founders.jpg',
     href: '/horecaspecialist',
     number: '02',
   },
