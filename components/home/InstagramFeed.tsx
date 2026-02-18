@@ -20,8 +20,8 @@ const instagramPosts = [
   },
   {
     id: 3,
-    image: '/instagram/post1.png',
-    url: 'https://www.instagram.com/chefsconnectnl/', // Vervang met daadwerkelijke post URL
+    image: '/instagram/post3.png',
+    url: 'https://www.instagram.com/chefsconnectnl/',
     type: 'post' as const,
   },
 ];
