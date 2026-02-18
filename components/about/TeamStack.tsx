@@ -105,10 +105,10 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
           !isEven ? 'md:grid-flow-dense' : ''
         }`}
       >
-        {/* Image Section with Parallax */}
+        {/* Image Section with Quote */}
         <motion.div
           ref={imageRef}
-          className={`${!isEven ? 'md:col-start-2' : ''} relative group sticky top-24`}
+          className={`${!isEven ? 'md:col-start-2' : ''} relative group sticky top-24 space-y-6`}
         >
           {/* Number Badge */}
           <motion.div
@@ -123,14 +123,16 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
             </span>
           </motion.div>
 
-          <div className="relative aspect-[3/4] overflow-hidden bg-gradient-to-br from-cream via-white to-gold/10 border-2 border-brown/10 shadow-2xl group">
+          {/* Image Container - Natural Height */}
+          <div className="relative w-full overflow-hidden bg-gradient-to-br from-cream via-white to-gold/10 border-2 border-brown/10 shadow-2xl group">
             {member.imageAvailable ? (
-              <motion.div style={{ y: imageY }} className="w-full h-full">
+              <motion.div style={{ y: imageY }} className="w-full">
                 <Image
                   src={member.image}
                   alt={member.name}
-                  fill
-                  className="object-cover"
+                  width={600}
+                  height={800}
+                  className="w-full h-auto object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   loading={index === 0 ? 'eager' : 'lazy'}
                 />
@@ -141,7 +143,7 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
                 <div className="absolute inset-0 bg-gradient-to-br from-cream via-white to-gold/5" />
 
                 {/* Premium placeholder content */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-8 md:p-12">
+                <div className="relative w-full aspect-[3/4] flex flex-col items-center justify-center p-8 md:p-12">
                   {/* Main initial circle */}
                   <motion.div
                     initial={{ scale: 0, rotate: -180 }}
@@ -190,6 +192,28 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
               className="absolute bottom-0 left-0 w-20 h-20 border-b-4 border-l-4 border-gold/50"
             />
           </div>
+
+          {/* Quote - Below Image */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="relative py-6 px-6 md:px-8 bg-gold/5 border-l-4 border-gold"
+          >
+            {/* Subtle quote mark */}
+            <Quote className="absolute top-4 left-4 w-6 h-6 text-gold/20" strokeWidth={2} />
+
+            {/* Quote content */}
+            <div className="relative pl-6">
+              <div className="text-xs text-gold/80 font-inter uppercase tracking-wider mb-2">
+                Motto
+              </div>
+              <p className="font-playfair text-lg md:text-xl text-brown italic leading-relaxed">
+                {member.quote}
+              </p>
+            </div>
+          </motion.div>
         </motion.div>
 
         {/* Content Section */}
@@ -250,28 +274,6 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
               </motion.p>
             ))}
           </div>
-
-          {/* Quote - Clean & Professional */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="relative my-10 py-8 px-6 md:px-10 bg-gold/5 border-l-4 border-gold"
-          >
-            {/* Subtle opening quote */}
-            <Quote className="absolute top-6 left-6 w-8 h-8 text-gold/20" strokeWidth={2} />
-
-            {/* Quote content */}
-            <div className="relative pl-8">
-              <div className="text-xs text-gold/80 font-inter uppercase tracking-wider mb-3">
-                Motto
-              </div>
-              <p className="font-playfair text-xl md:text-2xl text-brown italic leading-relaxed">
-                {member.quote}
-              </p>
-            </div>
-          </motion.div>
 
           {/* Signature with draw effect */}
           <motion.div
