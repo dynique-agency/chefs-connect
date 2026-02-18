@@ -17,8 +17,6 @@ export default function HorecaSpecialistPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
-  const textRef1 = useRef<HTMLParagraphElement>(null);
-  const textRef2 = useRef<HTMLParagraphElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -29,39 +27,6 @@ export default function HorecaSpecialistPage() {
 
   // GSAP Scroll Reveal
   useEffect(() => {
-    const elements = [textRef1.current, textRef2.current].filter(Boolean);
-    
-    elements.forEach((element) => {
-      if (!element) return;
-      
-      const split = new SplitType(element as HTMLElement, {
-        types: 'chars',
-      });
-
-      gsap.set(split.chars, {
-        opacity: 0,
-        y: 15,
-        scale: 0.95,
-      });
-
-      gsap.to(split.chars, {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        ease: 'power3.out',
-        stagger: {
-          amount: 0.6,
-          from: 'start',
-        },
-        scrollTrigger: {
-          trigger: element,
-          start: 'top 85%',
-          end: 'bottom 40%',
-          scrub: 0.3,
-        },
-      });
-    });
-
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
@@ -113,10 +78,10 @@ export default function HorecaSpecialistPage() {
               </h1>
 
               <div className="space-y-6 font-inter text-base md:text-lg text-brown-medium leading-relaxed max-w-xl">
-                <p ref={textRef1}>
+                <p>
                   Ben jij chef, kok of bedieningsmedewerker en wil je als <span className="font-semibold text-brown">freelancer werken in de horeca</span>, of ben je dat al? Zoek je <span className="font-semibold text-gold">vrijheid, flexibiliteit én zekerheid</span> van mooie opdrachten?
                 </p>
-                <p ref={textRef2} className="text-xl font-medium text-gold">
+                <p className="text-xl font-medium text-gold">
                   Bij ChefsConnect krijg je toegang tot hoogwaardige freelance opdrachten die passen bij jouw ervaring en agenda.
                 </p>
                 <p>
@@ -315,17 +280,20 @@ export default function HorecaSpecialistPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative h-[500px]"
+              className="relative"
             >
-              <Image
-                src="/team-founders.jpg"
-                alt="Persoonlijke benadering"
-                fill
-                className="object-cover brightness-[0.85]"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-brown via-brown/40 to-transparent" />
-              <div className="absolute inset-0 border-2 border-gold/30" />
+              <div className="relative w-full">
+                <Image
+                  src="/service-vertical.png"
+                  alt="Persoonlijke benadering"
+                  width={600}
+                  height={800}
+                  className="w-full h-auto object-contain brightness-[0.85]"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-brown via-brown/40 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 border-2 border-gold/30 pointer-events-none" />
             </motion.div>
 
             <motion.div

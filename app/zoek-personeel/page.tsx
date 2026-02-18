@@ -17,7 +17,6 @@ export default function ZoekPersoneelPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement>(null);
-  const textRef1 = useRef<HTMLParagraphElement>(null);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -28,39 +27,6 @@ export default function ZoekPersoneelPage() {
 
   // GSAP Scroll Reveal
   useEffect(() => {
-    const elements = [textRef1.current].filter(Boolean);
-    
-    elements.forEach((element) => {
-      if (!element) return;
-      
-      const split = new SplitType(element as HTMLElement, {
-        types: 'chars',
-      });
-
-      gsap.set(split.chars, {
-        opacity: 0,
-        y: 15,
-        scale: 0.95,
-      });
-
-      gsap.to(split.chars, {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        ease: 'power3.out',
-        stagger: {
-          amount: 0.6,
-          from: 'start',
-        },
-        scrollTrigger: {
-          trigger: element,
-          start: 'top 85%',
-          end: 'bottom 40%',
-          scrub: 0.3,
-        },
-      });
-    });
-
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
@@ -112,8 +78,8 @@ export default function ZoekPersoneelPage() {
               </h1>
 
               <div className="space-y-6 font-inter text-base md:text-lg text-brown-medium leading-relaxed max-w-xl">
-                <p ref={textRef1}>
-                  Ben je horecaondernemer en denk je: <span className="font-semibold text-brown">ik zoek horecafreelancers, en snel ook?</span> Dan wil je geen gedoe, geen mismatches en geen lange procedures. Je wilt kwaliteit, betrouwbaarheid en iemand die begrijpt hoe de horeca écht werkt.
+                <p>
+                  Ben je horecaondernemer en denk je:<br className="md:hidden" /> <span className="font-semibold text-brown">ik zoek horecafreelancers,<br className="md:hidden" /> en snel ook?</span> Dan wil je geen gedoe,<br className="md:hidden" /> geen mismatches en geen lange procedures.<br className="md:hidden" /> Je wilt kwaliteit, betrouwbaarheid en iemand<br className="md:hidden" /> die begrijpt hoe de horeca écht werkt.
                 </p>
                 <p className="text-xl font-medium text-gold">
                   Bij ChefsConnect regelen we dat voor je.
