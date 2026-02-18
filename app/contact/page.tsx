@@ -223,7 +223,7 @@ export default function ContactPage() {
 
                 <div className="space-y-6">
                   <a
-                    href="mailto:info@chefsconnect.nl"
+                    href="mailto:info@chefs-connect.nl"
                     className="flex items-start gap-4 group transition-all duration-300"
                   >
                     <div className="flex-shrink-0 w-12 h-12 bg-gold/10 group-hover:bg-gold flex items-center justify-center transition-colors duration-300">
@@ -232,7 +232,7 @@ export default function ContactPage() {
                     <div>
                       <p className="font-inter text-xs uppercase tracking-wider text-brown/60 mb-1">E-mail</p>
                       <p className="font-inter text-base text-brown group-hover:text-gold transition-colors duration-300">
-                        info@chefsconnect.nl
+                        info@chefs-connect.nl
                       </p>
                     </div>
                   </a>
@@ -335,7 +335,7 @@ export default function ContactPage() {
               </a>
 
               <a
-                href="mailto:info@chefsconnect.nl"
+                href="mailto:info@chefs-connect.nl"
                 className="group px-8 py-4 bg-transparent hover:bg-cream/10 text-cream border-2 border-cream flex items-center justify-center gap-3 transition-all duration-300 overflow-hidden relative"
               >
                 <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />

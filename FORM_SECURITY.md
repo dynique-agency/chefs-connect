@@ -235,7 +235,7 @@ headers: {
 {
   access_key: 'fb37a17c-9ce1-4d12-932b-ce94e5a8c851',
   subject: 'Chefs Connect: ...',
-  to: 'info@chefsconnect.nl',
+  to: 'info@chefs-connect.nl',
   from_name: 'Chefs Connect Website',
   redirect: 'https://chefsconnect.nl/bedankt',
   botcheck: false
@@ -273,7 +273,7 @@ Alle communicatie verloopt via HTTPS:
 - [ ] Fill all required fields correctly
 - [ ] Submit form
 - [ ] Verify redirect to `/bedankt`
-- [ ] Check email received at info@chefsconnect.nl
+- [ ] Check email received at info@chefs-connect.nl
 
 #### Validation Testing
 - [ ] Submit without naam → Error shown
@@ -390,7 +390,7 @@ In productie worden errors gelogd maar geen sensitive data:
 **Voor vragen over security:**
 - Developer: Check code comments in `/lib/form-submit.ts`
 - Issues: Create GitHub issue
-- Urgent: Contact via info@chefsconnect.nl
+- Urgent: Contact via info@chefs-connect.nl
 
 **Web3Forms Support:**
 - Website: https://web3forms.com

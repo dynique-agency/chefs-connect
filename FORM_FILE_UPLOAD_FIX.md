@@ -22,7 +22,7 @@ const submitData = new FormData();
 // Voeg eerst Web3Forms vereiste velden toe
 submitData.append('access_key', WEB3FORMS_ACCESS_KEY);
 submitData.append('subject', options.subject);
-submitData.append('to', 'info@chefsconnect.nl');
+submitData.append('to', 'info@chefs-connect.nl');
 submitData.append('from_name', 'Chefs Connect Website');
 
 // Kopieer alle form velden naar submitData

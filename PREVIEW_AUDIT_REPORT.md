@@ -25,7 +25,7 @@
 ### Content
 - ✅ Alle teksten zijn aangepast en professioneel
 - ✅ Contactgegevens correct:
-  - Email: info@chefsconnect.nl
+  - Email: info@chefs-connect.nl
   - Telefoon: +31 6 41875803
   - Adres: Gasthuisstraat 3.1 Lanaken
 - ✅ Alle pagina's hebben unieke content

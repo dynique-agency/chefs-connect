@@ -65,11 +65,11 @@ export default function Footer() {
               </p>
               <div className="flex flex-col gap-3">
                 <a
-                  href="mailto:info@chefsconnect.nl"
+                  href="mailto:info@chefs-connect.nl"
                   className="flex items-center gap-3 font-inter text-sm text-cream/80 hover:text-gold transition-colors duration-300"
                 >
                   <Mail className="w-4 h-4" />
-                  <span>info@chefsconnect.nl</span>
+                  <span>info@chefs-connect.nl</span>
                 </a>
                 <a
                   href="tel:+31641875803"

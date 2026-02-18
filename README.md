@@ -76,7 +76,7 @@ NEXT_PUBLIC_WEB3FORMS_KEY=your_key_here
 
 De website gebruikt Web3Forms voor contact formulieren. Huidige configuratie:
 - Access Key is geconfigureerd in `config/web3forms.ts`
-- Forms sturen naar: `info@chefsconnect.nl`
+- Forms sturen naar: `info@chefs-connect.nl`
 - Success redirect: `/bedankt` pagina
 
 ---
@@ -178,7 +178,7 @@ chefs-connect/
 ## 👥 Contact
 
 **Chefs Connect**
-- Email: info@chefsconnect.nl
+- Email: info@chefs-connect.nl
 - Telefoon: +31 6 41875803
 - Adres: Gasthuisstraat 3.1 Lanaken
 

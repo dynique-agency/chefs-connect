@@ -223,7 +223,7 @@ export async function submitToWeb3Forms(
     const data: Record<string, any> = {
       access_key: WEB3FORMS_ACCESS_KEY,
       subject: sanitizeInput(options.subject),
-      to: 'info@chefsconnect.nl',
+      to: 'info@chefs-connect.nl',
       from_name: 'Chefs Connect Website',
       redirect: 'https://chefsconnect.nl/bedankt',
       botcheck: false // Honeypot field
@@ -344,7 +344,7 @@ export async function submitToWeb3FormsWithFiles(
     // Add Web3Forms required fields first
     submitData.append('access_key', WEB3FORMS_ACCESS_KEY);
     submitData.append('subject', options.subject);
-    submitData.append('to', 'info@chefsconnect.nl');
+    submitData.append('to', 'info@chefs-connect.nl');
     submitData.append('from_name', 'Chefs Connect Website');
     
     // Collect form data for validation

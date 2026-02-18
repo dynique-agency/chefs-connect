@@ -1,14 +1,14 @@
 # 📧 Email Formulieren Setup - Chefs Connect
 
 **Status:** ✅ Volledig geconfigureerd en werkend  
-**Email ontvanger:** info@chefsconnect.nl  
+**Email ontvanger:** info@chefs-connect.nl  
 **Service:** Web3Forms (Gratis & Onbeperkt)
 
 ---
 
 ## 🎯 Overzicht
 
-Alle contactformulieren op de website zijn geconfigureerd om emails te versturen naar **info@chefsconnect.nl** via Web3Forms.
+Alle contactformulieren op de website zijn geconfigureerd om emails te versturen naar **info@chefs-connect.nl** via Web3Forms.
 
 ### Actieve Formulieren:
 
@@ -42,7 +42,7 @@ Access Key: fb37a17c-9ce1-4d12-932b-ce94e5a8c851
 ```
 
 ### Email Instellingen
-- **To:** info@chefsconnect.nl
+- **To:** info@chefs-connect.nl
 - **From Name:** Chefs Connect Website
 - **Subject:** Aangepast per formulier (zie hieronder)
 
@@ -117,7 +117,7 @@ Emails worden verzonden met de volgende structuur:
 
 ```
 Van: Chefs Connect Website
-Aan: info@chefsconnect.nl
+Aan: info@chefs-connect.nl
 Onderwerp: [Subject van formulier]
 
 Velden:
@@ -155,7 +155,7 @@ Velden:
 ### Controleer:
 - ✅ Formulier wordt correct verzonden
 - ✅ Redirect naar `/bedankt` pagina
-- ✅ Email komt aan op info@chefsconnect.nl
+- ✅ Email komt aan op info@chefs-connect.nl
 - ✅ Alle velden zijn correct in email
 - ✅ CV upload werkt (horecaspecialist form)
 
@@ -167,7 +167,7 @@ Velden:
 1. Check spam folder
 2. Verifieer dat access key nog geldig is op https://web3forms.com
 3. Check browser console voor errors
-4. Verifieer dat info@chefsconnect.nl geverifieerd is in Web3Forms dashboard
+4. Verifieer dat info@chefs-connect.nl geverifieerd is in Web3Forms dashboard
 
 ### Formulier werkt niet?
 1. Check browser console voor JavaScript errors
@@ -190,7 +190,7 @@ Velden:
 - Support: support@web3forms.com
 
 **Chefs Connect:**
-- Email: info@chefsconnect.nl
+- Email: info@chefs-connect.nl
 - Telefoon: +31 6 41875803
 
 ---
@@ -217,7 +217,7 @@ Alle formulieren hebben:
 ### Access Key Vernieuwen
 Als je een nieuwe access key nodig hebt:
 1. Ga naar https://web3forms.com
-2. Voer info@chefsconnect.nl in
+2. Voer info@chefs-connect.nl in
 3. Krijg nieuwe access key
 4. Update in `/lib/form-submit.ts`:
    ```typescript
