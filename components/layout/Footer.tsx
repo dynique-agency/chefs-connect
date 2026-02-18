@@ -60,8 +60,11 @@ export default function Footer() {
                 Chefs Connect
               </h3>
               <p className="font-inter text-base text-cream/70 leading-relaxed max-w-md mb-6">
-                Wij verbinden vakmanschap met culinaire etablissementen. 
-                Van keuken tot zaal, wij vinden de perfecte match voor uw horeca-onderneming.
+                Wij leveren <span className="text-gold italic">chefs en bediening</span>, snel en professioneel.
+                <br />
+                Van <span className="text-gold italic">private dining</span> tot <span className="text-gold italic">grote events</span>.
+                <br />
+                Van <span className="text-gold italic">brasserie</span> tot <span className="text-gold italic">fine dining</span>.
               </p>
               <div className="flex flex-col gap-3">
                 <a
