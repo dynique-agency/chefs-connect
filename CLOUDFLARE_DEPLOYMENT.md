@@ -92,7 +92,7 @@ Vul dit **EXACT** in:
 |---------|-------|
 | **Production branch** | `main` |
 | **Build command** | `npm run build` |
-| **Build output directory** | `.next` |
+| **Build output directory** | `out` |
 | **Root directory** | `/` (leeg laten) |
 | **Node version** | `20.x` of hoger |
 
@@ -124,7 +124,7 @@ Vul dit **EXACT** in:
    - Check alle instellingen nog een keer
    - Framework: Next.js ✅
    - Build command: `npm run build` ✅
-   - Output: `.next` ✅
+   - Output: `out` ✅
 
 2. **Click "Save and Deploy"**
    - Cloudflare start nu de build
@@ -366,9 +366,6 @@ Environment Variables:
   NODE_ENV: production
   NEXT_PUBLIC_SITE_URL: https://chefs-connect.nl
 
-Compatibility Flags:
-  nodejs_compat: enabled
-  
 Build Watch Paths:
   - /app/**
   - /components/**
@@ -477,8 +474,9 @@ Total time: 2m 34s
 **Oplossing**:
 ```
 Check build command: npm run build (niet "next build")
-Check output directory: .next (niet "out")
+Check output directory: out (niet ".next")
 Check Node version: 20+ (niet 18)
+Check next.config.js heeft: output: 'export'
 ```
 
 #### Error: "Module not found"
@@ -660,7 +658,7 @@ Build command:
 npm run build
 
 Build output directory:
-.next
+out
 
 Root directory:
 (leeg laten)
@@ -955,7 +953,7 @@ Check dat alle pages werken via .be domein ✅
 4. **Vul in**:
    ```
    Build command: npm run build
-   Output: .next
+   Output: out
    Node version: 20
    NEXT_PUBLIC_SITE_URL: https://chefs-connect.nl
    ```
