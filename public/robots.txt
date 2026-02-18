@@ -6,5 +6,6 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
-# Sitemap
-Sitemap: https://chefsconnect.nl/sitemap.xml
+# Sitemaps (both domains)
+Sitemap: https://chefs-connect.nl/sitemap.xml
+Sitemap: https://chefs-connect.be/sitemap.xml

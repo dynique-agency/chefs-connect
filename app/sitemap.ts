@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://chefsconnect.nl';
+  const baseUrl = 'https://chefs-connect.nl';
   const currentDate = new Date();
 
   return [

@@ -3,7 +3,34 @@
 **Platform**: Cloudflare Pages  
 **Framework**: Next.js 16.1.6  
 **Build System**: Turbopack  
+**Domains**: chefs-connect.nl + chefs-connect.be  
 **Status**: Ready to Deploy ✅
+
+---
+
+## 🌍 DUAL DOMAIN SETUP (.nl + .be)
+
+### Jouw Configuratie
+
+Jullie website draait op **2 domeinen**:
+- 🇳🇱 **chefs-connect.nl** (Primary - Nederland)
+- 🇧🇪 **chefs-connect.be** (Secondary - België)
+
+### Hoe werkt het?
+
+**Simpel**: Beide domeinen wijzen naar dezelfde Cloudflare Pages deployment.
+
+**Stappen**:
+1. Deploy website naar Cloudflare (1x)
+2. Voeg **beide** custom domains toe in Cloudflare
+3. Beide domeinen zijn automatisch live!
+
+**Bezoekers kunnen kiezen**:
+- Nederlandse klanten → `chefs-connect.nl`
+- Belgische klanten → `chefs-connect.be`
+- Zelfde website, zelfde content, beide actief ✅
+
+**Kosten**: €0 extra (Free tier ondersteunt meerdere domains)
 
 ---
 
@@ -19,8 +46,9 @@
 - ✅ Branch: `main`
 - ✅ Code: Up-to-date en gepusht
 
-### 3. Domain (Optioneel)
-- Domeinnaam: `chefsconnect.nl`
+### 3. Domains (Optioneel)
+- Domeinnamen: `chefs-connect.nl` + `chefs-connect.be`
+- Beide domeinen wijzen naar dezelfde website
 - Nameservers kunnen naar Cloudflare gemigreerd worden
 - Of: Gebruik gratis `*.pages.dev` subdomain
 
@@ -80,12 +108,13 @@ Vul dit **EXACT** in:
 |---------------|-------|
 | `NODE_VERSION` | `20` |
 | `NODE_ENV` | `production` |
-| `NEXT_PUBLIC_SITE_URL` | `https://chefsconnect.nl` |
+| `NEXT_PUBLIC_SITE_URL` | `https://chefs-connect.nl` |
 
 **Let op**: 
 - Gebruik de "Production" environment voor deze variabelen
 - Klik "Add variable" voor elke variabele
 - Geen quotes gebruiken in de values
+- We gebruiken `.nl` als primary URL (beide domeinen wijzen hier naartoe)
 
 ---
 
@@ -118,42 +147,57 @@ Vul dit **EXACT** in:
 
 ---
 
-## 🌐 CUSTOM DOMAIN SETUP (chefsconnect.nl)
+## 🌐 CUSTOM DOMAIN SETUP (chefs-connect.nl + chefs-connect.be)
 
-### Optie A: Domain al bij Cloudflare
+**Jullie hebben 2 domeinen**: `chefs-connect.nl` en `chefs-connect.be`  
+**Strategie**: Beide wijzen naar dezelfde website, `.nl` is primary
+
+### Optie A: Domains al bij Cloudflare
 
 1. **Go to Pages Project**
    - Open je `chefs-connect` project
    - Ga naar "Custom domains" tab
 
-2. **Add Custom Domain**
+2. **Add Primary Domain (.nl)**
    - Klik "Set up a custom domain"
-   - Voer in: `chefsconnect.nl`
+   - Voer in: `chefs-connect.nl`
    - Klik "Continue"
+   - Voeg ook toe: `www.chefs-connect.nl`
+   - Klik "Activate domain"
 
-3. **Add www Subdomain**
-   - Voeg ook toe: `www.chefsconnect.nl`
+3. **Add Second Domain (.be)**
+   - Klik opnieuw "Set up a custom domain"
+   - Voer in: `chefs-connect.be`
    - Klik "Continue"
+   - Voeg ook toe: `www.chefs-connect.be`
+   - Klik "Activate domain"
 
 4. **DNS Records (Automatic)**
-   - Cloudflare configureert automatisch:
-   - `chefsconnect.nl` → CNAME/ALIAS naar Pages
-   - `www.chefsconnect.nl` → CNAME naar Pages
-   - SSL certificaat wordt automatisch gegenereerd
+   - Cloudflare configureert automatisch voor beide:
+   - `chefs-connect.nl` → CNAME naar Pages ✅
+   - `www.chefs-connect.nl` → CNAME naar Pages ✅
+   - `chefs-connect.be` → CNAME naar Pages ✅
+   - `www.chefs-connect.be` → CNAME naar Pages ✅
+   - SSL certificaten automatisch gegenereerd
 
 5. **Wait for SSL**
-   - Dit duurt 1-5 minuten
+   - Dit duurt 1-5 minuten per domein
    - Status verandert naar "Active" ✅
+   - Herhaal voor beide domeinen
+
+**Resultaat**: Bezoekers kunnen de site bereiken via **beide** domeinen!
 
 ---
 
-### Optie B: Domain bij Andere Provider (TransIP, GoDaddy, etc.)
+### Optie B: Domains bij Andere Provider (TransIP, GoDaddy, etc.)
 
 #### Methode 1: Nameservers Wijzigen (Aanbevolen)
 
+**Voor chefs-connect.nl:**
+
 1. **Get Cloudflare Nameservers**
    - Ga naar Cloudflare Dashboard
-   - Klik "Add site" → voer `chefsconnect.nl` in
+   - Klik "Add site" → voer `chefs-connect.nl` in
    - Selecteer Free plan
    - Cloudflare geeft je 2 nameservers:
      ```
@@ -163,8 +207,8 @@ Vul dit **EXACT** in:
      ```
 
 2. **Update bij Domain Provider**
-   - Log in bij je domain provider (TransIP, etc.)
-   - Ga naar DNS/Nameserver instellingen
+   - Log in bij je .nl domain provider
+   - Ga naar DNS/Nameserver instellingen voor `chefs-connect.nl`
    - Vervang huidige nameservers door Cloudflare nameservers
    - Save changes
 
@@ -172,8 +216,17 @@ Vul dit **EXACT** in:
    - Dit kan 2-48 uur duren
    - Check status in Cloudflare Dashboard
 
-4. **Add Domain to Pages**
+**Voor chefs-connect.be:**
+
+4. **Herhaal voor .be Domain**
+   - Klik "Add site" → voer `chefs-connect.be` in
+   - Selecteer Free plan
+   - Krijg nameservers (kunnen dezelfde zijn of andere)
+   - Update nameservers bij je .be domain provider
+
+5. **Add Both Domains to Pages**
    - Volg "Optie A" hierboven
+   - Voeg beide domeinen toe aan je Pages project
    - Cloudflare configureert alles automatisch
 
 #### Methode 2: CNAME Records (Sneller, maar minder features)
@@ -182,8 +235,10 @@ Vul dit **EXACT** in:
    - Je krijgt van Cloudflare:
    - `chefs-connect-xxx.pages.dev`
 
-2. **Add CNAME in Domain Provider**
+2. **Add CNAME voor chefs-connect.nl**
    ```
+   Bij je .nl domain provider:
+   
    Type: CNAME
    Name: @ (root)
    Value: chefs-connect-xxx.pages.dev
@@ -195,9 +250,102 @@ Vul dit **EXACT** in:
    TTL: 3600
    ```
 
-3. **SSL via Domain Provider**
-   - Activeer SSL bij je provider
+3. **Add CNAME voor chefs-connect.be**
+   ```
+   Bij je .be domain provider:
+   
+   Type: CNAME
+   Name: @ (root)
+   Value: chefs-connect-xxx.pages.dev
+   TTL: 3600
+   
+   Type: CNAME
+   Name: www
+   Value: chefs-connect-xxx.pages.dev
+   TTL: 3600
+   ```
+
+4. **SSL via Domain Provider**
+   - Activeer SSL bij beide providers
    - Of laat Cloudflare het regelen
+
+---
+
+## 🔄 MULTI-DOMAIN STRATEGIE (NL + BE)
+
+### Hoe het werkt
+
+Jullie website draait op **beide** domeinen tegelijk:
+- `https://chefs-connect.nl` ✅
+- `https://www.chefs-connect.nl` ✅
+- `https://chefs-connect.be` ✅
+- `https://www.chefs-connect.be` ✅
+
+**Alle 4 de URLs tonen dezelfde website.**
+
+### Primary Domain: .nl
+
+We gebruiken `.nl` als primary voor:
+- SEO canonical URLs
+- Sitemap
+- Social media shares
+- Analytics tracking
+
+### Optie 1: Beide Domeinen Actief (AANBEVOLEN)
+
+**Voordeel**:
+- Nederlandse bezoekers gebruiken `.nl`
+- Belgische bezoekers gebruiken `.be`
+- Betere lokale SEO voor beide landen
+- Meer traffic via beide ingangen
+
+**Setup**:
+- Voeg beide domeinen toe in Cloudflare
+- Geen redirects nodig
+- Website bereikbaar via beide
+
+**Perfect voor jullie target market** (Nederland + België) ✅
+
+### Optie 2: .be Redirect naar .nl
+
+Als je **alleen** `.nl` wilt als primary:
+
+**Setup in Cloudflare**:
+
+1. **Voeg beide domeinen toe** (zoals hierboven)
+
+2. **Create Bulk Redirect**
+   - Ga naar: Cloudflare Dashboard → "Bulk Redirects"
+   - Create List: `be-to-nl-redirects`
+   - Add Rules:
+     ```
+     Source: chefs-connect.be/*
+     Target: https://chefs-connect.nl/$1
+     Status: 301 (Permanent)
+     
+     Source: www.chefs-connect.be/*
+     Target: https://chefs-connect.nl/$1
+     Status: 301 (Permanent)
+     ```
+
+3. **Activate Redirect**
+   - Enable de redirect list
+   - Belgische domain redirect automatisch naar .nl
+
+**Gevolg**:
+- `chefs-connect.be` → `chefs-connect.nl` ✅
+- Alle subpages ook: `chefs-connect.be/contact` → `chefs-connect.nl/contact`
+
+### Aanbeveling: GEEN REDIRECT
+
+**Beste strategie voor jullie**:
+- Laat **beide** domeinen actief
+- Belgische klanten vinden `.be` vertrouwder
+- Nederlandse klanten gebruiken `.nl`
+- Google indexeert beide voor lokale SEO
+- Meer zichtbaarheid in beide landen
+
+**Later altijd nog redirect mogelijk als gewenst**
 
 ---
 
@@ -216,7 +364,7 @@ Build Settings:
 Environment Variables:
   NODE_VERSION: 20
   NODE_ENV: production
-  NEXT_PUBLIC_SITE_URL: https://chefsconnect.nl
+  NEXT_PUBLIC_SITE_URL: https://chefs-connect.nl
 
 Compatibility Flags:
   nodejs_compat: enabled
@@ -520,7 +668,7 @@ Root directory:
 Environment variables:
 NODE_VERSION = 20
 NODE_ENV = production
-NEXT_PUBLIC_SITE_URL = https://chefsconnect.nl
+NEXT_PUBLIC_SITE_URL = https://chefs-connect.nl
 ```
 
 ### 4. Advanced Settings (Optional)
@@ -663,30 +811,46 @@ vercel --prod
 
 ### Na Deployment Test Deze URLs:
 
+**Test beide domeinen!** (.nl én .be moeten werken)
+
+#### Primary Domain (.nl)
 ```
 Homepage:
-https://chefsconnect.nl/
+https://chefs-connect.nl/
 
 Service Pages:
-https://chefsconnect.nl/zoek-personeel
-https://chefsconnect.nl/horecaspecialist
-https://chefsconnect.nl/evenementen
+https://chefs-connect.nl/zoek-personeel
+https://chefs-connect.nl/horecaspecialist
+https://chefs-connect.nl/evenementen
 
 Info Pages:
-https://chefsconnect.nl/over-ons
-https://chefsconnect.nl/contact
+https://chefs-connect.nl/over-ons
+https://chefs-connect.nl/contact
 
 Legal:
-https://chefsconnect.nl/privacy
-https://chefsconnect.nl/cookies
-https://chefsconnect.nl/terms
+https://chefs-connect.nl/privacy
+https://chefs-connect.nl/cookies
+https://chefs-connect.nl/terms
 
 Success:
-https://chefsconnect.nl/bedankt
+https://chefs-connect.nl/bedankt
 
 SEO:
-https://chefsconnect.nl/sitemap.xml
-https://chefsconnect.nl/robots.txt
+https://chefs-connect.nl/sitemap.xml
+https://chefs-connect.nl/robots.txt
+```
+
+#### Secondary Domain (.be)
+```
+Homepage:
+https://chefs-connect.be/
+
+Test minimaal:
+https://chefs-connect.be/zoek-personeel
+https://chefs-connect.be/contact
+https://chefs-connect.be/evenementen
+
+Check dat alle pages werken via .be domein ✅
 ```
 
 ---
@@ -793,12 +957,15 @@ https://chefsconnect.nl/robots.txt
    Build command: npm run build
    Output: .next
    Node version: 20
+   NEXT_PUBLIC_SITE_URL: https://chefs-connect.nl
    ```
 5. **Deploy**: Klik "Save and Deploy"
 6. **Wait**: 2-3 minuten
 7. **Live**: Test de .pages.dev URL
-8. **Domain**: Add custom domain `chefsconnect.nl`
-9. **Done**: Website is live! 🚀
+8. **Domains**: Add custom domains:
+   - `chefs-connect.nl` + `www.chefs-connect.nl`
+   - `chefs-connect.be` + `www.chefs-connect.be`
+9. **Done**: Website live op beide domeinen! 🚀
 
 ---
 
