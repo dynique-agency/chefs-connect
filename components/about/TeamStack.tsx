@@ -54,6 +54,21 @@ const teamMembers: TeamMember[] = [
   },
   {
     id: 3,
+    name: 'Reda Hamite',
+    age: '35 jaar',
+    role: 'Executive Chef',
+    specialty: 'Connect Events & Dining',
+    quote: 'Respect voor het product, verfijning in elk detail.',
+    story: [
+      'Reda Hamite is een gepassioneerde kok uit Antwerpen met meer dan 15 jaar ervaring in toonaangevende sterrezaken in België en Nederland.',
+      'Hij deed ervaring op bij onder andere \'t Fornuis (1★), De Colvenier en Nuance (2★), waar hij zijn vakmanschap tot in de puntjes verfijnde.',
+      'Zijn stijl combineert de klassieke Franse keuken met moderne finesse, gekenmerkt door respect voor het product, verfijnde technieken en een constante focus op perfectie met een elegante balans tussen traditie en innovatie.'
+    ],
+    image: '/zoek-personeel-hero.png',
+    imageAvailable: true
+  },
+  {
+    id: 4,
     name: 'Marcel',
     age: '23 jaar',
     role: 'Horeca Planner',
