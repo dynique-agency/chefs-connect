@@ -20,9 +20,10 @@ const choices = [
     title: 'Ik ben een horeca professional',
     subtitle: 'Voor Professionals',
     description: 'Ontdek jouw volgende culinaire avontuur',
-    image: '/team-founders.jpg',
+    image: '/professional-card.png',
     href: '/horecaspecialist',
     number: '02',
+    objectPosition: 'top',
   },
   {
     id: 'events',
@@ -131,7 +132,9 @@ function ChoiceCard({ choice, index }: { choice: typeof choices[0]; index: numbe
                 src={choice.image}
                 alt={choice.title}
                 fill
-                className="object-cover transition-all duration-700 group-hover:scale-110"
+                className={`transition-all duration-700 group-hover:scale-110 ${
+                  (choice as any).objectPosition === 'top' ? 'object-cover object-top' : 'object-cover'
+                }`}
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             </motion.div>
