@@ -81,7 +81,7 @@ export default function AboutSection() {
         }}
       >
         <Image
-          src="/team-founders.jpg"
+          src="/team-photo.png"
           alt="Chefs Connect Story"
           fill
           className="object-cover object-top"

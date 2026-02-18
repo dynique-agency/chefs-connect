@@ -84,8 +84,7 @@ const teamMembers: TeamMember[] = [
     specialty: 'Organisatie & Planning',
     quote: 'Met de juiste planning ontstaat ruimte om het verschil te maken.',
     story: [
-      'Mijn naam is Marcel en ik ben geboren in Poznań, Polen.',
-      'Op zesjarige leeftijd verhuisde ik naar Belgisch Limburg, waar ik op 15-jarige leeftijd mijn eerste stappen zette in de horeca. Sindsdien heeft deze sector mijn professionele ontwikkeling volledig gevormd.',
+      'Mijn naam is Marcel. Op zesjarige leeftijd verhuisde ik naar Belgisch Limburg, waar ik op 15-jarige leeftijd mijn eerste stappen zette in de horeca. Sindsdien heeft deze sector mijn professionele ontwikkeling volledig gevormd.',
       'Mijn carrière begon in de afwas, in een periode waarin ik werk combineerde met voetbal op hoog niveau. Die combinatie leerde mij al vroeg discipline, structuur en doorzettingsvermogen, eigenschappen die vandaag nog steeds de basis vormen van mijn manier van werken.',
       'Door de jaren heen groeide ik stap voor stap door: van afwas naar bediening, van ontbijtkeuken naar fulltime service. Later bekleedde ik functies als assistent maître en uiteindelijk assistent banqueting manager bij La Butte aux Bois.',
       'In die rol ontwikkelde ik niet alleen leidinggevende vaardigheden, maar ook een sterk organisatorisch inzicht en het vermogen om onder druk rust en overzicht te bewaren. Als Horeca Planner ligt mijn kracht in structuur, planning en het creëren van rust binnen dynamische omgevingen. Voor mij moet het totaalplaatje kloppen: een fantastische gastbeleving, een professioneel team en een organisatie die efficiënt functioneert.'
