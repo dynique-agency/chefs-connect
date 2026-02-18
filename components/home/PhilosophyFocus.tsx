@@ -11,7 +11,7 @@ const choices = [
     title: 'Ik zoek een horeca professional',
     subtitle: 'Voor Werkgevers',
     description: 'Vind de perfecte match voor jouw culinaire team',
-    image: '/zoek-personeel-hero.png',
+    image: '/chef-plating-vertical.png',
     href: '/zoek-personeel',
     number: '01',
   },

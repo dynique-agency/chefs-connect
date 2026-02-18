@@ -124,7 +124,7 @@ export default function ZoekPersoneelPage() {
                 style={{ y: imageY }}
               >
                 <Image
-                  src="/zoek-personeel-hero.png"
+                  src="/chef-plating-vertical.png"
                   alt="Horeca professionals"
                   fill
                   className="object-cover brightness-[0.85]"
