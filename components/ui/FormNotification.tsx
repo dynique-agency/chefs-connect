@@ -47,8 +47,8 @@ export default function FormNotification({ type, title, messages, onClose }: Not
         >
           <div className={`
             relative overflow-hidden
-            ${isError ? 'bg-red-50 border-red-200' : 'bg-green-50 border-green-200'}
-            border-2 rounded-lg shadow-2xl
+            ${isError ? 'bg-red-50' : 'bg-green-50'}
+            rounded-lg shadow-2xl
           `}>
             {/* Accent bar */}
             <div className={`

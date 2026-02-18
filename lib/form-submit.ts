@@ -192,7 +192,10 @@ export async function submitToWeb3Forms(
   try {
     // Rate limiting check
     if (!checkRateLimit()) {
-      throw new RateLimitError('Te veel aanvragen. Wacht even en probeer het opnieuw.');
+      return {
+        success: false,
+        error: 'Te veel aanvragen. Wacht even en probeer het opnieuw.'
+      };
     }
 
     // Convert FormData to object and sanitize
@@ -216,7 +219,10 @@ export async function submitToWeb3Forms(
     // Validate form data
     const validation = validateFormData(data);
     if (!validation.valid) {
-      throw new FormValidationError(validation.errors.join('\n'));
+      return {
+        success: false,
+        error: validation.errors.join('\n')
+      };
     }
 
     // Submit to Web3Forms with timeout
@@ -294,7 +300,10 @@ export async function submitToWeb3FormsWithFiles(
   try {
     // Rate limiting check
     if (!checkRateLimit()) {
-      throw new RateLimitError('Te veel aanvragen. Wacht even en probeer het opnieuw.');
+      return {
+        success: false,
+        error: 'Te veel aanvragen. Wacht even en probeer het opnieuw.'
+      };
     }
 
     // Validate files
@@ -303,7 +312,10 @@ export async function submitToWeb3FormsWithFiles(
       if (file instanceof File) {
         const fileValidation = validateFile(file);
         if (!fileValidation.valid) {
-          throw new FormValidationError(fileValidation.error || 'Ongeldig bestand');
+          return {
+            success: false,
+            error: fileValidation.error || 'Ongeldig bestand'
+          };
         }
       }
     }
@@ -318,7 +330,10 @@ export async function submitToWeb3FormsWithFiles(
 
     const validation = validateFormData(data);
     if (!validation.valid) {
-      throw new FormValidationError(validation.errors.join('\n'));
+      return {
+        success: false,
+        error: validation.errors.join('\n')
+      };
     }
 
     // Add Web3Forms required fields
