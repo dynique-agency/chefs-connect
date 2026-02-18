@@ -79,24 +79,32 @@ function isValidPhone(phone: string): boolean {
 
 /**
  * Validate form data before submission
+ * Supports both Dutch (naam, bericht) and English (name, message) field names
  */
 function validateFormData(data: Record<string, any>): { valid: boolean; errors: string[] } {
   const errors: string[] = [];
 
-  // Check required fields
-  if (!data.naam || data.naam.length < 2) {
+  // Check name field (supports both 'naam' and 'name')
+  const nameValue = data.naam || data.name || '';
+  if (!nameValue || nameValue.trim().length < 2) {
     errors.push('Naam moet minimaal 2 karakters bevatten');
   }
 
-  if (!data.email || !isValidEmail(data.email)) {
+  // Check email field
+  const emailValue = data.email || '';
+  if (!emailValue || !isValidEmail(emailValue)) {
     errors.push('Voer een geldig e-mailadres in');
   }
 
-  if (data.telefoon && !isValidPhone(data.telefoon)) {
+  // Check phone field (optional, supports both 'telefoon' and 'phone')
+  const phoneValue = data.telefoon || data.phone || '';
+  if (phoneValue && !isValidPhone(phoneValue)) {
     errors.push('Voer een geldig telefoonnummer in');
   }
 
-  if (!data.bericht || data.bericht.length < 10) {
+  // Check message field (supports both 'bericht' and 'message')
+  const messageValue = data.bericht || data.message || '';
+  if (!messageValue || messageValue.trim().length < 10) {
     errors.push('Bericht moet minimaal 10 karakters bevatten');
   }
 
