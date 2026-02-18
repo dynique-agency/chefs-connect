@@ -114,7 +114,7 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-        className={`grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-start ${
+        className={`grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-20 md:items-center ${
           !isEven ? 'md:grid-flow-dense' : ''
         }`}
       >
@@ -206,7 +206,7 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
         </motion.div>
 
         {/* Content Section */}
-        <div className={`${!isEven ? 'md:col-start-1 md:row-start-1' : ''} space-y-8`}>
+        <div className={`${!isEven ? 'md:col-start-1 md:row-start-1' : ''} space-y-8 flex flex-col justify-center`}>
           {/* Header */}
           <div className="space-y-4">
             {/* Name - optimized */}

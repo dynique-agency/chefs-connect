@@ -66,7 +66,7 @@ export default function OverOnsPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="grid md:grid-cols-2 gap-12 md:gap-16 mb-20"
+            className="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-20"
           >
             <div>
               <h2 className="font-playfair text-3xl md:text-5xl text-brown mb-6 leading-tight">
@@ -84,11 +84,11 @@ export default function OverOnsPage() {
               </div>
             </div>
 
-            <div className="relative h-full">
+            <div className="relative">
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.4 }}
-                className="relative h-full overflow-hidden shadow-2xl"
+                className="relative aspect-[4/5] overflow-hidden shadow-2xl"
               >
                 <Image
                   src="/team-founders.jpg"
