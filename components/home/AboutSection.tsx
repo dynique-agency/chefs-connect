@@ -84,7 +84,7 @@ export default function AboutSection() {
           src="/team-founders.jpg"
           alt="Chefs Connect Story"
           fill
-          className="object-cover object-center"
+          className="object-cover object-top"
           sizes="100vw"
         />
         {/* Premium vignette */}
