@@ -3,12 +3,11 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
-import { Quote, ChefHat, Users, Calendar } from 'lucide-react';
+import { Quote, ChefHat, Users } from 'lucide-react';
 
 interface TeamMember {
   id: number;
   name: string;
-  age: string;
   role: string;
   specialty: string;
   quote: string;
@@ -21,12 +20,11 @@ const teamMembers: TeamMember[] = [
   {
     id: 1,
     name: 'Gert-Jan',
-    age: '38 jaar',
     role: 'Oprichter',
     specialty: 'Chef & Patissier',
     quote: 'Hard werken. Eerlijk ondernemen. Altijd leveren.',
     story: [
-      'Mijn naam is Gert-Jan, 38 jaar en geboren in Hoek van Holland.',
+      'Mijn naam is Gert-Jan en ik ben geboren in Hoek van Holland.',
       'Met meer dan 30 jaar ervaring in de horeca is gastronomie voor mij nooit zomaar werk geweest, het is een levensstijl. Als jong mannetje van 13 liep ik al bij een bevriende patisserie mee op de zaterdagen voor de voetbal.',
       'Na het afronden van de koksopleiding begon mijn carrière als patissier bij het prestigieuze Kurhaus* in Scheveningen. Hier werd de basis gelegd voor mijn passie voor kwaliteit, discipline en verfijning. Vervolgens zette ik mijn carrière voort in Amsterdam, waar ik de kans kreeg om te werken bij toonaangevende restaurants zoals Ron Blaauw en Restaurant Moon.',
       'Deze periode heeft mijn visie op gastvrijheid en topgastronomie sterk gevormd. In 2018 koos ik bewust voor het freelance chef-bestaan. Die weg leidde mij naar Limburg, een regio waar de liefde voor gastronomie diepgeworteld is.',
@@ -38,12 +36,11 @@ const teamMembers: TeamMember[] = [
   {
     id: 2,
     name: 'Mitchell',
-    age: '31 jaar',
     role: 'Oprichter',
     specialty: 'Sterrenzaken & Hospitality',
     quote: 'Geen standaard bemiddeling, maar een premium aanpak.',
     story: [
-      'Ik ben Mitchell Deneke, 31 jaar en oprichter van ChefsConnect.',
+      'Ik ben Mitchell Deneke en oprichter van ChefsConnect.',
       'Mijn carrière begon in de keuken, waar ik jarenlang heb gewerkt in toonaangevende zaken zoals Beluga Loves You, De Leuf, Château Neercanne, Harry\'s en La Butte aux Bois. In deze omgevingen leerde ik niet alleen de technische kant van het vak, maar vooral wat discipline, structuur en constante kwaliteit betekenen op het hoogste niveau van de gastronomie.',
       'Naast mijn werk in sterrenzaken heb ik ervaring opgedaan als privéchef in Oostenrijk, waar exclusiviteit, vertrouwen en persoonlijke service centraal stonden. Die periode heeft mijn kijk op hospitality verdiept en mij laten inzien hoe belangrijk het is om met de juiste mensen te werken.',
       'ChefsConnect is ontstaan vanuit mijn eigen ervaringen in de horeca. Ik heb zelf gezien hoe uitdagend het kan zijn om sterke, betrouwbare chefs te vinden die écht passen binnen een team. Daarom bouw ik vandaag aan een netwerk dat anders werkt: persoonlijk, direct en gefocust op kwaliteit.',
@@ -55,7 +52,6 @@ const teamMembers: TeamMember[] = [
   {
     id: 3,
     name: 'Reda Hamite',
-    age: '35 jaar',
     role: 'Executive Chef',
     specialty: 'Connect Events & Dining',
     quote: 'Respect voor het product, verfijning in elk detail.',
@@ -70,7 +66,6 @@ const teamMembers: TeamMember[] = [
   {
     id: 4,
     name: 'Robin de Neijs',
-    age: '32 jaar',
     role: 'Headchef',
     specialty: 'Connect Events & Dining',
     quote: 'Passie voor het vak, oog voor detail, professionele werkhouding.',
@@ -85,12 +80,11 @@ const teamMembers: TeamMember[] = [
   {
     id: 5,
     name: 'Marcel',
-    age: '23 jaar',
     role: 'Horeca Planner',
     specialty: 'Organisatie & Planning',
     quote: 'Met de juiste planning ontstaat ruimte om het verschil te maken.',
     story: [
-      'Mijn naam is Marcel, ik ben 23 jaar en geboren in Poznań, Polen.',
+      'Mijn naam is Marcel en ik ben geboren in Poznań, Polen.',
       'Op zesjarige leeftijd verhuisde ik naar Belgisch Limburg, waar ik op 15-jarige leeftijd mijn eerste stappen zette in de horeca. Sindsdien heeft deze sector mijn professionele ontwikkeling volledig gevormd.',
       'Mijn carrière begon in de afwas, in een periode waarin ik werk combineerde met voetbal op hoog niveau. Die combinatie leerde mij al vroeg discipline, structuur en doorzettingsvermogen, eigenschappen die vandaag nog steeds de basis vormen van mijn manier van werken.',
       'Door de jaren heen groeide ik stap voor stap door: van afwas naar bediening, van ontbijtkeuken naar fulltime service. Later bekleedde ik functies als assistent maître en uiteindelijk assistent banqueting manager bij La Butte aux Bois.',
@@ -153,18 +147,19 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
             </span>
           </motion.div>
 
-          {/* Image Container - Natural Height */}
-          <div className="relative w-full overflow-hidden bg-gradient-to-br from-cream via-white to-gold/10 border-2 border-brown/10 shadow-2xl group">
+          {/* Image Container - Optimized for all devices */}
+          <div className="relative w-full overflow-hidden bg-gradient-to-br from-cream via-white to-gold/10 border-2 border-brown/10 shadow-2xl group rounded-sm">
             {member.imageAvailable ? (
-              <motion.div style={{ y: imageY }} className="w-full">
+              <motion.div style={{ y: imageY }} className="w-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px]">
                 <Image
                   src={member.image}
                   alt={member.name}
                   width={600}
                   height={800}
-                  className="w-full h-auto object-contain"
+                  className="w-full h-full object-cover object-center"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   loading={index === 0 ? 'eager' : 'lazy'}
+                  priority={index === 0}
                 />
               </motion.div>
             ) : (
@@ -276,10 +271,6 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
               <span className="inline-flex items-center gap-2 px-4 py-2 bg-brown/5 border border-brown/20 text-brown text-sm font-inter uppercase tracking-wider">
                 <ChefHat className="w-4 h-4" />
                 {member.specialty}
-              </span>
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-cream border border-brown/10 text-brown/60 text-sm font-inter">
-                <Calendar className="w-4 h-4" />
-                {member.age}
               </span>
             </motion.div>
           </div>
