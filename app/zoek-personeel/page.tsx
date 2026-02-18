@@ -39,14 +39,14 @@ export default function ZoekPersoneelPage() {
 
     const formData = new FormData(e.currentTarget);
 
-    try {
-      await submitToWeb3Forms(formData, {
-        subject: 'Chefs Connect: Aanvraag Horecafreelancers',
-      });
+    const result = await submitToWeb3Forms(formData, {
+      subject: 'Chefs Connect: Aanvraag Horecafreelancers',
+    });
+
+    if (result.success) {
       router.push('/bedankt');
-    } catch (error) {
-      console.error('Form submission error:', error);
-      alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+    } else {
+      alert(result.error || 'Er is een fout opgetreden. Probeer het later opnieuw.');
       setIsSubmitting(false);
     }
   };
@@ -542,6 +542,15 @@ export default function ZoekPersoneelPage() {
                   placeholder="Vertel ons over je situatie en wanneer je freelancers nodig hebt..."
                 />
               </div>
+
+              {/* Honeypot field for spam protection */}
+              <input
+                type="text"
+                name="botcheck"
+                style={{ display: 'none' }}
+                tabIndex={-1}
+                autoComplete="off"
+              />
 
               <button
                 type="submit"

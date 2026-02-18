@@ -26,14 +26,14 @@ export default function ContactPage() {
 
     const formData = new FormData(e.currentTarget);
 
-    try {
-      await submitToWeb3Forms(formData, {
-        subject: 'Chefs Connect: Contact Aanvraag',
-      });
+    const result = await submitToWeb3Forms(formData, {
+      subject: 'Chefs Connect: Contact Aanvraag',
+    });
+
+    if (result.success) {
       router.push('/bedankt');
-    } catch (error) {
-      console.error('Form submission error:', error);
-      alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+    } else {
+      alert(result.error || 'Er is een fout opgetreden. Probeer het later opnieuw.');
       setIsSubmitting(false);
     }
   };
@@ -156,6 +156,15 @@ export default function ContactPage() {
                     placeholder="Vertel ons waar we je mee kunnen helpen..."
                   />
                 </div>
+
+                {/* Honeypot field for spam protection */}
+                <input
+                  type="text"
+                  name="botcheck"
+                  style={{ display: 'none' }}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
 
                 <button
                   type="submit"

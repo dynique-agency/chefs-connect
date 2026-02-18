@@ -39,14 +39,14 @@ export default function HorecaSpecialistPage() {
 
     const formData = new FormData(e.currentTarget);
 
-    try {
-      await submitToWeb3FormsWithFiles(formData, {
-        subject: 'Chefs Connect: Aanmelding Horecaprofessional',
-      });
+    const result = await submitToWeb3FormsWithFiles(formData, {
+      subject: 'Chefs Connect: Aanmelding Horecaprofessional',
+    });
+
+    if (result.success) {
       router.push('/bedankt');
-    } catch (error) {
-      console.error('Form submission error:', error);
-      alert('Er is een fout opgetreden. Probeer het later opnieuw.');
+    } else {
+      alert(result.error || 'Er is een fout opgetreden. Probeer het later opnieuw.');
       setIsSubmitting(false);
     }
   };
@@ -571,6 +571,15 @@ export default function HorecaSpecialistPage() {
                   placeholder="Vertel ons over je ervaring, voorkeuren en wat voor opdrachten je zoekt..."
                 />
               </div>
+
+              {/* Honeypot field for spam protection */}
+              <input
+                type="text"
+                name="botcheck"
+                style={{ display: 'none' }}
+                tabIndex={-1}
+                autoComplete="off"
+              />
 
               <button
                 type="submit"
