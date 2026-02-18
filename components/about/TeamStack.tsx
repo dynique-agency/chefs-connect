@@ -32,8 +32,8 @@ const teamMembers: TeamMember[] = [
       'Deze periode heeft mijn visie op gastvrijheid en topgastronomie sterk gevormd. In 2018 koos ik bewust voor het freelance chef-bestaan. Die weg leidde mij naar Limburg, een regio waar de liefde voor gastronomie diepgeworteld is.',
       'Ik werkte hier onder andere bij La Butte aux Bois en Restaurant NOON, waar ik mijn ervaring verder kon verdiepen. In 2024 zette ik samen met mijn compagnon Mitchell de volgende stap met de oprichting van ChefsConnect. Wat begon als een netwerk in Limburg groeide al snel uit tot een organisatie die actief is in heel Nederland en België.'
     ],
-    image: '/team-photo.png',
-    imageAvailable: false
+    image: '/gert-jan.png',
+    imageAvailable: true
   },
   {
     id: 2,
