@@ -33,7 +33,7 @@ const choices = [
     image: '/events-service.png',
     href: '/evenementen',
     number: '03',
-    objectPosition: 'top',
+    objectPosition: 'left-top',
   },
 ];
 
@@ -134,7 +134,9 @@ function ChoiceCard({ choice, index }: { choice: typeof choices[0]; index: numbe
                 alt={choice.title}
                 fill
                 className={`transition-all duration-700 group-hover:scale-110 ${
-                  (choice as any).objectPosition === 'top' ? 'object-cover object-top' : 'object-cover'
+                  (choice as any).objectPosition === 'top' ? 'object-cover object-top' : 
+                  (choice as any).objectPosition === 'left-top' ? 'object-cover object-left-top' : 
+                  'object-cover'
                 }`}
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
