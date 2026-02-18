@@ -27,15 +27,10 @@ const teamMembers: TeamMember[] = [
     quote: 'Hard werken. Eerlijk ondernemen. Altijd leveren.',
     story: [
       'Mijn naam is Gert-Jan, 38 jaar en geboren in Hoek van Holland.',
-      'Met meer dan 30 jaar ervaring in de horeca is gastronomie voor mij nooit zomaar werk geweest, het is een levensstijl.',
-      'Als jong mannetje van 13 liep ik al bij een bevriende patisserie mee op de zaterdagen voor de voetbal.',
-      'Na het afronden van de koksopleiding begon mijn carrière als patissier bij het prestigieuze Kurhaus* in Scheveningen. Hier werd de basis gelegd voor mijn passie voor kwaliteit, discipline en verfijning.',
-      'Vervolgens zette ik mijn carrière voort in Amsterdam, waar ik de kans kreeg om te werken bij toonaangevende restaurants zoals Ron Blaauw en Restaurant Moon.',
-      'Deze periode heeft mijn visie op gastvrijheid en topgastronomie sterk gevormd.',
-      'In 2018 koos ik bewust voor het freelance chef-bestaan. Die weg leidde mij naar Limburg, een regio waar de liefde voor gastronomie diepgeworteld is.',
-      'Ik werkte hier onder andere bij La Butte aux Bois en Restaurant NOON, waar ik mijn ervaring verder kon verdiepen.',
-      'In 2024 zette ik samen met mijn compagnon Mitchell de volgende stap met de oprichting van ChefsConnect.',
-      'Wat begon als een netwerk in Limburg groeide al snel uit tot een organisatie die actief is in heel Nederland en België.'
+      'Met meer dan 30 jaar ervaring in de horeca is gastronomie voor mij nooit zomaar werk geweest, het is een levensstijl. Als jong mannetje van 13 liep ik al bij een bevriende patisserie mee op de zaterdagen voor de voetbal.',
+      'Na het afronden van de koksopleiding begon mijn carrière als patissier bij het prestigieuze Kurhaus* in Scheveningen. Hier werd de basis gelegd voor mijn passie voor kwaliteit, discipline en verfijning. Vervolgens zette ik mijn carrière voort in Amsterdam, waar ik de kans kreeg om te werken bij toonaangevende restaurants zoals Ron Blaauw en Restaurant Moon.',
+      'Deze periode heeft mijn visie op gastvrijheid en topgastronomie sterk gevormd. In 2018 koos ik bewust voor het freelance chef-bestaan. Die weg leidde mij naar Limburg, een regio waar de liefde voor gastronomie diepgeworteld is.',
+      'Ik werkte hier onder andere bij La Butte aux Bois en Restaurant NOON, waar ik mijn ervaring verder kon verdiepen. In 2024 zette ik samen met mijn compagnon Mitchell de volgende stap met de oprichting van ChefsConnect. Wat begon als een netwerk in Limburg groeide al snel uit tot een organisatie die actief is in heel Nederland en België.'
     ],
     image: '/team-photo.png',
     imageAvailable: false
@@ -49,16 +44,13 @@ const teamMembers: TeamMember[] = [
     quote: 'Geen standaard bemiddeling, maar een premium aanpak.',
     story: [
       'Ik ben Mitchell Deneke, 31 jaar en oprichter van ChefsConnect.',
-      'Mijn carrière begon in de keuken, waar ik jarenlang heb gewerkt in toonaangevende zaken zoals Beluga Loves You, De Leuf, Château Neercanne, Harry\'s en La Butte aux Bois.',
-      'In deze omgevingen leerde ik niet alleen de technische kant van het vak, maar vooral wat discipline, structuur en constante kwaliteit betekenen op het hoogste niveau van de gastronomie.',
-      'Naast mijn werk in sterrenzaken heb ik ervaring opgedaan als privéchef in Oostenrijk, waar exclusiviteit, vertrouwen en persoonlijke service centraal stonden.',
-      'Die periode heeft mijn kijk op hospitality verdiept en mij laten inzien hoe belangrijk het is om met de juiste mensen te werken.',
-      'ChefsConnect is ontstaan vanuit mijn eigen ervaringen in de horeca. Ik heb zelf gezien hoe uitdagend het kan zijn om sterke, betrouwbare chefs te vinden die écht passen binnen een team.',
-      'Daarom bouw ik vandaag aan een netwerk dat anders werkt: persoonlijk, direct en gefocust op kwaliteit.',
+      'Mijn carrière begon in de keuken, waar ik jarenlang heb gewerkt in toonaangevende zaken zoals Beluga Loves You, De Leuf, Château Neercanne, Harry\'s en La Butte aux Bois. In deze omgevingen leerde ik niet alleen de technische kant van het vak, maar vooral wat discipline, structuur en constante kwaliteit betekenen op het hoogste niveau van de gastronomie.',
+      'Naast mijn werk in sterrenzaken heb ik ervaring opgedaan als privéchef in Oostenrijk, waar exclusiviteit, vertrouwen en persoonlijke service centraal stonden. Die periode heeft mijn kijk op hospitality verdiept en mij laten inzien hoe belangrijk het is om met de juiste mensen te werken.',
+      'ChefsConnect is ontstaan vanuit mijn eigen ervaringen in de horeca. Ik heb zelf gezien hoe uitdagend het kan zijn om sterke, betrouwbare chefs te vinden die écht passen binnen een team. Daarom bouw ik vandaag aan een netwerk dat anders werkt: persoonlijk, direct en gefocust op kwaliteit.',
       'Een premium aanpak waarbij chefs en horecazaken kunnen rekenen op rust, professionaliteit en mensen die precies weten wat er moet gebeuren.'
     ],
-    image: '/team-photo.png',
-    imageAvailable: false
+    image: '/mitchell.png',
+    imageAvailable: true
   },
   {
     id: 3,
@@ -69,15 +61,10 @@ const teamMembers: TeamMember[] = [
     quote: 'Met de juiste planning ontstaat ruimte om het verschil te maken.',
     story: [
       'Mijn naam is Marcel, ik ben 23 jaar en geboren in Poznań, Polen.',
-      'Op zesjarige leeftijd verhuisde ik naar Belgisch Limburg, waar ik op 15-jarige leeftijd mijn eerste stappen zette in de horeca.',
-      'Sindsdien heeft deze sector mijn professionele ontwikkeling volledig gevormd.',
-      'Mijn carrière begon in de afwas, in een periode waarin ik werk combineerde met voetbal op hoog niveau.',
-      'Die combinatie leerde mij al vroeg discipline, structuur en doorzettingsvermogen, eigenschappen die vandaag nog steeds de basis vormen van mijn manier van werken.',
-      'Door de jaren heen groeide ik stap voor stap door: van afwas naar bediening, van ontbijtkeuken naar fulltime service.',
-      'Later bekleedde ik functies als assistent maître en uiteindelijk assistent banqueting manager bij La Butte aux Bois.',
-      'In die rol ontwikkelde ik niet alleen leidinggevende vaardigheden, maar ook een sterk organisatorisch inzicht en het vermogen om onder druk rust en overzicht te bewaren.',
-      'Als Horeca Planner ligt mijn kracht in structuur, planning en het creëren van rust binnen dynamische omgevingen.',
-      'Voor mij moet het totaalplaatje kloppen: een fantastische gastbeleving, een professioneel team en een organisatie die efficiënt functioneert.'
+      'Op zesjarige leeftijd verhuisde ik naar Belgisch Limburg, waar ik op 15-jarige leeftijd mijn eerste stappen zette in de horeca. Sindsdien heeft deze sector mijn professionele ontwikkeling volledig gevormd.',
+      'Mijn carrière begon in de afwas, in een periode waarin ik werk combineerde met voetbal op hoog niveau. Die combinatie leerde mij al vroeg discipline, structuur en doorzettingsvermogen, eigenschappen die vandaag nog steeds de basis vormen van mijn manier van werken.',
+      'Door de jaren heen groeide ik stap voor stap door: van afwas naar bediening, van ontbijtkeuken naar fulltime service. Later bekleedde ik functies als assistent maître en uiteindelijk assistent banqueting manager bij La Butte aux Bois.',
+      'In die rol ontwikkelde ik niet alleen leidinggevende vaardigheden, maar ook een sterk organisatorisch inzicht en het vermogen om onder druk rust en overzicht te bewaren. Als Horeca Planner ligt mijn kracht in structuur, planning en het creëren van rust binnen dynamische omgevingen. Voor mij moet het totaalplaatje kloppen: een fantastische gastbeleving, een professioneel team en een organisatie die efficiënt functioneert.'
     ],
     image: '/marcel.png',
     imageAvailable: true
@@ -136,7 +123,7 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
             </span>
           </motion.div>
 
-          <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-cream via-white to-gold/10 border-2 border-brown/10 shadow-2xl group">
+          <div className="relative aspect-[3/4] overflow-hidden bg-gradient-to-br from-cream via-white to-gold/10 border-2 border-brown/10 shadow-2xl group">
             {member.imageAvailable ? (
               <motion.div style={{ y: imageY }} className="w-full h-full">
                 <Image
