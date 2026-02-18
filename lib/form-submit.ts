@@ -29,6 +29,8 @@ export async function submitToWeb3Forms(
     const data: Record<string, any> = {
       access_key: WEB3FORMS_ACCESS_KEY,
       subject: options.subject,
+      to: 'info@chefsconnect.nl', // All emails go to this address
+      from_name: 'Chefs Connect Website', // Sender name
     };
 
     // Add all form fields
@@ -77,6 +79,8 @@ export async function submitToWeb3FormsWithFiles(
     // Add Web3Forms required fields
     formData.append('access_key', WEB3FORMS_ACCESS_KEY);
     formData.append('subject', options.subject);
+    formData.append('to', 'info@chefsconnect.nl'); // All emails go to this address
+    formData.append('from_name', 'Chefs Connect Website'); // Sender name
 
     // Submit to Web3Forms (with files) - use FormData directly
     const response = await fetch(WEB3FORMS_ENDPOINT, {

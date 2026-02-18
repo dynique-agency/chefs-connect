@@ -8,6 +8,7 @@ import { useRouter } from 'next/navigation';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
+import { submitToWeb3FormsWithFiles } from '@/lib/form-submit';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -37,22 +38,15 @@ export default function HorecaSpecialistPage() {
     setIsSubmitting(true);
 
     const formData = new FormData(e.currentTarget);
-    formData.append('access_key', '6ee20b60-9eee-40c6-bd14-b90720d4536b');
-    formData.append('subject', 'Nieuwe aanmelding: Horeca Professional');
 
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: formData,
+      await submitToWeb3FormsWithFiles(formData, {
+        subject: 'Chefs Connect: Aanmelding Horecaprofessional',
       });
-
-      if (response.ok) {
-        router.push('/bedankt');
-      } else {
-        setIsSubmitting(false);
-      }
+      router.push('/bedankt');
     } catch (error) {
       console.error('Form submission error:', error);
+      alert('Er is een fout opgetreden. Probeer het later opnieuw.');
       setIsSubmitting(false);
     }
   };
