@@ -232,33 +232,39 @@ export default function ContactPage() {
               </div>
 
               {/* Decorative Images with Parallax */}
-              <div className="relative hidden lg:block h-96">
+              <div className="relative hidden lg:block">
                 <motion.div
                   style={{ y: image1Y }}
-                  className="absolute top-0 left-0 w-2/3 h-64 overflow-hidden"
+                  className="absolute top-0 left-0 w-1/2 z-10"
                 >
-                  <Image
-                    src="/team-founders.jpg"
-                    alt="Chefs Connect Team"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brown/20 to-transparent" />
+                  <div className="relative w-full">
+                    <Image
+                      src="/team-founders.jpg"
+                      alt="Chefs Connect Team"
+                      width={400}
+                      height={533}
+                      className="w-full h-auto object-contain"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brown/20 to-transparent pointer-events-none" />
+                  </div>
                 </motion.div>
 
                 <motion.div
                   style={{ y: image2Y }}
-                  className="absolute bottom-0 right-0 w-2/3 h-64 overflow-hidden"
+                  className="absolute top-20 right-0 w-1/2"
                 >
-                  <Image
-                    src="/contact-service.png"
-                    alt="Professional Service"
-                    fill
-                    className="object-cover object-top"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brown/20 to-transparent" />
+                  <div className="relative w-full">
+                    <Image
+                      src="/contact-service.png"
+                      alt="Professional Service"
+                      width={600}
+                      height={800}
+                      className="w-full h-auto object-contain"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-brown/20 to-transparent pointer-events-none" />
+                  </div>
                 </motion.div>
               </div>
             </motion.div>
