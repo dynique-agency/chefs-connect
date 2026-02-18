@@ -168,9 +168,13 @@ function checkRateLimit(): boolean {
 }
 
 /**
- * Fetch with timeout
+ * Fetch with timeout - returns error info instead of throwing
  */
-async function fetchWithTimeout(url: string, options: RequestInit, timeout: number): Promise<Response> {
+async function fetchWithTimeout(
+  url: string, 
+  options: RequestInit, 
+  timeout: number
+): Promise<{ response?: Response; error?: string }> {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeout);
   
@@ -180,13 +184,22 @@ async function fetchWithTimeout(url: string, options: RequestInit, timeout: numb
       signal: controller.signal
     });
     clearTimeout(timeoutId);
-    return response;
+    return { response };
   } catch (error) {
     clearTimeout(timeoutId);
+    
+    // Handle timeout
     if (error instanceof Error && error.name === 'AbortError') {
-      throw new NetworkError('De aanvraag duurde te lang. Probeer het opnieuw.');
+      return { error: 'De aanvraag duurde te lang. Controleer je internetverbinding en probeer het opnieuw.' };
     }
-    throw error;
+    
+    // Handle network errors
+    if (error instanceof TypeError && error.message === 'Failed to fetch') {
+      return { error: 'Kan geen verbinding maken met de server. Controleer je internetverbinding en probeer het opnieuw.' };
+    }
+    
+    // Generic network error
+    return { error: 'Netwerkfout. Controleer je internetverbinding en probeer het opnieuw.' };
   }
 }
 
@@ -234,7 +247,7 @@ export async function submitToWeb3Forms(
     }
 
     // Submit to Web3Forms with timeout
-    const response = await fetchWithTimeout(
+    const fetchResult = await fetchWithTimeout(
       WEB3FORMS_ENDPOINT,
       {
         method: 'POST',
@@ -246,6 +259,16 @@ export async function submitToWeb3Forms(
       },
       FORM_TIMEOUT
     );
+
+    // Check for fetch error
+    if (fetchResult.error) {
+      return {
+        success: false,
+        error: fetchResult.error
+      };
+    }
+
+    const response = fetchResult.response!;
 
     // Check response status
     if (!response.ok) {
@@ -354,7 +377,7 @@ export async function submitToWeb3FormsWithFiles(
     formData.append('botcheck', 'false');
 
     // Submit to Web3Forms with timeout
-    const response = await fetchWithTimeout(
+    const fetchResult = await fetchWithTimeout(
       WEB3FORMS_ENDPOINT,
       {
         method: 'POST',
@@ -362,6 +385,16 @@ export async function submitToWeb3FormsWithFiles(
       },
       FORM_TIMEOUT
     );
+
+    // Check for fetch error
+    if (fetchResult.error) {
+      return {
+        success: false,
+        error: fetchResult.error
+      };
+    }
+
+    const response = fetchResult.response!;
 
     // Check response status
     if (!response.ok) {
