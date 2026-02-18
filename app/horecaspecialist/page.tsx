@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
-import { submitToFormgridWithFiles } from '@/lib/formgrid-submit';
+import { submitToWeb3Forms } from '@/lib/form-submit';
 import FormNotification from '@/components/ui/FormNotification';
 
 if (typeof window !== 'undefined') {
@@ -42,8 +42,8 @@ export default function HorecaSpecialistPage() {
     try {
       const formData = new FormData(e.currentTarget);
 
-      const result = await submitToFormgridWithFiles(formData, {
-        successMessage: 'Bedankt voor je aanmelding! We nemen zo snel mogelijk contact met je op.',
+      const result = await submitToWeb3Forms(formData, {
+        subject: 'Chefs Connect: Aanmelding Horecaprofessional',
       });
 
       if (result.success) {
@@ -573,16 +573,25 @@ export default function HorecaSpecialistPage() {
               </div>
 
               <div>
-                <label htmlFor="cv" className="block font-inter text-sm uppercase tracking-wider text-brown/70 mb-2">
-                  Upload je CV
+                <label htmlFor="cv_link" className="block font-inter text-sm uppercase tracking-wider text-brown/70 mb-2">
+                  CV Link (Optioneel)
                 </label>
                 <input
-                  type="file"
-                  id="cv"
-                  name="cv"
-                  accept=".pdf,.doc,.docx"
-                  className="w-full px-4 py-3 bg-white border border-brown/20 focus:border-gold focus:outline-none transition-colors font-inter text-brown file:mr-4 file:py-2 file:px-4 file:border-0 file:text-sm file:font-semibold file:bg-gold/10 file:text-brown hover:file:bg-gold/20"
+                  type="url"
+                  id="cv_link"
+                  name="cv_link"
+                  placeholder="Link naar je CV (Google Drive, Dropbox, etc.)"
+                  className="w-full px-4 py-3 bg-white border border-brown/20 focus:border-gold focus:outline-none transition-colors font-inter text-brown"
                 />
+                <p className="mt-2 text-sm text-brown-medium font-inter">
+                  Of mail je CV naar{' '}
+                  <a 
+                    href="mailto:info@chefs-connect.nl" 
+                    className="text-gold hover:text-gold-dark transition-colors font-medium"
+                  >
+                    info@chefs-connect.nl
+                  </a>
+                </p>
               </div>
 
               <div>

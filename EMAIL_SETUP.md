@@ -26,7 +26,8 @@ Alle contactformulieren op de website zijn geconfigureerd om emails te versturen
 
 4. **Ik ben horecaprofessional** (`/app/horecaspecialist/page.tsx`)
    - Locatie: `/horecaspecialist`
-   - Velden: Naam, Email, Telefoon, Functie, Ervaring, CV upload, Bericht
+   - Velden: Naam, Email, Telefoon, Functie, Ervaring, CV Link (optioneel), Bericht
+   - Note: CV kan via link worden gedeeld of gemaild naar info@chefs-connect.nl
 
 5. **Evenementen** (`/app/evenementen/page.tsx`)
    - Locatie: `/evenementen`
@@ -86,30 +87,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 };
 ```
 
-#### `submitToWeb3FormsWithFiles()`
-Voor formulieren met file uploads (bijv. CV upload).
-
-```typescript
-import { submitToWeb3FormsWithFiles } from '@/lib/form-submit';
-
-const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  setIsSubmitting(true);
-
-  const formData = new FormData(e.currentTarget);
-
-  try {
-    await submitToWeb3FormsWithFiles(formData, {
-      subject: 'Chefs Connect: Aanmelding Horecaprofessional',
-    });
-    router.push('/bedankt');
-  } catch (error) {
-    console.error('Form submission error:', error);
-    alert('Er is een fout opgetreden. Probeer het later opnieuw.');
-    setIsSubmitting(false);
-  }
-};
-```
+**Note**: `submitToWeb3FormsWithFiles()` is beschikbaar voor toekomstige file uploads, maar wordt momenteel niet gebruikt. Alle forms gebruiken `submitToWeb3Forms()` omdat Web3Forms gratis plan geen file uploads ondersteunt. Het CV veld op `/horecaspecialist` is nu een optioneel link veld waar kandidaten een Google Drive/Dropbox link kunnen delen, of ze kunnen het CV mailen naar info@chefs-connect.nl.
 
 ### 2. Email Format
 
@@ -136,7 +114,7 @@ Velden:
 2. **Geen account nodig** - Direct te gebruiken met access key
 3. **Privacy-first** - GDPR compliant, geen tracking
 4. **Betrouwbaar** - 99.9% uptime
-5. **File uploads** - Ondersteunt CV uploads (max 5MB)
+5. **Eenvoudig** - Geen file uploads nodig, CV via link of email
 6. **Spam protection** - Ingebouwde honeypot bescherming
 7. **Custom redirects** - Naar `/bedankt` pagina na succesvolle submission
 8. **Real-time delivery** - Emails komen direct binnen
