@@ -11,7 +11,7 @@ export default function OverOnsPage() {
       <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/about-team.png"
+            src="/team-photo.png"
             alt="ChefsConnect Team"
             fill
             className="object-cover"
@@ -66,7 +66,7 @@ export default function OverOnsPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="grid md:grid-cols-2 gap-12 md:gap-16 items-center mb-20"
+            className="grid md:grid-cols-2 gap-12 md:gap-16 mb-20"
           >
             <div>
               <h2 className="font-playfair text-3xl md:text-5xl text-brown mb-6 leading-tight">
@@ -84,11 +84,11 @@ export default function OverOnsPage() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative h-full">
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.4 }}
-                className="relative aspect-[4/5] overflow-hidden shadow-2xl"
+                className="relative h-full overflow-hidden shadow-2xl"
               >
                 <Image
                   src="/team-founders.jpg"
@@ -115,7 +115,7 @@ export default function OverOnsPage() {
       <section className="py-20 md:py-32 px-6 bg-brown text-cream relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="/about-team.png"
+            src="/team-photo.png"
             alt="Background"
             fill
             className="object-cover"

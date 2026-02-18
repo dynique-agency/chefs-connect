@@ -138,7 +138,7 @@ export default function ContactForm() {
             >
               <div className="relative w-full h-full border border-gold/30">
                 <Image
-                  src="/choice-dining.png"
+                  src="/service-professional.png"
                   alt="Premium culinary experience"
                   fill
                   className="object-cover"
@@ -177,7 +177,7 @@ export default function ContactForm() {
           >
             <div className="relative w-full h-full border border-gold/30">
               <Image
-                src="/choice-dining.png"
+                src="/service-professional.png"
                 alt="Premium culinary experience"
                 fill
                 className="object-cover"

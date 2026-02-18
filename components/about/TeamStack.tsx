@@ -37,7 +37,7 @@ const teamMembers: TeamMember[] = [
       'In 2024 zette ik samen met mijn compagnon Mitchell de volgende stap met de oprichting van ChefsConnect.',
       'Wat begon als een netwerk in Limburg groeide al snel uit tot een organisatie die actief is in heel Nederland en België.'
     ],
-    image: '/about-team.png',
+    image: '/team-photo.png',
     imageAvailable: false
   },
   {
@@ -57,7 +57,7 @@ const teamMembers: TeamMember[] = [
       'Daarom bouw ik vandaag aan een netwerk dat anders werkt: persoonlijk, direct en gefocust op kwaliteit.',
       'Een premium aanpak waarbij chefs en horecazaken kunnen rekenen op rust, professionaliteit en mensen die precies weten wat er moet gebeuren.'
     ],
-    image: '/about-team.png',
+    image: '/team-photo.png',
     imageAvailable: false
   },
   {
