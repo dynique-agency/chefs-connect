@@ -30,9 +30,10 @@ const choices = [
     title: 'Ik organiseer een evenement',
     subtitle: 'Voor Evenementen',
     description: 'Creëer onvergetelijke culinaire ervaringen',
-    image: '/choice-events.png',
+    image: '/events-service.png',
     href: '/evenementen',
     number: '03',
+    objectPosition: 'top',
   },
 ];
 
