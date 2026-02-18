@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
-import { submitToWeb3FormsWithFiles } from '@/lib/form-submit';
+import { submitToFormgridWithFiles } from '@/lib/formgrid-submit';
 import FormNotification from '@/components/ui/FormNotification';
 
 if (typeof window !== 'undefined') {
@@ -42,8 +42,8 @@ export default function HorecaSpecialistPage() {
     try {
       const formData = new FormData(e.currentTarget);
 
-      const result = await submitToWeb3FormsWithFiles(formData, {
-        subject: 'Chefs Connect: Aanmelding Horecaprofessional',
+      const result = await submitToFormgridWithFiles(formData, {
+        successMessage: 'Bedankt voor je aanmelding! We nemen zo snel mogelijk contact met je op.',
       });
 
       if (result.success) {
