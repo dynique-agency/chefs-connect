@@ -249,7 +249,7 @@ export default function EvenementenPage() {
               <span className="text-gold italic">op topniveau</span>
             </h2>
             <p className="font-inter text-lg md:text-xl text-cream/80 max-w-4xl mx-auto leading-relaxed mb-6">
-              Met meer dan <span className="font-semibold text-gold">30 jaar ervaring</span> in de top van de gastronomie brengen wij restaurantkwaliteit naar jouw locatie. Geen standaard catering, maar een verfijnde ervaring waarin smaak, presentatie en service samenkomen.
+              Met meer dan <span className="font-semibold text-gold">20 jaar ervaring</span> in de top van de gastronomie brengen wij restaurantkwaliteit naar jouw locatie. Geen standaard catering, maar een verfijnde ervaring waarin smaak, presentatie en service samenkomen.
             </p>
           </motion.div>
 
@@ -539,7 +539,7 @@ export default function EvenementenPage() {
             className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
           >
             {[
-              { icon: Award, text: '30 jaar ervaring in de topgastronomie' },
+              { icon: Award, text: '20 jaar ervaring in de topgastronomie' },
               { icon: Star, text: 'Bekroonde chef en culinair team' },
               { icon: Sparkles, text: 'Fine dining op locatie' },
               { icon: CheckCircle2, text: 'Alleen premium ingrediënten' },
