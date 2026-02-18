@@ -150,13 +150,13 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
           {/* Image Container - Optimized for all devices */}
           <div className="relative w-full overflow-hidden bg-gradient-to-br from-cream via-white to-gold/10 border-2 border-brown/10 shadow-2xl group rounded-sm">
             {member.imageAvailable ? (
-              <motion.div style={{ y: imageY }} className="w-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px]">
+              <motion.div style={{ y: imageY }} className="w-full">
                 <Image
                   src={member.image}
                   alt={member.name}
                   width={600}
                   height={800}
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-auto object-contain"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   loading={index === 0 ? 'eager' : 'lazy'}
                   priority={index === 0}
