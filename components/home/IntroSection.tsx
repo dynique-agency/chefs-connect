@@ -237,21 +237,21 @@ export default function IntroSection() {
                   textWrap: 'pretty'
                 }}
               >
-                Kwaliteit ontstaat wanneer de <span className="text-gold font-medium">juiste mensen</span> op het juiste moment samenkomen.
+                Kwaliteit ontstaat wanneer de <span className="text-gold font-medium">juiste mensen</span><br className="sm:hidden" /> op het juiste moment samenkomen.
               </p>
 
               <p
                 ref={paragraph2Ref}
                 className="font-inter text-base sm:text-lg md:text-xl text-brown-medium leading-relaxed"
                 style={{ 
-                  wordBreak: 'keep-all',
-                  overflowWrap: 'normal',
-                  hyphens: 'manual',
-                  WebkitHyphens: 'manual',
+                  wordBreak: 'normal',
+                  overflowWrap: 'break-word',
+                  hyphens: 'auto',
+                  WebkitHyphens: 'auto',
                   textWrap: 'pretty'
                 }}
               >
-                Bij Chefs Connect versterken wij horecazaken<br className="md:hidden" /> met <span className="text-gold font-medium">ervaren chefs</span> en <span className="text-gold font-medium">professionele bediening</span><br className="md:hidden" /> die direct het verschil maken. Van private dining tot<br className="md:hidden" /> grootschalige events zorgen wij dat elke service staat<br className="md:hidden" /> met aandacht, vakmanschap en een feilloze uitvoering.
+                Bij Chefs Connect versterken wij horecazaken<br className="sm:hidden" /> met <span className="text-gold font-medium">ervaren chefs</span> en <span className="text-gold font-medium">professionele bediening</span><br className="md:hidden" /> die direct het verschil maken.<br className="sm:hidden" /> Van <span className="text-gold font-medium">private dining</span> tot <span className="text-gold font-medium">grootschalige events</span><br className="md:hidden" /> zorgen wij dat elke service staat<br className="sm:hidden" /> met aandacht, vakmanschap<br className="sm:hidden" /> en een feilloze uitvoering.
               </p>
 
               {/* Premium CTA Button */}

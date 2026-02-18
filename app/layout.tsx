@@ -5,21 +5,26 @@ import LenisScroll from '@/components/providers/lenis-scroll';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import LoadingScreen from '@/components/ui/LoadingScreen';
-import CustomCursor from '@/components/ui/CustomCursor';
 import FloatingCTA from '@/components/ui/FloatingCTA';
-import CookieBanner from '@/components/ui/CookieBanner';
+import { LazyCustomCursor, LazyCookieBanner } from '@/lib/lazy-components';
 import { MenuProvider } from '@/contexts/MenuContext';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair',
   display: 'swap',
+  preload: true,
+  fallback: ['Georgia', 'serif'],
+  adjustFontFallback: true,
 });
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
+  preload: true,
+  fallback: ['Arial', 'sans-serif'],
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {
@@ -54,17 +59,19 @@ export default function RootLayout({
   return (
     <html lang="nl" className={`${playfair.variable} ${inter.variable}`}>
       <head>
+        <link rel="preconnect" href="https://api.web3forms.com" />
+        <link rel="dns-prefetch" href="https://api.web3forms.com" />
       </head>
       <body className="font-inter antialiased">
         <MenuProvider>
           <LoadingScreen />
-          <CustomCursor />
+          <LazyCustomCursor />
           <div className="noise-overlay" />
           <Navigation />
           <LenisScroll>{children}</LenisScroll>
           <Footer />
           <FloatingCTA />
-          <CookieBanner />
+          <LazyCookieBanner />
         </MenuProvider>
       </body>
     </html>
