@@ -3,7 +3,7 @@
  * Handles all form submissions to Web3Forms API
  */
 
-const WEB3FORMS_ACCESS_KEY = '6ee20b60-9eee-40c6-bd14-b90720d4536b';
+const WEB3FORMS_ACCESS_KEY = 'fb37a17c-9ce1-4d12-932b-ce94e5a8c851';
 const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
 
 export interface FormSubmissionData {

@@ -38,7 +38,7 @@ Alle contactformulieren op de website zijn geconfigureerd om emails te versturen
 
 ### Web3Forms Access Key
 ```
-Access Key: 6ee20b60-9eee-40c6-bd14-b90720d4536b
+Access Key: fb37a17c-9ce1-4d12-932b-ce94e5a8c851
 ```
 
 ### Email Instellingen
