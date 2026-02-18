@@ -20,7 +20,7 @@ const choices = [
     title: 'Ik ben een horeca professional',
     subtitle: 'Voor Professionals',
     description: 'Ontdek jouw volgende culinaire avontuur',
-    image: '/chef-action.png',
+    image: '/professional-card.png',
     href: '/horecaspecialist',
     number: '02',
     objectPosition: 'top',
@@ -30,10 +30,9 @@ const choices = [
     title: 'Ik organiseer een evenement',
     subtitle: 'Voor Evenementen',
     description: 'Creëer onvergetelijke culinaire ervaringen',
-    image: '/events-service.png',
+    image: '/choice-events.png',
     href: '/evenementen',
     number: '03',
-    objectPosition: 'left-top',
   },
 ];
 

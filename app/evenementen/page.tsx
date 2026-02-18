@@ -186,22 +186,20 @@ export default function EvenementenPage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative h-[500px]"
+              className="relative"
             >
-              <motion.div
-                className="absolute inset-0"
-                style={{ y: imageY }}
-              >
+              <div className="relative w-full">
                 <Image
-                  src="/reviews-background.png"
+                  src="/event-service-detail.png"
                   alt="Fine dining experience"
-                  fill
-                  className="object-cover brightness-[0.85]"
+                  width={600}
+                  height={800}
+                  className="w-full h-auto object-contain brightness-[0.85]"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
-              </motion.div>
-              <div className="absolute inset-0 bg-gradient-to-t from-brown via-brown/40 to-transparent" />
-              <div className="absolute inset-0 border-2 border-gold/30" />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-brown via-brown/40 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 border-2 border-gold/30 pointer-events-none" />
             </motion.div>
           </div>
         </div>
