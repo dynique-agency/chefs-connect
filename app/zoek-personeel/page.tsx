@@ -181,7 +181,6 @@ export default function ZoekPersoneelPage() {
                   'Head chefs',
                   'Sous chefs',
                   'Zelfstandig werkend koks',
-                  'Hulpkoks',
                   'Bedieningsmedewerkers',
                   'Leidinggevenden bediening',
                   'Complete keuken- of bedieningsteams'
