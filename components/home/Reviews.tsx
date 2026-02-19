@@ -186,7 +186,7 @@ export default function Reviews() {
           src="/reviews-background.png"
           alt="Premium dining experience"
           fill
-          className="object-cover"
+          className="object-cover scale-110"
           sizes="100vw"
           loading="lazy"
         />
