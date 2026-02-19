@@ -2,8 +2,8 @@
 
 import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { Star, CheckCircle2, ExternalLink, PenLine } from 'lucide-react';
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { Star, CheckCircle2, ExternalLink, PenLine, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const reviews = [
   {
@@ -71,7 +71,10 @@ function HighlightedText({ text }: { text: string }) {
 
 export default function Reviews() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [direction, setDirection] = useState(0);
 
   // Check if mobile on mount and resize
   useEffect(() => {
@@ -92,11 +95,85 @@ export default function Reviews() {
 
   const bgY = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
-  // Duplicate reviews for seamless infinite scroll
-  const duplicatedReviews = [...reviews, ...reviews, ...reviews];
-  
-  // Much faster scroll on mobile (7s), slower on desktop (40s)
-  const scrollDuration = isMobile ? 7 : 40;
+  // How many reviews to show at once based on screen size
+  const getVisibleCount = () => {
+    if (typeof window === 'undefined') return 1;
+    if (window.innerWidth >= 1024) return 3; // lg
+    if (window.innerWidth >= 768) return 2; // md
+    return 1; // mobile
+  };
+
+  const [visibleCount, setVisibleCount] = useState(getVisibleCount());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setVisibleCount(getVisibleCount());
+    };
+    
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Auto-advance timer (faster on mobile: 3s, slower on desktop: 5s)
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+    
+    const interval = setInterval(() => {
+      handleNext();
+    }, isMobile ? 3000 : 5000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex, isAutoPlaying, isMobile, visibleCount]);
+
+  const handleNext = () => {
+    setDirection(1);
+    setCurrentIndex((prev) => (prev + 1) % reviews.length);
+  };
+
+  const handlePrev = () => {
+    setDirection(-1);
+    setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
+  };
+
+  const handleDotClick = (index: number) => {
+    setDirection(index > currentIndex ? 1 : -1);
+    setCurrentIndex(index);
+    setIsAutoPlaying(false);
+    // Resume autoplay after 10 seconds
+    setTimeout(() => setIsAutoPlaying(true), 10000);
+  };
+
+  // Get visible reviews
+  const getVisibleReviews = () => {
+    const visible = [];
+    for (let i = 0; i < visibleCount; i++) {
+      const index = (currentIndex + i) % reviews.length;
+      visible.push({ ...reviews[index], key: index });
+    }
+    return visible;
+  };
+
+  const visibleReviews = getVisibleReviews();
+
+  // Variants for smooth Apple-style animations
+  const slideVariants = {
+    enter: (direction: number) => ({
+      x: direction > 0 ? '100%' : '-100%',
+      opacity: 0,
+      scale: 0.95,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+      scale: 1,
+    },
+    exit: (direction: number) => ({
+      x: direction > 0 ? '-100%' : '100%',
+      opacity: 0,
+      scale: 0.95,
+    }),
+  };
 
   return (
     <section ref={containerRef} className="relative py-24 md:py-32 overflow-hidden bg-cream">
@@ -154,32 +231,92 @@ export default function Reviews() {
           </div>
         </motion.div>
 
-        {/* Auto-scrolling Reviews - All Devices */}
-        <div className="relative mb-12">
-          {/* Gradient Fades on sides */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-r from-cream to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-l from-cream to-transparent z-10 pointer-events-none" />
+        {/* Carousel Container */}
+        <div 
+          className="relative mb-12"
+          onMouseEnter={() => setIsAutoPlaying(false)}
+          onMouseLeave={() => setIsAutoPlaying(true)}
+        >
+          {/* Navigation Buttons - Premium Apple Style */}
+          <motion.button
+            onClick={handlePrev}
+            className="absolute left-0 md:-left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 md:w-14 md:h-14 bg-white/90 backdrop-blur-md border border-brown/10 hover:border-gold/50 hover:bg-white shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 group"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            <ChevronLeft className="w-6 h-6 text-brown group-hover:text-gold transition-colors duration-300" />
+          </motion.button>
 
-          {/* Infinite Scroll Container */}
-          <div className="overflow-hidden">
-            <motion.div
-              className="flex gap-4 md:gap-6"
-              animate={{
-                x: ['0%', '-33.333%'],
-              }}
-              transition={{
-                x: {
-                  repeat: Infinity,
-                  repeatType: 'loop',
-                  duration: scrollDuration,
-                  ease: 'linear',
-                },
-              }}
-            >
-              {duplicatedReviews.map((review, index) => (
-                <AutoScrollReviewCard key={index} review={review} />
-              ))}
-            </motion.div>
+          <motion.button
+            onClick={handleNext}
+            className="absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 md:w-14 md:h-14 bg-white/90 backdrop-blur-md border border-brown/10 hover:border-gold/50 hover:bg-white shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 group"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            <ChevronRight className="w-6 h-6 text-brown group-hover:text-gold transition-colors duration-300" />
+          </motion.button>
+
+          {/* Reviews Grid */}
+          <div className="overflow-hidden px-2 md:px-4">
+            <div className={`grid gap-4 md:gap-6 ${
+              visibleCount === 1 ? 'grid-cols-1' : 
+              visibleCount === 2 ? 'grid-cols-2' : 
+              'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+            }`}>
+              <AnimatePresence mode="popLayout" custom={direction}>
+                {visibleReviews.map((review, index) => (
+                  <motion.div
+                    key={`${review.key}-${index}`}
+                    custom={direction}
+                    variants={slideVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
+                    transition={{
+                      x: { type: 'spring', stiffness: 300, damping: 30 },
+                      opacity: { duration: 0.3 },
+                      scale: { duration: 0.3 },
+                    }}
+                  >
+                    <ReviewCard review={review} />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+            </div>
+          </div>
+
+          {/* Dots Navigation - Premium Style */}
+          <div className="flex items-center justify-center gap-2 mt-8">
+            {reviews.map((_, index) => (
+              <motion.button
+                key={index}
+                onClick={() => handleDotClick(index)}
+                className="group relative"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <div className={`w-2 h-2 rounded-full transition-all duration-500 ${
+                  index === currentIndex
+                    ? 'bg-gold scale-125'
+                    : 'bg-brown/20 group-hover:bg-brown/40'
+                }`} />
+                {index === currentIndex && (
+                  <motion.div
+                    layoutId="activeDot"
+                    className="absolute inset-0 border-2 border-gold rounded-full"
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    animate={{ scale: 1.5, opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                )}
+              </motion.button>
+            ))}
           </div>
         </div>
 
@@ -191,83 +328,96 @@ export default function Reviews() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <a
+          <motion.a
             href="https://www.google.com/maps/place/Chefsconnect/@51.5642759,4.8758051,663722m/data=!3m1!1e3!4m8!3m7!1s0x40f016df59b51bf:0xa54be2c98204141d!8m2!3d51.5642759!4d4.875805!9m1!1b1!16s%2Fg%2F11x204wxp_?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-6 md:px-8 py-3 md:py-4 font-inter text-xs md:text-sm uppercase tracking-wider text-brown border-2 border-brown/20 hover:border-gold hover:bg-gold/10 transition-all duration-500 group relative overflow-hidden w-full sm:w-auto justify-center"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
             <ExternalLink className="w-4 h-4 md:w-5 md:h-5 text-gold" />
             <span className="relative z-10">Bekijk alle reviews</span>
             <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-gold/10 to-transparent" />
-          </a>
+          </motion.a>
 
-          <a
+          <motion.a
             href="https://search.google.com/local/writereview?placeid=ChIJv1Gb9W0BDwQRHRQEgsniS6U"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-6 md:px-8 py-3 md:py-4 font-inter text-xs md:text-sm uppercase tracking-wider text-cream bg-gold border-2 border-gold hover:bg-gold/90 hover:border-gold/90 transition-all duration-500 group relative overflow-hidden w-full sm:w-auto justify-center"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
             <PenLine className="w-4 h-4 md:w-5 md:h-5 text-cream" />
             <span className="relative z-10">Schrijf een review</span>
             <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-          </a>
+          </motion.a>
         </motion.div>
       </div>
     </section>
   );
 }
 
-// Auto-scrolling Review Card - Works on all devices
-function AutoScrollReviewCard({ review }: { review: typeof reviews[0] }) {
+// Review Card Component
+function ReviewCard({ review }: { review: typeof reviews[0] }) {
   return (
-    <div className="flex-shrink-0 w-[300px] sm:w-[350px] md:w-[400px] lg:w-[420px] group">
-      <div className="h-full bg-white/80 backdrop-blur-md border border-brown/10 p-6 md:p-8 relative overflow-hidden hover:border-gold/50 hover:bg-white transition-all duration-500 shadow-lg hover:shadow-xl">
-        {/* Hover Glow */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+    <motion.div 
+      className="h-full bg-white/80 backdrop-blur-md border border-brown/10 p-6 md:p-8 relative overflow-hidden hover:border-gold/50 hover:bg-white transition-all duration-500 shadow-lg hover:shadow-xl group"
+      whileHover={{ y: -4 }}
+      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+    >
+      {/* Hover Glow */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-        {/* Decorative corner accents */}
-        <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-gold/30" />
-        <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-gold/30" />
+      {/* Decorative corner accents */}
+      <div className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-gold/30 transition-all duration-500 group-hover:border-gold/60" />
+      <div className="absolute bottom-0 right-0 w-12 h-12 border-b-2 border-r-2 border-gold/30 transition-all duration-500 group-hover:border-gold/60" />
 
-        {/* Content */}
-        <div className="relative z-10 flex flex-col">
-          {/* Stars and Verified Badge */}
-          <div className="flex items-center justify-between mb-5">
-            <div className="flex gap-1">
-              {[...Array(review.stars)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-gold text-gold" />
-              ))}
-            </div>
-
-            {/* Google Verified Badge */}
-            <div className="flex items-center gap-1.5 px-3 py-1 bg-gold/10 border border-gold/30">
-              <CheckCircle2 className="w-3.5 h-3.5 text-gold" />
-              <span className="font-inter text-[10px] uppercase tracking-wider text-gold">
-                Verified
-              </span>
-            </div>
+      {/* Content */}
+      <div className="relative z-10 flex flex-col">
+        {/* Stars and Verified Badge */}
+        <div className="flex items-center justify-between mb-5">
+          <div className="flex gap-1">
+            {[...Array(review.stars)].map((_, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: i * 0.05, type: 'spring' }}
+              >
+                <Star className="w-4 h-4 fill-gold text-gold" />
+              </motion.div>
+            ))}
           </div>
 
-          {/* Review Text with Highlights */}
-          <div className="mb-6 min-h-[140px]">
-            <p className="font-inter text-sm md:text-base text-brown-medium leading-relaxed">
-              "<HighlightedText text={review.text} />"
-            </p>
-          </div>
-
-          {/* Name */}
-          <div className="flex items-center justify-between pt-4 border-t border-brown/10">
-            <p className="font-inter text-sm text-brown uppercase font-bold tracking-wider">
-              {review.name}
-            </p>
-            <div className="text-gold/30 text-5xl leading-none font-playfair">"</div>
+          {/* Google Verified Badge */}
+          <div className="flex items-center gap-1.5 px-3 py-1 bg-gold/10 border border-gold/30">
+            <CheckCircle2 className="w-3.5 h-3.5 text-gold" />
+            <span className="font-inter text-[10px] uppercase tracking-wider text-gold">
+              Verified
+            </span>
           </div>
         </div>
 
-        {/* Premium accent line */}
-        <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-gold via-gold/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        {/* Review Text with Highlights */}
+        <div className="mb-6 min-h-[140px]">
+          <p className="font-inter text-sm md:text-base text-brown-medium leading-relaxed">
+            "<HighlightedText text={review.text} />"
+          </p>
+        </div>
+
+        {/* Name */}
+        <div className="flex items-center justify-between pt-4 border-t border-brown/10">
+          <p className="font-inter text-sm text-brown uppercase font-bold tracking-wider">
+            {review.name}
+          </p>
+          <div className="text-gold/30 text-5xl leading-none font-playfair">"</div>
+        </div>
       </div>
-    </div>
+
+      {/* Premium accent line */}
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-gold via-gold/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+    </motion.div>
   );
 }
