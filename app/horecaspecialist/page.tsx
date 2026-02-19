@@ -325,9 +325,13 @@ export default function HorecaSpecialistPage() {
             >
               <Users className="w-12 h-12 text-gold mb-6" />
               <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light text-cream mb-8 leading-tight">
-                Persoonlijke benadering
+                Persoonlijke
                 <br />
-                <span className="text-gold italic">jij bent geen nummertje</span>
+                benadering
+                <br />
+                <span className="text-gold italic">jij bent geen</span>
+                <br />
+                <span className="text-gold italic">nummertje</span>
               </h2>
               <p className="font-inter text-lg text-cream/90 leading-relaxed mb-8">
                 Bij ons draait het om wie jij bent als professional. We kijken verder dan alleen je cv en leren je echt kennen.

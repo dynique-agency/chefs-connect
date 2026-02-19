@@ -56,7 +56,7 @@ const teamMembers: TeamMember[] = [
     specialty: 'Connect Events & Dining',
     quote: 'Respect voor het product, verfijning in elk detail.',
     story: [
-      'Reda Hamite is een gepassioneerde kok uit Antwerpen met meer dan 15 jaar ervaring in toonaangevende sterrezaken in België en Nederland.',
+      'Reda Hamite is een gepassioneerde kok uit Antwerpen met meer dan 15 jaar ervaring in toonaangevende sterrenzaken in België en Nederland.',
       'Hij deed ervaring op bij onder andere \'t Fornuis (1★), De Colvenier en Nuance (2★), waar hij zijn vakmanschap tot in de puntjes verfijnde.',
       'Zijn stijl combineert de klassieke Franse keuken met moderne finesse, gekenmerkt door respect voor het product, verfijnde technieken en een constante focus op perfectie met een elegante balans tussen traditie en innovatie.'
     ],
@@ -70,9 +70,9 @@ const teamMembers: TeamMember[] = [
     specialty: 'Connect Events & Dining',
     quote: 'Passie voor het vak, oog voor detail, professionele werkhouding.',
     story: [
-      'Ik ben een ervaren chef met een brede achtergrond in bistro, restaurant, fine dining en high-end catering. In mijn loopbaan heb ik gewerkt als chef kok en (junior) sous chef, waarbij ik verantwoordelijk was voor kwaliteit, organisatie en het aansturen van keukenteams.',
-      'Ik deed ervaring op bij onder andere Restaurant Moon, EYE Filmbar & Restaurant, Bar Bistro Leijten en Hotel New York, waar ik mij heb ontwikkeld tot een zelfstandige, stressbestendige en flexibele professional. Ik pas mij snel aan in nieuwe keukens en lever altijd constante kwaliteit.',
-      'Met passie voor het vak, oog voor detail en een professionele werkhouding sta ik klaar voor nieuwe opdrachten en uitdagingen.'
+      'Robin is een ervaren chef met een brede achtergrond in bistro, restaurant, fine dining en high-end catering. In zijn loopbaan heeft hij gewerkt als chef kok en (junior) sous chef, waarbij hij verantwoordelijk was voor kwaliteit, organisatie en het aansturen van keukenteams.',
+      'Hij deed ervaring op bij onder andere Restaurant Moon, EYE Filmbar & Restaurant, Bar Bistro Leijten en Hotel New York, waar hij zich heeft ontwikkeld tot een zelfstandige, stressbestendige en flexibele professional. Hij past zich snel aan in nieuwe keukens en levert altijd constante kwaliteit.',
+      'Met passie voor het vak, oog voor detail en een professionele werkhouding staat hij klaar voor nieuwe opdrachten en uitdagingen.'
     ],
     image: '/chef-action.png',
     imageAvailable: true

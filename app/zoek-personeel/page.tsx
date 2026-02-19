@@ -95,12 +95,14 @@ export default function ZoekPersoneelPage() {
               <div className="h-px bg-gold/30 w-32" />
               
               <h1 className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-brown leading-[1.1]">
-                Ik zoek <span className="text-gold italic">horecafreelancers</span>
+                Ik zoek <span className="text-gold italic">horeca-freelancers</span>
               </h1>
 
               <div className="space-y-6 font-inter text-base md:text-lg text-brown-medium leading-relaxed max-w-xl">
                 <p>
-                  Ben je horecaondernemer en denk je:<br className="md:hidden" /> <span className="font-semibold text-brown">ik zoek horecafreelancers,<br className="md:hidden" /> en snel ook?</span> Dan wil je geen gedoe,<br className="md:hidden" /> geen mismatches en geen lange procedures.<br className="md:hidden" /> Je wilt kwaliteit, betrouwbaarheid en iemand<br className="md:hidden" /> die begrijpt hoe de horeca écht werkt.
+                  Ben je horecaondernemer en denk je: <span className="font-semibold text-brown whitespace-nowrap">ik zoek</span>{' '}
+                  <span className="font-semibold text-brown whitespace-nowrap">horeca-freelancers,</span>{' '}
+                  <span className="font-semibold text-brown whitespace-nowrap">en snel ook?</span> Dan wil je geen gedoe, geen mismatches en geen lange procedures. Je wilt kwaliteit, betrouwbaarheid en iemand die begrijpt hoe de horeca écht werkt.
                 </p>
                 <p className="text-xl font-medium text-gold">
                   Bij ChefsConnect regelen we dat voor je.
@@ -157,7 +159,7 @@ export default function ZoekPersoneelPage() {
           >
             <Clock className="w-12 h-12 text-gold mx-auto mb-6" />
             <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light text-cream mb-8">
-              Snel horecafreelancers nodig?
+              Snel <span className="whitespace-nowrap">horeca-freelancers</span> nodig?
               <br />
               <span className="text-gold italic">vaak snel geregeld</span>
             </h2>
@@ -222,10 +224,10 @@ export default function ZoekPersoneelPage() {
             >
               <Award className="w-12 h-12 text-gold mb-6" />
               <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light text-brown mb-8 leading-tight">
-                Horecafreelancers die <span className="text-gold italic">écht</span> bij je zaak passen
+                <span className="whitespace-nowrap">Horeca-freelancers</span> die <span className="text-gold italic">écht</span> bij je zaak passen
               </h2>
               <p className="font-inter text-lg text-brown-medium leading-relaxed mb-8">
-                Goede horecafreelancers vinden is meer dan alleen een cv matchen. Het gaat om <span className="font-semibold text-brown">tempo, teamdynamiek, mentaliteit en vakmanschap</span>.
+                Goede <span className="whitespace-nowrap">horeca-freelancers</span> vinden is meer dan alleen een cv matchen. Het gaat om <span className="font-semibold text-brown">tempo, teamdynamiek, mentaliteit en vakmanschap</span>.
               </p>
 
               <div className="bg-brown/5 border border-brown/10 p-8 mb-8">
@@ -293,7 +295,7 @@ export default function ZoekPersoneelPage() {
               <span className="text-gold italic">van planning tot contracten</span>
             </h2>
             <p className="font-inter text-xl text-cream/80 max-w-3xl mx-auto leading-relaxed mb-4">
-              Wanneer je denkt <span className="font-semibold text-gold">"ik zoek horecafreelancers"</span>, zoek je eigenlijk vooral <span className="font-semibold text-gold">rust</span>.
+              Wanneer je denkt <span className="font-semibold text-gold whitespace-nowrap">"ik zoek horeca-freelancers"</span>, zoek je eigenlijk vooral <span className="font-semibold text-gold">rust</span>.
             </p>
             <p className="font-inter text-lg text-cream/70 max-w-2xl mx-auto">
               Daarom regelen wij het volledige traject:
@@ -469,7 +471,7 @@ export default function ZoekPersoneelPage() {
             className="text-center mb-16"
           >
             <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light text-brown mb-8 leading-tight">
-              Ik zoek horecafreelancers en ik wil het{' '}
+              Ik zoek <span className="whitespace-nowrap">horeca-freelancers</span> en ik wil het{' '}
               <span className="text-gold italic">goed geregeld</span> hebben.
             </h2>
             <p className="font-inter text-lg md:text-xl text-brown-medium leading-relaxed max-w-3xl mx-auto">
