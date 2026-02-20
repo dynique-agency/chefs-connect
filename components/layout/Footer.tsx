@@ -124,7 +124,7 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="pt-8 border-t border-gold/10">
+          <div className="pt-8 border-t border-gold/10 space-y-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="font-inter text-xs text-cream/50">
                 © {new Date().getFullYear()} Chefs Connect. Alle rechten voorbehouden.
@@ -159,6 +159,32 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
+
+            {/* Dynique Credits - Ultra Clean */}
+            <motion.div 
+              className="flex justify-center items-center"
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <a
+                href="https://dynique.nl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 font-inter text-xs text-cream/40 hover:text-gold transition-all duration-500"
+              >
+                <span>Design en realisatie door</span>
+                <motion.span 
+                  className="font-medium text-cream/60 group-hover:text-gold relative"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+                >
+                  Dynique
+                  <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gold group-hover:w-full transition-all duration-500" />
+                </motion.span>
+              </a>
+            </motion.div>
           </div>
         </div>
       </footer>
