@@ -240,7 +240,8 @@ export default function IntroSection() {
                 Kwaliteit ontstaat wanneer de{' '}
                 <span className="text-gold font-medium whitespace-nowrap">juiste mensen</span>
                 <br className="md:hidden" />{' '}
-                op het juiste moment samenkomen.
+                op het juiste<br className="hidden md:block" />{' '}
+                moment samenkomen.
               </p>
 
               <p
@@ -261,15 +262,17 @@ export default function IntroSection() {
                 <br className="md:hidden" />
                 <span className="text-gold font-medium whitespace-nowrap">professionele bediening</span> die direct{' '}
                 <br className="md:hidden" />
-                het verschil maken. Van{' '}
+                het<br className="hidden md:block" />{' '}
+                verschil maken. Van{' '}
                 <span className="text-gold font-medium whitespace-nowrap">private dining</span> tot{' '}
                 <br className="md:hidden" />
-                <span className="text-gold font-medium whitespace-nowrap">grootschalige events</span>{' '}
+                <span className="text-gold font-medium whitespace-nowrap">grootschalige events</span><br className="hidden md:block" />{' '}
                 zorgen wij dat{' '}
                 <br className="md:hidden" />
                 elke service staat met aandacht,{' '}
                 <br className="md:hidden" />
-                vakmanschap en een{' '}
+                vakmanschap en<br className="hidden md:block" />{' '}
+                een{' '}
                 <br className="md:hidden" />
                 feilloze uitvoering.
               </p>
