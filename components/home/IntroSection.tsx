@@ -269,10 +269,10 @@ export default function IntroSection() {
                 <span className="text-gold font-medium whitespace-nowrap">grootschalige events</span><br className="hidden md:block" />{' '}
                 zorgen wij dat{' '}
                 <br className="md:hidden" />
-                elke service staat met aandacht,{' '}
+                elke service staat met{' '}
                 <br className="md:hidden" />
-                vakmanschap en<br className="hidden md:block" />{' '}
-                een{' '}
+                aandacht, vakmanschap<br className="hidden md:block" />{' '}
+                en een{' '}
                 <br className="md:hidden" />
                 feilloze uitvoering.
               </p>
