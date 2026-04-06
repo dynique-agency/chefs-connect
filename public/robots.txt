@@ -1,0 +1,11 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths (if any)
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemaps (both domains)
+Sitemap: https://chefs-connect.nl/sitemap.xml
+Sitemap: https://chefs-connect.be/sitemap.xml
