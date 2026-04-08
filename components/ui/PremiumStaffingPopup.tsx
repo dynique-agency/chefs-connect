@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { X } from 'lucide-react';
 
 const WHATSAPP_NUMBER = '31641875803';
@@ -16,23 +16,23 @@ interface PremiumStaffingPopupProps {
 
 const EASE_LUXURY = [0.22, 1, 0.36, 1] as const;
 
-const backdropVariants = {
+const backdropVariants: Variants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.5, ease: 'easeOut' } },
-  exit:   { opacity: 0, transition: { duration: 0.4, ease: 'easeIn'  } },
+  visible: { opacity: 1, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } },
+  exit:   { opacity: 0, transition: { duration: 0.4, ease: [0.55, 0, 1, 0.45] } },
 };
 
-const modalVariants = {
+const modalVariants: Variants = {
   hidden:  { opacity: 0, y: 24, scale: 0.97 },
   visible: { opacity: 1, y: 0,  scale: 1,
     transition: { duration: 0.6, ease: EASE_LUXURY },
   },
   exit:    { opacity: 0, y: 14, scale: 0.98,
-    transition: { duration: 0.3, ease: 'easeIn' },
+    transition: { duration: 0.3, ease: [0.55, 0, 1, 0.45] },
   },
 };
 
-const stagger = (i: number, base = 0.25) => ({
+const stagger = (i: number, base = 0.25): Variants => ({
   hidden:  { opacity: 0, y: 10 },
   visible: { opacity: 1, y: 0,
     transition: { duration: 0.5, delay: base + i * 0.09, ease: EASE_LUXURY },
