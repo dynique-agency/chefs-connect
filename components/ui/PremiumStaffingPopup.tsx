@@ -50,7 +50,7 @@ function WhatsAppIcon({ className }: { className?: string }) {
 const stats = [
   { value: '150+',   label: 'Professionals' },
   { value: '< 24u', label: 'Reactietijd'    },
-  { value: '30+ jr', label: 'Ervaring'      },
+  { value: '100+',   label: 'Tevreden klanten' },
 ];
 
 export default function PremiumStaffingPopup({ showAfterMs = 3000 }: PremiumStaffingPopupProps) {
@@ -198,7 +198,7 @@ export default function PremiumStaffingPopup({ showAfterMs = 3000 }: PremiumStaf
                   <span className="text-cream/75 font-medium">omzet en reputatie</span>.
                   {' '}Ons netwerk van{' '}
                   <span className="text-gold font-medium">150+ horecaprofessionals</span>{' '}
-                  staat klaar — wij schakelen vandaag nog.
+                  staat klaar. Wij schakelen vandaag nog.
                 </motion.p>
 
                 {/* Stats row */}
