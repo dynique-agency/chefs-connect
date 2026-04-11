@@ -3,63 +3,44 @@ import { MetadataRoute } from 'next';
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://chefs-connect.nl';
-  const currentDate = new Date();
+  const lastUpdate = '2025-04-06';
 
   return [
     {
-      url: baseUrl,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 1.0,
+      url: 'https://chefs-connect.nl',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 1,
     },
     {
-      url: `${baseUrl}/zoek-personeel`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/horecaspecialist`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/evenementen`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/over-ons`,
-      lastModified: currentDate,
+      url: 'https://chefs-connect.nl/zoek-personeel',
+      lastModified: lastUpdate,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/contact`,
-      lastModified: currentDate,
+      url: 'https://chefs-connect.nl/horecaspecialist',
+      lastModified: lastUpdate,
       changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://chefs-connect.nl/evenementen',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://chefs-connect.nl/over-ons',
+      lastModified: lastUpdate,
+      changeFrequency: 'yearly',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/privacy`,
-      lastModified: currentDate,
+      url: 'https://chefs-connect.nl/contact',
+      lastModified: lastUpdate,
       changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/cookies`,
-      lastModified: currentDate,
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/terms`,
-      lastModified: currentDate,
-      changeFrequency: 'yearly',
-      priority: 0.3,
+      priority: 0.6,
     },
   ];
 }

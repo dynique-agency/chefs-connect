@@ -25,18 +25,39 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Chefs Connect | Premium Horecafreelancers & Evenement Catering',
-  description: 'Chefs Connect bemiddelt ervaren horecaprofessionals en verzorgt exclusieve evenementen. Snel, betrouwbaar en professioneel. Van private dining tot grootschalige events in België en Nederland.',
+  metadataBase: new URL('https://chefs-connect.nl'),
+  title: {
+    template: '%s | Chefs Connect',
+    default: 'Chefs Connect | Premium Freelance Horecaprofessionals & Fine Dining Catering',
+  },
+  description: 'Verbindt topklasse freelance chefs en horecaprofessionals met exclusieve opdrachtgevers. Ervaar culinaire excellentie met onze fine dining event catering.',
   icons: {
     icon: '/faviconchefsconnect.png',
   },
-  keywords: ['horeca freelancers', 'chef bemiddeling', 'evenement catering', 'private dining', 'horecaprofessionals', 'fine dining catering'],
   authors: [{ name: 'Chefs Connect' }],
+  alternates: {
+    languages: {
+      'nl-NL': 'https://chefs-connect.nl',
+      'nl-BE': 'https://chefs-connect.be',
+    },
+  },
   openGraph: {
-    title: 'Chefs Connect | Premium Horecafreelancers & Evenement Catering',
-    description: 'Ervaren chefs en bediening voor uw horecazaak. Exclusieve catering voor evenementen.',
     type: 'website',
     locale: 'nl_NL',
+    url: 'https://chefs-connect.nl',
+    siteName: 'Chefs Connect',
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Chefs Connect - Premium Horeca Professionals',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@ChefsConnect',
   },
 };
 
@@ -46,6 +67,25 @@ export const viewport: Viewport = {
   maximumScale: 5,
   userScalable: true,
   themeColor: '#1a1d19',
+};
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Chefs Connect',
+  url: 'https://chefs-connect.nl',
+  logo: 'https://chefs-connect.nl/faviconchefsconnect.png',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+31-6-41875803',
+    contactType: 'customer service',
+    areaServed: ['NL', 'BE'],
+    availableLanguage: 'Dutch',
+  },
+  sameAs: [
+    'https://www.instagram.com/chefsconnectnl',
+    'https://www.facebook.com/people/Chefs-Connect/61572633120372/',
+  ],
 };
 
 export default function RootLayout({
@@ -72,6 +112,10 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://formsubmit.co" />
       </head>
       <body className="font-inter antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <MenuProvider>
           <ConditionalShell>
             <LenisScroll>{children}</LenisScroll>
