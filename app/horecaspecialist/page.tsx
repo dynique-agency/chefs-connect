@@ -10,6 +10,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 import { FORMSUBMIT_ACTION_URL, validateFile } from '@/lib/form-submit';
 import FormNotification from '@/components/ui/FormNotification';
+import PremiumFreelancerPopup from '@/components/ui/PremiumFreelancerPopup';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -66,6 +67,9 @@ export default function HorecaSpecialistPage() {
 
   return (
     <main className="min-h-screen bg-cream">
+      {/* Freelancer Lead Popup */}
+      <PremiumFreelancerPopup showAfterMs={4000} />
+
       {/* Notification */}
       {notification && (
         <FormNotification
