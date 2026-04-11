@@ -148,7 +148,7 @@ export default function PremiumFreelancerPopup({ showAfterMs = 4000 }: PremiumFr
                 }}
               />
 
-              <div className="relative px-6 pt-7 pb-6 sm:px-9 sm:pt-9 sm:pb-8">
+              <div className="relative px-6 pt-7 pb-6 sm:px-9 sm:pt-9 sm:pb-8" style={{ hyphens: 'none', wordBreak: 'normal' }}>
 
                 {/* Close */}
                 <button
