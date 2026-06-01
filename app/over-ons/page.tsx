@@ -138,24 +138,41 @@ export default function OverOnsPage() {
             wilt zetten, wij staan klaar om te verbinden.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
               href="/zoek-personeel"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
               className="px-8 py-4 bg-gold text-brown font-inter uppercase tracking-wider hover:bg-gold-dark transition-colors duration-300 shadow-xl"
             >
               Ik zoek freelancers
             </motion.a>
-            
             <motion.a
               href="/horecaspecialist"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
               className="px-8 py-4 bg-transparent border-2 border-gold text-gold font-inter uppercase tracking-wider hover:bg-gold hover:text-brown transition-all duration-300"
             >
               Ik ben chef
             </motion.a>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 pt-8 border-t border-gold/20">
+            <a
+              href="https://wa.me/31641875803"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-inter text-sm text-cream/60 hover:text-gold transition-colors duration-300"
+            >
+              WhatsApp
+            </a>
+            <span className="text-cream/20 hidden sm:block">·</span>
+            <a href="tel:+31641875803" className="font-inter text-sm text-cream/60 hover:text-gold transition-colors duration-300">
+              +31 6 41875803
+            </a>
+            <span className="text-cream/20 hidden sm:block">·</span>
+            <a href="mailto:info@chefs-connect.nl" className="font-inter text-sm text-cream/60 hover:text-gold transition-colors duration-300">
+              info@chefs-connect.nl
+            </a>
           </div>
         </motion.div>
       </section>

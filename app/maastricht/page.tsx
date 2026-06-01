@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import { CheckCircle2, ArrowRight, ChefHat, Clock, Star } from 'lucide-react';
 import { submitToFormSubmit } from '@/lib/form-submit';
 import FormNotification from '@/components/ui/FormNotification';
+import PremiumFreelancerPopup from '@/components/ui/PremiumFreelancerPopup';
 
 export default function MaastrichtPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -46,6 +47,7 @@ export default function MaastrichtPage() {
 
   return (
     <main className="min-h-screen bg-cream">
+      <PremiumFreelancerPopup showAfterMs={4000} />
       {notification && (
         <FormNotification
           type={notification.type}

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { ChefHat, CheckCircle2, Calendar, Users, Briefcase, ArrowRight, Clock, Award } from 'lucide-react';
+import { ChefHat, CheckCircle2, Calendar, Users, Briefcase, ArrowRight, Clock, Award, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRouter } from 'next/navigation';
@@ -363,6 +363,34 @@ export default function HorecaSpecialistPage() {
         </div>
       </section>
 
+      {/* Mid-page CTA Strip */}
+      <section className="py-10 px-6 bg-gold">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <p className="font-playfair text-xl md:text-2xl text-brown italic">Klaar voor jouw volgende opdracht?</p>
+            <p className="font-inter text-sm text-brown/70 mt-1">Schrijf je in en wij nemen binnen 24 uur contact op.</p>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-6 py-3 font-inter text-sm uppercase tracking-wider text-cream bg-brown hover:bg-brown/90 transition-colors duration-300"
+            >
+              <span>Direct inschrijven</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="https://wa.me/31641875803?text=Hallo!%20Ik%20ben%20een%20horecaprofessional%20en%20wil%20graag%20meer%20weten%20over%20jullie%20opdrachten."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 font-inter text-sm uppercase tracking-wider text-brown bg-brown/10 hover:bg-brown/20 border border-brown/30 transition-all duration-300"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Duidelijke Afspraken Section */}
       <section className="relative py-20 md:py-32 px-6 bg-cream">
         <div className="max-w-7xl mx-auto">
@@ -707,6 +735,29 @@ export default function HorecaSpecialistPage() {
               </button>
             </form>
           </motion.div>
+        </div>
+      </section>
+
+      {/* WhatsApp secondary option */}
+      <section className="pb-16 px-6 bg-cream">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
+          <p className="font-inter text-base text-brown-medium text-center">Liever eerst een vraag stellen?</p>
+          <a
+            href="https://wa.me/31641875803?text=Hallo!%20Ik%20ben%20een%20horecaprofessional%20en%20wil%20graag%20meer%20weten%20over%20jullie%20opdrachten."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 font-inter text-sm text-brown font-semibold hover:text-gold transition-colors duration-300"
+          >
+            <MessageCircle className="w-4 h-4 text-gold" />
+            <span>Stuur een WhatsApp</span>
+          </a>
+          <span className="text-brown/30 hidden sm:block">·</span>
+          <a
+            href="tel:+31641875803"
+            className="font-inter text-sm text-brown font-semibold hover:text-gold transition-colors duration-300"
+          >
+            +31 6 41875803
+          </a>
         </div>
       </section>
 

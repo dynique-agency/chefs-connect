@@ -6,12 +6,12 @@ import { ArrowRight } from 'lucide-react';
 import ScrollReveal from '@/components/ui/ScrollReveal';
 
 const services = [
-  { title: 'Werkgevers', href: '/werkgevers', description: 'Vind het perfecte culinaire talent voor jouw concept' },
-  { title: 'Private Dining', href: '/private-dining', description: 'Exclusieve dining ervaringen op maat' },
-  { title: 'Catering', href: '/catering', description: 'Professionale catering voor evenementen' },
-  { title: 'Consultancy', href: '/consultancy', description: 'Strategisch advies voor jouw horeca-onderneming' },
-  { title: 'Recruitment', href: '/recruitment', description: 'Gespecialiseerde werving en selectie' },
-  { title: 'Training', href: '/training', description: 'Opleiding en ontwikkeling voor professionals' },
+  { title: 'Personeel inhuren', href: '/zoek-personeel', description: 'Freelance koks en bediening snel en zonder gedoe' },
+  { title: 'Freelance opdrachten', href: '/horecaspecialist', description: 'Schrijf je in als horecaprofessional en werk op jouw voorwaarden' },
+  { title: 'Evenementen', href: '/evenementen', description: 'Culinaire totaalbeleving voor private dining en grote events' },
+  { title: 'Maastricht', href: '/personeel-maastricht', description: 'Freelance koks inhuren in Maastricht en Limburg' },
+  { title: 'Eindhoven', href: '/personeel-eindhoven', description: 'Freelance koks inhuren in Eindhoven en Noord-Brabant' },
+  { title: 'Contact', href: '/contact', description: 'Stel je vraag of maak direct een afspraak' },
 ];
 
 export default function ServicesGrid() {

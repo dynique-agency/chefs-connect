@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Building2, CheckCircle2, Clock, Users, Award, ArrowRight, ChefHat, Utensils, MapPin } from 'lucide-react';
+import { Building2, CheckCircle2, Clock, Users, Award, ArrowRight, ChefHat, Utensils, MapPin, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -214,6 +214,34 @@ export default function ZoekPersoneelPage() {
               </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Mid-page CTA Strip */}
+      <section className="py-10 px-6 bg-gold">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <p className="font-playfair text-xl md:text-2xl text-brown italic">Direct personeel nodig?</p>
+            <p className="font-inter text-sm text-brown/70 mt-1">Wij schakelen vaak binnen 24 uur.</p>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-6 py-3 font-inter text-sm uppercase tracking-wider text-cream bg-brown hover:bg-brown/90 transition-colors duration-300"
+            >
+              <span>Vrijblijvend aanvragen</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="https://wa.me/31641875803?text=Hallo!%20Ik%20heb%20dringend%20horeca%20personeel%20nodig."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 font-inter text-sm uppercase tracking-wider text-brown bg-brown/10 hover:bg-brown/20 border border-brown/30 transition-all duration-300"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>WhatsApp</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -596,15 +624,33 @@ export default function ZoekPersoneelPage() {
             </form>
           </motion.div>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-inter text-base text-brown-medium text-center mt-8"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
           >
-            Neem vandaag nog contact met ons op en ontdek hoe snel wij kunnen schakelen.
-          </motion.p>
+            <p className="font-inter text-base text-brown-medium text-center">
+              Liever direct contact?
+            </p>
+            <a
+              href="https://wa.me/31641875803?text=Hallo!%20Ik%20heb%20dringend%20horeca%20personeel%20nodig."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-inter text-sm text-brown font-semibold hover:text-gold transition-colors duration-300"
+            >
+              <MessageCircle className="w-4 h-4 text-gold" />
+              <span>Stuur een WhatsApp</span>
+            </a>
+            <span className="text-brown/30 hidden sm:block">·</span>
+            <a
+              href="tel:+31641875803"
+              className="inline-flex items-center gap-2 font-inter text-sm text-brown font-semibold hover:text-gold transition-colors duration-300"
+            >
+              <span>+31 6 41875803</span>
+            </a>
+          </motion.div>
         </div>
       </section>
 

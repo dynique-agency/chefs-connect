@@ -5,6 +5,7 @@ import PhilosophyFocus from '@/components/home/PhilosophyFocus';
 import Reviews from '@/components/home/Reviews';
 import AboutSection from '@/components/home/AboutSection';
 import { LazyInstagramFeed, LazyContactForm } from '@/lib/lazy-components';
+import PremiumStaffingPopup from '@/components/ui/PremiumStaffingPopup';
 
 export const metadata: Metadata = {
   title: 'Freelance Horecaprofessionals & Fine Dining Catering',
@@ -81,6 +82,7 @@ const localBusinessSchema = {
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <PremiumStaffingPopup showAfterMs={7000} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}

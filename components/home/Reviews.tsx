@@ -3,7 +3,8 @@
 import { useRef, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { Star, CheckCircle2, ExternalLink, PenLine, ChevronLeft, ChevronRight } from 'lucide-react';
+import Link from 'next/link';
+import { Star, CheckCircle2, ExternalLink, PenLine, ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 
 const reviews = [
   {
@@ -314,6 +315,35 @@ export default function Reviews() {
             ))}
           </div>
         </div>
+
+        {/* Conversion CTA */}
+        <motion.div
+          className="text-center my-10 md:my-14"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <p className="font-inter text-base text-brown/60 mb-6">
+            Zo word jij ook klant van Chefs Connect.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/zoek-personeel"
+              className="group inline-flex items-center gap-3 px-8 py-4 font-inter text-sm uppercase tracking-wider text-brown bg-gold hover:bg-gold-dark transition-colors duration-300"
+            >
+              <span>Personeel inhuren</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+            </Link>
+            <Link
+              href="/horecaspecialist"
+              className="group inline-flex items-center gap-3 px-8 py-4 font-inter text-sm uppercase tracking-wider text-brown border-2 border-brown/20 hover:border-gold hover:bg-gold/10 transition-all duration-300"
+            >
+              <span>Freelancer worden</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+            </Link>
+          </div>
+        </motion.div>
 
         {/* Bottom CTA Buttons */}
         <motion.div

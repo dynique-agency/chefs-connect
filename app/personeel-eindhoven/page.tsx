@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import { CheckCircle2, ArrowRight, Clock, Award, Users } from 'lucide-react';
 import { submitToFormSubmit } from '@/lib/form-submit';
 import FormNotification from '@/components/ui/FormNotification';
+import PremiumStaffingPopup from '@/components/ui/PremiumStaffingPopup';
 
 export default function PersoneelEindhovenPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -46,6 +47,7 @@ export default function PersoneelEindhovenPage() {
 
   return (
     <main className="min-h-screen bg-cream">
+      <PremiumStaffingPopup showAfterMs={4000} />
       {notification && (
         <FormNotification
           type={notification.type}
