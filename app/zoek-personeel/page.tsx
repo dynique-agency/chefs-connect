@@ -465,103 +465,6 @@ export default function ZoekPersoneelPage() {
         </div>
       </section>
 
-      {/* Actief In Section */}
-      <section className="relative py-20 md:py-32 px-6 bg-cream overflow-hidden">
-        <div className="max-w-7xl mx-auto">
-
-          {/* Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-16 md:mb-24"
-          >
-            <div className="h-px bg-gold/40 w-full mb-12" />
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
-              <div>
-                <p className="font-inter text-xs uppercase tracking-[0.3em] text-gold mb-4 flex items-center gap-2">
-                  <MapPin className="w-3 h-3" />
-                  Onze regio&apos;s
-                </p>
-                <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light text-brown leading-tight">
-                  Actief in <span className="text-gold italic">jouw stad</span>
-                </h2>
-              </div>
-              <p className="font-inter text-base text-brown-medium max-w-xs leading-relaxed">
-                Lokale kennis van de horecamarkt, met een netwerk dat snel kan schakelen.
-              </p>
-            </div>
-          </motion.div>
-
-          {/* City rows */}
-          <div>
-            {[
-              {
-                name: 'Maastricht',
-                region: 'Limburg & omgeving',
-                cta: 'Kok inhuren',
-                href: '/personeel-maastricht',
-                index: 1,
-              },
-              {
-                name: 'Eindhoven',
-                region: 'Noord-Brabant & omgeving',
-                cta: 'Kok inhuren',
-                href: '/personeel-eindhoven',
-                index: 2,
-              },
-            ].map((city, i) => (
-              <motion.div
-                key={city.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.12 }}
-              >
-                <Link href={city.href} className="group block border-t border-brown/10 hover:border-gold/50 transition-colors duration-500">
-                  <div className="py-8 md:py-10 flex items-center justify-between gap-8">
-                    <div className="flex items-center gap-8 md:gap-16 min-w-0">
-                      <span className="font-inter text-xs text-gold/40 tracking-[0.2em] flex-shrink-0 tabular-nums">
-                        0{city.index}
-                      </span>
-                      <div className="min-w-0">
-                        <h3 className="font-playfair text-3xl md:text-5xl lg:text-6xl font-light text-brown group-hover:text-gold transition-colors duration-500 leading-none">
-                          {city.name}
-                        </h3>
-                        <p className="font-inter text-sm text-brown/40 mt-2 group-hover:text-brown/60 transition-colors duration-300">
-                          {city.region}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3 text-brown/30 group-hover:text-gold transition-colors duration-400 flex-shrink-0">
-                      <span className="font-inter text-sm uppercase tracking-[0.15em] hidden sm:block">{city.cta}</span>
-                      <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
-            <div className="border-t border-brown/10" />
-          </div>
-
-          {/* Footer note */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-inter text-sm text-brown/40 mt-12 text-center"
-          >
-            Jouw stad staat er niet bij? Wij zijn ook buiten deze regio&apos;s actief.{' '}
-            <Link href="/contact" className="text-gold hover:underline underline-offset-4 transition-all duration-300">
-              Neem contact op.
-            </Link>
-          </motion.p>
-
-        </div>
-      </section>
-
       {/* Contact Form Section */}
       <section className="relative py-20 md:py-32 px-6 bg-cream">
         <div className="max-w-4xl mx-auto">
@@ -702,6 +605,100 @@ export default function ZoekPersoneelPage() {
           >
             Neem vandaag nog contact met ons op en ontdek hoe snel wij kunnen schakelen.
           </motion.p>
+        </div>
+      </section>
+
+      {/* Actief In Section */}
+      <section className="relative py-20 md:py-32 px-6 bg-cream overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="mb-16 md:mb-24"
+          >
+            <div className="h-px bg-gold/40 w-full mb-12" />
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
+              <div>
+                <p className="font-inter text-xs uppercase tracking-[0.3em] text-gold mb-4 flex items-center gap-2">
+                  <MapPin className="w-3 h-3" />
+                  Onze regio&apos;s
+                </p>
+                <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light text-brown leading-tight">
+                  Actief in <span className="text-gold italic">jouw stad</span>
+                </h2>
+              </div>
+              <p className="font-inter text-base text-brown-medium max-w-xs leading-relaxed">
+                Lokale kennis van de horecamarkt, met een netwerk dat snel kan schakelen.
+              </p>
+            </div>
+          </motion.div>
+
+          <div>
+            {[
+              {
+                name: 'Maastricht',
+                region: 'Limburg & omgeving',
+                cta: 'Kok inhuren',
+                href: '/personeel-maastricht',
+                index: 1,
+              },
+              {
+                name: 'Eindhoven',
+                region: 'Noord-Brabant & omgeving',
+                cta: 'Kok inhuren',
+                href: '/personeel-eindhoven',
+                index: 2,
+              },
+            ].map((city, i) => (
+              <motion.div
+                key={city.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: i * 0.12 }}
+              >
+                <Link href={city.href} className="group block border-t border-brown/10 hover:border-gold/50 transition-colors duration-500">
+                  <div className="py-8 md:py-10 flex items-center justify-between gap-8">
+                    <div className="flex items-center gap-8 md:gap-16 min-w-0">
+                      <span className="font-inter text-xs text-gold/40 tracking-[0.2em] flex-shrink-0 tabular-nums">
+                        0{city.index}
+                      </span>
+                      <div className="min-w-0">
+                        <h3 className="font-playfair text-3xl md:text-5xl lg:text-6xl font-light text-brown group-hover:text-gold transition-colors duration-500 leading-none">
+                          {city.name}
+                        </h3>
+                        <p className="font-inter text-sm text-brown/40 mt-2 group-hover:text-brown/60 transition-colors duration-300">
+                          {city.region}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3 text-brown/30 group-hover:text-gold transition-all duration-300 flex-shrink-0">
+                      <span className="font-inter text-sm uppercase tracking-[0.15em] hidden sm:block">{city.cta}</span>
+                      <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+            <div className="border-t border-brown/10" />
+          </div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="font-inter text-sm text-brown/40 mt-12 text-center"
+          >
+            Jouw stad staat er niet bij? Wij zijn ook buiten deze regio&apos;s actief.{' '}
+            <Link href="/contact" className="text-gold hover:underline underline-offset-4 transition-all duration-300">
+              Neem contact op.
+            </Link>
+          </motion.p>
+
         </div>
       </section>
 
