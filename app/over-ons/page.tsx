@@ -44,7 +44,7 @@ export default function OverOnsPage() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             De Mensen Achter<br />
-            <span className="text-gold">ChefsConnect</span>
+            <span className="text-gold">Chefs Connect</span>
           </motion.h1>
           
           <motion.p 

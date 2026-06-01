@@ -59,14 +59,14 @@ export default function Footer() {
               <h3 className="font-playfair text-3xl md:text-4xl font-light text-cream mb-6">
                 Chefs Connect
               </h3>
-              <p className="font-inter text-base text-cream/70 leading-relaxed max-w-md mb-6">
+              <p data-nosnippet className="font-inter text-base text-cream/70 leading-relaxed max-w-md mb-6">
                 Wij leveren <span className="text-gold italic">chefs en bediening</span>, snel en professioneel.
                 <br />
                 Van <span className="text-gold italic">private dining</span> tot <span className="text-gold italic">grote events</span>.
                 <br />
                 Van <span className="text-gold italic">brasserie</span> tot <span className="text-gold italic">fine dining</span>.
               </p>
-              <div className="flex flex-col gap-3">
+              <div data-nosnippet className="flex flex-col gap-3">
                 <a
                   href="mailto:info@chefs-connect.nl"
                   className="flex items-center gap-3 font-inter text-sm text-cream/80 hover:text-gold transition-colors duration-300"

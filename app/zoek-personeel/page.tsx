@@ -111,7 +111,7 @@ export default function ZoekPersoneelPage() {
                   <span className="font-semibold text-brown whitespace-nowrap">en snel ook?</span> Dan wil je geen gedoe, geen mismatches en geen lange procedures. Je wilt kwaliteit, betrouwbaarheid en iemand die begrijpt hoe de horeca écht werkt.
                 </p>
                 <p className="text-xl font-medium text-gold">
-                  Bij ChefsConnect regelen we dat voor je.
+                  Bij Chefs Connect regelen we dat voor je.
                 </p>
                 <p>
                   Wij bemiddelen <span className="font-semibold text-brown">chefs en bedieningsmedewerkers</span> op alle niveaus en kunnen zowel individuele professionals als complete horecateams leveren voor korte én lange periodes.

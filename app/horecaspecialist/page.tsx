@@ -104,7 +104,7 @@ export default function HorecaSpecialistPage() {
                   Ben jij chef, kok of bedieningsmedewerker en wil je als <span className="font-semibold text-brown">freelancer werken in de horeca</span>, of ben je dat al? Zoek je <span className="font-semibold text-gold">vrijheid, flexibiliteit én zekerheid</span> van mooie opdrachten?
                 </p>
                 <p className="text-xl font-medium text-gold">
-                  Bij ChefsConnect krijg je toegang tot hoogwaardige freelance opdrachten die passen bij jouw ervaring en agenda.
+                  Bij Chefs Connect krijg je toegang tot hoogwaardige freelance opdrachten die passen bij jouw ervaring en agenda.
                 </p>
                 <p>
                   Wij geloven dat sterke horecaprofessionals het verschil maken in iedere zaak. Daarom zorgen wij voor <span className="font-semibold text-brown">duidelijke afspraken</span> en opdrachten waar jij écht tot je recht komt.
