@@ -6,6 +6,7 @@ import Image from 'next/image';
 interface VideoBackgroundProps {
   src: string;
   fallbackImage?: string;
+  poster?: string;
   overlay?: boolean;
   className?: string;
   priority?: boolean;
@@ -14,35 +15,20 @@ interface VideoBackgroundProps {
 export default function VideoBackground({
   src,
   fallbackImage = '/hero-banner.webp',
+  poster,
   overlay = true,
   className = '',
   priority = true,
 }: VideoBackgroundProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Detect mobile device
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768 || 
-                  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
-    };
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
     const handleCanPlay = () => {
-      setIsLoaded(true);
-      // Ensure video plays on mobile
+      // Ensure video plays on mobile where autoplay may be blocked
       video.play().catch(err => {
         console.warn('Video autoplay failed:', err);
       });
@@ -55,8 +41,6 @@ export default function VideoBackground({
 
     video.addEventListener('canplay', handleCanPlay);
     video.addEventListener('error', handleError);
-
-    // Attempt to load and play
     video.load();
 
     return () => {
@@ -65,7 +49,6 @@ export default function VideoBackground({
     };
   }, []);
 
-  // Performance optimization: reduce quality on mobile
   const videoProps = {
     autoPlay: true,
     loop: true,
@@ -79,41 +62,22 @@ export default function VideoBackground({
   return (
     <div className={`absolute inset-0 w-full h-full ${className}`}>
       {!hasError ? (
-        <>
-          {/* Video */}
-          <video
-            ref={videoRef}
-            {...videoProps}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
-              isLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
-            style={{
-              transform: 'translateZ(0)',
-              backfaceVisibility: 'hidden',
-              perspective: 1000,
-              willChange: 'transform',
-            }}
-          >
-            <source src={src} type="video/mp4" />
-          </video>
-
-          {/* Loading placeholder - show fallback image while video loads */}
-          {!isLoaded && (
-            <div className="absolute inset-0 w-full h-full">
-              <Image
-                src={fallbackImage}
-                alt="Background"
-                fill
-                className="object-cover"
-                priority={priority}
-                quality={isMobile ? 75 : 90}
-                sizes="100vw"
-              />
-            </div>
-          )}
-        </>
+        /* poster= shows the first video frame natively until the video is ready — no flash */
+        <video
+          ref={videoRef}
+          {...videoProps}
+          poster={poster}
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{
+            transform: 'translateZ(0)',
+            backfaceVisibility: 'hidden',
+            willChange: 'transform',
+          }}
+        >
+          <source src={src} type="video/mp4" />
+        </video>
       ) : (
-        // Fallback image on error
+        // Static fallback if video fails to load entirely
         <Image
           src={fallbackImage}
           alt="Background"
@@ -124,7 +88,6 @@ export default function VideoBackground({
         />
       )}
 
-      {/* Optional overlay gradient */}
       {overlay && (
         <div className="absolute inset-0 bg-gradient-to-b from-brown/70 via-brown/50 to-brown/80" />
       )}

@@ -166,6 +166,7 @@ export default function HeroSection() {
         <VideoBackground
           src="/BANNER.mp4"
           fallbackImage="/hero-banner.png"
+          poster="/hero-video-poster.jpg"
           overlay={true}
           priority={true}
         />
