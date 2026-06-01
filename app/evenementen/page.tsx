@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description: 'Verhef uw zakelijke of particuliere evenement met onze fine dining catering op locatie. Culinaire meesterwerken door topchefs, tot in de puntjes verzorgd.',
   keywords: ['fine dining catering op locatie', 'luxe catering evenementen', 'exclusieve zakelijke catering', 'private dining chef thuis', 'high-end event catering'],
   alternates: { canonical: 'https://chefs-connect.nl/evenementen' },
+  openGraph: { description: 'Verhef uw zakelijke of particuliere evenement met onze fine dining catering op locatie. Culinaire meesterwerken door topchefs, tot in de puntjes verzorgd.' },
 };
 
 const cateringSchema = {

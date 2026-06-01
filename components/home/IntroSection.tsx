@@ -344,7 +344,7 @@ export default function IntroSection() {
               >
                 <Image
                   src="/chef-action.png"
-                  alt="Premium culinary craftsmanship"
+                  alt="Freelance chef van Chefs Connect die een gerecht opmaakt"
                   fill
                   className="object-cover brightness-[0.85]"
                   sizes="(max-width: 768px) 100vw, 50vw"

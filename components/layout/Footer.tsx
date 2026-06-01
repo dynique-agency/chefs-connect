@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ArrowUp, Mail, Phone, MapPin } from 'lucide-react';
+import { ArrowUp, Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -85,6 +85,26 @@ export default function Footer() {
                   <MapPin className="w-4 h-4" />
                   <span>Gasthuisstraat 3.1 Lanaken</span>
                 </div>
+              </div>
+              <div className="flex items-center gap-4 mt-6">
+                <a
+                  href="https://www.instagram.com/chefsconnectnl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-10 h-10 border border-gold/30 hover:border-gold hover:bg-gold/10 transition-all duration-300 text-cream/70 hover:text-gold"
+                  aria-label="Volg Chefs Connect op Instagram"
+                >
+                  <Instagram className="w-4 h-4" />
+                </a>
+                <a
+                  href="https://www.facebook.com/people/Chefs-Connect/61572633120372/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-10 h-10 border border-gold/30 hover:border-gold hover:bg-gold/10 transition-all duration-300 text-cream/70 hover:text-gold"
+                  aria-label="Volg Chefs Connect op Facebook"
+                >
+                  <Facebook className="w-4 h-4" />
+                </a>
               </div>
             </div>
 

@@ -179,7 +179,7 @@ export default function Reviews() {
       >
         <Image
           src="/reviews-background.png"
-          alt="Premium dining experience"
+          alt="Fine dining evenement verzorgd door Chefs Connect"
           fill
           className="object-cover scale-110"
           sizes="100vw"

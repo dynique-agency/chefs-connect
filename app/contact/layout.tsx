@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Klaar om uw keukenbrigade te versterken of een exclusief evenement te plannen? Neem contact op met Chefs Connect voor een vrijblijvende kennismaking.',
   keywords: ['contact chefs connect', 'horeca personeel aanvragen', 'catering offerte aanvragen', 'freelance kok boeken'],
   alternates: { canonical: 'https://chefs-connect.nl/contact' },
+  openGraph: { description: 'Klaar om uw keukenbrigade te versterken of een exclusief evenement te plannen? Neem contact op met Chefs Connect voor een vrijblijvende kennismaking.' },
 };
 
 const breadcrumbSchema = {

@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Voorkom personeelstekort zonder in te leveren op kwaliteit. Huur tijdelijk of flexibel premium freelance horecapersoneel in voor uw restaurant of hotel.',
   keywords: ['tijdelijk horeca personeel inhuren', 'freelance kok gezocht', 'extra bediening inhuren', 'spoed chef kok', 'flexibel horeca personeel'],
   alternates: { canonical: 'https://chefs-connect.nl/zoek-personeel' },
+  openGraph: { description: 'Voorkom personeelstekort zonder in te leveren op kwaliteit. Huur tijdelijk of flexibel premium freelance horecapersoneel in voor uw restaurant of hotel.' },
 };
 
 const breadcrumbSchema = {
@@ -13,6 +14,45 @@ const breadcrumbSchema = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
     { '@type': 'ListItem', position: 2, name: 'Zoek Personeel', item: 'https://chefs-connect.nl/zoek-personeel' },
+  ],
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Hoe snel kunnen jullie horecapersoneel leveren?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelancer voorstellen. Bij spoedaanvragen schakelen wij zo snel mogelijk op basis van beschikbaarheid in ons netwerk.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Welke functies bemiddelen jullie?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks, bedieningsmedewerkers, leidinggevenden bediening en complete keuken- of bedieningsteams voor zowel korte als langere periodes.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Werken jullie ook in België?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Ja, wij zijn actief in zowel Nederland als België. Onze professionals worden door de hele Benelux ingezet.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Wat maakt Chefs Connect anders dan andere uitzendbureaus?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Wij komen zelf uit de horeca en begrijpen de praktijk van binnenuit. Daardoor matchen wij niet op papier maar op vakmanschap, mentaliteit en teamdynamiek.',
+      },
+    },
   ],
 };
 
@@ -31,6 +71,10 @@ export default function ZoekPersoneelLayout({ children }: { children: React.Reac
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <script
         type="application/ld+json"

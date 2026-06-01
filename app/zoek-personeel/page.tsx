@@ -131,7 +131,7 @@ export default function ZoekPersoneelPage() {
               >
                 <Image
                   src="/chef-plating-vertical.png"
-                  alt="Horeca professionals"
+                  alt="Freelance chef die een gerecht opmaakt, geleverd door Chefs Connect"
                   fill
                   className="object-cover brightness-[0.85]"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -270,7 +270,7 @@ export default function ZoekPersoneelPage() {
             >
               <Image
                 src="/service-professional.png"
-                alt="Professional service"
+                alt="Professioneel bedienend personeel van Chefs Connect"
                 fill
                 className="object-cover brightness-[0.85]"
                 sizes="(max-width: 1024px) 100vw, 50vw"

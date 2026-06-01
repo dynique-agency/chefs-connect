@@ -82,7 +82,7 @@ export default function AboutSection() {
       >
         <Image
           src="/team-photo.png"
-          alt="Chefs Connect Story"
+          alt="Het team van Chefs Connect"
           fill
           className="object-cover object-top"
           sizes="100vw"
