@@ -178,7 +178,7 @@ export default function Reviews() {
         style={{ y: bgY }}
       >
         <Image
-          src="/reviews-background.png"
+          src="/reviews-background.webp"
           alt="Fine dining evenement verzorgd door Chefs Connect"
           fill
           className="object-cover scale-110"

@@ -9,7 +9,7 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center px-6 py-32">
       <div className="absolute inset-0">
         <Image
-          src="/choice-events.png"
+          src="/choice-events.webp"
           alt="Connect Event & Dining"
           fill
           className="object-cover brightness-[0.6]"

@@ -13,7 +13,7 @@ interface VideoBackgroundProps {
 
 export default function VideoBackground({
   src,
-  fallbackImage = '/hero-banner.png',
+  fallbackImage = '/hero-banner.webp',
   overlay = true,
   className = '',
   priority = true,
