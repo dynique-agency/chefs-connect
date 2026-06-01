@@ -69,6 +69,14 @@ export const viewport: Viewport = {
   themeColor: '#1a1d19',
 };
 
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Chefs Connect',
+  url: 'https://chefs-connect.nl',
+  inLanguage: 'nl-NL',
+};
+
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -112,6 +120,10 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://formsubmit.co" />
       </head>
       <body className="font-inter antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

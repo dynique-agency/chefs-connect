@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://chefs-connect.nl/over-ons' },
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
+    { '@type': 'ListItem', position: 2, name: 'Over Ons', item: 'https://chefs-connect.nl/over-ons' },
+  ],
+};
+
 const aboutSchema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
@@ -21,6 +30,10 @@ const aboutSchema = {
 export default function OverOnsLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}

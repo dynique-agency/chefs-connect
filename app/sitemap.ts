@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastUpdate = '2025-04-06';
+  const lastUpdate = new Date().toISOString().split('T')[0];
 
   return [
     {

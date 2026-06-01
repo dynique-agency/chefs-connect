@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://chefs-connect.nl/contact' },
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
+    { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://chefs-connect.nl/contact' },
+  ],
+};
+
 const contactSchema = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
@@ -25,6 +34,10 @@ const contactSchema = {
 export default function ContactLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}

@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://chefs-connect.nl/zoek-personeel' },
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
+    { '@type': 'ListItem', position: 2, name: 'Zoek Personeel', item: 'https://chefs-connect.nl/zoek-personeel' },
+  ],
+};
+
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -19,6 +28,10 @@ const serviceSchema = {
 export default function ZoekPersoneelLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
