@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Freelance Kok Inhuren in Eindhoven | Chefs Connect',
+  title: 'Freelance Kok Inhuren in Eindhoven',
   description: 'Op zoek naar een freelance kok in Eindhoven? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Eindhoven en Noord-Brabant.',
   keywords: ['freelance kok eindhoven', 'kok inhuren eindhoven', 'horecapersoneel eindhoven', 'tijdelijke kok eindhoven', 'spoed kok brabant', 'keukenpersoneel eindhoven'],
   alternates: { canonical: 'https://chefs-connect.nl/personeel-eindhoven' },

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact | Neem Contact Op Met Chefs Connect',
+  title: 'Neem Direct Contact Op',
   description: 'Klaar om uw keukenbrigade te versterken of een exclusief evenement te plannen? Neem contact op met Chefs Connect voor een vrijblijvende kennismaking.',
   keywords: ['contact chefs connect', 'horeca personeel aanvragen', 'catering offerte aanvragen', 'freelance kok boeken'],
   alternates: { canonical: 'https://chefs-connect.nl/contact' },

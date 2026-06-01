@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Freelance Horeca Opdrachten | Word Chefs Connect Specialist',
+  title: 'Freelance Horeca Opdrachten | Word Horecaspecialist',
   description: 'Op zoek naar uitdagende freelance chef kok opdrachten? Sluit je aan bij Chefs Connect en werk voor de mooiste high-end locaties in Nederland en België.',
   keywords: ['freelance chef kok opdrachten', 'zzp horeca opdrachten', 'werken als zzp kok', 'freelance horeca vacatures', 'freelance bediening'],
   alternates: { canonical: 'https://chefs-connect.nl/horecaspecialist' },
