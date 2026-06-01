@@ -54,5 +54,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: 'https://chefs-connect.nl/personeel-eindhoven',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ];
 }
