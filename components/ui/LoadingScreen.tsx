@@ -8,20 +8,26 @@ export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Preload video during loading screen for smooth transition
+    // Only show once per browser session
+    if (sessionStorage.getItem('cc-loaded')) {
+      setIsLoading(false);
+      return;
+    }
+
+    // Preload video during loading screen
     const video = document.createElement('video');
     video.src = '/BANNER.mp4';
     video.preload = 'auto';
     video.load();
 
-    // Loading screen duration - 3 seconds
     const timer = setTimeout(() => {
+      sessionStorage.setItem('cc-loaded', '1');
       setIsLoading(false);
-    }, 3000); // 3 seconds
+    }, 1500);
 
     return () => {
       clearTimeout(timer);
-      video.src = ''; // Clean up
+      video.src = '';
     };
   }, []);
 
@@ -31,41 +37,28 @@ export default function LoadingScreen() {
         <motion.div
           className="fixed inset-0 z-[10000] flex items-center justify-center bg-cream"
           initial={{ opacity: 1 }}
-          exit={{ 
+          exit={{
             opacity: 0,
-            transition: { 
-              duration: 1.2, 
-              ease: [0.22, 1, 0.36, 1] 
-            } 
+            transition: {
+              duration: 0.7,
+              ease: [0.22, 1, 0.36, 1],
+            },
           }}
         >
-          {/* Logo Animation Container - Matches Hero Position */}
-          <div 
+          <div
             className="absolute flex items-center justify-center w-full"
-            style={{ 
+            style={{
               top: '50%',
-              transform: 'translateY(calc(-50% + 5vh))'
+              transform: 'translateY(calc(-50% + 5vh))',
             }}
           >
             <motion.div
               className="relative w-full max-w-[280px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] px-4"
-              initial={{ 
-                scale: 1.8,
-                opacity: 0,
-              }}
-              animate={{ 
-                scale: 1,
-                opacity: 1,
-              }}
+              initial={{ scale: 1.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
               transition={{
-                scale: {
-                  duration: 2.5,
-                  ease: [0.22, 1, 0.36, 1],
-                },
-                opacity: {
-                  duration: 0.8,
-                  ease: 'easeOut',
-                },
+                scale: { duration: 1.0, ease: [0.22, 1, 0.36, 1] },
+                opacity: { duration: 0.5, ease: 'easeOut' },
               }}
             >
               <div className="relative w-full aspect-[4/1]">
@@ -81,16 +74,11 @@ export default function LoadingScreen() {
             </motion.div>
           </div>
 
-          {/* Optional: Subtle animation indicator */}
           <motion.div
             className="absolute bottom-12 left-1/2 -translate-x-1/2"
             initial={{ opacity: 0 }}
             animate={{ opacity: [0, 0.5, 0] }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: 'easeInOut',
-            }}
+            transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut' }}
           >
             <div className="w-1 h-1 bg-gold rounded-full" />
           </motion.div>

@@ -1,75 +1,108 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function CustomCursor() {
-  const [position, setPosition] = useState({ x: -100, y: -100 });
-  const [isHovering, setIsHovering] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const dotRef = useRef<HTMLDivElement>(null);
+  const ringRef = useRef<HTMLDivElement>(null);
+  const mouse = useRef({ x: -100, y: -100 });
+  const ringPos = useRef({ x: -100, y: -100 });
+  const hovering = useRef(false);
+  const rafId = useRef<number>(0);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
-    // Check if mobile/tablet
-    setIsMobile(window.innerWidth < 768);
-    setIsMounted(true);
+    if (window.innerWidth < 768) return;
+    setShow(true);
 
-    const updateCursor = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+    document.documentElement.style.cursor = 'none';
+
+    const onMouseMove = (e: MouseEvent) => {
+      mouse.current = { x: e.clientX, y: e.clientY };
     };
 
-    const handleMouseOver = (e: MouseEvent) => {
+    const onMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (
+      const isHovering = !!(
         target.tagName === 'A' ||
         target.tagName === 'BUTTON' ||
         target.closest('a') ||
         target.closest('button') ||
         target.closest('[role="button"]')
-      ) {
-        setIsHovering(true);
-      } else {
-        setIsHovering(false);
+      );
+      if (isHovering === hovering.current) return;
+      hovering.current = isHovering;
+
+      if (ringRef.current) {
+        ringRef.current.style.width = isHovering ? '44px' : '32px';
+        ringRef.current.style.height = isHovering ? '44px' : '32px';
+        ringRef.current.style.backgroundColor = isHovering ? 'rgba(201,169,97,0.12)' : 'transparent';
+        ringRef.current.style.borderColor = isHovering ? 'rgba(201,169,97,0.5)' : '#C9A961';
+      }
+      if (dotRef.current) {
+        dotRef.current.style.opacity = isHovering ? '0' : '1';
+        dotRef.current.style.transform = isHovering
+          ? `translate3d(${mouse.current.x}px, ${mouse.current.y}px, 0) translate(-50%, -50%) scale(0)`
+          : `translate3d(${mouse.current.x}px, ${mouse.current.y}px, 0) translate(-50%, -50%) scale(1)`;
       }
     };
 
-    window.addEventListener('mousemove', updateCursor);
-    document.addEventListener('mouseover', handleMouseOver);
+    const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+
+    const tick = () => {
+      // Dot snaps to mouse
+      if (dotRef.current) {
+        dotRef.current.style.transform = `translate3d(${mouse.current.x}px, ${mouse.current.y}px, 0) translate(-50%, -50%)`;
+      }
+      // Ring lags behind
+      ringPos.current.x = lerp(ringPos.current.x, mouse.current.x, 0.1);
+      ringPos.current.y = lerp(ringPos.current.y, mouse.current.y, 0.1);
+      if (ringRef.current) {
+        ringRef.current.style.transform = `translate3d(${ringPos.current.x}px, ${ringPos.current.y}px, 0) translate(-50%, -50%)`;
+      }
+      rafId.current = requestAnimationFrame(tick);
+    };
+
+    window.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseover', onMouseOver);
+    rafId.current = requestAnimationFrame(tick);
 
     return () => {
-      window.removeEventListener('mousemove', updateCursor);
-      document.removeEventListener('mouseover', handleMouseOver);
+      window.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('mouseover', onMouseOver);
+      cancelAnimationFrame(rafId.current);
+      document.documentElement.style.cursor = '';
     };
   }, []);
 
-  // Don't render on server or mobile
-  if (!isMounted || isMobile) {
-    return null;
-  }
+  if (!show) return null;
 
   return (
-    <div
-      className="fixed pointer-events-none z-[99999]"
-      style={{
-        left: `${position.x}px`,
-        top: `${position.y}px`,
-        transform: 'translate(-50%, -50%)',
-        willChange: 'transform',
-      }}
-    >
-      {/* Gold outline circle cursor */}
+    <>
+      {/* Dot — snaps to mouse precisely */}
       <div
-        className={`transition-all duration-300 ease-out rounded-full border-2 border-gold ${
-          isHovering
-            ? 'w-10 h-10 border-opacity-60 bg-gold/10'
-            : 'w-3 h-3 border-opacity-100'
-        }`}
+        ref={dotRef}
+        className="fixed top-0 left-0 rounded-full pointer-events-none z-[99999]"
+        style={{
+          width: '6px',
+          height: '6px',
+          backgroundColor: '#C9A961',
+          willChange: 'transform',
+          transition: 'opacity 0.2s ease',
+        }}
       />
-      {/* Inner dot when not hovering */}
-      {!isHovering && (
-        <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1 h-1 bg-gold rounded-full"
-        />
-      )}
-    </div>
+      {/* Ring — lags behind for premium feel */}
+      <div
+        ref={ringRef}
+        className="fixed top-0 left-0 rounded-full pointer-events-none z-[99998]"
+        style={{
+          width: '32px',
+          height: '32px',
+          border: '1.5px solid #C9A961',
+          willChange: 'transform',
+          transition: 'width 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease',
+        }}
+      />
+    </>
   );
 }
