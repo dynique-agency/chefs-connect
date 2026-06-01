@@ -5,7 +5,11 @@ export const metadata: Metadata = {
   description: 'Voorkom personeelstekort zonder in te leveren op kwaliteit. Huur tijdelijk of flexibel premium freelance horecapersoneel in voor uw restaurant of hotel.',
   keywords: ['tijdelijk horeca personeel inhuren', 'freelance kok gezocht', 'extra bediening inhuren', 'spoed chef kok', 'flexibel horeca personeel'],
   alternates: { canonical: 'https://chefs-connect.nl/zoek-personeel' },
-  openGraph: { description: 'Voorkom personeelstekort zonder in te leveren op kwaliteit. Huur tijdelijk of flexibel premium freelance horecapersoneel in voor uw restaurant of hotel.' },
+  openGraph: {
+    title: 'Freelance Horecapersoneel Inhuren | Chefs Connect',
+    description: 'Voorkom personeelstekort zonder in te leveren op kwaliteit. Huur tijdelijk of flexibel premium freelance horecapersoneel in voor uw restaurant of hotel.',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
+  },
 };
 
 const breadcrumbSchema = {

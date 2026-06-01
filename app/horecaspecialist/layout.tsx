@@ -5,7 +5,11 @@ export const metadata: Metadata = {
   description: 'Op zoek naar uitdagende freelance chef kok opdrachten? Sluit je aan bij Chefs Connect en werk voor de mooiste high-end locaties in Nederland en België.',
   keywords: ['freelance chef kok opdrachten', 'zzp horeca opdrachten', 'werken als zzp kok', 'freelance horeca vacatures', 'freelance bediening'],
   alternates: { canonical: 'https://chefs-connect.nl/horecaspecialist' },
-  openGraph: { description: 'Op zoek naar uitdagende freelance chef kok opdrachten? Sluit je aan bij Chefs Connect en werk voor de mooiste high-end locaties in Nederland en België.' },
+  openGraph: {
+    title: 'Freelance Horeca Opdrachten | Chefs Connect',
+    description: 'Op zoek naar uitdagende freelance chef kok opdrachten? Sluit je aan bij Chefs Connect en werk voor de mooiste high-end locaties in Nederland en België.',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
+  },
 };
 
 const faqSchema = {

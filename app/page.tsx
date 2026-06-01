@@ -12,7 +12,11 @@ export const metadata: Metadata = {
   description: 'Zekerheid van topkwaliteit in uw keuken of evenement. Chefs Connect bemiddelt in high-end freelance chefs en verzorgt exclusieve fine dining catering in NL & BE.',
   keywords: ['freelance horeca personeel inhuren', 'freelance chef kok gezocht', 'luxe catering evenementen', 'horeca professionals', 'fine dining catering'],
   alternates: { canonical: 'https://chefs-connect.nl' },
-  openGraph: { description: 'Zekerheid van topkwaliteit in uw keuken of evenement. Chefs Connect bemiddelt in high-end freelance chefs en verzorgt exclusieve fine dining catering in NL & BE.' },
+  openGraph: {
+    title: 'Chefs Connect | Premium Freelance Horecaprofessionals & Fine Dining Catering',
+    description: 'Zekerheid van topkwaliteit in uw keuken of evenement. Chefs Connect bemiddelt in high-end freelance chefs en verzorgt exclusieve fine dining catering in NL & BE.',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
+  },
 };
 
 const localBusinessSchema = {

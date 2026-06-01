@@ -5,7 +5,11 @@ export const metadata: Metadata = {
   description: 'Werk als freelance chef of bedieningsprofessional op de mooiste horecalocaties in Maastricht en Zuid-Limburg. Chefs Connect verbindt je met opdrachten die bij je passen.',
   keywords: ['freelance kok maastricht', 'horeca opdrachten maastricht', 'freelance chef maastricht', 'horecawerk maastricht', 'zzp horeca limburg', 'freelance bediening maastricht'],
   alternates: { canonical: 'https://chefs-connect.nl/maastricht' },
-  openGraph: { description: 'Werk als freelance chef of bedieningsprofessional op de mooiste horecalocaties in Maastricht en Zuid-Limburg. Chefs Connect verbindt je met opdrachten die bij je passen.' },
+  openGraph: {
+    title: 'Freelance Horeca Opdrachten in Maastricht | Chefs Connect',
+    description: 'Werk als freelance chef of bedieningsprofessional op de mooiste horecalocaties in Maastricht en Zuid-Limburg. Chefs Connect verbindt je met opdrachten die bij je passen.',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
+  },
 };
 
 const breadcrumbSchema = {

@@ -5,7 +5,11 @@ export const metadata: Metadata = {
   description: 'Maak kennis met Chefs Connect. Ontdek onze visie op gastvrijheid, ons strenge selectieproces voor topchefs en waarom wij de premium standaard zetten.',
   keywords: ['over chefs connect', 'premium horeca bemiddeling', 'missie visie horeca bureau', 'kwaliteit horeca personeel'],
   alternates: { canonical: 'https://chefs-connect.nl/over-ons' },
-  openGraph: { description: 'Maak kennis met Chefs Connect. Ontdek onze visie op gastvrijheid, ons strenge selectieproces voor topchefs en waarom wij de premium standaard zetten.' },
+  openGraph: {
+    title: 'Over Ons | Chefs Connect',
+    description: 'Maak kennis met Chefs Connect. Ontdek onze visie op gastvrijheid, ons strenge selectieproces voor topchefs en waarom wij de premium standaard zetten.',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
+  },
 };
 
 const breadcrumbSchema = {
