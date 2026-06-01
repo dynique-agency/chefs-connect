@@ -175,10 +175,10 @@ export default function ContactForm() {
             >
               <div className="relative w-full h-full border border-gold/30">
                 <Image
-                  src="/service-professional.png"
-                  alt="Premium culinary experience"
+                  src="/chef-table-explanation.webp"
+                  alt="Chefs Connect chef bespreekt zijn gerecht met gasten aan tafel"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   sizes="50vw"
                 />
               </div>
@@ -214,10 +214,10 @@ export default function ContactForm() {
           >
             <div className="relative w-full h-full border border-gold/30">
               <Image
-                src="/service-professional.png"
-                alt="Premium culinary experience"
+                src="/chef-table-explanation.webp"
+                alt="Chefs Connect chef bespreekt zijn gerecht met gasten aan tafel"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="100vw"
               />
             </div>

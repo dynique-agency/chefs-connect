@@ -151,8 +151,8 @@ export default function PersoneelEindhovenPage() {
               className="relative h-[480px]"
             >
               <Image
-                src="/chef-plating-vertical.png"
-                alt="Freelance chef aan het werk in een keuken in Eindhoven"
+                src="/service-professional.png"
+                alt="Professionele horecamedewerker van Chefs Connect aan het werk in Eindhoven"
                 fill
                 className="object-cover brightness-[0.85]"
                 sizes="(max-width: 1024px) 100vw, 50vw"

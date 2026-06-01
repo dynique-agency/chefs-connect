@@ -343,8 +343,8 @@ export default function IntroSection() {
                 }}
               >
                 <Image
-                  src="/chef-action.png"
-                  alt="Freelance chef van Chefs Connect die een gerecht opmaakt"
+                  src="/chef-table-explanation.webp"
+                  alt="Chefs Connect chef legt zijn gerecht uit aan gasten tijdens een diner"
                   fill
                   className="object-cover brightness-[0.85]"
                   sizes="(max-width: 768px) 100vw, 50vw"
