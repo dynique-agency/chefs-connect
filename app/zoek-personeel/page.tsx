@@ -298,8 +298,8 @@ export default function ZoekPersoneelPage() {
               className="relative h-[500px]"
             >
               <Image
-                src="/service-professional.png"
-                alt="Professioneel bedienend personeel van Chefs Connect"
+                src="/freelancer-bediening.webp"
+                alt="Freelance bedieningsmedewerker van Chefs Connect tapt een biertje"
                 fill
                 className="object-cover brightness-[0.85]"
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -305,8 +305,8 @@ export default function HorecaSpecialistPage() {
             >
               <div className="relative w-full">
                 <Image
-                  src="/service-vertical.png"
-                  alt="Persoonlijke benadering"
+                  src="/freelancer-bediening.webp"
+                  alt="Freelance bedieningsmedewerker van Chefs Connect aan het werk"
                   width={600}
                   height={800}
                   className="w-full h-auto object-contain brightness-[0.85]"

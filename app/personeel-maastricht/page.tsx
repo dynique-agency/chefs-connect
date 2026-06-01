@@ -153,8 +153,8 @@ export default function PersoneelMaastrichtPage() {
               className="relative h-[480px]"
             >
               <Image
-                src="/chef-plating-vertical.png"
-                alt="Freelance chef aan het werk in een keuken in Maastricht"
+                src="/freelancer-bediening.webp"
+                alt="Freelance bedieningsmedewerker van Chefs Connect aan het werk in Maastricht"
                 fill
                 className="object-cover brightness-[0.85]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
