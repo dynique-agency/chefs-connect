@@ -97,7 +97,7 @@ export default function MaastrichtPage() {
             transition={{ duration: 1, delay: 0.4 }}
             className="font-inter text-lg md:text-xl text-cream/85 max-w-2xl mx-auto leading-relaxed mb-10"
           >
-            Van fine dining in de binnenstad tot grote evenementen bij het MECC. Wij verbinden freelance chefs en bedieningsprofessionals met de mooiste locaties in de regio.
+            Van fine dining in de binnenstad tot grote evenementen in de regio. Wij verbinden freelance chefs en bedieningsprofessionals met de mooiste locaties in Maastricht.
           </motion.p>
 
           <motion.a
@@ -181,7 +181,7 @@ export default function MaastrichtPage() {
               Waar kom je terecht?
             </h2>
             <p className="font-inter text-lg text-cream/70 max-w-2xl mx-auto">
-              Het aanbod in de regio Maastricht is breed. Van een rustige zondagse brasserie tot een gala voor 500 gasten bij het MECC.
+              Het aanbod in de regio Maastricht is breed. Van een rustige zondagse brasserie tot een gala voor 500 gasten.
             </p>
           </motion.div>
 
@@ -196,8 +196,8 @@ export default function MaastrichtPage() {
                 description: 'Hotels met karakter en een eigen identiteit, waar persoonlijke service het onderschil maakt.',
               },
               {
-                title: 'Evenementen bij het MECC',
-                description: 'Grote congressen en galadineers waarbij planning en uitvoering tot in de puntjes moeten kloppen.',
+                title: 'Grote evenementen',
+                description: 'Congressen, galadineers en bedrijfsfeesten waarbij planning en uitvoering tot in de puntjes moeten kloppen.',
               },
               {
                 title: 'Private dining',
