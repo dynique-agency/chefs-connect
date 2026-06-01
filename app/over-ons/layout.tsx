@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Over Ons | Chefs Connect',
     description: 'Maak kennis met Chefs Connect. Ontdek onze visie op gastvrijheid, ons strenge selectieproces voor topchefs en waarom wij de premium standaard zetten.',
+    url: 'https://chefs-connect.nl/over-ons',
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Freelance Horeca Opdrachten in Maastricht | Chefs Connect',
     description: 'Werk als freelance chef of bediening op de mooiste horecalocaties in Maastricht en Zuid-Limburg. Chefs Connect verbindt je met opdrachten die bij je passen.',
+    url: 'https://chefs-connect.nl/maastricht',
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };

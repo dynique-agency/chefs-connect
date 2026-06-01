@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Chefs Connect | Premium Freelance Horecaprofessionals & Fine Dining Catering',
     description: 'Zekerheid van topkwaliteit in uw keuken of evenement. Chefs Connect bemiddelt high-end freelance chefs en verzorgt fine dining catering in NL & BE.',
+    url: 'https://chefs-connect.nl',
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };

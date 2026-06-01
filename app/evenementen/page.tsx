@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Fine Dining Catering & Exclusieve Evenementen | Chefs Connect',
     description: 'Verhef uw zakelijke of particuliere evenement met onze fine dining catering op locatie. Culinaire meesterwerken door topchefs, tot in de puntjes verzorgd.',
+    url: 'https://chefs-connect.nl/evenementen',
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };

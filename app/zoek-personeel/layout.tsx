@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Freelance Horecapersoneel Inhuren | Chefs Connect',
     description: 'Voorkom personeelstekort zonder in te leveren op kwaliteit. Huur tijdelijk of flexibel premium freelance horecapersoneel in voor uw restaurant of hotel.',
+    url: 'https://chefs-connect.nl/zoek-personeel',
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };

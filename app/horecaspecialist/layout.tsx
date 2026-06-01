@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Freelance Horeca Opdrachten | Chefs Connect',
     description: 'Op zoek naar uitdagende freelance chef kok opdrachten? Sluit je aan bij Chefs Connect en werk voor de mooiste high-end locaties in Nederland en België.',
+    url: 'https://chefs-connect.nl/horecaspecialist',
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };

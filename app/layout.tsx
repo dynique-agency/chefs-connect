@@ -38,7 +38,6 @@ export const metadata: Metadata = {
   alternates: {
     languages: {
       'nl-NL': 'https://chefs-connect.nl',
-      'nl-BE': 'https://chefs-connect.be',
     },
   },
   openGraph: {
@@ -58,6 +57,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@ChefsConnect',
+    title: 'Chefs Connect | Premium Freelance Horecaprofessionals',
+    description: 'Verbindt topklasse freelance chefs en horecaprofessionals met exclusieve opdrachtgevers in Nederland en België.',
+    images: ['/opengraph-image.png'],
   },
 };
 

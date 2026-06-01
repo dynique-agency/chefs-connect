@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact | Chefs Connect',
     description: 'Klaar om uw keukenbrigade te versterken of een exclusief evenement te plannen? Neem contact op met Chefs Connect voor een vrijblijvende kennismaking.',
+    url: 'https://chefs-connect.nl/contact',
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };
