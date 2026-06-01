@@ -36,8 +36,11 @@ export const metadata: Metadata = {
   },
   authors: [{ name: 'Chefs Connect' }],
   alternates: {
+    canonical: 'https://chefs-connect.nl',
     languages: {
+      'x-default': 'https://chefs-connect.nl',
       'nl-NL': 'https://chefs-connect.nl',
+      'nl-BE': 'https://chefs-connect.be',
     },
   },
   openGraph: {
