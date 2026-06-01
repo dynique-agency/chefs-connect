@@ -1,15 +1,12 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacyverklaring | ChefsConnect',
-  description: 'Lees hoe ChefsConnect omgaat met jouw persoonsgegevens. Wij respecteren jouw privacy en handelen conform de AVG/GDPR wetgeving.',
-  keywords: 'privacy, AVG, GDPR, persoonsgegevens, dataveiligheid, ChefsConnect',
+  title: 'Privacyverklaring | Chefs Connect',
+  description: 'Lees hoe Chefs Connect omgaat met jouw persoonsgegevens. Wij respecteren jouw privacy en handelen conform de AVG/GDPR wetgeving.',
+  alternates: { canonical: 'https://chefs-connect.nl/privacy' },
+  robots: { index: false, follow: false },
 };
 
-export default function PrivacyLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function PrivacyLayout({ children }: { children: React.ReactNode }) {
   return children;
 }

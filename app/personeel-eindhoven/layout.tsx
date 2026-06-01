@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Eindhoven | Chefs Connect',
-  description: 'Op zoek naar een freelance kok in Eindhoven? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe. Actief in Eindhoven en de regio Noord-Brabant.',
+  description: 'Op zoek naar een freelance kok in Eindhoven? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Eindhoven en Noord-Brabant.',
   keywords: ['freelance kok eindhoven', 'kok inhuren eindhoven', 'horecapersoneel eindhoven', 'tijdelijke kok eindhoven', 'spoed kok brabant', 'keukenpersoneel eindhoven'],
   alternates: { canonical: 'https://chefs-connect.nl/personeel-eindhoven' },
   openGraph: {
     title: 'Freelance Kok Inhuren in Eindhoven | Chefs Connect',
-    description: 'Op zoek naar een freelance kok in Eindhoven? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe. Actief in Eindhoven en de regio Noord-Brabant.',
+    description: 'Op zoek naar een freelance kok in Eindhoven? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Eindhoven en Noord-Brabant.',
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };

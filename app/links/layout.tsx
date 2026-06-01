@@ -7,8 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Chefs Connect — Links',
     description: 'Chefs Connect: Premium horecafreelancers, exclusieve evenementen en fine dining catering.',
-    type: 'website',
-    locale: 'nl_NL',
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };
 
