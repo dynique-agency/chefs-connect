@@ -53,7 +53,7 @@ export default function Footer() {
       {/* Footer */}
       <footer className="relative bg-brown border-t border-gold/10">
         <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-12">
             {/* Brand Column */}
             <div className="lg:col-span-2">
               <h3 className="font-playfair text-3xl md:text-4xl font-light text-cream mb-6">
@@ -138,6 +138,39 @@ export default function Footer() {
                 >
                   Evenementen
                 </Link>
+              </nav>
+            </div>
+
+            {/* Locaties */}
+            <div>
+              <h4 className="font-inter text-sm uppercase tracking-[0.2em] text-gold mb-6">
+                Locaties
+              </h4>
+              <nav className="flex flex-col gap-4">
+                <div>
+                  <p className="font-inter text-xs uppercase tracking-wider text-cream/30 mb-2">Maastricht</p>
+                  <Link
+                    href="/personeel-maastricht"
+                    className="font-inter text-sm text-cream/70 hover:text-gold transition-colors duration-300 block"
+                  >
+                    Kok inhuren
+                  </Link>
+                  <Link
+                    href="/maastricht"
+                    className="font-inter text-sm text-cream/70 hover:text-gold transition-colors duration-300 block mt-1"
+                  >
+                    Freelance opdrachten
+                  </Link>
+                </div>
+                <div className="pt-2">
+                  <p className="font-inter text-xs uppercase tracking-wider text-cream/30 mb-2">Eindhoven</p>
+                  <Link
+                    href="/personeel-eindhoven"
+                    className="font-inter text-sm text-cream/70 hover:text-gold transition-colors duration-300 block"
+                  >
+                    Kok inhuren
+                  </Link>
+                </div>
               </nav>
             </div>
 
