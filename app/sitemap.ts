@@ -42,5 +42,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.6,
     },
+    {
+      url: 'https://chefs-connect.nl/maastricht',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ];
 }
