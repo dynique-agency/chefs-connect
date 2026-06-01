@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { ChefHat, CheckCircle2, Calendar, Users, Briefcase, ArrowRight, Clock, Award, MessageCircle } from 'lucide-react';
+import FaqSection from '@/components/ui/FaqSection';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRouter } from 'next/navigation';
@@ -737,6 +738,34 @@ export default function HorecaSpecialistPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FaqSection
+        title="Veelgestelde vragen"
+        subtitle="Alles wat je wilt weten over freelance opdrachten via Chefs Connect."
+        items={[
+          {
+            question: 'Hoe meld ik me aan als horecafreelancer?',
+            answer: 'Je kunt je aanmelden via het inschrijfformulier op deze pagina. Na ontvangst nemen wij binnen één werkdag contact met je op voor een persoonlijk kennismakingsgesprek.',
+          },
+          {
+            question: 'Wat voor opdrachten kan ik verwachten?',
+            answer: 'Wij plaatsen freelancers bij restaurants, hotels, cateraars en evenementenbedrijven door heel Nederland en België. De opdrachten variëren van een enkele avond tot meerdere weken, afhankelijk van jouw beschikbaarheid en voorkeur.',
+          },
+          {
+            question: 'Wat verdien ik als freelancer via Chefs Connect?',
+            answer: 'Tarieven zijn afhankelijk van jouw functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn transparant over wat je kunt verwachten — dit bespreken wij tijdens het kennismakingsgesprek.',
+          },
+          {
+            question: 'Hoe snel krijg ik mijn eerste opdracht?',
+            answer: 'Dat hangt af van jouw beschikbaarheid en het aanbod op dat moment. In de meeste gevallen kunnen wij binnen één tot twee weken na inschrijving een eerste passende opdracht voorstellen.',
+          },
+          {
+            question: 'Werken jullie ook met freelancers in België?',
+            answer: 'Ja. Wij bemiddelen actief in zowel Nederland als België. Ben je gevestigd in de grensregio of wil je in beide landen werken? Dan is Chefs Connect een uitstekende partner.',
+          },
+        ]}
+      />
 
       {/* WhatsApp secondary option */}
       <section className="pb-16 px-6 bg-cream">

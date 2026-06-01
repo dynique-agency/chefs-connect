@@ -8,6 +8,53 @@ export const metadata: Metadata = {
   openGraph: { description: 'Op zoek naar uitdagende freelance chef kok opdrachten? Sluit je aan bij Chefs Connect en werk voor de mooiste high-end locaties in Nederland en België.' },
 };
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Hoe meld ik me aan als horecafreelancer?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Je kunt je aanmelden via het inschrijfformulier op deze pagina. Na ontvangst nemen wij binnen één werkdag contact met je op voor een persoonlijk kennismakingsgesprek.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Wat voor opdrachten kan ik verwachten?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Wij plaatsen freelancers bij restaurants, hotels, cateraars en evenementenbedrijven door heel Nederland en België. De opdrachten variëren van een enkele avond tot meerdere weken, afhankelijk van jouw beschikbaarheid en voorkeur.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Wat verdien ik als freelancer via Chefs Connect?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Tarieven zijn afhankelijk van jouw functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn transparant over wat je kunt verwachten — dit bespreken wij tijdens het kennismakingsgesprek.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Hoe snel krijg ik mijn eerste opdracht?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Dat hangt af van jouw beschikbaarheid en het aanbod op dat moment. In de meeste gevallen kunnen wij binnen één tot twee weken na inschrijving een eerste passende opdracht voorstellen.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Werken jullie ook met freelancers in België?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Ja. Wij bemiddelen actief in zowel Nederland als België. Ben je gevestigd in de grensregio of wil je in beide landen werken? Dan is Chefs Connect een uitstekende partner.',
+      },
+    },
+  ],
+};
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -23,6 +70,10 @@ export default function HorecaspecialistLayout({ children }: { children: React.R
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {children}
     </>

@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { Building2, CheckCircle2, Clock, Users, Award, ArrowRight, ChefHat, Utensils, MapPin, MessageCircle } from 'lucide-react';
+import FaqSection from '@/components/ui/FaqSection';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -653,6 +654,30 @@ export default function ZoekPersoneelPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FaqSection
+        title="Veelgestelde vragen"
+        subtitle="Alles wat u wilt weten over het inzetten van horecapersoneel via Chefs Connect."
+        items={[
+          {
+            question: 'Hoe snel kunnen jullie horecapersoneel leveren?',
+            answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelancer voorstellen. Bij spoedaanvragen schakelen wij zo snel mogelijk op basis van beschikbaarheid in ons netwerk.',
+          },
+          {
+            question: 'Welke functies bemiddelen jullie?',
+            answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks, bedieningsmedewerkers, leidinggevenden bediening en complete keuken- of bedieningsteams voor zowel korte als langere periodes.',
+          },
+          {
+            question: 'Werken jullie ook in België?',
+            answer: 'Ja, wij zijn actief in zowel Nederland als België. Onze professionals worden door de hele Benelux ingezet.',
+          },
+          {
+            question: 'Wat maakt Chefs Connect anders dan andere uitzendbureaus?',
+            answer: 'Wij komen zelf uit de horeca en begrijpen de praktijk van binnenuit. Daardoor matchen wij niet op papier maar op vakmanschap, mentaliteit en teamdynamiek.',
+          },
+        ]}
+      />
 
       {/* Actief In Section */}
       <section className="relative py-20 md:py-32 px-6 bg-cream overflow-hidden">
