@@ -144,33 +144,31 @@ export default function Footer() {
             {/* Locaties */}
             <div>
               <h4 className="font-inter text-sm uppercase tracking-[0.2em] text-gold mb-6">
-                Locaties
+                Kok inhuren
               </h4>
-              <nav className="flex flex-col gap-4">
-                <div>
-                  <p className="font-inter text-xs uppercase tracking-wider text-cream/30 mb-2">Maastricht</p>
+              <nav className="flex flex-col gap-3">
+                {[
+                  { href: '/personeel-maastricht', label: 'Maastricht' },
+                  { href: '/personeel-eindhoven', label: 'Eindhoven' },
+                  { href: '/personeel-tilburg', label: 'Tilburg' },
+                  { href: '/personeel-breda', label: 'Breda' },
+                  { href: '/personeel-den-bosch', label: 'Den Bosch' },
+                  { href: '/personeel-nijmegen', label: 'Nijmegen' },
+                ].map((loc) => (
                   <Link
-                    href="/personeel-maastricht"
-                    className="font-inter text-sm text-cream/70 hover:text-gold transition-colors duration-300 block"
+                    key={loc.href}
+                    href={loc.href}
+                    className="font-inter text-sm text-cream/70 hover:text-gold transition-colors duration-300"
                   >
-                    Kok inhuren
+                    {loc.label}
                   </Link>
-                  <Link
-                    href="/maastricht"
-                    className="font-inter text-sm text-cream/70 hover:text-gold transition-colors duration-300 block mt-1"
-                  >
-                    Freelance opdrachten
-                  </Link>
-                </div>
-                <div className="pt-2">
-                  <p className="font-inter text-xs uppercase tracking-wider text-cream/30 mb-2">Eindhoven</p>
-                  <Link
-                    href="/personeel-eindhoven"
-                    className="font-inter text-sm text-cream/70 hover:text-gold transition-colors duration-300 block"
-                  >
-                    Kok inhuren
-                  </Link>
-                </div>
+                ))}
+                <Link
+                  href="/maastricht"
+                  className="font-inter text-xs text-cream/40 hover:text-gold transition-colors duration-300 pt-2"
+                >
+                  Freelance opdrachten →
+                </Link>
               </nav>
             </div>
 

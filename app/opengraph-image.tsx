@@ -2,6 +2,9 @@ import { ImageResponse } from 'next/og';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
+// Required for `output: export` (static export) on Next.js — without this the
+// build fails to collect page data for this route and the OG image is never generated.
+export const dynamic = 'force-static';
 export const alt = 'Chefs Connect – Premium Horecapersoneel & Fine Dining Catering';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';

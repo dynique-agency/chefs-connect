@@ -55,6 +55,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: 'https://chefs-connect.nl/personeel-tilburg',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://chefs-connect.nl/personeel-breda',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://chefs-connect.nl/personeel-den-bosch',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://chefs-connect.nl/personeel-nijmegen',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
       url: 'https://chefs-connect.nl/maastricht',
       lastModified: lastUpdate,
       changeFrequency: 'monthly',
