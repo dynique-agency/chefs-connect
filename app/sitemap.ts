@@ -84,5 +84,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.75,
     },
+    {
+      url: 'https://chefs-connect.nl/kennisbank',
+      lastModified: lastUpdate,
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://chefs-connect.nl/kennisbank/freelance-kok-worden',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
   ];
 }

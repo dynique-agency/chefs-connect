@@ -2,10 +2,10 @@ import { ImageResponse } from 'next/og';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-// Required for `output: export` (static export) on Next.js — without this the
+// Required for `output: export` (static export) on Next.js - without this the
 // build fails to collect page data for this route and the OG image is never generated.
 export const dynamic = 'force-static';
-export const alt = 'Chefs Connect – Premium Horecapersoneel & Fine Dining Catering';
+export const alt = 'Chefs Connect: Premium Horecapersoneel & Fine Dining Catering';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -42,7 +42,7 @@ export default async function Image() {
             padding: '52px 80px 44px 80px',
           }}
         >
-          {/* Left column — text */}
+          {/* Left column - text */}
           <div
             style={{
               display: 'flex',
@@ -79,7 +79,7 @@ export default async function Image() {
                 </span>
               </div>
 
-              {/* Headline — Chefs Connect */}
+              {/* Headline - Chefs Connect */}
               <div
                 style={{
                   display: 'flex',
@@ -120,7 +120,7 @@ export default async function Image() {
                   letterSpacing: '0.01em',
                 }}
               >
-                <span>Van topchef tot bediening —</span>
+                <span>Van topchef tot bediening,</span>
                 <span>voor de betere horeca.</span>
               </div>
             </div>
@@ -167,7 +167,7 @@ export default async function Image() {
             </div>
           </div>
 
-          {/* Right column — decorative rings */}
+          {/* Right column - decorative rings */}
           <div
             style={{
               width: 300,
@@ -214,7 +214,7 @@ export default async function Image() {
                     justifyContent: 'center',
                   }}
                 >
-                  {/* Core — filled gold circle with CC monogram */}
+                  {/* Core - filled gold circle with CC monogram */}
                   <div
                     style={{
                       width: 76,

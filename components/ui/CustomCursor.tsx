@@ -79,7 +79,7 @@ export default function CustomCursor() {
 
   return (
     <>
-      {/* Dot — snaps to mouse precisely */}
+      {/* Dot - snaps to mouse precisely */}
       <div
         ref={dotRef}
         className="fixed top-0 left-0 rounded-full pointer-events-none z-[99999]"
@@ -91,7 +91,7 @@ export default function CustomCursor() {
           transition: 'opacity 0.2s ease',
         }}
       />
-      {/* Ring — lags behind for premium feel */}
+      {/* Ring - lags behind for premium feel */}
       <div
         ref={ringRef}
         className="fixed top-0 left-0 rounded-full pointer-events-none z-[99998]"

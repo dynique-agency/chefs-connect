@@ -233,7 +233,7 @@ export default function HeroSection() {
             initial="hidden"
             animate={animationComplete ? 'visible' : 'hidden'}
           >
-            {/* Button 1: Ik zoek een horeca professional — PRIMARY CTA */}
+            {/* Button 1: Ik zoek een horeca professional - PRIMARY CTA */}
             <motion.div variants={buttonVariants} className="w-full sm:w-auto relative">
 
               {/* Soft ambient glow */}

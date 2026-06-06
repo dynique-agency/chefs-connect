@@ -15,8 +15,8 @@ import PremiumStaffingPopup from '@/components/ui/PremiumStaffingPopup';
  *
  * The *structure* is shared for maintainability, but every page passes its own
  * unique, locally-relevant copy (hero, "city as a hospitality city" context and
- * the why-us prose). That keeps each rendered page genuinely distinct — the
- * opposite of a thin doorway page — while we only maintain one form + layout.
+ * the why-us prose). That keeps each rendered page genuinely distinct - the
+ * opposite of a thin doorway page - while we only maintain one form + layout.
  */
 
 export interface CityStaffingContent {
@@ -33,7 +33,7 @@ export interface CityStaffingContent {
   /** Context heading split into a normal lead and a gold-italic accent */
   contextHeadingLead: string;
   contextHeadingAccent: string;
-  /** 2–4 unique paragraphs about the local hospitality market */
+  /** 2-4 unique paragraphs about the local hospitality market */
   contextParagraphs: string[];
   /** Why-us heading split into lead + gold-italic accent */
   whyHeadingLead: string;
@@ -194,7 +194,7 @@ export default function CityStaffingPage({
         </div>
       </section>
 
-      {/* Context — unique local content */}
+      {/* Context - unique local content */}
       <section className="relative py-20 md:py-32 px-6 bg-cream">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
@@ -279,7 +279,7 @@ export default function CityStaffingPage({
         </div>
       </section>
 
-      {/* Why us — unique local prose */}
+      {/* Why us - unique local prose */}
       <section className="relative py-20 md:py-32 px-6 bg-cream">
         <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-start">

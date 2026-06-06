@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import { ChefHat, CheckCircle2, Calendar, Users, Briefcase, ArrowRight, Clock, Award, MessageCircle } from 'lucide-react';
 import FaqSection from '@/components/ui/FaqSection';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { gsap } from 'gsap';
@@ -754,7 +755,7 @@ export default function HorecaSpecialistPage() {
           },
           {
             question: 'Wat verdien ik als freelancer via Chefs Connect?',
-            answer: 'Tarieven zijn afhankelijk van jouw functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn transparant over wat je kunt verwachten — dit bespreken wij tijdens het kennismakingsgesprek.',
+            answer: 'Tarieven zijn afhankelijk van jouw functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn transparant over wat je kunt verwachten. Dit bespreken wij tijdens het kennismakingsgesprek.',
           },
           {
             question: 'Hoe snel krijg ik mijn eerste opdracht?',
@@ -766,6 +767,27 @@ export default function HorecaSpecialistPage() {
           },
         ]}
       />
+
+      {/* Kennisbank cross-link */}
+      <section className="pb-8 px-6 bg-cream">
+        <div className="max-w-4xl mx-auto">
+          <Link
+            href="/kennisbank/freelance-kok-worden"
+            className="group flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-brown/5 border border-brown/10 p-6 md:p-8 hover:border-gold/40 transition-colors duration-300"
+          >
+            <div>
+              <span className="font-inter text-xs uppercase tracking-[0.2em] text-gold block mb-2">Uit de kennisbank</span>
+              <h3 className="font-playfair text-xl md:text-2xl text-brown group-hover:text-gold transition-colors duration-300">
+                Freelance kok worden: zo begin je
+              </h3>
+              <p className="font-inter text-sm text-brown-medium mt-1">
+                Van KvK-inschrijving tot je eerste opdracht. Het complete stappenplan.
+              </p>
+            </div>
+            <ArrowRight className="w-6 h-6 text-brown/40 group-hover:text-gold group-hover:translate-x-1 transition-all duration-300 flex-shrink-0" />
+          </Link>
+        </div>
+      </section>
 
       {/* WhatsApp secondary option */}
       <section className="pb-16 px-6 bg-cream">

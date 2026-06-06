@@ -138,6 +138,12 @@ export default function Footer() {
                 >
                   Evenementen
                 </Link>
+                <Link
+                  href="/kennisbank"
+                  className="font-inter text-sm text-cream/70 hover:text-gold transition-colors duration-300"
+                >
+                  Kennisbank
+                </Link>
               </nav>
             </div>
 

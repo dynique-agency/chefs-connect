@@ -136,7 +136,7 @@ export default function StorySection() {
                 zijn, maar ook op de lange termijn bloeien.
               </p>
               <p ref={paragraph3Ref}>
-                Chefs Connect is meer dan een platform – het is een
+                Chefs Connect is meer dan een platform. Het is een
                 gemeenschap van professionals die streven naar perfectie in
                 elke maaltijd, elke service en elke ontmoeting.
               </p>

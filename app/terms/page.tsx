@@ -78,14 +78,14 @@ function FreelancerTerms() {
     >
       <div className="mb-12">
         <h2 className="font-playfair text-3xl text-brown mb-6 text-center">
-          Algemene Voorwaarden – Freelancers via ChefsConnect
+          Algemene Voorwaarden - Freelancers via ChefsConnect
         </h2>
       </div>
 
       {/* Artikel 1 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 1</span> – Definities
+          <span className="text-gold">Artikel 1</span> - Definities
         </h3>
         <div className="space-y-3 font-inter text-brown/80">
           <p><strong>ChefsConnect:</strong> CHEFS CONNECT BV, gevestigd te Lanaken, die horeca-opdrachtgevers en zelfstandige professionals met elkaar in contact brengt en opdrachten faciliteert.</p>
@@ -99,7 +99,7 @@ function FreelancerTerms() {
       {/* Artikel 2 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 2</span> – Toepasselijkheid
+          <span className="text-gold">Artikel 2</span> - Toepasselijkheid
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Deze algemene voorwaarden zijn van toepassing op iedere samenwerking tussen ChefsConnect en de Freelancer.</li>
@@ -111,7 +111,7 @@ function FreelancerTerms() {
       {/* Artikel 3 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 3</span> – Zelfstandige dienstverlening
+          <span className="text-gold">Artikel 3</span> - Zelfstandige dienstverlening
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• De Freelancer voert de Diensten volledig zelfstandig uit en bepaalt zelf de wijze waarop de werkzaamheden worden verricht.</li>
@@ -124,7 +124,7 @@ function FreelancerTerms() {
       {/* Artikel 4 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 4</span> – Totstandkoming van opdrachten
+          <span className="text-gold">Artikel 4</span> - Totstandkoming van opdrachten
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Een opdracht komt tot stand zodra deze via ChefsConnect wordt aangeboden en door de Freelancer wordt aanvaard.</li>
@@ -136,7 +136,7 @@ function FreelancerTerms() {
       {/* Artikel 5 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 5</span> – Uitvoering van de diensten
+          <span className="text-gold">Artikel 5</span> - Uitvoering van de diensten
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• De Freelancer voert de Diensten uit volgens professionele normen en met de nodige zorg en vakbekwaamheid.</li>
@@ -149,7 +149,7 @@ function FreelancerTerms() {
       {/* Artikel 6 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 6</span> – Beschikbaarheid en vervanging
+          <span className="text-gold">Artikel 6</span> - Beschikbaarheid en vervanging
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Na aanvaarding van een opdracht verbindt de Freelancer zich ertoe deze effectief uit te voeren.</li>
@@ -161,7 +161,7 @@ function FreelancerTerms() {
       {/* Artikel 7 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 7</span> – Annulering en no-show
+          <span className="text-gold">Artikel 7</span> - Annulering en no-show
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Bij annulering minder dan 72 uur vóór aanvang van de opdracht kan ChefsConnect een forfaitaire schadevergoeding van 50% van de afgesproken vergoeding aanrekenen.</li>
@@ -174,7 +174,7 @@ function FreelancerTerms() {
       {/* Artikel 8 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 8</span> – Vergoeding en facturatie
+          <span className="text-gold">Artikel 8</span> - Vergoeding en facturatie
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• De vergoeding van de Freelancer wordt vastgelegd in de individuele Overeenkomst.</li>
@@ -187,7 +187,7 @@ function FreelancerTerms() {
       {/* Artikel 9 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 9</span> – Aansprakelijkheid
+          <span className="text-gold">Artikel 9</span> - Aansprakelijkheid
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• De Freelancer is aansprakelijk voor schade veroorzaakt door fouten, nalatigheid of onzorgvuldig handelen tijdens de uitvoering van de Diensten.</li>
@@ -200,7 +200,7 @@ function FreelancerTerms() {
       {/* Artikel 10 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 10</span> – Verzekering
+          <span className="text-gold">Artikel 10</span> - Verzekering
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• De Freelancer is verplicht een geldige beroeps- en/of bedrijfsaansprakelijkheidsverzekering te hebben met een minimale dekking van € 500.000,- per gebeurtenis.</li>
@@ -211,7 +211,7 @@ function FreelancerTerms() {
       {/* Artikel 11 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 11</span> – Geheimhouding en AVG
+          <span className="text-gold">Artikel 11</span> - Geheimhouding en AVG
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• De Freelancer behandelt alle vertrouwelijke informatie strikt geheim.</li>
@@ -224,7 +224,7 @@ function FreelancerTerms() {
       {/* Artikel 12 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 12</span> – Non-solicitatie (verbod op afwerving)
+          <span className="text-gold">Artikel 12</span> - Non-solicitatie (verbod op afwerving)
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Het is de Freelancer verboden om gedurende de samenwerking en tot 12 maanden na beëindiging rechtstreeks (buiten ChefsConnect om) samen te werken met opdrachtgevers die via ChefsConnect werden verkregen.</li>
@@ -235,7 +235,7 @@ function FreelancerTerms() {
       {/* Artikel 13 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 13</span> – Intellectuele eigendom
+          <span className="text-gold">Artikel 13</span> - Intellectuele eigendom
         </h3>
         <p className="font-inter text-brown/80">
           Alle rechten met betrekking tot het platform, de planningstools, databanken, logo's, werkwijze en werkmethodes van ChefsConnect blijven exclusief eigendom van ChefsConnect.
@@ -245,7 +245,7 @@ function FreelancerTerms() {
       {/* Artikel 14 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 14</span> – Duur en beëindiging
+          <span className="text-gold">Artikel 14</span> - Duur en beëindiging
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• De samenwerking wordt aangegaan voor onbepaalde tijd, tenzij anders overeengekomen.</li>
@@ -258,7 +258,7 @@ function FreelancerTerms() {
       {/* Artikel 15 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 15</span> – Overmacht
+          <span className="text-gold">Artikel 15</span> - Overmacht
         </h3>
         <p className="font-inter text-brown/80">
           Geen van beide partijen is aansprakelijk indien verplichtingen tijdelijk of definitief niet kunnen worden nagekomen door overmacht, waaronder begrepen: natuurrampen, oorlog, pandemieën, stakingen, overheidsmaatregelen en uitval van essentiële systemen.
@@ -268,7 +268,7 @@ function FreelancerTerms() {
       {/* Artikel 16 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 16</span> – Toepasselijk recht en geschillen
+          <span className="text-gold">Artikel 16</span> - Toepasselijk recht en geschillen
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Op deze voorwaarden is uitsluitend Belgisch recht van toepassing.</li>
@@ -296,14 +296,14 @@ function ClientTerms() {
     >
       <div className="mb-12">
         <h2 className="font-playfair text-3xl text-brown mb-6 text-center">
-          Algemene Voorwaarden – Opdrachtgevers via ChefsConnect
+          Algemene Voorwaarden - Opdrachtgevers via ChefsConnect
         </h2>
       </div>
 
       {/* Artikel 1 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 1</span> – Definities
+          <span className="text-gold">Artikel 1</span> - Definities
         </h3>
         <div className="space-y-3 font-inter text-brown/80">
           <p><strong>ChefsConnect:</strong> CHEFS CONNECT BV, gevestigd te Lanaken, die horeca-opdrachtgevers en zelfstandige professionals met elkaar in contact brengt.</p>
@@ -316,7 +316,7 @@ function ClientTerms() {
       {/* Artikel 2 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 2</span> – Toepasselijkheid
+          <span className="text-gold">Artikel 2</span> - Toepasselijkheid
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Deze algemene voorwaarden zijn van toepassing op alle overeenkomsten en dienstverlening tussen ChefsConnect en de Opdrachtgever.</li>
@@ -328,7 +328,7 @@ function ClientTerms() {
       {/* Artikel 3 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 3</span> – Dienstverlening
+          <span className="text-gold">Artikel 3</span> - Dienstverlening
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• ChefsConnect bemiddelt tussen Opdrachtgever en gekwalificeerde Freelancers.</li>
@@ -341,7 +341,7 @@ function ClientTerms() {
       {/* Artikel 4 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 4</span> – Totstandkoming opdracht
+          <span className="text-gold">Artikel 4</span> - Totstandkoming opdracht
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Een opdracht komt tot stand na schriftelijke bevestiging door ChefsConnect.</li>
@@ -353,7 +353,7 @@ function ClientTerms() {
       {/* Artikel 5 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 5</span> – Vergoeding en betaling
+          <span className="text-gold">Artikel 5</span> - Vergoeding en betaling
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• De vergoeding wordt vooraf schriftelijk overeengekomen en is exclusief BTW tenzij anders vermeld.</li>
@@ -367,7 +367,7 @@ function ClientTerms() {
       {/* Artikel 6 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 6</span> – Annulering
+          <span className="text-gold">Artikel 6</span> - Annulering
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Nadat ChefsConnect haar Diensten voor de betreffende opdracht heeft aangevat en de opdracht is binnen de termijn van 7 dagen, is er een vergoeding verschuldigd van 50% van de geschatte waarde van de opdracht, met een minimum van € 150,00, onverminderd het recht van ChefsConnect om hogere werkelijk geleden schade te bewijzen en te eisen van de Opdrachtgever.</li>
@@ -378,7 +378,7 @@ function ClientTerms() {
       {/* Artikel 7 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 7</span> – Verplichtingen Opdrachtgever
+          <span className="text-gold">Artikel 7</span> - Verplichtingen Opdrachtgever
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• De Opdrachtgever zorgt voor een veilige werkomgeving conform de Arbowetgeving.</li>
@@ -391,7 +391,7 @@ function ClientTerms() {
       {/* Artikel 8 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 8</span> – Aansprakelijkheid
+          <span className="text-gold">Artikel 8</span> - Aansprakelijkheid
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• ChefsConnect is enkel aansprakelijk voor schade ontstaan door opzet of bewuste roekeloosheid van ChefsConnect zelf.</li>
@@ -404,7 +404,7 @@ function ClientTerms() {
       {/* Artikel 9 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 9</span> – Non-solicitatie
+          <span className="text-gold">Artikel 9</span> - Non-solicitatie
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Het is de Opdrachtgever verboden om gedurende de samenwerking en tot 12 maanden na beëindiging rechtstreeks (buiten ChefsConnect om) samen te werken met Freelancers die via ChefsConnect zijn ingezet.</li>
@@ -415,7 +415,7 @@ function ClientTerms() {
       {/* Artikel 10 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 10</span> – Geheimhouding
+          <span className="text-gold">Artikel 10</span> - Geheimhouding
         </h3>
         <p className="font-inter text-brown/80">
           Beide partijen verplichten zich tot geheimhouding van alle vertrouwelijke informatie die in het kader van de samenwerking wordt uitgewisseld. Deze verplichting blijft bestaan na beëindiging van de overeenkomst.
@@ -425,7 +425,7 @@ function ClientTerms() {
       {/* Artikel 11 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 11</span> – Persoonsgegevens (AVG/GDPR)
+          <span className="text-gold">Artikel 11</span> - Persoonsgegevens (AVG/GDPR)
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Beide partijen verwerken persoonsgegevens conform de AVG/GDPR.</li>
@@ -437,7 +437,7 @@ function ClientTerms() {
       {/* Artikel 12 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 12</span> – Klachten
+          <span className="text-gold">Artikel 12</span> - Klachten
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Klachten dienen binnen 48 uur na de prestatie schriftelijk te worden gemeld.</li>
@@ -449,7 +449,7 @@ function ClientTerms() {
       {/* Artikel 13 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 13</span> – Overmacht
+          <span className="text-gold">Artikel 13</span> - Overmacht
         </h3>
         <p className="font-inter text-brown/80">
           Bij overmacht (waaronder ziekte, ongeval, transportproblemen, natuurrampen, pandemieën) is ChefsConnect niet gehouden tot vergoeding van schade en kan de overeenkomst zonder rechterlijke tussenkomst worden ontbonden.
@@ -459,7 +459,7 @@ function ClientTerms() {
       {/* Artikel 14 */}
       <div className="mb-10">
         <h3 className="font-playfair text-2xl text-brown mb-4 flex items-center gap-3">
-          <span className="text-gold">Artikel 14</span> – Toepasselijk recht
+          <span className="text-gold">Artikel 14</span> - Toepasselijk recht
         </h3>
         <ul className="space-y-2 font-inter text-brown/80">
           <li>• Op deze voorwaarden is uitsluitend Belgisch recht van toepassing.</li>

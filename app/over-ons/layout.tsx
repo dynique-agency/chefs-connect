@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Over Ons | Dé Partner in Culinaire Excellentie',
-  description: 'Maak kennis met het team achter Chefs Connect. Passie voor gastronomie, toewijding aan perfectie — wij verbinden toptalent met de beste horeca in NL & BE.',
+  description: 'Maak kennis met het team achter Chefs Connect. Passie voor gastronomie, toewijding aan perfectie. Wij verbinden toptalent met de beste horeca in NL & BE.',
   keywords: ['over chefs connect', 'premium horeca bemiddeling', 'missie visie horeca bureau', 'kwaliteit horeca personeel'],
   alternates: { canonical: 'https://chefs-connect.nl/over-ons' },
   openGraph: {
     title: 'Over Ons | Chefs Connect',
-    description: 'Maak kennis met het team achter Chefs Connect. Passie voor gastronomie, toewijding aan perfectie — wij verbinden toptalent met de beste horeca in NL & BE.',
+    description: 'Maak kennis met het team achter Chefs Connect. Passie voor gastronomie, toewijding aan perfectie. Wij verbinden toptalent met de beste horeca in NL & BE.',
     url: 'https://chefs-connect.nl/over-ons',
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

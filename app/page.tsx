@@ -9,12 +9,12 @@ import PremiumStaffingPopup from '@/components/ui/PremiumStaffingPopup';
 
 export const metadata: Metadata = {
   title: 'Freelance Horecaprofessionals & Fine Dining Catering',
-  description: 'Chefs Connect levert chefs en bediening snel en professioneel — van private dining tot fine dining. Premium freelance horecapersoneel voor restaurants en events in NL & BE.',
+  description: 'Chefs Connect levert chefs en bediening snel en professioneel, van private dining tot fine dining. Premium freelance horecapersoneel voor restaurants en events in NL & BE.',
   keywords: ['freelance horeca personeel inhuren', 'freelance chef kok gezocht', 'luxe catering evenementen', 'horeca professionals', 'fine dining catering'],
   alternates: { canonical: 'https://chefs-connect.nl' },
   openGraph: {
     title: 'Chefs Connect | Premium Horecapersoneel & Catering',
-    description: 'Chefs Connect levert chefs en bediening snel en professioneel — van private dining tot fine dining. Premium freelance horecapersoneel voor restaurants en events in NL & BE.',
+    description: 'Chefs Connect levert chefs en bediening snel en professioneel, van private dining tot fine dining. Premium freelance horecapersoneel voor restaurants en events in NL & BE.',
     url: 'https://chefs-connect.nl',
   },
 };

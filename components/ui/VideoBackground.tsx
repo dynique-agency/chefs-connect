@@ -62,7 +62,7 @@ export default function VideoBackground({
   return (
     <div className={`absolute inset-0 w-full h-full ${className}`}>
       {!hasError ? (
-        /* poster= shows the first video frame natively until the video is ready — no flash */
+        /* poster= shows the first video frame natively until the video is ready - no flash */
         <video
           ref={videoRef}
           {...videoProps}

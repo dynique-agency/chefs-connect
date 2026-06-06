@@ -166,7 +166,7 @@ export default function PremiumFreelancerPopup({ showAfterMs = 4000 }: PremiumFr
                   className="flex items-center gap-2 mb-4 sm:mb-5"
                 >
                   <span className="font-inter text-[10px] uppercase tracking-[0.2em] text-gold/60">
-                    Chefs Connect — Voor professionals
+                    Chefs Connect · Voor professionals
                   </span>
                 </motion.div>
 
