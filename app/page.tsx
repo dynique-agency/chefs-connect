@@ -48,7 +48,7 @@ const localBusinessSchema = {
       '@type': 'Review',
       author: { '@type': 'Person', name: 'Mitchel' },
       reviewRating: { '@type': 'Rating', ratingValue: '5' },
-      reviewBody: 'ChefsConnect heeft voor ons snel een vakbekwame kok gevonden die perfect past binnen onze keukencultuur. Het team was professioneel, dacht mee en zorgde voor een soepel traject. Echt een aanrader!',
+      reviewBody: 'Chefs Connect heeft voor ons snel een vakbekwame kok gevonden die perfect past binnen onze keukencultuur. Het team was professioneel, dacht mee en zorgde voor een soepel traject. Echt een aanrader!',
     },
     {
       '@type': 'Review',
@@ -60,13 +60,13 @@ const localBusinessSchema = {
       '@type': 'Review',
       author: { '@type': 'Person', name: 'Stijn Antens' },
       reviewRating: { '@type': 'Rating', ratingValue: '5' },
-      reviewBody: 'De jongens van ChefsConnect onderscheiden zich met een super service en zorgen altijd voor een oplossing wanneer nodig. Zeer tevreden!',
+      reviewBody: 'De jongens van Chefs Connect onderscheiden zich met een super service en zorgen altijd voor een oplossing wanneer nodig. Zeer tevreden!',
     },
     {
       '@type': 'Review',
       author: { '@type': 'Person', name: 'Rick Vinckers' },
       reviewRating: { '@type': 'Rating', ratingValue: '5' },
-      reviewBody: 'Super service! Leuke gasten, gerichte vakmensen. Als je een paar handjes tekort komt zorgt ChefsConnect voor passende oplossingen. Toppers!',
+      reviewBody: 'Super service! Leuke gasten, gerichte vakmensen. Als je een paar handjes tekort komt zorgt Chefs Connect voor passende oplossingen. Toppers!',
     },
     {
       '@type': 'Review',

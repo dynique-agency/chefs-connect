@@ -41,7 +41,7 @@ export default function IntroSection() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="break-words hyphens-auto"
               >
-                Sta je aan de vooravond van een bijzonder evenement? Of het nu gaat om een <span className="font-semibold text-brown">bedrijfsfeest, bruiloft, zakelijke lunch, healthy brunch</span> of een exclusieve <span className="font-semibold text-gold">private dining</span>, met Connect Event & Dining kies je voor een culinaire totaalbeleving van het hoogste niveau.
+                Sta je aan de vooravond van een bijzonder evenement? Of het nu gaat om een <span className="font-semibold text-brown">bedrijfsfeest, bruiloft, zakelijke lunch, healthy brunch</span> of een exclusieve <span className="font-semibold text-gold">private dining</span>, met Connect Events & Dining kies je voor een culinaire totaalbeleving van het hoogste niveau.
               </motion.p>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}

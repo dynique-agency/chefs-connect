@@ -9,7 +9,7 @@ import { Star, CheckCircle2, ExternalLink, PenLine, ChevronLeft, ChevronRight, A
 const reviews = [
   {
     name: "Mitchel",
-    text: "ChefsConnect heeft voor ons snel een {vakbekwame kok} gevonden die {perfect past} binnen onze keukencultuur. Het team was {professioneel}, dacht mee en zorgde voor een {soepel traject} echt een aanrader!",
+    text: "Chefs Connect heeft voor ons snel een {vakbekwame kok} gevonden die {perfect past} binnen onze keukencultuur. Het team was {professioneel}, dacht mee en zorgde voor een {soepel traject} echt een aanrader!",
     stars: 5,
   },
   {

@@ -28,7 +28,7 @@ export default function WhyChooseUsSection() {
           <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light text-cream mb-8 text-balance break-words">
             Waarom kiezen voor
             <br />
-            <span className="text-gold italic">Connect Event & Dining?</span>
+            <span className="text-gold italic">Connect Events & Dining?</span>
           </h2>
         </motion.div>
 

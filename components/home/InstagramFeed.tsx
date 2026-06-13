@@ -64,7 +64,7 @@ export default function InstagramFeed() {
           </h2>
 
           <p className="font-inter text-base md:text-lg text-brown/70 max-w-2xl mx-auto mb-6">
-            Ontdek onze dagelijkse werkzaamheden, culinaire creaties en de professionals achter ChefsConnect
+            Ontdek onze dagelijkse werkzaamheden, culinaire creaties en de professionals achter Chefs Connect
           </p>
 
           <motion.a

@@ -36,7 +36,7 @@ const links = [
     external: false,
     accent: false,
     image: '/connect-events-dining-logo.png',
-    imageAlt: 'Connect Event & Dining',
+    imageAlt: 'Connect Events & Dining',
     imageLogo: true,
   },
   {

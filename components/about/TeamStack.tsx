@@ -28,7 +28,7 @@ const teamMembers: TeamMember[] = [
       'Met meer dan 30 jaar ervaring in de horeca is gastronomie voor mij nooit zomaar werk geweest, het is een levensstijl. Als jong mannetje van 13 liep ik al bij een bevriende patisserie mee op de zaterdagen voor de voetbal.',
       'Na het afronden van de koksopleiding begon mijn carrière als patissier bij het prestigieuze Kurhaus* in Scheveningen. Hier werd de basis gelegd voor mijn passie voor kwaliteit, discipline en verfijning. Vervolgens zette ik mijn carrière voort in Amsterdam, waar ik de kans kreeg om te werken bij toonaangevende restaurants zoals Ron Blaauw en Restaurant Moon.',
       'Deze periode heeft mijn visie op gastvrijheid en topgastronomie sterk gevormd. In 2018 koos ik bewust voor het freelance chef-bestaan. Die weg leidde mij naar Limburg, een regio waar de liefde voor gastronomie diepgeworteld is.',
-      'Ik werkte hier onder andere bij La Butte aux Bois en Restaurant NOON, waar ik mijn ervaring verder kon verdiepen. In 2024 zette ik samen met mijn compagnon Mitchell de volgende stap met de oprichting van ChefsConnect. Wat begon als een netwerk in Limburg groeide al snel uit tot een organisatie die actief is in heel Nederland en België.'
+      'Ik werkte hier onder andere bij La Butte aux Bois en Restaurant NOON, waar ik mijn ervaring verder kon verdiepen. In 2024 zette ik samen met mijn compagnon Mitchell de volgende stap met de oprichting van Chefs Connect. Wat begon als een netwerk in Limburg groeide al snel uit tot een organisatie die actief is in heel Nederland en België.'
     ],
     image: '/gert-jan.png',
     imageAvailable: true
@@ -40,10 +40,10 @@ const teamMembers: TeamMember[] = [
     specialty: 'Sterrenzaken & Hospitality',
     quote: 'Geen standaard bemiddeling, maar een premium aanpak.',
     story: [
-      'Ik ben Mitchell Deneke en oprichter van ChefsConnect.',
+      'Ik ben Mitchell Deneke en oprichter van Chefs Connect.',
       'Mijn carrière begon in de keuken, waar ik jarenlang heb gewerkt in toonaangevende zaken zoals Beluga Loves You, De Leuf, Château Neercanne, Harry\'s en La Butte aux Bois. In deze omgevingen leerde ik niet alleen de technische kant van het vak, maar vooral wat discipline, structuur en constante kwaliteit betekenen op het hoogste niveau van de gastronomie.',
       'Naast mijn werk in sterrenzaken heb ik ervaring opgedaan als privéchef in Oostenrijk, waar exclusiviteit, vertrouwen en persoonlijke service centraal stonden. Die periode heeft mijn kijk op hospitality verdiept en mij laten inzien hoe belangrijk het is om met de juiste mensen te werken.',
-      'ChefsConnect is ontstaan vanuit mijn eigen ervaringen in de horeca. Ik heb zelf gezien hoe uitdagend het kan zijn om sterke, betrouwbare chefs te vinden die écht passen binnen een team. Daarom bouw ik vandaag aan een netwerk dat anders werkt: persoonlijk, direct en gefocust op kwaliteit.',
+      'Chefs Connect is ontstaan vanuit mijn eigen ervaringen in de horeca. Ik heb zelf gezien hoe uitdagend het kan zijn om sterke, betrouwbare chefs te vinden die écht passen binnen een team. Daarom bouw ik vandaag aan een netwerk dat anders werkt: persoonlijk, direct en gefocust op kwaliteit.',
       'Een premium aanpak waarbij chefs en horecazaken kunnen rekenen op rust, professionaliteit en mensen die precies weten wat er moet gebeuren.'
     ],
     image: '/mitchell.png',

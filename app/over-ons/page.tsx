@@ -12,7 +12,7 @@ export default function OverOnsPage() {
         <div className="absolute inset-0">
           <Image
             src="/team-photo.png"
-            alt="ChefsConnect Team"
+            alt="Chefs Connect Team"
             fill
             className="object-cover"
             priority
@@ -92,7 +92,7 @@ export default function OverOnsPage() {
               >
                 <Image
                   src="/team-photo.png"
-                  alt="ChefsConnect Premium Service"
+                  alt="Chefs Connect Premium Service"
                   fill
                   className="object-cover"
                   loading="lazy"

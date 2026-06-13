@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <Image
           src="/choice-events.webp"
-          alt="Connect Event & Dining"
+          alt="Connect Events & Dining"
           fill
           className="object-cover brightness-[0.6]"
           priority
@@ -28,7 +28,7 @@ export default function HeroSection() {
           <div className="relative w-full max-w-md aspect-[4/1]">
             <Image
               src="/connect-events-dining-logo.png"
-              alt="Connect Event & Dining"
+              alt="Connect Events & Dining"
               fill
               className="object-contain"
               priority

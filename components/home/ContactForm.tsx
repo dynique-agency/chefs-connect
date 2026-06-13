@@ -195,7 +195,7 @@ export default function ContactForm() {
               <div className="relative w-full h-full border border-gold/30">
                 <Image
                   src="/logo-detail.jpg"
-                  alt="ChefsConnect branding detail"
+                  alt="Chefs Connect branding detail"
                   fill
                   className="object-cover"
                   sizes="50vw"

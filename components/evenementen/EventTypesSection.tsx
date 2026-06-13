@@ -31,7 +31,7 @@ export default function EventTypesSection() {
             <span className="text-gold italic">exclusieve private dining</span>
           </h2>
           <p className="font-inter text-lg md:text-xl text-cream/80 max-w-3xl mx-auto leading-relaxed break-words">
-            Connect Event & Dining is er niet alleen voor grootschalige evenementen. Juist ook in intieme settings maken wij het verschil.
+            Connect Events & Dining is er niet alleen voor grootschalige evenementen. Juist ook in intieme settings maken wij het verschil.
           </p>
         </motion.div>
 
