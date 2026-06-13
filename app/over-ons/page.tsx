@@ -116,7 +116,7 @@ export default function OverOnsPage() {
         <div className="absolute inset-0 opacity-10">
           <Image
             src="/team-photo.png"
-            alt="Background"
+            alt="Het team van Chefs Connect"
             fill
             className="object-cover"
             loading="lazy"

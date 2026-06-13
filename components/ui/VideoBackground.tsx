@@ -80,7 +80,7 @@ export default function VideoBackground({
         // Static fallback if video fails to load entirely
         <Image
           src={fallbackImage}
-          alt="Background"
+          alt="Chefs Connect premium horeca sfeerbeeld"
           fill
           className="object-cover"
           priority={priority}
