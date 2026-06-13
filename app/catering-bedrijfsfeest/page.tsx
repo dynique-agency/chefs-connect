@@ -53,8 +53,8 @@ export default function CateringBedrijfsfeestPage() {
       formEventTypeDefault="Bedrijfsfeest"
       formLocation="Catering bedrijfsfeest"
       relatedLinks={[
+        { href: '/catering-bruiloft', label: 'Catering bruiloft & gala' },
         { href: '/evenementen', label: 'Alle fine dining catering' },
-        { href: '/over-ons', label: 'Over onze chefs' },
       ]}
     />
   );

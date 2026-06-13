@@ -46,6 +46,12 @@ export interface EventLandingContent {
   heroImage?: string;
   introImage?: string;
   relatedLinks?: { href: string; label: string }[];
+  /** Call-to-action label (hero button + form submit). Defaults to a quote request. */
+  ctaLabel?: string;
+  /** Heading above the form. */
+  formHeading?: string;
+  /** Paragraph under the form heading. */
+  formSubtext?: string;
 }
 
 const WHY_CARDS = [
@@ -103,6 +109,9 @@ export default function EventLandingPage({
   heroImage = '/choice-events.webp',
   introImage = '/chef-table-explanation.webp',
   relatedLinks,
+  ctaLabel = 'Vraag offerte aan',
+  formHeading = 'Vertel ons over je evenement',
+  formSubtext = 'Laat je aanvraag achter en we nemen binnen 24 uur contact met je op voor een vrijblijvend voorstel.',
 }: EventLandingContent) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [notification, setNotification] = useState<{
@@ -192,7 +201,7 @@ export default function EventLandingPage({
             transition={{ duration: 1, delay: 0.6 }}
             className="inline-flex items-center gap-3 px-10 py-5 font-inter text-sm uppercase tracking-wider text-brown bg-gold hover:bg-gold-dark transition-all duration-500"
           >
-            <span>Vraag offerte aan</span>
+            <span>{ctaLabel}</span>
             <ArrowRight className="w-5 h-5" />
           </motion.a>
         </div>
@@ -331,9 +340,9 @@ export default function EventLandingPage({
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center mb-12">
             <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">Offerte aanvragen</span>
-            <h2 className="font-playfair text-4xl md:text-5xl font-light text-cream mb-6">Vertel ons over je evenement</h2>
+            <h2 className="font-playfair text-4xl md:text-5xl font-light text-cream mb-6">{formHeading}</h2>
             <p className="font-inter text-lg text-cream/70 max-w-xl mx-auto leading-relaxed">
-              Laat je aanvraag achter en we nemen binnen 24 uur contact met je op voor een vrijblijvend voorstel.
+              {formSubtext}
             </p>
           </motion.div>
 
@@ -386,7 +395,7 @@ export default function EventLandingPage({
                 disabled={isSubmitting}
                 className="group w-full md:w-auto px-10 py-4 font-inter text-sm uppercase tracking-wider text-brown bg-gold border-2 border-gold hover:bg-gold-dark hover:border-gold-dark transition-all duration-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
               >
-                <span>{isSubmitting ? 'Verzenden...' : 'Vraag offerte aan'}</span>
+                <span>{isSubmitting ? 'Verzenden...' : ctaLabel}</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </form>

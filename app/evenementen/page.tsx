@@ -4,6 +4,7 @@ import IntroSection from '@/components/evenementen/IntroSection';
 import FineDiningSection from '@/components/evenementen/FineDiningSection';
 import SignatureMenuSection from '@/components/evenementen/SignatureMenuSection';
 import EventTypesSection from '@/components/evenementen/EventTypesSection';
+import CateringServicesSection from '@/components/evenementen/CateringServicesSection';
 import CarefreeSection from '@/components/evenementen/CarefreeSection';
 import WhyChooseUsSection from '@/components/evenementen/WhyChooseUsSection';
 import ContactSection from '@/components/evenementen/ContactSection';
@@ -42,6 +43,7 @@ export default function EvenementenPage() {
       <FineDiningSection />
       <SignatureMenuSection />
       <EventTypesSection />
+      <CateringServicesSection />
       <CarefreeSection />
       <WhyChooseUsSection />
       <ContactSection />

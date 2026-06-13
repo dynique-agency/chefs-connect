@@ -85,6 +85,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75,
     },
     {
+      url: 'https://chefs-connect.nl/catering-bedrijfsfeest',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://chefs-connect.nl/catering-bruiloft',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: 'https://chefs-connect.nl/cateringpartner',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
       url: 'https://chefs-connect.nl/kennisbank',
       lastModified: lastUpdate,
       changeFrequency: 'weekly',
