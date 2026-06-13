@@ -100,8 +100,8 @@ export default function EventLandingPage({
   formSubject,
   formEventTypeDefault,
   formLocation,
-  heroImage = '/events-service.png',
-  introImage = '/event-service-detail.png',
+  heroImage = '/choice-events.webp',
+  introImage = '/chef-table-explanation.webp',
   relatedLinks,
 }: EventLandingContent) {
   const [isSubmitting, setIsSubmitting] = useState(false);
