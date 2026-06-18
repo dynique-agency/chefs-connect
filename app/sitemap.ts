@@ -85,6 +85,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.75,
     },
     {
+      url: 'https://chefs-connect.nl/vacature-kok-eindhoven',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://chefs-connect.nl/vacature-kok-tilburg',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://chefs-connect.nl/vacature-kok-breda',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://chefs-connect.nl/vacature-kok-den-bosch',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://chefs-connect.nl/vacature-kok-nijmegen',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://chefs-connect.nl/catering-bedrijfsfeest',
       lastModified: lastUpdate,
       changeFrequency: 'monthly',

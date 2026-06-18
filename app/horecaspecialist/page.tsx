@@ -789,6 +789,33 @@ export default function HorecaSpecialistPage() {
         </div>
       </section>
 
+      {/* Werken als kok per stad */}
+      <section className="pb-12 px-6 bg-cream">
+        <div className="max-w-4xl mx-auto">
+          <span className="font-inter text-xs uppercase tracking-[0.2em] text-gold block mb-5 text-center">
+            Werken als kok in jouw regio
+          </span>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { href: '/vacature-kok-eindhoven', label: 'Kok in Eindhoven' },
+              { href: '/vacature-kok-tilburg', label: 'Kok in Tilburg' },
+              { href: '/vacature-kok-breda', label: 'Kok in Breda' },
+              { href: '/vacature-kok-den-bosch', label: 'Kok in Den Bosch' },
+              { href: '/vacature-kok-nijmegen', label: 'Kok in Nijmegen' },
+              { href: '/maastricht', label: 'Kok in Maastricht' },
+            ].map((c) => (
+              <Link
+                key={c.href}
+                href={c.href}
+                className="font-inter text-sm text-brown border border-brown/20 px-5 py-2.5 hover:border-gold hover:text-gold transition-colors duration-300"
+              >
+                {c.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* WhatsApp secondary option */}
       <section className="pb-16 px-6 bg-cream">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
