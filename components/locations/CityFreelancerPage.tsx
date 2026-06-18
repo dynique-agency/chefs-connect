@@ -24,6 +24,12 @@ export interface CityFreelancerContent {
   city: string;
   /** Eyebrow label, e.g. "Eindhoven en Noord-Brabant" */
   regionLabel: string;
+  /** First hero line, e.g. "Werk als freelance kok" */
+  heroLead?: string;
+  /** Role noun used in image alt texts, e.g. "kok" or "bedieningsmedewerker" */
+  roleNoun?: string;
+  /** Options for the function dropdown */
+  functionOptions?: string[];
   /** Hero accent line, e.g. "in Eindhoven" */
   heroAccent: string;
   heroSubtext: string;
@@ -56,9 +62,14 @@ const WHY_CARDS = [
   { icon: ChefHat, label: 'Eerlijk en transparant', desc: 'Duidelijke afspraken vooraf, geen verrassingen achteraf.' },
 ];
 
+const DEFAULT_FUNCTIONS = ['Head chef', 'Sous chef', 'Chef de partie', 'Zelfstandig werkend kok', 'Commis kok', 'Bedieningsmedewerker', 'Anders'];
+
 export default function CityFreelancerPage({
   city,
   regionLabel,
+  heroLead = 'Werk als freelance kok',
+  roleNoun = 'kok',
+  functionOptions = DEFAULT_FUNCTIONS,
   heroAccent,
   heroSubtext,
   contextEyebrow,
@@ -120,7 +131,7 @@ export default function CityFreelancerPage({
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-center justify-center px-6 py-32">
         <div className="absolute inset-0">
-          <Image src={heroImage} alt={`Freelance kok aan het werk in een restaurant in ${city}`} fill className="object-cover brightness-[0.45]" priority />
+          <Image src={heroImage} alt={`Freelance ${roleNoun} aan het werk in een restaurant in ${city}`} fill className="object-cover brightness-[0.45]" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-brown/50 via-brown/30 to-brown/75" />
         </div>
 
@@ -135,7 +146,7 @@ export default function CityFreelancerPage({
             transition={{ duration: 1, delay: 0.2 }}
             className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-cream leading-tight mb-8"
           >
-            Werk als freelance kok
+            {heroLead}
             <br />
             <span className="text-gold italic">{heroAccent}</span>
           </motion.h1>
@@ -180,7 +191,7 @@ export default function CityFreelancerPage({
             </motion.div>
 
             <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.2 }} className="relative h-[480px]">
-              <Image src={contextImage} alt={`Chef aan het werk in een restaurant in ${city}`} fill className="object-cover brightness-[0.85]" sizes="(max-width: 1024px) 100vw, 50vw" />
+              <Image src={contextImage} alt={`Freelance ${roleNoun} aan het werk in een restaurant in ${city}`} fill className="object-cover brightness-[0.85]" sizes="(max-width: 1024px) 100vw, 50vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-brown via-brown/20 to-transparent" />
               <div className="absolute inset-0 border-2 border-gold/30" />
             </motion.div>
@@ -346,13 +357,9 @@ export default function CityFreelancerPage({
                   <label htmlFor="function" className="block font-inter text-sm uppercase tracking-wider text-cream/70 mb-2">Functie *</label>
                   <select id="function" name="function" required className="w-full px-4 py-3 bg-cream/95 border border-cream/20 focus:border-gold focus:outline-none transition-colors font-inter text-brown">
                     <option value="">Selecteer je functie</option>
-                    <option value="Head chef">Head chef</option>
-                    <option value="Sous chef">Sous chef</option>
-                    <option value="Chef de partie">Chef de partie</option>
-                    <option value="Zelfstandig werkend kok">Zelfstandig werkend kok</option>
-                    <option value="Commis kok">Commis kok</option>
-                    <option value="Bedieningsmedewerker">Bedieningsmedewerker</option>
-                    <option value="Anders">Anders</option>
+                    {functionOptions.map((opt) => (
+                      <option key={opt} value={opt}>{opt}</option>
+                    ))}
                   </select>
                 </div>
               </div>

@@ -115,6 +115,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: 'https://chefs-connect.nl/vacature-bediening-eindhoven',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://chefs-connect.nl/vacature-bediening-tilburg',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://chefs-connect.nl/vacature-bediening-breda',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://chefs-connect.nl/vacature-bediening-den-bosch',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://chefs-connect.nl/vacature-bediening-nijmegen',
+      lastModified: lastUpdate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://chefs-connect.nl/catering-bedrijfsfeest',
       lastModified: lastUpdate,
       changeFrequency: 'monthly',
