@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Nijmegen',
-  description: 'Op zoek naar een freelance kok in Nijmegen? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Nijmegen en de regio Arnhem-Nijmegen.',
+  description: 'Op zoek naar een freelance kok in Nijmegen? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in de regio Arnhem-Nijmegen.',
   keywords: ['freelance kok nijmegen', 'kok inhuren nijmegen', 'horecapersoneel nijmegen', 'tijdelijke kok nijmegen', 'spoed kok nijmegen', 'keukenpersoneel nijmegen'],
-  alternates: { canonical: 'https://chefs-connect.nl/personeel-nijmegen' },
+  alternates: pageAlternates('https://chefs-connect.nl/personeel-nijmegen'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Nijmegen | Chefs Connect',
-    description: 'Op zoek naar een freelance kok in Nijmegen? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Nijmegen en de regio Arnhem-Nijmegen.',
+    description: 'Op zoek naar een freelance kok in Nijmegen? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in de regio Arnhem-Nijmegen.',
     url: 'https://chefs-connect.nl/personeel-nijmegen',
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

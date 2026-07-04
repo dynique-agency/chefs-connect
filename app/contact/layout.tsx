@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Neem Direct Contact Op',
   description: 'Klaar om uw keukenbrigade te versterken of een exclusief evenement te plannen? Neem contact op met Chefs Connect voor een vrijblijvende kennismaking.',
   keywords: ['contact chefs connect', 'horeca personeel aanvragen', 'catering offerte aanvragen', 'freelance kok boeken'],
-  alternates: { canonical: 'https://chefs-connect.nl/contact' },
+  alternates: pageAlternates('https://chefs-connect.nl/contact'),
   openGraph: {
     title: 'Contact | Chefs Connect',
     description: 'Klaar om uw keukenbrigade te versterken of een exclusief evenement te plannen? Neem contact op met Chefs Connect voor een vrijblijvende kennismaking.',

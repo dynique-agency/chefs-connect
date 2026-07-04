@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-kok-tilburg';
 const description = 'Op zoek naar werk als kok in Tilburg? Schrijf je in bij Chefs Connect en werk als freelance kok bij de mooiste restaurants, hotels en events in Tilburg en omstreken.';
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Vacature Kok Tilburg? Werk als Freelancer',
   description,
   keywords: ['vacature kok tilburg', 'freelance kok tilburg', 'zzp kok tilburg', 'zelfstandig werkend kok tilburg', 'kok vacatures tilburg', 'horeca werk tilburg'],
-  alternates: { canonical: url },
+  alternates: pageAlternates(url),
   openGraph: {
     title: 'Werk als Freelance Kok in Tilburg | Chefs Connect',
     description,

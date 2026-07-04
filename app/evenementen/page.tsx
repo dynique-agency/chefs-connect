@@ -8,12 +8,13 @@ import CateringServicesSection from '@/components/evenementen/CateringServicesSe
 import CarefreeSection from '@/components/evenementen/CarefreeSection';
 import WhyChooseUsSection from '@/components/evenementen/WhyChooseUsSection';
 import ContactSection from '@/components/evenementen/ContactSection';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Fine Dining Catering & Exclusieve Evenementen',
   description: 'Verhef uw zakelijke of particuliere evenement met onze fine dining catering op locatie. Culinaire meesterwerken door topchefs, tot in de puntjes verzorgd.',
   keywords: ['fine dining catering op locatie', 'luxe catering evenementen', 'exclusieve zakelijke catering', 'private dining chef thuis', 'high-end event catering'],
-  alternates: { canonical: 'https://chefs-connect.nl/evenementen' },
+  alternates: pageAlternates('https://chefs-connect.nl/evenementen'),
   openGraph: {
     title: 'Fine Dining Catering & Exclusieve Evenementen | Chefs Connect',
     description: 'Verhef uw zakelijke of particuliere evenement met onze fine dining catering op locatie. Culinaire meesterwerken door topchefs, tot in de puntjes verzorgd.',

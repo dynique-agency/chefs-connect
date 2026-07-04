@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-kok-nijmegen';
 const description = 'Op zoek naar werk als kok in Nijmegen? Schrijf je in bij Chefs Connect en werk als freelance kok bij de mooiste restaurants, hotels en events in Nijmegen en omstreken.';
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Vacature Kok Nijmegen? Werk als Freelancer',
   description,
   keywords: ['vacature kok nijmegen', 'freelance kok nijmegen', 'zzp kok nijmegen', 'zelfstandig werkend kok nijmegen', 'kok vacatures nijmegen', 'horeca werk nijmegen'],
-  alternates: { canonical: url },
+  alternates: pageAlternates(url),
   openGraph: {
     title: 'Werk als Freelance Kok in Nijmegen | Chefs Connect',
     description,

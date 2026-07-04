@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-bediening-breda';
 const description = 'Op zoek naar werk in de bediening in Breda? Schrijf je in bij Chefs Connect en werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Breda en omstreken.';
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Vacature Bediening Breda? Werk als Freelancer',
   description,
   keywords: ['vacature bediening breda', 'freelance bediening breda', 'gastheer gastvrouw breda', 'horeca bediening breda', 'zzp bediening breda', 'bediening werk breda'],
-  alternates: { canonical: url },
+  alternates: pageAlternates(url),
   openGraph: {
     title: 'Werk in de Bediening in Breda | Chefs Connect',
     description,

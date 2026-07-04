@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-kok-eindhoven';
 const description = 'Op zoek naar werk als kok in Eindhoven? Schrijf je in bij Chefs Connect en werk als freelance kok bij de mooiste restaurants, hotels en events in Eindhoven en omstreken.';
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Vacature Kok Eindhoven? Werk als Freelancer',
   description,
   keywords: ['vacature kok eindhoven', 'freelance kok eindhoven', 'zzp kok eindhoven', 'zelfstandig werkend kok eindhoven', 'kok vacatures eindhoven', 'horeca werk eindhoven'],
-  alternates: { canonical: url },
+  alternates: pageAlternates(url),
   openGraph: {
     title: 'Werk als Freelance Kok in Eindhoven | Chefs Connect',
     description,

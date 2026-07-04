@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Horeca Opdrachten in Maastricht',
   description: 'Werk als freelance chef of bediening op de mooiste horecalocaties in Maastricht en Zuid-Limburg. Chefs Connect verbindt je met opdrachten die bij je passen.',
   keywords: ['freelance kok maastricht', 'horeca opdrachten maastricht', 'freelance chef maastricht', 'horecawerk maastricht', 'zzp horeca limburg', 'freelance bediening maastricht'],
-  alternates: { canonical: 'https://chefs-connect.nl/maastricht' },
+  alternates: pageAlternates('https://chefs-connect.nl/maastricht'),
   openGraph: {
     title: 'Freelance Horeca Opdrachten in Maastricht | Chefs Connect',
     description: 'Werk als freelance chef of bediening op de mooiste horecalocaties in Maastricht en Zuid-Limburg. Chefs Connect verbindt je met opdrachten die bij je passen.',

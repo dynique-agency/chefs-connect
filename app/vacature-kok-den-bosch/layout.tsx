@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-kok-den-bosch';
 const description = 'Op zoek naar werk als kok in Den Bosch? Schrijf je in bij Chefs Connect en werk als freelance kok bij de mooiste restaurants, hotels en events in ’s-Hertogenbosch en omstreken.';
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Vacature Kok Den Bosch? Werk als Freelancer',
   description,
   keywords: ['vacature kok den bosch', 'freelance kok den bosch', 'zzp kok den bosch', "zelfstandig werkend kok 's-hertogenbosch", 'kok vacatures den bosch', 'horeca werk den bosch'],
-  alternates: { canonical: url },
+  alternates: pageAlternates(url),
   openGraph: {
     title: 'Werk als Freelance Kok in Den Bosch | Chefs Connect',
     description,

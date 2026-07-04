@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Algemene Voorwaarden | Chefs Connect',
   description: 'Lees de algemene voorwaarden van Chefs Connect voor freelancers en opdrachtgevers. Duidelijke afspraken voor professionele samenwerking in de horeca.',
-  alternates: { canonical: 'https://chefs-connect.nl/terms' },
+  alternates: pageAlternates('https://chefs-connect.nl/terms'),
   robots: { index: false, follow: false },
 };
 

@@ -6,15 +6,16 @@ import Reviews from '@/components/home/Reviews';
 import AboutSection from '@/components/home/AboutSection';
 import { LazyInstagramFeed, LazyContactForm } from '@/lib/lazy-components';
 import PremiumStaffingPopup from '@/components/ui/PremiumStaffingPopup';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Horecaprofessionals & Fine Dining Catering',
-  description: 'Chefs Connect levert chefs en bediening snel en professioneel, van private dining tot fine dining. Premium freelance horecapersoneel voor restaurants en events in NL & BE.',
+  description: 'Chefs Connect levert chefs en bediening snel en professioneel, van private dining tot fine dining. Freelance horecapersoneel voor restaurants in NL & BE.',
   keywords: ['freelance horeca personeel inhuren', 'freelance chef kok gezocht', 'luxe catering evenementen', 'horeca professionals', 'fine dining catering'],
-  alternates: { canonical: 'https://chefs-connect.nl' },
+  alternates: pageAlternates('https://chefs-connect.nl'),
   openGraph: {
     title: 'Chefs Connect | Premium Horecapersoneel & Catering',
-    description: 'Chefs Connect levert chefs en bediening snel en professioneel, van private dining tot fine dining. Premium freelance horecapersoneel voor restaurants en events in NL & BE.',
+    description: 'Chefs Connect levert chefs en bediening snel en professioneel, van private dining tot fine dining. Freelance horecapersoneel voor restaurants in NL & BE.',
     url: 'https://chefs-connect.nl',
   },
 };

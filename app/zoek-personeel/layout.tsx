@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Horecapersoneel Inhuren | Chefs & Bediening',
-  description: 'Op zoek naar freelance horecapersoneel? Chefs Connect levert chefs en bediening snel en zonder gedoe, met gegarandeerde kwaliteit voor uw restaurant of hotel in NL & BE.',
+  description: 'Op zoek naar freelance horecapersoneel? Chefs Connect levert chefs en bediening snel en zonder gedoe, met gegarandeerde kwaliteit voor uw zaak in NL & BE.',
   keywords: ['tijdelijk horeca personeel inhuren', 'freelance kok gezocht', 'extra bediening inhuren', 'spoed chef kok', 'flexibel horeca personeel'],
-  alternates: { canonical: 'https://chefs-connect.nl/zoek-personeel' },
+  alternates: pageAlternates('https://chefs-connect.nl/zoek-personeel'),
   openGraph: {
     title: 'Freelance Horecapersoneel Inhuren | Chefs Connect',
-    description: 'Op zoek naar freelance horecapersoneel? Chefs Connect levert chefs en bediening snel en zonder gedoe, met gegarandeerde kwaliteit voor uw restaurant of hotel in NL & BE.',
+    description: 'Op zoek naar freelance horecapersoneel? Chefs Connect levert chefs en bediening snel en zonder gedoe, met gegarandeerde kwaliteit voor uw zaak in NL & BE.',
     url: 'https://chefs-connect.nl/zoek-personeel',
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

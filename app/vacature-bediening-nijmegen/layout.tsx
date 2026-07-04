@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-bediening-nijmegen';
 const description = 'Op zoek naar werk in de bediening in Nijmegen? Schrijf je in bij Chefs Connect en werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Nijmegen en omstreken.';
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Vacature Bediening Nijmegen? Werk als Freelancer',
   description,
   keywords: ['vacature bediening nijmegen', 'freelance bediening nijmegen', 'gastheer gastvrouw nijmegen', 'horeca bediening nijmegen', 'zzp bediening nijmegen', 'bediening werk nijmegen'],
-  alternates: { canonical: url },
+  alternates: pageAlternates(url),
   openGraph: {
     title: 'Werk in de Bediening in Nijmegen | Chefs Connect',
     description,

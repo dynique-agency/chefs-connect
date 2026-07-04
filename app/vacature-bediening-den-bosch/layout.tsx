@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-bediening-den-bosch';
 const description = 'Op zoek naar werk in de bediening in Den Bosch? Schrijf je in bij Chefs Connect en werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in ’s-Hertogenbosch en omstreken.';
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Vacature Bediening Den Bosch? Werk als Freelancer',
   description,
   keywords: ['vacature bediening den bosch', 'freelance bediening den bosch', "gastheer gastvrouw 's-hertogenbosch", 'horeca bediening den bosch', 'zzp bediening den bosch', 'bediening werk den bosch'],
-  alternates: { canonical: url },
+  alternates: pageAlternates(url),
   openGraph: {
     title: 'Werk in de Bediening in Den Bosch | Chefs Connect',
     description,

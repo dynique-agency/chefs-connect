@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Tilburg',
   description: 'Op zoek naar een freelance kok in Tilburg? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Tilburg en Midden-Brabant.',
   keywords: ['freelance kok tilburg', 'kok inhuren tilburg', 'horecapersoneel tilburg', 'tijdelijke kok tilburg', 'spoed kok midden-brabant', 'keukenpersoneel tilburg'],
-  alternates: { canonical: 'https://chefs-connect.nl/personeel-tilburg' },
+  alternates: pageAlternates('https://chefs-connect.nl/personeel-tilburg'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Tilburg | Chefs Connect',
     description: 'Op zoek naar een freelance kok in Tilburg? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Tilburg en Midden-Brabant.',

@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Chefs Connect | Links',
   description: 'Chefs Connect: Premium horecafreelancers, exclusieve evenementen en fine dining catering.',
   icons: { icon: '/faviconchefsconnect.png' },
-  alternates: { canonical: 'https://chefs-connect.nl/links' },
+  alternates: pageAlternates('https://chefs-connect.nl/links'),
   robots: { index: false, follow: false },
   openGraph: {
     title: 'Chefs Connect | Links',

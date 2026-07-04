@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Breda',
   description: 'Op zoek naar een freelance kok in Breda? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Breda en West-Brabant.',
   keywords: ['freelance kok breda', 'kok inhuren breda', 'horecapersoneel breda', 'tijdelijke kok breda', 'spoed kok west-brabant', 'keukenpersoneel breda'],
-  alternates: { canonical: 'https://chefs-connect.nl/personeel-breda' },
+  alternates: pageAlternates('https://chefs-connect.nl/personeel-breda'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Breda | Chefs Connect',
     description: 'Op zoek naar een freelance kok in Breda? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Breda en West-Brabant.',

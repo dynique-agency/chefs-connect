@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Maastricht',
   description: 'Op zoek naar een freelance kok in Maastricht? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in de regio Zuid-Limburg.',
   keywords: ['freelance kok maastricht', 'kok inhuren maastricht', 'horecapersoneel maastricht', 'tijdelijke kok maastricht', 'spoed kok limburg', 'keukenpersoneel maastricht'],
-  alternates: { canonical: 'https://chefs-connect.nl/personeel-maastricht' },
+  alternates: pageAlternates('https://chefs-connect.nl/personeel-maastricht'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Maastricht | Chefs Connect',
     description: 'Op zoek naar een freelance kok in Maastricht? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in de regio Zuid-Limburg.',

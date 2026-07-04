@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-kok-breda';
 const description = 'Op zoek naar werk als kok in Breda? Schrijf je in bij Chefs Connect en werk als freelance kok bij de mooiste restaurants, hotels en events in Breda en omstreken.';
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Vacature Kok Breda? Werk als Freelancer',
   description,
   keywords: ['vacature kok breda', 'freelance kok breda', 'zzp kok breda', 'zelfstandig werkend kok breda', 'kok vacatures breda', 'horeca werk breda'],
-  alternates: { canonical: url },
+  alternates: pageAlternates(url),
   openGraph: {
     title: 'Werk als Freelance Kok in Breda | Chefs Connect',
     description,

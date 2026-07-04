@@ -1,14 +1,15 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/kennisbank/freelance-kok-worden';
 const title = 'Freelance Kok Worden: Zo Begin Je (Stappenplan 2026)';
-const description = 'Freelance kok worden? Compleet stappenplan: KvK-inschrijving, btw, verzekeringen, je uurtarief bepalen en aan opdrachten komen. Geschreven door een ervaren chef.';
+const description = 'Freelance kok worden? Compleet stappenplan: KvK, btw, verzekeringen, je uurtarief bepalen en aan opdrachten komen. Geschreven door een ervaren chef.';
 
 export const metadata: Metadata = {
   title,
   description,
   keywords: ['freelance kok worden', 'zzp kok beginnen', 'freelance kok starten', 'kvk inschrijven horeca', 'zelfstandig kok worden', 'freelance chef worden'],
-  alternates: { canonical: url },
+  alternates: pageAlternates(url),
   openGraph: {
     title: 'Freelance Kok Worden: Zo Begin Je | Chefs Connect',
     description,

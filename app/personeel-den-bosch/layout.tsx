@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Den Bosch',
   description: 'Op zoek naar een freelance kok in Den Bosch? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in ’s-Hertogenbosch en omstreken.',
   keywords: ['freelance kok den bosch', 'kok inhuren den bosch', 'horecapersoneel den bosch', "kok inhuren 's-hertogenbosch", 'spoed kok den bosch', 'keukenpersoneel den bosch'],
-  alternates: { canonical: 'https://chefs-connect.nl/personeel-den-bosch' },
+  alternates: pageAlternates('https://chefs-connect.nl/personeel-den-bosch'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Den Bosch | Chefs Connect',
     description: 'Op zoek naar een freelance kok in Den Bosch? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in ’s-Hertogenbosch en omstreken.',

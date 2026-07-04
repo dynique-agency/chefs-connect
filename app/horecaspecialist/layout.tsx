@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Horeca Opdrachten | Word Horecaspecialist',
   description: 'Ben je chef, kok of bediening en wil je freelancen? Sluit je aan bij Chefs Connect en werk bij top-locaties in NL & BE, flexibel en op jouw agenda.',
   keywords: ['freelance chef kok opdrachten', 'zzp horeca opdrachten', 'werken als zzp kok', 'freelance horeca vacatures', 'freelance bediening'],
-  alternates: { canonical: 'https://chefs-connect.nl/horecaspecialist' },
+  alternates: pageAlternates('https://chefs-connect.nl/horecaspecialist'),
   openGraph: {
     title: 'Freelance Horeca Opdrachten | Chefs Connect',
     description: 'Ben je chef, kok of bediening en wil je freelancen? Sluit je aan bij Chefs Connect en werk bij top-locaties in NL & BE, flexibel en op jouw agenda.',

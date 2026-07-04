@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/cateringpartner';
 const description = 'Op zoek naar een vaste cateringpartner voor uw evenementenlocatie? Connect Events & Dining verzorgt fine dining op locatie in heel NL & BE. Bespreek een samenwerking.';
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Cateringpartner voor Evenementenlocaties',
   description,
   keywords: ['cateringpartner', 'catering voor locaties', 'cateringpartner evenementenlocatie', 'vaste cateraar locatie', 'fine dining cateringpartner', 'catering landgoed kasteel'],
-  alternates: { canonical: url },
+  alternates: pageAlternates(url),
   openGraph: {
     title: 'Cateringpartner voor Locaties | Connect Events & Dining',
     description,
