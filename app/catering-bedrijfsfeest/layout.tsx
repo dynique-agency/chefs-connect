@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/catering-bedrijfsfeest';
-const description = 'Fine dining catering voor uw bedrijfsfeest of zakelijk evenement. Topchefs koken op locatie in heel NL & BE. Van walking dinner tot gala. Vraag een offerte aan.';
+const description = 'Fine dining catering voor uw bedrijfsfeest. Topchefs koken op locatie in heel NL & BE. Van walking dinner tot gala. Vraag een offerte aan.';
 
 export const metadata: Metadata = {
   title: 'Catering Bedrijfsfeest | Fine Dining op Locatie',

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-bediening-eindhoven';
-const description = 'Op zoek naar werk in de bediening in Eindhoven? Schrijf je in bij Chefs Connect en werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Eindhoven en omstreken.';
+const description = 'Op zoek naar werk in de bediening in Eindhoven? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Eindhoven en omstreken.';
 
 export const metadata: Metadata = {
   title: 'Vacature Bediening Eindhoven? Werk als Freelancer',

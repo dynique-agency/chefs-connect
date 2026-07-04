@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/cateringpartner';
-const description = 'Op zoek naar een vaste cateringpartner voor uw evenementenlocatie? Connect Events & Dining verzorgt fine dining op locatie in heel NL & BE. Bespreek een samenwerking.';
+const description = 'Op zoek naar een vaste cateringpartner voor uw evenementenlocatie? Connect Events & Dining verzorgt fine dining op locatie in NL & BE.';
 
 export const metadata: Metadata = {
   title: 'Cateringpartner voor Evenementenlocaties',

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-kok-nijmegen';
-const description = 'Op zoek naar werk als kok in Nijmegen? Schrijf je in bij Chefs Connect en werk als freelance kok bij de mooiste restaurants, hotels en events in Nijmegen en omstreken.';
+const description = 'Op zoek naar werk als kok in Nijmegen? Werk als freelance kok bij de mooiste restaurants, hotels en events in Nijmegen en omstreken.';
 
 export const metadata: Metadata = {
   title: 'Vacature Kok Nijmegen? Werk als Freelancer',

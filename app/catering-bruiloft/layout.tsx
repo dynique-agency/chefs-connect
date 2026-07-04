@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/catering-bruiloft';
-const description = 'Fine dining catering voor uw bruiloft of gala. Topchefs koken op locatie in heel NL & BE, van walking dinner tot zittend galadiner. Vraag vrijblijvend een offerte aan.';
+const description = 'Fine dining catering voor uw bruiloft of gala. Topchefs koken op locatie in heel NL & BE, van walking dinner tot zittend galadiner. Vraag een offerte aan.';
 
 export const metadata: Metadata = {
   title: 'Catering Bruiloft & Gala | Fine Dining op Locatie',

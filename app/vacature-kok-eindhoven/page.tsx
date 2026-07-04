@@ -27,9 +27,9 @@ export default function VacatureKokEindhovenPage() {
       formSubject="Chefs Connect: Aanmelding Freelance Kok Eindhoven"
       formLocation="Vacature kok Eindhoven"
       relatedLinks={[
+        { href: '/vacature-kok-helmond', label: 'Kok in Helmond' },
         { href: '/vacature-kok-tilburg', label: 'Kok in Tilburg' },
         { href: '/vacature-kok-den-bosch', label: 'Kok in Den Bosch' },
-        { href: '/horecaspecialist', label: 'Word horecaspecialist' },
       ]}
     />
   );

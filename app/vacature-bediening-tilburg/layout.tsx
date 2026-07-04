@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-bediening-tilburg';
-const description = 'Op zoek naar werk in de bediening in Tilburg? Schrijf je in bij Chefs Connect en werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Tilburg en omstreken.';
+const description = 'Op zoek naar werk in de bediening in Tilburg? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Tilburg en omstreken.';
 
 export const metadata: Metadata = {
   title: 'Vacature Bediening Tilburg? Werk als Freelancer',

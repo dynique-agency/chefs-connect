@@ -33,8 +33,8 @@ export default function VacatureBedieningEindhovenPage() {
       formLocation="Vacature bediening Eindhoven"
       relatedLinks={[
         { href: '/vacature-kok-eindhoven', label: 'Kok in Eindhoven' },
+        { href: '/vacature-bediening-helmond', label: 'Bediening in Helmond' },
         { href: '/vacature-bediening-tilburg', label: 'Bediening in Tilburg' },
-        { href: '/horecaspecialist', label: 'Word horecaspecialist' },
       ]}
     />
   );

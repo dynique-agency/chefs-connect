@@ -804,6 +804,11 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-kok-den-bosch', label: 'Kok in Den Bosch' },
                 { href: '/vacature-kok-nijmegen', label: 'Kok in Nijmegen' },
                 { href: '/maastricht', label: 'Kok in Maastricht' },
+                { href: '/vacature-kok-utrecht', label: 'Kok in Utrecht' },
+                { href: '/vacature-kok-helmond', label: 'Kok in Helmond' },
+                { href: '/vacature-kok-venlo', label: 'Kok in Venlo' },
+                { href: '/vacature-kok-antwerpen', label: 'Kok in Antwerpen' },
+                { href: '/vacature-kok-hasselt', label: 'Kok in Hasselt' },
               ].map((c) => (
                 <Link
                   key={c.href}
@@ -827,6 +832,11 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-bediening-breda', label: 'Bediening in Breda' },
                 { href: '/vacature-bediening-den-bosch', label: 'Bediening in Den Bosch' },
                 { href: '/vacature-bediening-nijmegen', label: 'Bediening in Nijmegen' },
+                { href: '/vacature-bediening-utrecht', label: 'Bediening in Utrecht' },
+                { href: '/vacature-bediening-helmond', label: 'Bediening in Helmond' },
+                { href: '/vacature-bediening-venlo', label: 'Bediening in Venlo' },
+                { href: '/vacature-bediening-antwerpen', label: 'Bediening in Antwerpen' },
+                { href: '/vacature-bediening-hasselt', label: 'Bediening in Hasselt' },
               ].map((c) => (
                 <Link
                   key={c.href}

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates } from '@/lib/seo';
 
 const url = 'https://chefs-connect.nl/vacature-kok-den-bosch';
-const description = 'Op zoek naar werk als kok in Den Bosch? Schrijf je in bij Chefs Connect en werk als freelance kok bij de mooiste restaurants, hotels en events in ’s-Hertogenbosch en omstreken.';
+const description = 'Op zoek naar werk als kok in Den Bosch? Werk als freelance kok bij de mooiste restaurants en events in ’s-Hertogenbosch.';
 
 export const metadata: Metadata = {
   title: 'Vacature Kok Den Bosch? Werk als Freelancer',
