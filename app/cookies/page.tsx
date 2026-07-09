@@ -189,11 +189,11 @@ export default function CookiesPage() {
               <ul className="space-y-3 font-inter text-brown/80">
                 <li>
                   • <strong>Google Analytics:</strong> Voor website statistieken<br />
-                  <span className="text-sm text-brown/60">Privacybeleid: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">policies.google.com/privacy</a></span>
+                  <span className="text-sm text-brown/60">Privacybeleid: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-gold-accessible underline">policies.google.com/privacy</a></span>
                 </li>
                 <li>
                   • <strong>Google Maps:</strong> Voor locatie weergave<br />
-                  <span className="text-sm text-brown/60">Privacybeleid: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">policies.google.com/privacy</a></span>
+                  <span className="text-sm text-brown/60">Privacybeleid: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-gold-accessible underline">policies.google.com/privacy</a></span>
                 </li>
               </ul>
               <p className="font-inter text-sm text-brown/60 mt-4">
@@ -230,9 +230,9 @@ export default function CookiesPage() {
                 Voor meer informatie over cookies en privacy:
               </p>
               <ul className="space-y-2 font-inter text-brown/80">
-                <li>• Lees onze <a href="/privacy" className="text-gold hover:underline">Privacyverklaring</a></li>
-                <li>• Bezoek <a href="https://www.consumentenbond.nl/internet-privacy/cookies-verwijderen" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">consumentenbond.nl</a> voor algemene informatie over cookies</li>
-                <li>• Bezoek <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">autoriteitpersoonsgegevens.nl</a> voor informatie over jouw rechten</li>
+                <li>• Lees onze <a href="/privacy" className="text-gold-accessible underline">Privacyverklaring</a></li>
+                <li>• Bezoek <a href="https://www.consumentenbond.nl/internet-privacy/cookies-verwijderen" target="_blank" rel="noopener noreferrer" className="text-gold-accessible underline">consumentenbond.nl</a> voor algemene informatie over cookies</li>
+                <li>• Bezoek <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener noreferrer" className="text-gold-accessible underline">autoriteitpersoonsgegevens.nl</a> voor informatie over jouw rechten</li>
               </ul>
             </div>
 
@@ -244,8 +244,8 @@ export default function CookiesPage() {
               </p>
               <p className="font-inter text-sm">
                 <strong>ChefsConnect</strong><br />
-                E-mail: <a href="mailto:info@chefs-connect.nl" className="text-gold hover:underline">info@chefs-connect.nl</a><br />
-                Telefoon: <a href="tel:+31641875803" className="text-gold hover:underline">+31 6 41875803</a>
+                E-mail: <a href="mailto:info@chefs-connect.nl" className="text-gold-accessible underline">info@chefs-connect.nl</a><br />
+                Telefoon: <a href="tel:+31641875803" className="text-gold-accessible underline">+31 6 41875803</a>
               </p>
             </div>
           </motion.div>

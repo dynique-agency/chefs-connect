@@ -76,7 +76,7 @@ export default function ArticleLayout({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
             >
-              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">
+              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold-accessible block mb-6">
                 {category}
               </span>
               <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light text-brown leading-[1.1] mb-8">
@@ -119,7 +119,7 @@ export default function ArticleLayout({
                 aria-label="In dit artikel"
                 className="bg-brown/5 border border-brown/10 p-6 md:p-8 mb-12"
               >
-                <p className="font-inter text-xs uppercase tracking-[0.2em] text-gold mb-4">In dit artikel</p>
+                <p className="font-inter text-xs uppercase tracking-[0.2em] text-gold-accessible mb-4">In dit artikel</p>
                 <ol className="space-y-2.5">
                   {toc.map((item, i) => (
                     <li key={item.id}>
@@ -169,7 +169,7 @@ export default function ArticleLayout({
                 <Image src={author.image} alt={author.name} fill className="object-cover" sizes="80px" />
               </div>
               <div>
-                <p className="font-inter text-xs uppercase tracking-[0.2em] text-gold mb-2">Geschreven door</p>
+                <p className="font-inter text-xs uppercase tracking-[0.2em] text-gold-accessible mb-2">Geschreven door</p>
                 <p className="font-playfair text-xl text-brown mb-1">{author.name}</p>
                 <p className="font-inter text-sm text-brown/50 mb-3">{author.role}</p>
                 {author.bio && <p className="font-inter text-sm text-brown-medium leading-relaxed mb-4">{author.bio}</p>}
@@ -189,7 +189,7 @@ export default function ArticleLayout({
         {related && related.length > 0 && (
           <div className="px-6 py-12 bg-brown/[0.03] border-t border-brown/10">
             <div className="max-w-3xl mx-auto">
-              <p className="font-inter text-xs uppercase tracking-[0.3em] text-gold mb-8">Lees verder</p>
+              <p className="font-inter text-xs uppercase tracking-[0.3em] text-gold-accessible mb-8">Lees verder</p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {related.map((item) => (
                   <Link

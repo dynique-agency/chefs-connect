@@ -11,6 +11,11 @@ const config: Config = {
       colors: {
         gold: '#C9A961',
         'gold-dark': '#B8935A',
+        // Same warm-gold hue, darkened for WCAG AA text contrast (4.5:1) on
+        // cream backgrounds. Use for readable gold-colored text on light
+        // sections; the standard `gold` stays on dark/brown sections where
+        // it already passes.
+        'gold-accessible': '#7D5F24',
         white: '#FFFFFF',
         cream: '#FAF8F3',
         'cream-dark': '#F5EFE6',

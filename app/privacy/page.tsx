@@ -173,7 +173,7 @@ export default function PrivacyPage() {
                 <li>• <strong>Recht om toestemming in te trekken:</strong> Je kunt toestemming op elk moment intrekken</li>
               </ul>
               <p className="font-inter text-brown/80 leading-relaxed mt-4">
-                Verzoeken kunnen worden gericht aan: <a href="mailto:info@chefs-connect.nl" className="text-gold hover:underline">info@chefs-connect.nl</a>
+                Verzoeken kunnen worden gericht aan: <a href="mailto:info@chefs-connect.nl" className="text-gold-accessible underline">info@chefs-connect.nl</a>
               </p>
               <p className="font-inter text-brown/80 leading-relaxed mt-2">
                 Wij zullen binnen 30 dagen op jouw verzoek reageren.
@@ -186,7 +186,7 @@ export default function PrivacyPage() {
                 <span className="text-gold">9.</span> Cookies
               </h2>
               <p className="font-inter text-brown/80 leading-relaxed">
-                Onze website maakt gebruik van cookies en vergelijkbare technologieën om de werking van het platform te verbeteren en inzicht te krijgen in het gebruik ervan. Meer informatie vind je in ons <a href="/cookies" className="text-gold hover:underline">cookiebeleid</a>.
+                Onze website maakt gebruik van cookies en vergelijkbare technologieën om de werking van het platform te verbeteren en inzicht te krijgen in het gebruik ervan. Meer informatie vind je in ons <a href="/cookies" className="text-gold-accessible underline">cookiebeleid</a>.
               </p>
             </div>
 
@@ -226,7 +226,7 @@ export default function PrivacyPage() {
                 <span className="text-gold">13.</span> Klachten
               </h2>
               <p className="font-inter text-brown/80 leading-relaxed">
-                Mocht je niet tevreden zijn over de manier waarop wij omgaan met jouw persoonsgegevens, dan hoor wij dit graag. Je hebt ook het recht om een klacht in te dienen bij de Autoriteit Persoonsgegevens via <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">autoriteitpersoonsgegevens.nl</a>.
+                Mocht je niet tevreden zijn over de manier waarop wij omgaan met jouw persoonsgegevens, dan hoor wij dit graag. Je hebt ook het recht om een klacht in te dienen bij de Autoriteit Persoonsgegevens via <a href="https://autoriteitpersoonsgegevens.nl" target="_blank" rel="noopener noreferrer" className="text-gold-accessible underline">autoriteitpersoonsgegevens.nl</a>.
               </p>
             </div>
 
@@ -242,8 +242,8 @@ export default function PrivacyPage() {
                   <p className="font-inter text-sm">
                     <strong>ChefsConnect</strong><br />
                     Gasthuisstraat 3.1 Lanaken<br />
-                    Telefoon: <a href="tel:+31641875803" className="text-gold hover:underline">+31 6 41875803</a><br />
-                    E-mail: <a href="mailto:info@chefs-connect.nl" className="text-gold hover:underline">info@chefs-connect.nl</a>
+                    Telefoon: <a href="tel:+31641875803" className="text-gold-accessible underline">+31 6 41875803</a><br />
+                    E-mail: <a href="mailto:info@chefs-connect.nl" className="text-gold-accessible underline">info@chefs-connect.nl</a>
                   </p>
                 </div>
               </div>

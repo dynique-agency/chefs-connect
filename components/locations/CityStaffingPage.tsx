@@ -204,7 +204,7 @@ export default function CityStaffingPage({
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">
+              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold-accessible block mb-6">
                 {contextEyebrow}
               </span>
               <h2 className="font-playfair text-4xl md:text-5xl font-light text-brown leading-tight mb-8">
@@ -289,7 +289,7 @@ export default function CityStaffingPage({
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">
+              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold-accessible block mb-6">
                 Waarom Chefs Connect
               </span>
               <h2 className="font-playfair text-4xl md:text-5xl font-light text-brown mb-8 leading-tight">
@@ -372,7 +372,7 @@ export default function CityStaffingPage({
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">
+            <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold-accessible block mb-6">
               Kok aanvragen
             </span>
             <h2 className="font-playfair text-4xl md:text-5xl font-light text-brown mb-6">
@@ -500,7 +500,7 @@ export default function CityStaffingPage({
               transition={{ duration: 0.6 }}
               className="mt-16 pt-10 border-t border-brown/10 text-center"
             >
-              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">
+              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold-accessible block mb-6">
                 Ook actief in de regio
               </span>
               <div className="flex flex-wrap justify-center gap-3">

@@ -828,7 +828,7 @@ export default function ZoekPersoneelPage() {
             className="font-inter text-sm text-brown/40 mt-12 text-center"
           >
             Jouw stad staat er niet bij? Wij zijn ook buiten deze regio&apos;s actief.{' '}
-            <Link href="/contact" className="text-gold hover:underline underline-offset-4 transition-all duration-300">
+            <Link href="/contact" className="text-gold-accessible underline underline-offset-4 transition-all duration-300">
               Neem contact op.
             </Link>
           </motion.p>

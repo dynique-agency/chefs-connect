@@ -178,7 +178,7 @@ export default function CityFreelancerPage({
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">{contextEyebrow}</span>
+              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold-accessible block mb-6">{contextEyebrow}</span>
               <h2 className="font-playfair text-4xl md:text-5xl font-light text-brown leading-tight mb-8">
                 {contextHeadingLead}
                 <span className="text-gold italic"> {contextHeadingAccent}</span>
@@ -234,7 +234,7 @@ export default function CityFreelancerPage({
         <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">Waarom Chefs Connect</span>
+              <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold-accessible block mb-6">Waarom Chefs Connect</span>
               <h2 className="font-playfair text-4xl md:text-5xl font-light text-brown mb-8 leading-tight">
                 Wij komen zelf
                 <span className="text-gold italic"> uit de horeca</span>
@@ -300,7 +300,7 @@ export default function CityFreelancerPage({
       <section className="relative py-20 md:py-32 px-6 bg-cream">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center mb-12">
-            <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">Veelgestelde vragen</span>
+            <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold-accessible block mb-6">Veelgestelde vragen</span>
             <h2 className="font-playfair text-4xl md:text-5xl font-light text-brown">Goed om te weten</h2>
           </motion.div>
 
