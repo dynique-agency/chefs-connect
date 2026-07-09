@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Kennisbank | Gidsen voor de Horecaprofessional',
+  title: 'Kennisbank Voor Horecaprofessionals',
   description: 'Praktische kennis over freelancen in de horeca: van freelance kok worden tot je tarief bepalen. Geschreven door ervaren chefs van Chefs Connect.',
   keywords: ['freelance horeca kennis', 'freelance kok tips', 'zzp horeca gids', 'werken in de horeca', 'horeca kennisbank'],
   alternates: pageAlternates('https://chefs-connect.nl/kennisbank'),

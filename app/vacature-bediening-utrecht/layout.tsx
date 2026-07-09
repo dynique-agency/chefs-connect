@@ -5,7 +5,7 @@ const url = siteUrl('https://chefs-connect.nl/vacature-bediening-utrecht');
 const description = 'Op zoek naar werk in de bediening in Utrecht? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Utrecht.';
 
 export const metadata: Metadata = {
-  title: 'Vacature Bediening Utrecht? Werk als Freelancer',
+  title: 'Bediening Utrecht? Werk als Freelancer',
   description,
   keywords: ['vacature bediening utrecht', 'freelance bediening utrecht', 'gastheer gastvrouw utrecht', 'horeca bediening utrecht', 'zzp bediening utrecht', 'bediening werk utrecht'],
   alternates: pageAlternates(url),

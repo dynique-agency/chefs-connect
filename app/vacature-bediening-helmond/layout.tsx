@@ -5,7 +5,7 @@ const url = siteUrl('https://chefs-connect.nl/vacature-bediening-helmond');
 const description = 'Op zoek naar werk in de bediening in Helmond? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Helmond.';
 
 export const metadata: Metadata = {
-  title: 'Vacature Bediening Helmond? Werk als Freelancer',
+  title: 'Bediening Helmond? Werk als Freelancer',
   description,
   keywords: ['vacature bediening helmond', 'freelance bediening helmond', 'gastheer gastvrouw helmond', 'horeca bediening helmond', 'zzp bediening helmond', 'bediening werk helmond'],
   alternates: pageAlternates(url),

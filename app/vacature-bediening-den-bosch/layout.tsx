@@ -5,7 +5,7 @@ const url = siteUrl('https://chefs-connect.nl/vacature-bediening-den-bosch');
 const description = 'Op zoek naar werk in de bediening in Den Bosch? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in ’s-Hertogenbosch.';
 
 export const metadata: Metadata = {
-  title: 'Vacature Bediening Den Bosch? Werk als Freelancer',
+  title: 'Bediening Den Bosch? Werk als Freelancer',
   description,
   keywords: ['vacature bediening den bosch', 'freelance bediening den bosch', "gastheer gastvrouw 's-hertogenbosch", 'horeca bediening den bosch', 'zzp bediening den bosch', 'bediening werk den bosch'],
   alternates: pageAlternates(url),

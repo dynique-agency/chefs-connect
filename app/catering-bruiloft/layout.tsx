@@ -5,7 +5,7 @@ const url = siteUrl('https://chefs-connect.nl/catering-bruiloft');
 const description = 'Fine dining catering voor uw bruiloft of gala. Topchefs koken op locatie in heel NL & BE, van walking dinner tot zittend galadiner. Vraag een offerte aan.';
 
 export const metadata: Metadata = {
-  title: 'Catering Bruiloft & Gala | Fine Dining op Locatie',
+  title: 'Catering Bruiloft & Gala',
   description,
   keywords: ['catering bruiloft', 'trouwcatering', 'bruiloft catering fine dining', 'gala catering', 'walking dinner bruiloft', 'catering trouwerij', 'exclusieve bruiloft catering'],
   alternates: pageAlternates(url),

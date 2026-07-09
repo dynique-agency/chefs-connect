@@ -5,7 +5,7 @@ const url = siteUrl('https://chefs-connect.nl/catering-bedrijfsfeest');
 const description = 'Fine dining catering voor uw bedrijfsfeest. Topchefs koken op locatie in heel NL & BE. Van walking dinner tot gala. Vraag een offerte aan.';
 
 export const metadata: Metadata = {
-  title: 'Catering Bedrijfsfeest | Fine Dining op Locatie',
+  title: 'Catering Bedrijfsfeest',
   description,
   keywords: ['catering bedrijfsfeest', 'catering bedrijfsevenement', 'zakelijke catering', 'fine dining catering bedrijf', 'walking dinner catering', 'personeelsfeest catering', 'premium bedrijfscatering'],
   alternates: pageAlternates(url),

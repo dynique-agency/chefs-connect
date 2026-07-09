@@ -5,7 +5,7 @@ const url = siteUrl('https://chefs-connect.nl/vacature-bediening-hasselt');
 const description = 'Op zoek naar werk in de bediening in Hasselt? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Hasselt.';
 
 export const metadata: Metadata = {
-  title: 'Vacature Bediening Hasselt? Werk als Freelancer',
+  title: 'Bediening Hasselt? Werk als Freelancer',
   description,
   keywords: ['vacature bediening hasselt', 'freelance bediening hasselt', 'gastheer gastvrouw hasselt', 'horeca bediening hasselt', 'zelfstandig bediening hasselt', 'bediening werk hasselt'],
   alternates: pageAlternates(url),

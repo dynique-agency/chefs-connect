@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Freelance Horecapersoneel Inhuren | Chefs & Bediening',
+  title: 'Freelance Horecapersoneel Inhuren',
   description: 'Op zoek naar freelance horecapersoneel? Chefs Connect levert chefs en bediening snel en zonder gedoe, met gegarandeerde kwaliteit voor uw zaak in NL & BE.',
   keywords: ['tijdelijk horeca personeel inhuren', 'freelance kok gezocht', 'extra bediening inhuren', 'spoed chef kok', 'flexibel horeca personeel'],
   alternates: pageAlternates('https://chefs-connect.nl/zoek-personeel'),

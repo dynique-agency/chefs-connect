@@ -5,7 +5,7 @@ const url = siteUrl('https://chefs-connect.nl/vacature-bediening-eindhoven');
 const description = 'Op zoek naar werk in de bediening in Eindhoven? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Eindhoven en omstreken.';
 
 export const metadata: Metadata = {
-  title: 'Vacature Bediening Eindhoven? Werk als Freelancer',
+  title: 'Bediening Eindhoven? Werk als Freelancer',
   description,
   keywords: ['vacature bediening eindhoven', 'freelance bediening eindhoven', 'gastheer gastvrouw eindhoven', 'horeca bediening eindhoven', 'zzp bediening eindhoven', 'bediening werk eindhoven'],
   alternates: pageAlternates(url),

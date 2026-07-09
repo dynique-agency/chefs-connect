@@ -11,7 +11,7 @@ import ContactSection from '@/components/evenementen/ContactSection';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Fine Dining Catering & Exclusieve Evenementen',
+  title: 'Fine Dining Catering & Evenementen',
   description: 'Verhef uw zakelijke of particuliere evenement met onze fine dining catering op locatie. Culinaire meesterwerken door topchefs, tot in de puntjes verzorgd.',
   keywords: ['fine dining catering op locatie', 'luxe catering evenementen', 'exclusieve zakelijke catering', 'private dining chef thuis', 'high-end event catering'],
   alternates: pageAlternates('https://chefs-connect.nl/evenementen'),

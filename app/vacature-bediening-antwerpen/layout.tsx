@@ -5,7 +5,7 @@ const url = siteUrl('https://chefs-connect.nl/vacature-bediening-antwerpen');
 const description = 'Op zoek naar werk in de bediening in Antwerpen? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Antwerpen.';
 
 export const metadata: Metadata = {
-  title: 'Vacature Bediening Antwerpen? Werk als Freelancer',
+  title: 'Bediening Antwerpen? Werk als Freelancer',
   description,
   keywords: ['vacature bediening antwerpen', 'freelance bediening antwerpen', 'gastheer gastvrouw antwerpen', 'horeca bediening antwerpen', 'zelfstandig bediening antwerpen', 'bediening werk antwerpen'],
   alternates: pageAlternates(url),

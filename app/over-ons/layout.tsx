@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Over Ons | Dé Partner in Culinaire Excellentie',
+  title: 'Over Ons | Culinaire Excellentie',
   description: 'Maak kennis met het team achter Chefs Connect. Passie voor gastronomie, toewijding aan perfectie. Wij verbinden toptalent met de beste horeca in NL & BE.',
   keywords: ['over chefs connect', 'premium horeca bemiddeling', 'missie visie horeca bureau', 'kwaliteit horeca personeel'],
   alternates: pageAlternates('https://chefs-connect.nl/over-ons'),

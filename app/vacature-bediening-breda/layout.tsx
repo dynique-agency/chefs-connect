@@ -5,7 +5,7 @@ const url = siteUrl('https://chefs-connect.nl/vacature-bediening-breda');
 const description = 'Op zoek naar werk in de bediening in Breda? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Breda en omstreken.';
 
 export const metadata: Metadata = {
-  title: 'Vacature Bediening Breda? Werk als Freelancer',
+  title: 'Bediening Breda? Werk als Freelancer',
   description,
   keywords: ['vacature bediening breda', 'freelance bediening breda', 'gastheer gastvrouw breda', 'horeca bediening breda', 'zzp bediening breda', 'bediening werk breda'],
   alternates: pageAlternates(url),

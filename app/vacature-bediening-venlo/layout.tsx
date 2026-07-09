@@ -5,7 +5,7 @@ const url = siteUrl('https://chefs-connect.nl/vacature-bediening-venlo');
 const description = 'Op zoek naar werk in de bediening in Venlo? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Venlo.';
 
 export const metadata: Metadata = {
-  title: 'Vacature Bediening Venlo? Werk als Freelancer',
+  title: 'Bediening Venlo? Werk als Freelancer',
   description,
   keywords: ['vacature bediening venlo', 'freelance bediening venlo', 'gastheer gastvrouw venlo', 'horeca bediening venlo', 'zzp bediening venlo', 'bediening werk venlo'],
   alternates: pageAlternates(url),
