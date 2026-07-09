@@ -6,7 +6,7 @@ import Reviews from '@/components/home/Reviews';
 import AboutSection from '@/components/home/AboutSection';
 import { LazyInstagramFeed, LazyContactForm } from '@/lib/lazy-components';
 import PremiumStaffingPopup from '@/components/ui/PremiumStaffingPopup';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Horecaprofessionals & Fine Dining Catering',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Chefs Connect | Premium Horecapersoneel & Catering',
     description: 'Chefs Connect levert chefs en bediening snel en professioneel, van private dining tot fine dining. Freelance horecapersoneel voor restaurants in NL & BE.',
-    url: 'https://chefs-connect.nl',
+    url: siteUrl('https://chefs-connect.nl'),
   },
 };
 
@@ -24,7 +24,7 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'EmploymentAgency',
   name: 'Chefs Connect',
-  image: 'https://chefs-connect.nl/opengraph-image.png',
+  image: siteUrl('https://chefs-connect.nl/opengraph-image.png'),
   description: 'Premium bemiddelingsbureau voor freelance horecaprofessionals en verzorger van exclusieve fine dining catering voor evenementen.',
   address: {
     '@type': 'PostalAddress',

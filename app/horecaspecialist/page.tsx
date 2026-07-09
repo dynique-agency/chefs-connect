@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { gsap } from 'gsap';
+import { siteUrl } from '@/lib/seo';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 import { FORMSUBMIT_ACTION_URL, validateFile } from '@/lib/form-submit';
@@ -545,7 +546,7 @@ export default function HorecaSpecialistPage() {
             >
               {/* FormSubmit.co hidden fields */}
               <input type="hidden" name="_subject" value="Chefs Connect: Aanmelding Horecaprofessional" />
-              <input type="hidden" name="_next" value="https://chefs-connect.nl/bedankt" />
+              <input type="hidden" name="_next" value={siteUrl('https://chefs-connect.nl/bedankt')} />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
               <div className="grid md:grid-cols-2 gap-6">

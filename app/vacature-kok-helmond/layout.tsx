@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
-const url = 'https://chefs-connect.nl/vacature-kok-helmond';
+const url = siteUrl('https://chefs-connect.nl/vacature-kok-helmond');
 const description = 'Op zoek naar werk als kok in Helmond? Werk als freelance kok bij de mooiste restaurants en events in Helmond en de Brainportregio.';
 
 export const metadata: Metadata = {
@@ -21,8 +21,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Voor Horecaspecialisten', item: 'https://chefs-connect.nl/horecaspecialist' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Voor Horecaspecialisten', item: siteUrl('https://chefs-connect.nl/horecaspecialist') },
     { '@type': 'ListItem', position: 3, name: 'Kok in Helmond', item: url },
   ],
 };

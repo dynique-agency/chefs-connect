@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Chefs Connect | Links',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Chefs Connect | Links',
     description: 'Chefs Connect: Premium horecafreelancers, exclusieve evenementen en fine dining catering.',
-    url: 'https://chefs-connect.nl/links',
+    url: siteUrl('https://chefs-connect.nl/links'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };

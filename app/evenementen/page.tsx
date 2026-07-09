@@ -8,7 +8,7 @@ import CateringServicesSection from '@/components/evenementen/CateringServicesSe
 import CarefreeSection from '@/components/evenementen/CarefreeSection';
 import WhyChooseUsSection from '@/components/evenementen/WhyChooseUsSection';
 import ContactSection from '@/components/evenementen/ContactSection';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Fine Dining Catering & Exclusieve Evenementen',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Fine Dining Catering & Exclusieve Evenementen | Chefs Connect',
     description: 'Verhef uw zakelijke of particuliere evenement met onze fine dining catering op locatie. Culinaire meesterwerken door topchefs, tot in de puntjes verzorgd.',
-    url: 'https://chefs-connect.nl/evenementen',
+    url: siteUrl('https://chefs-connect.nl/evenementen'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };

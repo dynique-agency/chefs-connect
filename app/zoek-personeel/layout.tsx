@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Horecapersoneel Inhuren | Chefs & Bediening',
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Freelance Horecapersoneel Inhuren | Chefs Connect',
     description: 'Op zoek naar freelance horecapersoneel? Chefs Connect levert chefs en bediening snel en zonder gedoe, met gegarandeerde kwaliteit voor uw zaak in NL & BE.',
-    url: 'https://chefs-connect.nl/zoek-personeel',
+    url: siteUrl('https://chefs-connect.nl/zoek-personeel'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };
@@ -18,8 +18,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Zoek Personeel', item: 'https://chefs-connect.nl/zoek-personeel' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Zoek Personeel', item: siteUrl('https://chefs-connect.nl/zoek-personeel') },
   ],
 };
 

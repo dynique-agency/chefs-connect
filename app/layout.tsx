@@ -5,6 +5,7 @@ import './globals.css';
 import LenisScroll from '@/components/providers/lenis-scroll';
 import ConditionalShell from '@/components/layout/ConditionalShell';
 import { MenuProvider } from '@/contexts/MenuContext';
+import { SITE_URL, siteUrl, pageAlternates } from '@/lib/seo';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -25,7 +26,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://chefs-connect.nl'),
+  metadataBase: new URL(SITE_URL),
   title: {
     template: '%s | Chefs Connect',
     default: 'Chefs Connect | Premium Freelance Horecaprofessionals & Fine Dining Catering',
@@ -35,18 +36,11 @@ export const metadata: Metadata = {
     icon: '/faviconchefsconnect.png',
   },
   authors: [{ name: 'Chefs Connect' }],
-  alternates: {
-    canonical: 'https://chefs-connect.nl',
-    languages: {
-      'x-default': 'https://chefs-connect.nl',
-      'nl-NL': 'https://chefs-connect.nl',
-      'nl-BE': 'https://chefs-connect.be',
-    },
-  },
+  alternates: pageAlternates('https://chefs-connect.nl'),
   openGraph: {
     type: 'website',
     locale: 'nl_NL',
-    url: 'https://chefs-connect.nl',
+    url: SITE_URL,
     siteName: 'Chefs Connect',
     images: [
       {
@@ -78,16 +72,16 @@ const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Chefs Connect',
-  url: 'https://chefs-connect.nl',
-  inLanguage: 'nl-NL',
+  url: SITE_URL,
+  inLanguage: SITE_URL.endsWith('.be') ? 'nl-BE' : 'nl-NL',
 };
 
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Chefs Connect',
-  url: 'https://chefs-connect.nl',
-  logo: 'https://chefs-connect.nl/faviconchefsconnect.png',
+  url: SITE_URL,
+  logo: siteUrl('https://chefs-connect.nl/faviconchefsconnect.png'),
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+31-6-41875803',

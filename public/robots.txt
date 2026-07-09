@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /links/
-Disallow: /api/
-
-Sitemap: https://chefs-connect.nl/sitemap.xml

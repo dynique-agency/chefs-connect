@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Horeca Opdrachten in Maastricht',
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Freelance Horeca Opdrachten in Maastricht | Chefs Connect',
     description: 'Werk als freelance chef of bediening op de mooiste horecalocaties in Maastricht en Zuid-Limburg. Chefs Connect verbindt je met opdrachten die bij je passen.',
-    url: 'https://chefs-connect.nl/maastricht',
+    url: siteUrl('https://chefs-connect.nl/maastricht'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };
@@ -18,9 +18,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Horecaspecialist', item: 'https://chefs-connect.nl/horecaspecialist' },
-    { '@type': 'ListItem', position: 3, name: 'Maastricht', item: 'https://chefs-connect.nl/maastricht' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Horecaspecialist', item: siteUrl('https://chefs-connect.nl/horecaspecialist') },
+    { '@type': 'ListItem', position: 3, name: 'Maastricht', item: siteUrl('https://chefs-connect.nl/maastricht') },
   ],
 };
 

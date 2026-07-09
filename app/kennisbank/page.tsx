@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { siteUrl } from '@/lib/seo';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 
@@ -33,8 +34,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Kennisbank', item: 'https://chefs-connect.nl/kennisbank' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Kennisbank', item: siteUrl('https://chefs-connect.nl/kennisbank') },
   ],
 };
 
@@ -43,7 +44,7 @@ const collectionSchema = {
   '@type': 'CollectionPage',
   name: 'Kennisbank Chefs Connect',
   description: 'Gidsen en praktische kennis voor freelance horecaprofessionals.',
-  url: 'https://chefs-connect.nl/kennisbank',
+  url: siteUrl('https://chefs-connect.nl/kennisbank'),
   publisher: { '@type': 'Organization', name: 'Chefs Connect' },
 };
 

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Neem Direct Contact Op',
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact | Chefs Connect',
     description: 'Klaar om uw keukenbrigade te versterken of een exclusief evenement te plannen? Neem contact op met Chefs Connect voor een vrijblijvende kennismaking.',
-    url: 'https://chefs-connect.nl/contact',
+    url: siteUrl('https://chefs-connect.nl/contact'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };
@@ -18,8 +18,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://chefs-connect.nl/contact' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Contact', item: siteUrl('https://chefs-connect.nl/contact') },
   ],
 };
 

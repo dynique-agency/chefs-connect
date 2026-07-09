@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Breda',
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Freelance Kok Inhuren in Breda | Chefs Connect',
     description: 'Op zoek naar een freelance kok in Breda? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Breda en West-Brabant.',
-    url: 'https://chefs-connect.nl/personeel-breda',
+    url: siteUrl('https://chefs-connect.nl/personeel-breda'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };
@@ -18,9 +18,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Zoek Personeel', item: 'https://chefs-connect.nl/zoek-personeel' },
-    { '@type': 'ListItem', position: 3, name: 'Breda', item: 'https://chefs-connect.nl/personeel-breda' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Zoek Personeel', item: siteUrl('https://chefs-connect.nl/zoek-personeel') },
+    { '@type': 'ListItem', position: 3, name: 'Breda', item: siteUrl('https://chefs-connect.nl/personeel-breda') },
   ],
 };
 

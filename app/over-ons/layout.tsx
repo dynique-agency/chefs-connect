@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Over Ons | Dé Partner in Culinaire Excellentie',
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Over Ons | Chefs Connect',
     description: 'Maak kennis met het team achter Chefs Connect. Passie voor gastronomie, toewijding aan perfectie. Wij verbinden toptalent met de beste horeca in NL & BE.',
-    url: 'https://chefs-connect.nl/over-ons',
+    url: siteUrl('https://chefs-connect.nl/over-ons'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };
@@ -18,8 +18,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Over Ons', item: 'https://chefs-connect.nl/over-ons' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Over Ons', item: siteUrl('https://chefs-connect.nl/over-ons') },
   ],
 };
 

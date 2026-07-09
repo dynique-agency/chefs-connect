@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Kennisbank | Gidsen voor de Horecaprofessional',
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kennisbank | Chefs Connect',
     description: 'Praktische kennis over freelancen in de horeca: van freelance kok worden tot je tarief bepalen. Geschreven door ervaren chefs van Chefs Connect.',
-    url: 'https://chefs-connect.nl/kennisbank',
+    url: siteUrl('https://chefs-connect.nl/kennisbank'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
 };

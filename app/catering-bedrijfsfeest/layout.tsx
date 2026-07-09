@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
-const url = 'https://chefs-connect.nl/catering-bedrijfsfeest';
+const url = siteUrl('https://chefs-connect.nl/catering-bedrijfsfeest');
 const description = 'Fine dining catering voor uw bedrijfsfeest. Topchefs koken op locatie in heel NL & BE. Van walking dinner tot gala. Vraag een offerte aan.';
 
 export const metadata: Metadata = {
@@ -21,8 +21,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Evenementen', item: 'https://chefs-connect.nl/evenementen' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Evenementen', item: siteUrl('https://chefs-connect.nl/evenementen') },
     { '@type': 'ListItem', position: 3, name: 'Catering bedrijfsfeest', item: url },
   ],
 };

@@ -1,3 +1,4 @@
+import { siteUrl } from '@/lib/seo';
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -41,8 +42,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Evenementen', item: 'https://chefs-connect.nl/evenementen' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Evenementen', item: siteUrl('https://chefs-connect.nl/evenementen') },
   ],
 };
 

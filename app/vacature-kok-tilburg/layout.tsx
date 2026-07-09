@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
-const url = 'https://chefs-connect.nl/vacature-kok-tilburg';
+const url = siteUrl('https://chefs-connect.nl/vacature-kok-tilburg');
 const description = 'Op zoek naar werk als kok in Tilburg? Werk als freelance kok bij de mooiste restaurants, hotels en events in Tilburg en omstreken.';
 
 export const metadata: Metadata = {
@@ -21,8 +21,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Voor Horecaspecialisten', item: 'https://chefs-connect.nl/horecaspecialist' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Voor Horecaspecialisten', item: siteUrl('https://chefs-connect.nl/horecaspecialist') },
     { '@type': 'ListItem', position: 3, name: 'Kok in Tilburg', item: url },
   ],
 };

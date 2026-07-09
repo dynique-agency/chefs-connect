@@ -1,6 +1,7 @@
 import { ImageResponse } from 'next/og';
 import { readFileSync } from 'fs';
 import { join } from 'path';
+import { SITE_HOST } from '@/lib/seo';
 
 // Required for `output: export` (static export) on Next.js - without this the
 // build fails to collect page data for this route and the OG image is never generated.
@@ -162,7 +163,7 @@ export default async function Image() {
                   letterSpacing: '0.06em',
                 }}
               >
-                chefs-connect.nl
+                {SITE_HOST}
               </span>
             </div>
           </div>
@@ -266,7 +267,7 @@ export default async function Image() {
               textTransform: 'uppercase',
             }}
           >
-            chefs-connect.nl
+            {SITE_HOST}
           </span>
           <span
             style={{

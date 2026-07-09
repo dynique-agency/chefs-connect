@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Globe } from 'lucide-react';
 import PremiumStaffingPopup from '@/components/ui/PremiumStaffingPopup';
+import { SITE_HOST } from '@/lib/seo';
 
 const links = [
   {
@@ -316,7 +317,7 @@ export default function LinksPage() {
                   textTransform: 'uppercase',
                 }}
               >
-                chefs-connect.nl
+                {SITE_HOST}
               </span>
             </motion.div>
           </Link>

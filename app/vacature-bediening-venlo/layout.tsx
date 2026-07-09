@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
-const url = 'https://chefs-connect.nl/vacature-bediening-venlo';
+const url = siteUrl('https://chefs-connect.nl/vacature-bediening-venlo');
 const description = 'Op zoek naar werk in de bediening in Venlo? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Venlo.';
 
 export const metadata: Metadata = {
@@ -21,8 +21,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Voor Horecaspecialisten', item: 'https://chefs-connect.nl/horecaspecialist' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Voor Horecaspecialisten', item: siteUrl('https://chefs-connect.nl/horecaspecialist') },
     { '@type': 'ListItem', position: 3, name: 'Bediening in Venlo', item: url },
   ],
 };

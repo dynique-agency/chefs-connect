@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import { pageAlternates } from '@/lib/seo';
+import { pageAlternates, siteUrl } from '@/lib/seo';
 
-const url = 'https://chefs-connect.nl/kennisbank/freelance-kok-worden';
+const url = siteUrl('https://chefs-connect.nl/kennisbank/freelance-kok-worden');
 const title = 'Freelance Kok Worden: Zo Begin Je (Stappenplan 2026)';
 const description = 'Freelance kok worden? Compleet stappenplan: KvK, btw, verzekeringen, je uurtarief bepalen en aan opdrachten komen. Geschreven door een ervaren chef.';
 
@@ -24,7 +24,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Freelance kok worden: zo begin je',
   description,
-  image: 'https://chefs-connect.nl/opengraph-image.png',
+  image: siteUrl('https://chefs-connect.nl/opengraph-image.png'),
   datePublished: '2026-06-06',
   dateModified: '2026-06-06',
   author: {
@@ -36,7 +36,7 @@ const articleSchema = {
   publisher: {
     '@type': 'Organization',
     name: 'Chefs Connect',
-    logo: { '@type': 'ImageObject', url: 'https://chefs-connect.nl/chefsconnectlogo.png' },
+    logo: { '@type': 'ImageObject', url: siteUrl('https://chefs-connect.nl/chefsconnectlogo.png') },
   },
   mainEntityOfPage: { '@type': 'WebPage', '@id': url },
 };
@@ -45,8 +45,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://chefs-connect.nl/' },
-    { '@type': 'ListItem', position: 2, name: 'Kennisbank', item: 'https://chefs-connect.nl/kennisbank' },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl('https://chefs-connect.nl/') },
+    { '@type': 'ListItem', position: 2, name: 'Kennisbank', item: siteUrl('https://chefs-connect.nl/kennisbank') },
     { '@type': 'ListItem', position: 3, name: 'Freelance kok worden', item: url },
   ],
 };
