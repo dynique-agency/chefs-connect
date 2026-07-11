@@ -26,7 +26,7 @@ const articles = [
     excerpt:
       'Vrijheid en een hoger uurtarief, of de zekerheid van een vast contract? Een eerlijke vergelijking om te bepalen welke route bij jouw situatie past.',
     readingTime: '7 min',
-    published: false,
+    published: true,
   },
 ];
 

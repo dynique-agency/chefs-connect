@@ -40,14 +40,14 @@ export default function FreelanceKokWordenPage() {
       }}
       related={[
         {
+          href: '/kennisbank/freelancen-of-vast-in-de-horeca',
+          label: 'Freelancen of vast in de horeca?',
+          description: 'Nog niet zeker of freelancen bij je past? Een eerlijke vergelijking met een vast contract.',
+        },
+        {
           href: '/horecaspecialist',
           label: 'Word horecaspecialist',
           description: 'Sluit je aan bij ons netwerk en werk voor high-end locaties in NL & BE.',
-        },
-        {
-          href: '/over-ons',
-          label: 'Over Chefs Connect',
-          description: 'Opgericht door chefs die zelf jarenlang in de keuken stonden.',
         },
       ]}
     >
