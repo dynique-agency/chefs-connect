@@ -786,6 +786,27 @@ export default function ZoekPersoneelPage() {
                 href: '/personeel-hasselt',
                 index: 11,
               },
+              {
+                name: 'Gent',
+                region: 'Oost-Vlaanderen',
+                cta: 'Kok inhuren',
+                href: '/personeel-gent',
+                index: 12,
+              },
+              {
+                name: 'Brugge',
+                region: 'West-Vlaanderen',
+                cta: 'Kok inhuren',
+                href: '/personeel-brugge',
+                index: 13,
+              },
+              {
+                name: 'Brussel',
+                region: 'Hoofdstedelijk Gewest',
+                cta: 'Kok inhuren',
+                href: '/personeel-brussel',
+                index: 14,
+              },
             ].map((city, i) => (
               <motion.div
                 key={city.name}

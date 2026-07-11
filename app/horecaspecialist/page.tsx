@@ -810,6 +810,9 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-kok-venlo', label: 'Kok in Venlo' },
                 { href: '/vacature-kok-antwerpen', label: 'Kok in Antwerpen' },
                 { href: '/vacature-kok-hasselt', label: 'Kok in Hasselt' },
+                { href: '/vacature-kok-gent', label: 'Kok in Gent' },
+                { href: '/vacature-kok-brugge', label: 'Kok in Brugge' },
+                { href: '/vacature-kok-brussel', label: 'Kok in Brussel' },
               ].map((c) => (
                 <Link
                   key={c.href}
@@ -838,6 +841,9 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-bediening-venlo', label: 'Bediening in Venlo' },
                 { href: '/vacature-bediening-antwerpen', label: 'Bediening in Antwerpen' },
                 { href: '/vacature-bediening-hasselt', label: 'Bediening in Hasselt' },
+                { href: '/vacature-bediening-gent', label: 'Bediening in Gent' },
+                { href: '/vacature-bediening-brugge', label: 'Bediening in Brugge' },
+                { href: '/vacature-bediening-brussel', label: 'Bediening in Brussel' },
               ].map((c) => (
                 <Link
                   key={c.href}
