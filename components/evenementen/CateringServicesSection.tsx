@@ -16,6 +16,11 @@ const services = [
     description: 'Van ontvangst tot zittend galadiner, een culinaire herinnering voor de mooiste dag.',
   },
   {
+    href: '/kok-aan-huis',
+    title: 'Kok aan huis',
+    description: 'Een privéchef die bij u thuis kookt en serveert, voor een romantisch diner, verjaardag of familiefeest.',
+  },
+  {
     href: '/cateringpartner',
     title: 'Cateringpartner voor locaties',
     description: 'Een vaste fine dining-partner voor evenementenlocaties die regelmatig events ontvangen.',
@@ -39,7 +44,7 @@ export default function CateringServicesSection() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={service.href}

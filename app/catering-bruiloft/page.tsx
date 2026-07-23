@@ -60,6 +60,7 @@ export default function CateringBruiloftPage() {
       introImage="/chef-plating-vertical.png"
       relatedLinks={[
         { href: '/catering-bedrijfsfeest', label: 'Catering bedrijfsfeest' },
+        { href: '/kok-aan-huis', label: 'Kok aan huis' },
         { href: '/evenementen', label: 'Alle fine dining catering' },
       ]}
     />

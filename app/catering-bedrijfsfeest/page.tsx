@@ -54,6 +54,7 @@ export default function CateringBedrijfsfeestPage() {
       formLocation="Catering bedrijfsfeest"
       relatedLinks={[
         { href: '/catering-bruiloft', label: 'Catering bruiloft & gala' },
+        { href: '/kok-aan-huis', label: 'Kok aan huis' },
         { href: '/evenementen', label: 'Alle fine dining catering' },
       ]}
     />
