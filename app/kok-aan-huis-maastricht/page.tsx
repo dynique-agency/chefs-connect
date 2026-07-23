@@ -58,6 +58,8 @@ export default function KokAanHuisMaastrichtPage() {
       relatedLinks={[
         { href: '/kok-aan-huis', label: 'Kok aan huis, alle regio’s' },
         { href: '/kok-aan-huis-nijmegen', label: 'Kok aan huis in Nijmegen' },
+        { href: '/kok-aan-huis-tilburg', label: 'Kok aan huis in Tilburg' },
+        { href: '/kok-aan-huis-den-bosch', label: 'Kok aan huis in Den Bosch' },
         { href: '/catering-bruiloft', label: 'Catering bruiloft & gala' },
       ]}
     />

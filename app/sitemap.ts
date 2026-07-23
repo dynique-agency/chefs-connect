@@ -87,6 +87,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: siteUrl('https://chefs-connect.nl/kok-aan-huis'), file: 'app/kok-aan-huis/page.tsx', changeFrequency: 'monthly', priority: 0.8 },
     { url: siteUrl('https://chefs-connect.nl/kok-aan-huis-maastricht'), file: 'app/kok-aan-huis-maastricht/page.tsx', changeFrequency: 'monthly', priority: 0.75 },
     { url: siteUrl('https://chefs-connect.nl/kok-aan-huis-nijmegen'), file: 'app/kok-aan-huis-nijmegen/page.tsx', changeFrequency: 'monthly', priority: 0.75 },
+    { url: siteUrl('https://chefs-connect.nl/kok-aan-huis-tilburg'), file: 'app/kok-aan-huis-tilburg/page.tsx', changeFrequency: 'monthly', priority: 0.75 },
+    { url: siteUrl('https://chefs-connect.nl/kok-aan-huis-den-bosch'), file: 'app/kok-aan-huis-den-bosch/page.tsx', changeFrequency: 'monthly', priority: 0.75 },
     { url: siteUrl('https://chefs-connect.nl/cateringpartner'), file: 'app/cateringpartner/page.tsx', changeFrequency: 'monthly', priority: 0.75 },
     { url: siteUrl('https://chefs-connect.nl/kennisbank'), file: 'app/kennisbank/page.tsx', changeFrequency: 'weekly', priority: 0.7 },
     { url: siteUrl('https://chefs-connect.nl/kennisbank/freelance-kok-worden'), file: 'app/kennisbank/freelance-kok-worden/page.tsx', changeFrequency: 'monthly', priority: 0.6 },
