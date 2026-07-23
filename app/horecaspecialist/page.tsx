@@ -128,7 +128,7 @@ export default function HorecaSpecialistPage() {
               >
                 <Image
                   src="/team-founders.jpg"
-                  alt="Horeca professional"
+                  alt="De oprichters van Chefs Connect in een professionele keuken"
                   fill
                   className="object-cover brightness-[0.85]"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -804,7 +804,7 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-kok-breda', label: 'Kok in Breda' },
                 { href: '/vacature-kok-den-bosch', label: 'Kok in Den Bosch' },
                 { href: '/vacature-kok-nijmegen', label: 'Kok in Nijmegen' },
-                { href: '/maastricht', label: 'Kok in Maastricht' },
+                { href: '/vacature-kok-maastricht', label: 'Kok in Maastricht' },
                 { href: '/vacature-kok-utrecht', label: 'Kok in Utrecht' },
                 { href: '/vacature-kok-helmond', label: 'Kok in Helmond' },
                 { href: '/vacature-kok-venlo', label: 'Kok in Venlo' },
@@ -836,6 +836,7 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-bediening-breda', label: 'Bediening in Breda' },
                 { href: '/vacature-bediening-den-bosch', label: 'Bediening in Den Bosch' },
                 { href: '/vacature-bediening-nijmegen', label: 'Bediening in Nijmegen' },
+                { href: '/vacature-bediening-maastricht', label: 'Bediening in Maastricht' },
                 { href: '/vacature-bediening-utrecht', label: 'Bediening in Utrecht' },
                 { href: '/vacature-bediening-helmond', label: 'Bediening in Helmond' },
                 { href: '/vacature-bediening-venlo', label: 'Bediening in Venlo' },

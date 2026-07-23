@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -452,6 +453,21 @@ export default function MaastrichtPage() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </form>
+          </motion.div>
+
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="mt-16 pt-10 border-t border-brown/10 text-center">
+            <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">Specifiek op zoek naar</span>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link href="/vacature-kok-maastricht" className="font-inter text-sm text-brown border border-brown/20 px-5 py-2.5 hover:border-gold hover:text-gold transition-colors duration-300">
+                Kok in Maastricht
+              </Link>
+              <Link href="/vacature-bediening-maastricht" className="font-inter text-sm text-brown border border-brown/20 px-5 py-2.5 hover:border-gold hover:text-gold transition-colors duration-300">
+                Bediening in Maastricht
+              </Link>
+              <Link href="/personeel-maastricht" className="font-inter text-sm text-brown border border-brown/20 px-5 py-2.5 hover:border-gold hover:text-gold transition-colors duration-300">
+                Personeel inhuren in Maastricht
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
