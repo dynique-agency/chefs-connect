@@ -101,7 +101,7 @@ export default function ZoekPersoneelPage() {
               <div className="h-px bg-gold/30 w-32" />
               
               <h1 className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-brown leading-[1.1]">
-                Ik zoek <span className="text-gold italic">horeca-freelancers</span>
+                Koks en bediening <span className="text-gold italic">inhuren</span>
               </h1>
 
               <div className="space-y-6 font-inter text-base md:text-lg text-brown-medium leading-relaxed max-w-xl">
