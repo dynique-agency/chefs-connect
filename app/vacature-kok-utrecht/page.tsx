@@ -29,6 +29,7 @@ export default function VacatureKokUtrechtPage() {
       formLocation="Vacature kok Utrecht"
       relatedLinks={[
         { href: '/vacature-bediening-utrecht', label: 'Bediening in Utrecht' },
+        { href: '/vacature-kok-houten', label: 'Kok in Houten' },
         { href: '/kennisbank/freelance-kok-worden', label: 'Freelance kok worden' },
         { href: '/horecaspecialist', label: 'Word horecaspecialist' },
       ]}

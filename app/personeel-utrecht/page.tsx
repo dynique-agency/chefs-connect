@@ -26,6 +26,7 @@ export default function PersoneelUtrechtPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Utrecht"
       formLocation="Personeel Utrecht"
       relatedLinks={[
+        { href: '/personeel-houten', label: 'Kok inhuren Houten' },
         { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}

@@ -807,6 +807,13 @@ export default function ZoekPersoneelPage() {
                 href: '/personeel-brussel',
                 index: 14,
               },
+              {
+                name: 'Houten',
+                region: 'Regio Utrecht',
+                cta: 'Kok inhuren',
+                href: '/personeel-houten',
+                index: 15,
+              },
             ].map((city, i) => (
               <motion.div
                 key={city.name}
