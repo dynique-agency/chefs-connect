@@ -104,7 +104,7 @@ export default function StorySection() {
             >
               <Image
                 src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Restaurant atmosphere"
+                alt="Gasten proosten samen aan een gedekte tafel vol gerechten"
                 fill
                 className="object-cover transition-all duration-700 ease-in-out"
                 style={{
