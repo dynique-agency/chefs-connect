@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/vacature-bediening-brussel');
-const description = 'Op zoek naar werk in de bediening in Brussel? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Brussel.';
+const description = 'Freelance werken in de bediening in Brussel? Chefs Connect koppelt je aan opdrachten bij topzaken in Brussel en het Brussels Hoofdstedelijk Gewest.';
 
 export const metadata: Metadata = {
   title: 'Bediening Brussel? Werk als Freelancer',
@@ -45,6 +45,7 @@ const faqSchema = {
     { '@type': 'Question', name: 'Moet ik zelfstandige zijn om via Chefs Connect te werken?', acceptedAnswer: { '@type': 'Answer', text: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint, ook handig voor bediening." } },
     { '@type': 'Question', name: 'Wat verdien ik als freelance bediening in Brussel?', acceptedAnswer: { '@type': 'Answer', text: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' } },
     { '@type': 'Question', name: 'Werken jullie ook in andere Belgische steden?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, Chefs Connect is actief in heel België, waaronder Gent, Brugge en Antwerpen. Ben je bereid iets verder te reizen, dan vergroot dat je kansen op passende opdrachten.' } },
+    { '@type': 'Question', name: 'Werken jullie ook met medewerkers bediening, gastheren of gastvrouwen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' } },
   ],
 };
 

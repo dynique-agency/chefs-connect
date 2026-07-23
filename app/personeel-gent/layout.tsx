@@ -3,12 +3,12 @@ import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Gent',
-  description: 'Op zoek naar een freelance kok in Gent? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Gent en Oost-Vlaanderen.',
+  description: 'Personeelstekort in de keuken in Gent? Chefs Connect regelt snel een ervaren freelance kok voor Gent en Oost-Vlaanderen.',
   keywords: ['freelance kok gent', 'kok inhuren gent', 'horecapersoneel gent', 'tijdelijke kok gent', 'spoed kok gent', 'keukenpersoneel gent'],
   alternates: pageAlternates('https://chefs-connect.nl/personeel-gent'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Gent | Chefs Connect',
-    description: 'Op zoek naar een freelance kok in Gent? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Gent en Oost-Vlaanderen.',
+    description: 'Personeelstekort in de keuken in Gent? Chefs Connect regelt snel een ervaren freelance kok voor Gent en Oost-Vlaanderen.',
     url: siteUrl('https://chefs-connect.nl/personeel-gent'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

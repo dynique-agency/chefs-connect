@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/vacature-bediening-antwerpen');
-const description = 'Op zoek naar werk in de bediening in Antwerpen? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Antwerpen.';
+const description = 'Freelance werken in de bediening in Antwerpen? Chefs Connect koppelt je aan opdrachten bij topzaken in Antwerpen en omstreken.';
 
 export const metadata: Metadata = {
   title: 'Bediening Antwerpen? Werk als Freelancer',
@@ -45,6 +45,7 @@ const faqSchema = {
     { '@type': 'Question', name: 'Moet ik zelfstandige zijn om via Chefs Connect te werken?', acceptedAnswer: { '@type': 'Answer', text: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint, ook handig voor bediening." } },
     { '@type': 'Question', name: 'Wat verdien ik als freelance bediening in Antwerpen?', acceptedAnswer: { '@type': 'Answer', text: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' } },
     { '@type': 'Question', name: 'Werken jullie ook in Nederland?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, Chefs Connect is actief in zowel Nederland als België. Ben je bereid over de grens te werken, dan vergroot dat je kansen op passende opdrachten.' } },
+    { '@type': 'Question', name: 'Werken jullie ook met medewerkers bediening, gastheren of gastvrouwen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' } },
   ],
 };
 

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/vacature-kok-venlo');
-const description = 'Op zoek naar werk als kok in Venlo? Schrijf je in bij Chefs Connect en werk als freelance kok bij de mooiste restaurants en events in Venlo en Noord-Limburg.';
+const description = 'Op zoek naar kok-opdrachten in Venlo? Wij plaatsen freelance koks bij restaurants en evenementen in Venlo en Noord-Limburg.';
 
 export const metadata: Metadata = {
   title: 'Vacature Kok Venlo? Werk als Freelancer',
@@ -45,6 +45,7 @@ const faqSchema = {
     { '@type': 'Question', name: "Moet ik zzp'er zijn om via Chefs Connect te werken?", acceptedAnswer: { '@type': 'Answer', text: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint met een KvK-inschrijving, btw en verzekeringen." } },
     { '@type': 'Question', name: 'Wat verdien ik als freelance kok in Venlo?', acceptedAnswer: { '@type': 'Answer', text: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' } },
     { '@type': 'Question', name: 'Werken jullie ook richting Maastricht en Duitsland?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, wij zijn actief in heel Limburg en plaatsen ook grensoverschrijdend. Ben je bereid iets verder te reizen, dan vergroot dat je kansen op passende opdrachten.' } },
+    { '@type': 'Question', name: 'Werken jullie ook met chefkoks, zelfstandig werkend koks of executive chefs?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu chefkok, zelfstandig werkend kok, executive chef of hulpkok bent: we bemiddelen op alle niveaus in de keuken en stemmen de opdracht af op jouw functie en ervaring.' } },
   ],
 };
 

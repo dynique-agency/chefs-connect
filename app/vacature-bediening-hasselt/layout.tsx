@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/vacature-bediening-hasselt');
-const description = 'Op zoek naar werk in de bediening in Hasselt? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Hasselt.';
+const description = 'Werk als zzp-gastheer of -vrouw bij de beste horecazaken in Hasselt en Belgisch Limburg. Wij regelen opdrachten die bij je passen.';
 
 export const metadata: Metadata = {
   title: 'Bediening Hasselt? Werk als Freelancer',
@@ -45,6 +45,7 @@ const faqSchema = {
     { '@type': 'Question', name: 'Moet ik zelfstandige zijn om via Chefs Connect te werken?', acceptedAnswer: { '@type': 'Answer', text: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint, ook handig voor bediening." } },
     { '@type': 'Question', name: 'Wat verdien ik als freelance bediening in Hasselt?', acceptedAnswer: { '@type': 'Answer', text: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' } },
     { '@type': 'Question', name: 'Werken jullie ook in Nederland, richting Maastricht?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Door de korte afstand tot Maastricht plaatsen wij regelmatig freelancers aan beide kanten van de grens. Ben je bereid grensoverschrijdend te werken, dan vergroot dat je kansen.' } },
+    { '@type': 'Question', name: 'Werken jullie ook met medewerkers bediening, gastheren of gastvrouwen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' } },
   ],
 };
 

@@ -3,12 +3,12 @@ import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Antwerpen',
-  description: 'Op zoek naar een freelance kok in Antwerpen? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Antwerpen.',
+  description: 'Binnen 24 tot 48 uur een ervaren freelance kok in Antwerpen. Chefs Connect bemiddelt snel en zonder gedoe in Antwerpen en omstreken.',
   keywords: ['freelance kok antwerpen', 'kok inhuren antwerpen', 'horecapersoneel antwerpen', 'tijdelijke kok antwerpen', 'spoed kok antwerpen', 'keukenpersoneel antwerpen'],
   alternates: pageAlternates('https://chefs-connect.nl/personeel-antwerpen'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Antwerpen | Chefs Connect',
-    description: 'Op zoek naar een freelance kok in Antwerpen? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Antwerpen.',
+    description: 'Binnen 24 tot 48 uur een ervaren freelance kok in Antwerpen. Chefs Connect bemiddelt snel en zonder gedoe in Antwerpen en omstreken.',
     url: siteUrl('https://chefs-connect.nl/personeel-antwerpen'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

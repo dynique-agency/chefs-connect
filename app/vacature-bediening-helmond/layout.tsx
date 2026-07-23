@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/vacature-bediening-helmond');
-const description = 'Op zoek naar werk in de bediening in Helmond? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Helmond.';
+const description = 'Op zoek naar werk in de bediening in Helmond? Werk als freelance gastheer, gastvrouw of bediening bij de mooiste locaties in Helmond en de Brainportregio.';
 
 export const metadata: Metadata = {
   title: 'Bediening Helmond? Werk als Freelancer',
@@ -45,6 +45,7 @@ const faqSchema = {
     { '@type': 'Question', name: "Moet ik zzp'er zijn om via Chefs Connect te werken?", acceptedAnswer: { '@type': 'Answer', text: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint, ook handig voor bediening." } },
     { '@type': 'Question', name: 'Wat verdien ik als freelance bediening in Helmond?', acceptedAnswer: { '@type': 'Answer', text: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' } },
     { '@type': 'Question', name: 'Werken jullie ook in Eindhoven?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, gezien de korte afstand plaatsen wij regelmatig freelancers in zowel Helmond als Eindhoven. Ben je bereid in beide steden te werken, dan vergroot dat je kansen op passende opdrachten.' } },
+    { '@type': 'Question', name: 'Werken jullie ook met medewerkers bediening, gastheren of gastvrouwen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' } },
   ],
 };
 

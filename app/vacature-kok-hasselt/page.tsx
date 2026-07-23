@@ -23,12 +23,13 @@ export default function VacatureKokHasseltPage() {
         { question: 'Moet ik zelfstandige zijn om via Chefs Connect te werken?', answer: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint met een inschrijving, btw en verzekeringen." },
         { question: 'Wat verdien ik als freelance kok in Hasselt?', answer: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' },
         { question: 'Werken jullie ook in Nederland, richting Maastricht?', answer: 'Ja. Door de korte afstand tot Maastricht plaatsen wij regelmatig freelancers aan beide kanten van de grens. Ben je bereid grensoverschrijdend te werken, dan vergroot dat je kansen.' },
+        { question: 'Werken jullie ook met chefkoks, zelfstandig werkend koks of executive chefs?', answer: 'Ja. Of je nu chefkok, zelfstandig werkend kok, executive chef of hulpkok bent: we bemiddelen op alle niveaus in de keuken en stemmen de opdracht af op jouw functie en ervaring.' },
       ]}
       formSubject="Chefs Connect: Aanmelding Freelance Kok Hasselt"
       formLocation="Vacature kok Hasselt"
       relatedLinks={[
         { href: '/vacature-bediening-hasselt', label: 'Bediening in Hasselt' },
-        { href: '/maastricht', label: 'Freelance opdrachten Maastricht' },
+        { href: '/vacature-kok-maastricht', label: 'Kok in Maastricht' },
         { href: '/vacature-kok-antwerpen', label: 'Kok in Antwerpen' },
       ]}
     />

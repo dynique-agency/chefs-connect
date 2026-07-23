@@ -3,12 +3,12 @@ import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Venlo',
-  description: 'Op zoek naar een freelance kok in Venlo? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Venlo en Noord-Limburg.',
+  description: 'Personeelstekort in de keuken in Venlo? Chefs Connect regelt snel een ervaren freelance kok voor Venlo en Noord-Limburg.',
   keywords: ['freelance kok venlo', 'kok inhuren venlo', 'horecapersoneel venlo', 'tijdelijke kok venlo', 'spoed kok venlo', 'keukenpersoneel venlo'],
   alternates: pageAlternates('https://chefs-connect.nl/personeel-venlo'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Venlo | Chefs Connect',
-    description: 'Op zoek naar een freelance kok in Venlo? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Venlo en Noord-Limburg.',
+    description: 'Personeelstekort in de keuken in Venlo? Chefs Connect regelt snel een ervaren freelance kok voor Venlo en Noord-Limburg.',
     url: siteUrl('https://chefs-connect.nl/personeel-venlo'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

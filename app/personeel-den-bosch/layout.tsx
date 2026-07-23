@@ -3,12 +3,12 @@ import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Den Bosch',
-  description: 'Op zoek naar een freelance kok in Den Bosch? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in ’s-Hertogenbosch en omstreken.',
+  description: 'Chefs Connect bemiddelt freelance koks en keukenbrigades in Den Bosch en de regio Noordoost-Brabant, snel geregeld en zonder poespas.',
   keywords: ['freelance kok den bosch', 'kok inhuren den bosch', 'horecapersoneel den bosch', "kok inhuren 's-hertogenbosch", 'spoed kok den bosch', 'keukenpersoneel den bosch'],
   alternates: pageAlternates('https://chefs-connect.nl/personeel-den-bosch'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Den Bosch | Chefs Connect',
-    description: 'Op zoek naar een freelance kok in Den Bosch? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in ’s-Hertogenbosch en omstreken.',
+    description: 'Chefs Connect bemiddelt freelance koks en keukenbrigades in Den Bosch en de regio Noordoost-Brabant, snel geregeld en zonder poespas.',
     url: siteUrl('https://chefs-connect.nl/personeel-den-bosch'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

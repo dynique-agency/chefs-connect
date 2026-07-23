@@ -3,12 +3,12 @@ import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Brussel',
-  description: 'Op zoek naar een freelance kok in Brussel? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Brussel.',
+  description: 'Binnen 24 tot 48 uur een ervaren freelance kok in Brussel. Chefs Connect bemiddelt snel en zonder gedoe in Brussel en het Brussels Hoofdstedelijk Gewest.',
   keywords: ['freelance kok brussel', 'kok inhuren brussel', 'horecapersoneel brussel', 'tijdelijke kok brussel', 'spoed kok brussel', 'keukenpersoneel brussel'],
   alternates: pageAlternates('https://chefs-connect.nl/personeel-brussel'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Brussel | Chefs Connect',
-    description: 'Op zoek naar een freelance kok in Brussel? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Brussel.',
+    description: 'Binnen 24 tot 48 uur een ervaren freelance kok in Brussel. Chefs Connect bemiddelt snel en zonder gedoe in Brussel en het Brussels Hoofdstedelijk Gewest.',
     url: siteUrl('https://chefs-connect.nl/personeel-brussel'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

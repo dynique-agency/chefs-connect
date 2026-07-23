@@ -3,12 +3,12 @@ import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Tilburg',
-  description: 'Op zoek naar een freelance kok in Tilburg? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Tilburg en Midden-Brabant.',
+  description: 'Chefs Connect bemiddelt freelance koks en keukenbrigades in Tilburg en de regio Midden-Brabant, snel geregeld en zonder poespas.',
   keywords: ['freelance kok tilburg', 'kok inhuren tilburg', 'horecapersoneel tilburg', 'tijdelijke kok tilburg', 'spoed kok midden-brabant', 'keukenpersoneel tilburg'],
   alternates: pageAlternates('https://chefs-connect.nl/personeel-tilburg'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Tilburg | Chefs Connect',
-    description: 'Op zoek naar een freelance kok in Tilburg? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Tilburg en Midden-Brabant.',
+    description: 'Chefs Connect bemiddelt freelance koks en keukenbrigades in Tilburg en de regio Midden-Brabant, snel geregeld en zonder poespas.',
     url: siteUrl('https://chefs-connect.nl/personeel-tilburg'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

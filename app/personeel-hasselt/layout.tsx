@@ -3,12 +3,12 @@ import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Hasselt',
-  description: 'Op zoek naar een freelance kok in Hasselt? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Hasselt en Belgisch Limburg.',
+  description: 'Chefs Connect bemiddelt freelance koks en keukenbrigades in Hasselt en Belgisch Limburg, snel geregeld en zonder poespas.',
   keywords: ['freelance kok hasselt', 'kok inhuren hasselt', 'horecapersoneel hasselt', 'tijdelijke kok hasselt', 'spoed kok hasselt', 'keukenpersoneel hasselt'],
   alternates: pageAlternates('https://chefs-connect.nl/personeel-hasselt'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Hasselt | Chefs Connect',
-    description: 'Op zoek naar een freelance kok in Hasselt? Chefs Connect levert ervaren koks en keukenprofessionals snel en zonder gedoe in Hasselt en Belgisch Limburg.',
+    description: 'Chefs Connect bemiddelt freelance koks en keukenbrigades in Hasselt en Belgisch Limburg, snel geregeld en zonder poespas.',
     url: siteUrl('https://chefs-connect.nl/personeel-hasselt'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

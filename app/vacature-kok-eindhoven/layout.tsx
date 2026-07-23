@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/vacature-kok-eindhoven');
-const description = 'Op zoek naar werk als kok in Eindhoven? Werk als freelance kok bij de mooiste restaurants, hotels en events in Eindhoven en omstreken.';
+const description = 'Freelance kok worden in Eindhoven? Chefs Connect koppelt je aan opdrachten bij toprestaurants en hotels in Eindhoven en de regio Noord-Brabant.';
 
 export const metadata: Metadata = {
   title: 'Vacature Kok Eindhoven? Werk als Freelancer',
@@ -45,6 +45,7 @@ const faqSchema = {
     { '@type': 'Question', name: "Moet ik zzp'er zijn om via Chefs Connect te werken?", acceptedAnswer: { '@type': 'Answer', text: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint met een KvK-inschrijving, btw en verzekeringen." } },
     { '@type': 'Question', name: 'Wat verdien ik als freelance kok in Eindhoven?', acceptedAnswer: { '@type': 'Answer', text: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' } },
     { '@type': 'Question', name: 'Hoe snel kan ik aan de slag?', acceptedAnswer: { '@type': 'Answer', text: 'Na je aanmelding nemen we vaak binnen 48 uur contact op. In de meeste gevallen kunnen we binnen één tot twee weken een eerste passende opdracht voorstellen.' } },
+    { '@type': 'Question', name: 'Werken jullie ook met chefkoks, zelfstandig werkend koks of executive chefs?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu chefkok, zelfstandig werkend kok, executive chef of hulpkok bent: we bemiddelen op alle niveaus in de keuken en stemmen de opdracht af op jouw functie en ervaring.' } },
   ],
 };
 
