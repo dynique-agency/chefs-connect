@@ -813,6 +813,8 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-kok-gent', label: 'Kok in Gent' },
                 { href: '/vacature-kok-brugge', label: 'Kok in Brugge' },
                 { href: '/vacature-kok-brussel', label: 'Kok in Brussel' },
+                { href: '/vacature-kok-houten', label: 'Kok in Houten' },
+                { href: '/vacature-instellingskok', label: 'Instellingskok' },
               ].map((c) => (
                 <Link
                   key={c.href}
@@ -845,6 +847,7 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-bediening-gent', label: 'Bediening in Gent' },
                 { href: '/vacature-bediening-brugge', label: 'Bediening in Brugge' },
                 { href: '/vacature-bediening-brussel', label: 'Bediening in Brussel' },
+                { href: '/vacature-bediening-houten', label: 'Bediening in Houten' },
               ].map((c) => (
                 <Link
                   key={c.href}

@@ -32,6 +32,7 @@ export default function VacatureKokMaastrichtPage() {
         { href: '/vacature-bediening-maastricht', label: 'Bediening in Maastricht' },
         { href: '/vacature-kok-venlo', label: 'Kok in Venlo' },
         { href: '/vacature-kok-hasselt', label: 'Kok in Hasselt' },
+        { href: '/vacature-instellingskok', label: 'Instellingskok' },
       ]}
     />
   );
