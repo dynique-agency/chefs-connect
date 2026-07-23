@@ -11,6 +11,12 @@ interface CookiePreferences {
   marketing: boolean;
 }
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 export default function CookieBanner() {
   const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
@@ -27,32 +33,24 @@ export default function CookieBanner() {
       // Small delay before showing to avoid flash
       setTimeout(() => setShowBanner(true), 1000);
     } else {
-      // Load saved preferences
+      // Consent Mode default/restore already ran in the layout <head> script;
+      // this just syncs the banner's own UI state to the stored choice.
       try {
-        const saved = JSON.parse(cookieConsent);
-        setPreferences(saved);
-        // Here you would initialize analytics/marketing scripts based on preferences
-        if (saved.analytics) {
-          initializeAnalytics();
-        }
-        if (saved.marketing) {
-          initializeMarketing();
-        }
+        setPreferences(JSON.parse(cookieConsent));
       } catch (e) {
         console.error('Error parsing cookie preferences:', e);
       }
     }
   }, []);
 
-  const initializeAnalytics = () => {
-    // Initialize Google Analytics or other analytics
-    console.log('Analytics initialized');
-    // Example: gtag('config', 'GA_MEASUREMENT_ID');
-  };
-
-  const initializeMarketing = () => {
-    // Initialize marketing pixels (Facebook, LinkedIn, etc.)
-    console.log('Marketing initialized');
+  const updateConsent = (prefs: CookiePreferences) => {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('consent', 'update', {
+      analytics_storage: prefs.analytics ? 'granted' : 'denied',
+      ad_storage: prefs.marketing ? 'granted' : 'denied',
+      ad_user_data: prefs.marketing ? 'granted' : 'denied',
+      ad_personalization: prefs.marketing ? 'granted' : 'denied',
+    });
   };
 
   const savePreferences = (prefs: CookiePreferences) => {
@@ -60,14 +58,7 @@ export default function CookieBanner() {
     setPreferences(prefs);
     setShowBanner(false);
     setShowSettings(false);
-
-    // Initialize allowed tracking
-    if (prefs.analytics) {
-      initializeAnalytics();
-    }
-    if (prefs.marketing) {
-      initializeMarketing();
-    }
+    updateConsent(prefs);
   };
 
   const acceptAll = () => {

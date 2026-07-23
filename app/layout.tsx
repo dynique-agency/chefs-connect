@@ -111,6 +111,25 @@ export default function RootLayout({
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            gtag('consent', 'default', {
+              analytics_storage: 'denied',
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied'
+            });
+            (function() {
+              try {
+                var saved = JSON.parse(localStorage.getItem('cookieConsent') || 'null');
+                if (saved) {
+                  gtag('consent', 'update', {
+                    analytics_storage: saved.analytics ? 'granted' : 'denied',
+                    ad_storage: saved.marketing ? 'granted' : 'denied',
+                    ad_user_data: saved.marketing ? 'granted' : 'denied',
+                    ad_personalization: saved.marketing ? 'granted' : 'denied'
+                  });
+                }
+              } catch (e) {}
+            })();
             gtag('js', new Date());
             gtag('config', 'G-NLMGNKDEPV');
           `}
