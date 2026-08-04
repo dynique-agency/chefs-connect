@@ -4,11 +4,21 @@ import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Globe } from 'lucide-react';
+import { ArrowUpRight, ExternalLink, Globe } from 'lucide-react';
 import PremiumStaffingPopup from '@/components/ui/PremiumStaffingPopup';
 import { SITE_HOST } from '@/lib/seo';
 
 const links = [
+  {
+    id: 0,
+    label: 'Boeken voor evenement Café t Wiel',
+    sublabel: 'Reserveer direct via cafetwiel.nl',
+    href: 'https://cafetwiel.nl',
+    external: true,
+    accent: false,
+    image: null,
+    imageAlt: 'Café t Wiel',
+  },
   {
     id: 1,
     label: 'Ik ben een horeca professional',
@@ -171,8 +181,14 @@ export default function LinksPage() {
                 ease: [0.25, 0.1, 0.25, 1],
               }}
             >
-              <Link
-                href={link.href}
+              {(() => {
+                const CardWrapper = link.external ? 'a' : Link;
+                const wrapperProps = link.external
+                  ? { href: link.href, target: '_blank', rel: 'noopener noreferrer' }
+                  : { href: link.href };
+                return (
+              <CardWrapper
+                {...wrapperProps}
                 style={{ display: 'block', textDecoration: 'none' }}
               >
                 <motion.div
@@ -213,19 +229,23 @@ export default function LinksPage() {
                       overflow: 'hidden',
                     }}
                   >
-                    <Image
-                      src={link.image}
-                      alt={link.imageAlt}
-                      fill={!link.imageLogo}
-                      width={link.imageLogo ? 52 : undefined}
-                      height={link.imageLogo ? 20 : undefined}
-                      className={link.imageLogo ? undefined : 'object-cover'}
-                      style={link.imageLogo
-                        ? { objectFit: 'contain', position: 'relative', width: '52px', height: 'auto', opacity: 0.9 }
-                        : { opacity: 0.55 }
-                      }
-                    />
-                    {!link.imageLogo && (
+                    {link.image ? (
+                      <Image
+                        src={link.image}
+                        alt={link.imageAlt}
+                        fill={!link.imageLogo}
+                        width={link.imageLogo ? 52 : undefined}
+                        height={link.imageLogo ? 20 : undefined}
+                        className={link.imageLogo ? undefined : 'object-cover'}
+                        style={link.imageLogo
+                          ? { objectFit: 'contain', position: 'relative', width: '52px', height: 'auto', opacity: 0.9 }
+                          : { opacity: 0.55 }
+                        }
+                      />
+                    ) : (
+                      <ExternalLink size={20} style={{ color: 'rgba(201,169,97,0.5)' }} />
+                    )}
+                    {!link.imageLogo && link.image && (
                       <div
                         style={{
                           position: 'absolute',
@@ -278,7 +298,9 @@ export default function LinksPage() {
                     />
                   </div>
                 </motion.div>
-              </Link>
+              </CardWrapper>
+                );
+              })()}
             </motion.div>
           ))}
         </div>
