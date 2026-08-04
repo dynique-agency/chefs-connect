@@ -28,6 +28,15 @@ const articles = [
     readingTime: '7 min',
     published: true,
   },
+  {
+    slug: 'freelance-kok-tarief',
+    category: 'Voor freelancers',
+    title: 'Freelance kok tarief: wat bepaalt je uurtarief?',
+    excerpt:
+      'Nederlandse zzp-koks rekenen gemiddeld €38 tot €45 per uur. De echte cijfers uit onderzoek onder 20.000+ zzp\'ers, en de factoren die jouw tarief bepalen.',
+    readingTime: '8 min',
+    published: true,
+  },
 ];
 
 const breadcrumbSchema = {

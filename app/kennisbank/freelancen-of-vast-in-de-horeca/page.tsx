@@ -44,6 +44,11 @@ export default function FreelancenOfVastPage() {
           description: 'Koos je voor freelance? Dit stappenplan begeleidt je van KvK-inschrijving tot je eerste opdracht.',
         },
         {
+          href: '/kennisbank/freelance-kok-tarief',
+          label: 'Freelance kok tarief: wat bepaalt je uurtarief?',
+          description: 'De echte cijfers uit onderzoek onder 20.000+ zzp\'ers, en wat jouw tarief bepaalt.',
+        },
+        {
           href: '/horecaspecialist',
           label: 'Word horecaspecialist',
           description: 'Sluit je aan bij ons netwerk en werk voor high-end locaties in NL & BE.',
