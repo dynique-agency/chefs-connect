@@ -814,6 +814,17 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-kok-brugge', label: 'Kok in Brugge' },
                 { href: '/vacature-kok-brussel', label: 'Kok in Brussel' },
                 { href: '/vacature-kok-houten', label: 'Kok in Houten' },
+                { href: '/vacature-kok-oss', label: 'Kok in Oss' },
+                { href: '/vacature-kok-roosendaal', label: 'Kok in Roosendaal' },
+                { href: '/vacature-kok-bergen-op-zoom', label: 'Kok in Bergen op Zoom' },
+                { href: '/vacature-kok-oosterhout', label: 'Kok in Oosterhout' },
+                { href: '/vacature-kok-waalwijk', label: 'Kok in Waalwijk' },
+                { href: '/vacature-kok-uden', label: 'Kok in Uden' },
+                { href: '/vacature-kok-sittard-geleen', label: 'Kok in Sittard-Geleen' },
+                { href: '/vacature-kok-heerlen', label: 'Kok in Heerlen' },
+                { href: '/vacature-kok-roermond', label: 'Kok in Roermond' },
+                { href: '/vacature-kok-weert', label: 'Kok in Weert' },
+                { href: '/vacature-kok-kerkrade', label: 'Kok in Kerkrade' },
                 { href: '/vacature-instellingskok', label: 'Instellingskok' },
               ].map((c) => (
                 <Link
@@ -848,6 +859,17 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-bediening-brugge', label: 'Bediening in Brugge' },
                 { href: '/vacature-bediening-brussel', label: 'Bediening in Brussel' },
                 { href: '/vacature-bediening-houten', label: 'Bediening in Houten' },
+                { href: '/vacature-bediening-oss', label: 'Bediening in Oss' },
+                { href: '/vacature-bediening-roosendaal', label: 'Bediening in Roosendaal' },
+                { href: '/vacature-bediening-bergen-op-zoom', label: 'Bediening in Bergen op Zoom' },
+                { href: '/vacature-bediening-oosterhout', label: 'Bediening in Oosterhout' },
+                { href: '/vacature-bediening-waalwijk', label: 'Bediening in Waalwijk' },
+                { href: '/vacature-bediening-uden', label: 'Bediening in Uden' },
+                { href: '/vacature-bediening-sittard-geleen', label: 'Bediening in Sittard-Geleen' },
+                { href: '/vacature-bediening-heerlen', label: 'Bediening in Heerlen' },
+                { href: '/vacature-bediening-roermond', label: 'Bediening in Roermond' },
+                { href: '/vacature-bediening-weert', label: 'Bediening in Weert' },
+                { href: '/vacature-bediening-kerkrade', label: 'Bediening in Kerkrade' },
               ].map((c) => (
                 <Link
                   key={c.href}
