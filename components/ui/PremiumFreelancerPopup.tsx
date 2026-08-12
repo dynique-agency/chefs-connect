@@ -78,7 +78,11 @@ export default function PremiumFreelancerPopup({ showAfterMs = 4000 }: PremiumFr
   const handleFormLink = useCallback(() => {
     close();
     setTimeout(() => {
-      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+      const target =
+        document.getElementById('contact') ||
+        document.getElementById('aanmelden') ||
+        document.querySelector('form');
+      target?.scrollIntoView({ behavior: 'smooth' });
     }, 350);
   }, [close]);
 
