@@ -825,6 +825,16 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-kok-roermond', label: 'Kok in Roermond' },
                 { href: '/vacature-kok-weert', label: 'Kok in Weert' },
                 { href: '/vacature-kok-kerkrade', label: 'Kok in Kerkrade' },
+                { href: '/vacature-kok-amsterdam', label: 'Kok in Amsterdam' },
+                { href: '/vacature-kok-rotterdam', label: 'Kok in Rotterdam' },
+                { href: '/vacature-kok-den-haag', label: 'Kok in Den Haag' },
+                { href: '/vacature-kok-leuven', label: 'Kok in Leuven' },
+                { href: '/vacature-kok-mechelen', label: 'Kok in Mechelen' },
+                { href: '/vacature-kok-kortrijk', label: 'Kok in Kortrijk' },
+                { href: '/vacature-kok-oostende', label: 'Kok in Oostende' },
+                { href: '/vacature-kok-aalst', label: 'Kok in Aalst' },
+                { href: '/vacature-kok-sint-niklaas', label: 'Kok in Sint-Niklaas' },
+                { href: '/vacature-kok-genk', label: 'Kok in Genk' },
                 { href: '/vacature-instellingskok', label: 'Instellingskok' },
               ].map((c) => (
                 <Link
@@ -870,6 +880,16 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-bediening-roermond', label: 'Bediening in Roermond' },
                 { href: '/vacature-bediening-weert', label: 'Bediening in Weert' },
                 { href: '/vacature-bediening-kerkrade', label: 'Bediening in Kerkrade' },
+                { href: '/vacature-bediening-amsterdam', label: 'Bediening in Amsterdam' },
+                { href: '/vacature-bediening-rotterdam', label: 'Bediening in Rotterdam' },
+                { href: '/vacature-bediening-den-haag', label: 'Bediening in Den Haag' },
+                { href: '/vacature-bediening-leuven', label: 'Bediening in Leuven' },
+                { href: '/vacature-bediening-mechelen', label: 'Bediening in Mechelen' },
+                { href: '/vacature-bediening-kortrijk', label: 'Bediening in Kortrijk' },
+                { href: '/vacature-bediening-oostende', label: 'Bediening in Oostende' },
+                { href: '/vacature-bediening-aalst', label: 'Bediening in Aalst' },
+                { href: '/vacature-bediening-sint-niklaas', label: 'Bediening in Sint-Niklaas' },
+                { href: '/vacature-bediening-genk', label: 'Bediening in Genk' },
               ].map((c) => (
                 <Link
                   key={c.href}
