@@ -1,11 +1,13 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
 export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
+  const pathname = usePathname();
 
   useEffect(() => {
     // Only show once per browser session
@@ -14,11 +16,16 @@ export default function LoadingScreen() {
       return;
     }
 
-    // Preload video during loading screen
-    const video = document.createElement('video');
-    video.src = '/BANNER.mp4';
-    video.preload = 'auto';
-    video.load();
+    // Only the homepage hero plays BANNER.mp4; every other route paid for this
+    // 3.85MB preload without ever using it, which cost real load time on the
+    // ~110 SEO landing pages most sessions actually land on.
+    let video: HTMLVideoElement | null = null;
+    if (pathname === '/') {
+      video = document.createElement('video');
+      video.src = '/BANNER.mp4';
+      video.preload = 'auto';
+      video.load();
+    }
 
     const timer = setTimeout(() => {
       sessionStorage.setItem('cc-loaded', '1');
@@ -27,9 +34,9 @@ export default function LoadingScreen() {
 
     return () => {
       clearTimeout(timer);
-      video.src = '';
+      if (video) video.src = '';
     };
-  }, []);
+  }, [pathname]);
 
   return (
     <AnimatePresence mode="wait">
