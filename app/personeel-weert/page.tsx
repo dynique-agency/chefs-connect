@@ -28,6 +28,7 @@ export default function PersoneelWeertPage() {
       relatedLinks={[
         { href: '/personeel-roermond', label: 'Kok inhuren Roermond' },
         { href: '/personeel-maastricht', label: 'Kok inhuren Maastricht' },
+        { href: '/limburg', label: 'Heel Limburg' },
         { href: '/zoek-personeel', label: "Alle regio's" },
       ]}
     />

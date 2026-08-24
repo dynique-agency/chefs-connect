@@ -98,7 +98,7 @@ export default function HorecaSpecialistPage() {
               <div className="h-px bg-gold/30 w-32" />
               
               <h1 className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-brown leading-[1.1]">
-                Ik ben een <span className="text-gold italic">horeca professional</span>
+                Ik ben een <span className="text-gold italic">horecaspecialist</span>
               </h1>
 
               <div className="space-y-6 font-inter text-base md:text-lg text-brown-medium leading-relaxed max-w-xl">
@@ -836,6 +836,7 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-kok-sint-niklaas', label: 'Kok in Sint-Niklaas' },
                 { href: '/vacature-kok-genk', label: 'Kok in Genk' },
                 { href: '/vacature-instellingskok', label: 'Instellingskok' },
+                { href: '/limburg', label: 'Heel Limburg' },
               ].map((c) => (
                 <Link
                   key={c.href}

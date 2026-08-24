@@ -467,6 +467,9 @@ export default function MaastrichtPage() {
               <Link href="/personeel-maastricht" className="font-inter text-sm text-brown border border-brown/20 px-5 py-2.5 hover:border-gold hover:text-gold transition-colors duration-300">
                 Personeel inhuren in Maastricht
               </Link>
+              <Link href="/limburg" className="font-inter text-sm text-brown border border-brown/20 px-5 py-2.5 hover:border-gold hover:text-gold transition-colors duration-300">
+                Heel Limburg
+              </Link>
             </div>
           </motion.div>
         </div>

@@ -961,6 +961,13 @@ export default function ZoekPersoneelPage() {
                 href: '/personeel-genk',
                 index: 36,
               },
+              {
+                name: 'Heel Limburg',
+                region: 'Alle Limburgse steden op één pagina',
+                cta: 'Bekijk regio',
+                href: '/limburg',
+                index: 37,
+              },
             ].map((city, i) => (
               <motion.div
                 key={city.name}

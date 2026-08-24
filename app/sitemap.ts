@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: siteUrl('https://chefs-connect.nl'), file: 'app/page.tsx', changeFrequency: 'monthly', priority: 1 },
     { url: siteUrl('https://chefs-connect.nl/zoek-personeel'), file: 'app/zoek-personeel/page.tsx', changeFrequency: 'monthly', priority: 0.8 },
     { url: siteUrl('https://chefs-connect.nl/horecaspecialist'), file: 'app/horecaspecialist/page.tsx', changeFrequency: 'monthly', priority: 0.8 },
+    { url: siteUrl('https://chefs-connect.nl/limburg'), file: 'app/limburg/page.tsx', changeFrequency: 'monthly', priority: 0.8 },
     { url: siteUrl('https://chefs-connect.nl/evenementen'), file: 'app/evenementen/page.tsx', changeFrequency: 'monthly', priority: 0.9 },
     { url: siteUrl('https://chefs-connect.nl/over-ons'), file: 'app/over-ons/page.tsx', changeFrequency: 'yearly', priority: 0.7 },
     { url: siteUrl('https://chefs-connect.nl/contact'), file: 'app/contact/page.tsx', changeFrequency: 'yearly', priority: 0.6 },

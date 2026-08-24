@@ -28,6 +28,7 @@ export default function PersoneelVenloPage() {
       relatedLinks={[
         { href: '/personeel-maastricht', label: 'Kok inhuren Maastricht' },
         { href: '/personeel-hasselt', label: 'Kok inhuren Hasselt' },
+        { href: '/limburg', label: 'Heel Limburg' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
     />

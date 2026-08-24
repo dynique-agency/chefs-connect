@@ -28,6 +28,7 @@ export default function PersoneelSittardGeleenPage() {
       relatedLinks={[
         { href: '/personeel-heerlen', label: 'Kok inhuren Heerlen' },
         { href: '/personeel-maastricht', label: 'Kok inhuren Maastricht' },
+        { href: '/limburg', label: 'Heel Limburg' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
     />
