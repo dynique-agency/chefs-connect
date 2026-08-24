@@ -27,6 +27,15 @@ const breadcrumbSchema = {
   ],
 };
 
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: 'Freelance horeca bemiddeling voor bediening',
+  provider: { '@type': 'EmploymentAgency', name: 'Chefs Connect' },
+  description: 'Freelance opdrachten voor bedieningsprofessionals bij restaurants en horecazaken in Houten en de regio Utrecht.',
+  areaServed: { '@type': 'City', name: 'Houten' },
+};
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -44,6 +53,7 @@ export default function VacatureBedieningHoutenLayout({ children }: { children: 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
