@@ -59,6 +59,7 @@ export default function CookieBanner() {
     setShowBanner(false);
     setShowSettings(false);
     updateConsent(prefs);
+    window.dispatchEvent(new Event('cookieConsentResolved'));
   };
 
   const acceptAll = () => {

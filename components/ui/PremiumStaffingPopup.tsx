@@ -56,11 +56,29 @@ const stats = [
 export default function PremiumStaffingPopup({ showAfterMs = 3000 }: PremiumStaffingPopupProps) {
   const [isVisible, setIsVisible] = useState(false);
   const dialogRef = useRef<HTMLDivElement>(null);
-  const close = useCallback(() => setIsVisible(false), []);
+  const close = useCallback(() => {
+    setIsVisible(false);
+    sessionStorage.setItem('cc-staffing-popup-seen', '1');
+  }, []);
 
   useEffect(() => {
-    const t = setTimeout(() => setIsVisible(true), showAfterMs);
-    return () => clearTimeout(t);
+    if (sessionStorage.getItem('cc-staffing-popup-seen')) return;
+
+    let timeoutId: ReturnType<typeof setTimeout> | undefined;
+    const startTimer = () => {
+      timeoutId = setTimeout(() => setIsVisible(true), showAfterMs);
+    };
+
+    if (localStorage.getItem('cookieConsent')) {
+      startTimer();
+    } else {
+      window.addEventListener('cookieConsentResolved', startTimer, { once: true });
+    }
+
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener('cookieConsentResolved', startTimer);
+    };
   }, [showAfterMs]);
 
   useEffect(() => {
