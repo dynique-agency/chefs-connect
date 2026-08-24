@@ -71,8 +71,8 @@ const WHY_CARDS = [
 ];
 
 const STATS = [
-  { value: '150+', label: 'Professionals' },
-  { value: '100+', label: 'Opdrachtgevers' },
+  { value: '350+', label: 'Professionals' },
+  { value: '250+', label: 'Opdrachtgevers' },
   { value: '< 24u', label: 'Reactietijd' },
 ];
 
@@ -249,6 +249,57 @@ export default function CityStaffingPage({
         </div>
       </section>
 
+      {/* Reviews - real, verifiable trust right after the numbers */}
+      <section className="relative py-20 md:py-28 px-6 bg-cream border-t border-brown/10">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col items-center text-center mb-14">
+            <div className="flex items-center gap-2 mb-5">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 fill-gold text-gold" />
+              ))}
+              <span className="font-inter text-xs text-brown-medium/70 ml-1">5.0 op Google</span>
+            </div>
+            <h2 className="font-playfair text-4xl md:text-5xl font-light text-brown mb-4">
+              Vertrouwd door opdrachtgevers
+            </h2>
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 font-inter text-sm text-gold-accessible hover:underline"
+            >
+              <CheckCircle2 className="w-4 h-4" />
+              Geverifieerd op Google
+            </a>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-5">
+            {REVIEWS.map((review, index) => (
+              <motion.div
+                key={review.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                className="bg-white border border-brown/10 p-6 md:p-7 flex flex-col h-full"
+              >
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3.5 h-3.5 fill-gold text-gold" />
+                  ))}
+                </div>
+                <p className="font-inter text-sm text-brown-medium leading-relaxed mb-5 flex-1">
+                  &ldquo;<ReviewQuote text={review.text} />&rdquo;
+                </p>
+                <p className="font-inter text-sm text-brown font-semibold pt-4 border-t border-brown/10">
+                  {review.name}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Context - unique local content */}
       <section className="relative py-20 md:py-32 px-6 bg-cream">
         <div className="max-w-6xl mx-auto">
@@ -419,57 +470,6 @@ export default function CityStaffingPage({
 
       {/* FAQ */}
       {faq && faq.length > 0 && <FaqSection items={faq} />}
-
-      {/* Reviews - real, verifiable reassurance right before the ask */}
-      <section className="relative py-20 md:py-28 px-6 bg-cream border-t border-brown/10">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col items-center text-center mb-14">
-            <div className="flex items-center gap-2 mb-5">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-gold text-gold" />
-              ))}
-              <span className="font-inter text-xs text-brown-medium/70 ml-1">5.0 op Google</span>
-            </div>
-            <h2 className="font-playfair text-4xl md:text-5xl font-light text-brown mb-4">
-              Vertrouwd door opdrachtgevers
-            </h2>
-            <a
-              href={GOOGLE_REVIEWS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 font-inter text-sm text-gold-accessible hover:underline"
-            >
-              <CheckCircle2 className="w-4 h-4" />
-              Geverifieerd op Google
-            </a>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-5">
-            {REVIEWS.map((review, index) => (
-              <motion.div
-                key={review.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="bg-white border border-brown/10 p-6 md:p-7 flex flex-col h-full"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-gold text-gold" />
-                  ))}
-                </div>
-                <p className="font-inter text-sm text-brown-medium leading-relaxed mb-5 flex-1">
-                  &ldquo;<ReviewQuote text={review.text} />&rdquo;
-                </p>
-                <p className="font-inter text-sm text-brown font-semibold pt-4 border-t border-brown/10">
-                  {review.name}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Form */}
       <section id="aanvragen" className="relative py-20 md:py-32 px-6 bg-cream scroll-mt-8">

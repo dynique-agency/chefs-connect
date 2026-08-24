@@ -64,6 +64,39 @@ const WHY_CARDS = [
 
 const DEFAULT_FUNCTIONS = ['Head chef', 'Sous chef', 'Chef de partie', 'Zelfstandig werkend kok', 'Commis kok', 'Bedieningsmedewerker', 'Anders'];
 
+const GOOGLE_REVIEWS_URL =
+  'https://www.google.com/maps/place/Chefsconnect/@51.5642759,4.8758051,663722m/data=!3m1!1e3!4m8!3m7!1s0x40f016df59b51bf:0xa54be2c98204141d!8m2!3d51.5642759!4d4.875805!9m1!1b1!16s%2Fg%2F11x204wxp_?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D';
+
+const REVIEWS = [
+  {
+    name: 'Sharen Wintjens',
+    text: 'Mijn chef-kok was plots weggelopen en ik zat met mijn handen in het haar. De dag erna stond er al een {tijdelijke freelance chef-kok} die {écht kon koken}. Dat heeft {mijn zaak gered}. Chapeau jongens!',
+  },
+  {
+    name: 'Mitchel',
+    text: 'Chefs Connect heeft voor ons snel een {vakbekwame kok} gevonden die {perfect past} binnen onze keukencultuur. Het team was {professioneel}, dacht mee en zorgde voor een {soepel traject}, echt een aanrader!',
+  },
+  {
+    name: 'Dominic',
+    text: 'Chefs connect is een {goede en professionele organisatie} met {kennis van zaken}. Je krijgt {heldere uitleg} over het bemiddelingsproces en ze gaan {efficiënt te werk}.',
+  },
+];
+
+function ReviewQuote({ text }: { text: string }) {
+  const parts = text.split(/(\{[^}]+\})/g);
+  return (
+    <>
+      {parts.map((part, i) =>
+        part.startsWith('{') && part.endsWith('}') ? (
+          <span key={i} className="text-gold font-medium">{part.slice(1, -1)}</span>
+        ) : (
+          <span key={i}>{part}</span>
+        )
+      )}
+    </>
+  );
+}
+
 export default function CityFreelancerPage({
   city,
   regionLabel,
@@ -170,6 +203,57 @@ export default function CityFreelancerPage({
             <span>Meld je aan</span>
             <ArrowRight className="w-5 h-5" />
           </motion.a>
+        </div>
+      </section>
+
+      {/* Reviews - real, verifiable trust right after the hero */}
+      <section className="relative py-20 md:py-28 px-6 bg-brown">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col items-center text-center mb-14">
+            <div className="flex items-center gap-2 mb-5">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 fill-gold text-gold" />
+              ))}
+              <span className="font-inter text-xs text-cream/60 ml-1">5.0 op Google</span>
+            </div>
+            <h2 className="font-playfair text-4xl md:text-5xl font-light text-cream mb-4">
+              Vertrouwd door opdrachtgevers
+            </h2>
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 font-inter text-sm text-gold hover:underline"
+            >
+              <CheckCircle2 className="w-4 h-4" />
+              Geverifieerd op Google
+            </a>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-5">
+            {REVIEWS.map((review, index) => (
+              <motion.div
+                key={review.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
+                className="bg-cream/5 border border-cream/10 p-6 md:p-7 flex flex-col h-full"
+              >
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3.5 h-3.5 fill-gold text-gold" />
+                  ))}
+                </div>
+                <p className="font-inter text-sm text-cream/70 leading-relaxed mb-5 flex-1">
+                  &ldquo;<ReviewQuote text={review.text} />&rdquo;
+                </p>
+                <p className="font-inter text-sm text-cream font-semibold pt-4 border-t border-cream/10">
+                  {review.name}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
