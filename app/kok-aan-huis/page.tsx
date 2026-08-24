@@ -13,7 +13,7 @@ export default function KokAanHuisPage() {
       introHeadingLead="Sterrenkeuken in uw"
       introHeadingAccent="eigen keuken"
       introParagraphs={[
-        'Een kok aan huis is fine dining zonder de reservering, het vervoer of de wachttijd. Onze chef komt naar u toe, kookt live in uw eigen keuken en serveert een menu dat volledig is afgestemd op uw gezelschap en gelegenheid.',
+        'Een kok aan huis, ook wel private dining genoemd, is fine dining zonder de reservering, het vervoer of de wachttijd. Onze chef komt naar u toe, kookt live in uw eigen keuken en serveert een menu dat volledig is afgestemd op uw gezelschap en gelegenheid.',
         'Van een romantisch diner voor twee tot een familiediner met de feestdagen: u hoeft alleen uw gasten te ontvangen. Wij verzorgen het menu, de boodschappen, de bereiding en het serveren, en laten uw keuken achter zoals we hem aantroffen.',
         'Onze chefs komen uit het fine dining-segment en brengen diezelfde precisie en presentatie mee naar uw eigen tafel, zonder de formaliteit van een restaurant.',
       ]}
@@ -51,6 +51,10 @@ export default function KokAanHuisPage() {
         {
           question: 'In welke regio is dit beschikbaar?',
           answer: 'Wij verzorgen kok-aan-huis-diners in heel Nederland en België.',
+        },
+        {
+          question: 'Is een kok aan huis hetzelfde als private dining?',
+          answer: 'Ja, kok aan huis en private dining zijn twee namen voor dezelfde ervaring: een chef die bij u thuis een compleet menu kookt en serveert.',
         },
       ]}
       formSubject="Connect Events & Dining: Aanvraag Kok aan Huis"

@@ -13,7 +13,7 @@ export default function KokAanHuisDenBoschPage() {
       introHeadingLead="De Bourgondische keuken in uw"
       introHeadingAccent="eigen huis"
       introParagraphs={[
-        '’s-Hertogenbosch draagt de titel Bourgondische hoofdstad niet voor niets: van de terrassen rond de Markt en de Korte Putstraat tot de fine dining in de binnenstad, eten en drinken zitten hier diep in de cultuur. Met een kok aan huis haalt u diezelfde kwaliteit naar uw eigen keuken, zonder reservering.',
+        '’s-Hertogenbosch draagt de titel Bourgondische hoofdstad niet voor niets: van de terrassen rond de Markt en de Korte Putstraat tot de fine dining in de binnenstad, eten en drinken zitten hier diep in de cultuur. Met een kok aan huis, ook wel private dining genoemd, haalt u diezelfde kwaliteit naar uw eigen keuken, zonder reservering.',
         'Onze chef komt naar u toe, in Den Bosch of de wijde regio Noordoost-Brabant, en kookt live in uw keuken een menu dat is afgestemd op uw gezelschap en gelegenheid. U ontvangt uw gasten, wij verzorgen de rest.',
         'Ook geschikt voor een zakelijk diner na een beurs in de Brabanthallen: een privédiner aan huis maakt indruk zonder de formaliteit van een restaurant, en net zo Bourgondisch als de stad zelf.',
       ]}
@@ -47,6 +47,10 @@ export default function KokAanHuisDenBoschPage() {
         {
           question: 'Wat kost een kok aan huis in Den Bosch?',
           answer: 'De prijs hangt af van het aantal gasten, het gekozen menu en de gewenste bediening. Na uw aanvraag ontvangt u een concreet voorstel op maat.',
+        },
+        {
+          question: 'Is een kok aan huis hetzelfde als private dining?',
+          answer: 'Ja, kok aan huis en private dining zijn twee namen voor dezelfde ervaring: een chef die bij u thuis een compleet menu kookt en serveert.',
         },
       ]}
       formSubject="Connect Events & Dining: Aanvraag Kok aan Huis Den Bosch"

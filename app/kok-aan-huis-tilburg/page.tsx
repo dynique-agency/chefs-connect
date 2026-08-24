@@ -13,7 +13,7 @@ export default function KokAanHuisTilburgPage() {
       introHeadingLead="De Piushaven-kwaliteit in uw"
       introHeadingAccent="eigen keuken"
       introParagraphs={[
-        'Tilburg heeft de afgelopen jaren een eigen culinaire identiteit ontwikkeld: rondom de Piushaven en in het centrum zijn concepten ontstaan die durven, met een publiek dat weet wat het wil. Met een kok aan huis haalt u diezelfde kwaliteit naar uw eigen keuken, zonder reservering of parkeren in de binnenstad.',
+        'Tilburg heeft de afgelopen jaren een eigen culinaire identiteit ontwikkeld: rondom de Piushaven en in het centrum zijn concepten ontstaan die durven, met een publiek dat weet wat het wil. Met een kok aan huis, ook wel private dining genoemd, haalt u diezelfde kwaliteit naar uw eigen keuken, zonder reservering of parkeren in de binnenstad.',
         'Onze chef komt naar u toe, in Tilburg of de wijde regio Midden-Brabant, en kookt live in uw keuken een menu dat is afgestemd op uw gezelschap en gelegenheid. U ontvangt uw gasten, wij verzorgen de rest.',
         'Ook geschikt voor een zakelijk diner rond Tilburg University of een creatief etentje na een avond in de Spoorzone: een privédiner aan huis maakt net zoveel indruk als een avond uit, maar dan in uw eigen omgeving.',
       ]}
@@ -47,6 +47,10 @@ export default function KokAanHuisTilburgPage() {
         {
           question: 'Wat kost een kok aan huis in Tilburg?',
           answer: 'De prijs hangt af van het aantal gasten, het gekozen menu en de gewenste bediening. Na uw aanvraag ontvangt u een concreet voorstel op maat.',
+        },
+        {
+          question: 'Is een kok aan huis hetzelfde als private dining?',
+          answer: 'Ja, kok aan huis en private dining zijn twee namen voor dezelfde ervaring: een chef die bij u thuis een compleet menu kookt en serveert.',
         },
       ]}
       formSubject="Connect Events & Dining: Aanvraag Kok aan Huis Tilburg"

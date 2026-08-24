@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/kok-aan-huis-den-bosch');
-const description = 'Boek een privéchef aan huis in Den Bosch voor een romantisch diner, verjaardag of familiefeest. Onze chef kookt en serveert bij u thuis in Noordoost-Brabant.';
+const description = 'Boek een privéchef (private dining) in Den Bosch: een romantisch diner, verjaardag of familiefeest, gekookt en geserveerd bij u thuis in Noordoost-Brabant.';
 
 export const metadata: Metadata = {
   title: 'Privéchef Den Bosch: Diner aan Huis',
   description,
-  keywords: ['kok aan huis den bosch', 'privéchef den bosch', 'chef aan huis \'s-hertogenbosch', 'diner aan huis den bosch', 'privédiner den bosch'],
+  keywords: ['kok aan huis den bosch', 'private dining den bosch', 'privéchef den bosch', 'chef aan huis \'s-hertogenbosch', 'diner aan huis den bosch', 'privédiner den bosch'],
   alternates: pageAlternates(url),
   openGraph: {
     title: 'Kok aan Huis Den Bosch | Connect Events & Dining',
@@ -65,6 +65,11 @@ const faqSchema = {
       '@type': 'Question',
       name: 'Wat kost een kok aan huis in Den Bosch?',
       acceptedAnswer: { '@type': 'Answer', text: 'De prijs hangt af van het aantal gasten, het gekozen menu en de gewenste bediening. Na uw aanvraag ontvangt u een concreet voorstel op maat.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is een kok aan huis hetzelfde als private dining?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Ja, kok aan huis en private dining zijn twee namen voor dezelfde ervaring: een chef die bij u thuis een compleet menu kookt en serveert.' },
     },
   ],
 };

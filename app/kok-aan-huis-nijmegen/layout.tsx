@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/kok-aan-huis-nijmegen');
-const description = 'Boek een privéchef aan huis in Nijmegen voor een romantisch diner, verjaardag of familiefeest. Onze chef kookt en serveert bij u thuis in de regio.';
+const description = 'Boek een privéchef (private dining) in Nijmegen: een romantisch diner, verjaardag of familiefeest, gekookt en geserveerd bij u thuis in de regio.';
 
 export const metadata: Metadata = {
   title: 'Privéchef Nijmegen: Diner aan Huis',
   description,
-  keywords: ['kok aan huis nijmegen', 'privéchef nijmegen', 'chef aan huis nijmegen', 'diner aan huis nijmegen', 'privédiner nijmegen'],
+  keywords: ['kok aan huis nijmegen', 'private dining nijmegen', 'privéchef nijmegen', 'chef aan huis nijmegen', 'diner aan huis nijmegen', 'privédiner nijmegen'],
   alternates: pageAlternates(url),
   openGraph: {
     title: 'Kok aan Huis Nijmegen | Connect Events & Dining',
@@ -65,6 +65,11 @@ const faqSchema = {
       '@type': 'Question',
       name: 'Wat kost een kok aan huis in Nijmegen?',
       acceptedAnswer: { '@type': 'Answer', text: 'De prijs hangt af van het aantal gasten, het gekozen menu en de gewenste bediening. Na uw aanvraag ontvangt u een concreet voorstel op maat.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is een kok aan huis hetzelfde als private dining?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Ja, kok aan huis en private dining zijn twee namen voor dezelfde ervaring: een chef die bij u thuis een compleet menu kookt en serveert.' },
     },
   ],
 };

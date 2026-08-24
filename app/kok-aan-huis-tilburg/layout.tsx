@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/kok-aan-huis-tilburg');
-const description = 'Boek een privéchef aan huis in Tilburg voor een romantisch diner, verjaardag of familiefeest. Onze chef kookt en serveert bij u thuis in Midden-Brabant.';
+const description = 'Boek een privéchef (private dining) in Tilburg: een romantisch diner, verjaardag of familiefeest, gekookt en geserveerd bij u thuis in Midden-Brabant.';
 
 export const metadata: Metadata = {
   title: 'Privéchef Tilburg: Diner aan Huis',
   description,
-  keywords: ['kok aan huis tilburg', 'privéchef tilburg', 'chef aan huis tilburg', 'diner aan huis tilburg', 'privédiner tilburg'],
+  keywords: ['kok aan huis tilburg', 'private dining tilburg', 'privéchef tilburg', 'chef aan huis tilburg', 'diner aan huis tilburg', 'privédiner tilburg'],
   alternates: pageAlternates(url),
   openGraph: {
     title: 'Kok aan Huis Tilburg | Connect Events & Dining',
@@ -65,6 +65,11 @@ const faqSchema = {
       '@type': 'Question',
       name: 'Wat kost een kok aan huis in Tilburg?',
       acceptedAnswer: { '@type': 'Answer', text: 'De prijs hangt af van het aantal gasten, het gekozen menu en de gewenste bediening. Na uw aanvraag ontvangt u een concreet voorstel op maat.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is een kok aan huis hetzelfde als private dining?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Ja, kok aan huis en private dining zijn twee namen voor dezelfde ervaring: een chef die bij u thuis een compleet menu kookt en serveert.' },
     },
   ],
 };

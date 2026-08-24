@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/kok-aan-huis-maastricht');
-const description = 'Boek een privéchef aan huis in Maastricht voor een romantisch diner, verjaardag of familiefeest. Onze chef kookt en serveert bij u thuis in Zuid-Limburg.';
+const description = 'Boek een privéchef (private dining) in Maastricht: een romantisch diner, verjaardag of familiefeest, gekookt en geserveerd bij u thuis in Zuid-Limburg.';
 
 export const metadata: Metadata = {
   title: 'Privéchef Maastricht: Diner aan Huis',
   description,
-  keywords: ['kok aan huis maastricht', 'privéchef maastricht', 'chef aan huis maastricht', 'diner aan huis maastricht', 'privédiner maastricht'],
+  keywords: ['kok aan huis maastricht', 'private dining maastricht', 'privéchef maastricht', 'chef aan huis maastricht', 'diner aan huis maastricht', 'privédiner maastricht'],
   alternates: pageAlternates(url),
   openGraph: {
     title: 'Kok aan Huis Maastricht | Connect Events & Dining',
@@ -65,6 +65,11 @@ const faqSchema = {
       '@type': 'Question',
       name: 'Wat kost een kok aan huis in Maastricht?',
       acceptedAnswer: { '@type': 'Answer', text: 'De prijs hangt af van het aantal gasten, het gekozen menu en de gewenste bediening. Na uw aanvraag ontvangt u een concreet voorstel op maat.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is een kok aan huis hetzelfde als private dining?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Ja, kok aan huis en private dining zijn twee namen voor dezelfde ervaring: een chef die bij u thuis een compleet menu kookt en serveert.' },
     },
   ],
 };

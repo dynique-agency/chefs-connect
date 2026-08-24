@@ -13,7 +13,7 @@ export default function KokAanHuisMaastrichtPage() {
       introHeadingLead="Sterrenkeuken in uw"
       introHeadingAccent="eigen keuken"
       introParagraphs={[
-        'Maastricht staat bekend om zijn dichte concentratie fine dining, van de restaurants rond het Vrijthof tot verfijnde adressen in de Jekerkwartier. Met een kok aan huis haalt u diezelfde kwaliteit naar uw eigen keuken, zonder reservering of vervoer.',
+        'Maastricht staat bekend om zijn dichte concentratie fine dining, van de restaurants rond het Vrijthof tot verfijnde adressen in de Jekerkwartier. Met een kok aan huis, ook wel private dining genoemd, haalt u diezelfde kwaliteit naar uw eigen keuken, zonder reservering of vervoer.',
         'Onze chef komt naar u toe, in Maastricht of de wijde regio Zuid-Limburg, en kookt live in uw keuken een menu dat is afgestemd op uw gezelschap en gelegenheid. U ontvangt uw gasten, wij verzorgen de rest.',
         'Ook geschikt voor internationale gasten of zakelijk bezoek rond het MECC: een privédiner aan huis maakt indruk zonder de formaliteit van een restaurant.',
       ]}
@@ -47,6 +47,10 @@ export default function KokAanHuisMaastrichtPage() {
         {
           question: 'Wat kost een kok aan huis in Maastricht?',
           answer: 'De prijs hangt af van het aantal gasten, het gekozen menu en de gewenste bediening. Na uw aanvraag ontvangt u een concreet voorstel op maat.',
+        },
+        {
+          question: 'Is een kok aan huis hetzelfde als private dining?',
+          answer: 'Ja, kok aan huis en private dining zijn twee namen voor dezelfde ervaring: een chef die bij u thuis een compleet menu kookt en serveert.',
         },
       ]}
       formSubject="Connect Events & Dining: Aanvraag Kok aan Huis Maastricht"

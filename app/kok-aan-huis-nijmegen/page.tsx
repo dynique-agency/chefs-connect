@@ -13,7 +13,7 @@ export default function KokAanHuisNijmegenPage() {
       introHeadingLead="Sterrenkeuken in uw"
       introHeadingAccent="eigen keuken"
       introParagraphs={[
-        'Als oudste stad van Nederland heeft Nijmegen een verrassend levendige fine dining-scene, van de zaken rond het Waalfront tot verscholen adressen in het centrum. Met een kok aan huis haalt u diezelfde kwaliteit naar uw eigen keuken.',
+        'Als oudste stad van Nederland heeft Nijmegen een verrassend levendige fine dining-scene, van de zaken rond het Waalfront tot verscholen adressen in het centrum. Met een kok aan huis, ook wel private dining genoemd, haalt u diezelfde kwaliteit naar uw eigen keuken.',
         'Onze chef komt naar u toe, in Nijmegen of de bredere regio Arnhem-Nijmegen, en kookt live in uw keuken een menu dat is afgestemd op uw gezelschap en gelegenheid. U ontvangt uw gasten, wij verzorgen de rest.',
         'Ideaal voor een verjaardag met uitzicht op de Waal, een jubileum tijdens de Vierdaagse-feesten, of gewoon een avond zonder aanrecht vol afwas.',
       ]}
@@ -47,6 +47,10 @@ export default function KokAanHuisNijmegenPage() {
         {
           question: 'Wat kost een kok aan huis in Nijmegen?',
           answer: 'De prijs hangt af van het aantal gasten, het gekozen menu en de gewenste bediening. Na uw aanvraag ontvangt u een concreet voorstel op maat.',
+        },
+        {
+          question: 'Is een kok aan huis hetzelfde als private dining?',
+          answer: 'Ja, kok aan huis en private dining zijn twee namen voor dezelfde ervaring: een chef die bij u thuis een compleet menu kookt en serveert.',
         },
       ]}
       formSubject="Connect Events & Dining: Aanvraag Kok aan Huis Nijmegen"

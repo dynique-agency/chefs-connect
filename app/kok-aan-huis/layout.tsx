@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/kok-aan-huis');
-const description = 'Boek een privéchef aan huis voor een romantisch diner, verjaardag of familiefeest. Onze chef kookt en serveert bij u thuis, in heel NL en BE.';
+const description = 'Boek een privéchef aan huis (private dining) voor een romantisch diner, verjaardag of familiefeest. Onze chef kookt en serveert bij u thuis, in heel NL en BE.';
 
 export const metadata: Metadata = {
   title: 'Kok aan Huis: Privéchef voor een Avond',
   description,
-  keywords: ['kok aan huis', 'privéchef inhuren', 'chef aan huis', 'diner aan huis', 'privédiner thuis', 'kok aan huis boeken'],
+  keywords: ['kok aan huis', 'private dining', 'privéchef inhuren', 'chef aan huis', 'diner aan huis', 'privédiner thuis', 'kok aan huis boeken'],
   alternates: pageAlternates(url),
   openGraph: {
     title: 'Kok aan Huis | Connect Events & Dining',
@@ -69,6 +69,11 @@ const faqSchema = {
       '@type': 'Question',
       name: 'In welke regio is dit beschikbaar?',
       acceptedAnswer: { '@type': 'Answer', text: 'Wij verzorgen kok-aan-huis-diners in heel Nederland en België.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is een kok aan huis hetzelfde als private dining?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Ja, kok aan huis en private dining zijn twee namen voor dezelfde ervaring: een chef die bij u thuis een compleet menu kookt en serveert.' },
     },
   ],
 };
