@@ -30,6 +30,11 @@ export default function PersoneelDenHaagPage() {
         { href: '/personeel-amsterdam', label: 'Kok inhuren Amsterdam' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
+      faq={[
+        { question: 'Hoe snel kan Chefs Connect een kok leveren in Den Haag?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Den Haag.' },
+        { question: 'Welke koks kunnen jullie leveren in Den Haag?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Den Haag.' },
+        { question: 'Is Chefs Connect ook actief buiten Den Haag?', answer: 'Ja, wij plaatsen ook in de bredere regio Zuid-Holland.' },
+      ]}
     />
   );
 }

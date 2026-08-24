@@ -30,6 +30,11 @@ export default function PersoneelRoosendaalPage() {
         { href: '/personeel-breda', label: 'Kok inhuren Breda' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
+      faq={[
+        { question: 'Hoe snel kan Chefs Connect een kok leveren in Roosendaal?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Roosendaal en de regio West-Brabant.' },
+        { question: 'Welke koks kunnen jullie leveren in Roosendaal?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Roosendaal.' },
+        { question: 'Is Chefs Connect ook actief buiten Roosendaal?', answer: 'Ja, wij plaatsen ook in Bergen op Zoom, Zundert en de bredere regio West-Brabant, en zijn vanwege de ligging vlak bij de grens ook actief richting Antwerpen.' },
+      ]}
     />
   );
 }

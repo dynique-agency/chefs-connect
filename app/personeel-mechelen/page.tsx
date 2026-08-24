@@ -30,6 +30,11 @@ export default function PersoneelMechelenPage() {
         { href: '/personeel-leuven', label: 'Kok inhuren Leuven' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
+      faq={[
+        { question: 'Hoe snel kan Chefs Connect een kok leveren in Mechelen?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Mechelen.' },
+        { question: 'Welke koks kunnen jullie leveren in Mechelen?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants en horecazaken in Mechelen en omgeving.' },
+        { question: 'Is Chefs Connect ook actief buiten Mechelen?', answer: 'Ja, wij plaatsen ook in Antwerpen, Brussel, Leuven en de bredere regio daartussen.' },
+      ]}
     />
   );
 }

@@ -30,6 +30,11 @@ export default function PersoneelBredaPage() {
         { href: '/personeel-eindhoven', label: 'Kok inhuren Eindhoven' },
         { href: '/personeel-den-bosch', label: 'Kok inhuren Den Bosch' },
       ]}
+      faq={[
+        { question: 'Hoe snel kan Chefs Connect een kok leveren in Breda?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Breda en de regio West-Brabant.' },
+        { question: 'Welke koks kunnen jullie leveren in Breda?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Breda.' },
+        { question: 'Is Chefs Connect ook actief buiten Breda in West-Brabant?', answer: 'Ja, wij plaatsen ook in Oosterhout, Etten-Leur en de bredere regio West-Brabant, en zijn vanwege de ligging nabij de grens ook actief richting Antwerpen.' },
+      ]}
     />
   );
 }

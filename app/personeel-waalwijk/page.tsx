@@ -30,6 +30,11 @@ export default function PersoneelWaalwijkPage() {
         { href: '/personeel-den-bosch', label: 'Kok inhuren Den Bosch' },
         { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
       ]}
+      faq={[
+        { question: 'Hoe snel kan Chefs Connect een kok leveren in Waalwijk?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Waalwijk en de regio Midden-Brabant.' },
+        { question: 'Welke koks kunnen jullie leveren in Waalwijk?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Waalwijk.' },
+        { question: 'Is Chefs Connect ook actief buiten Waalwijk?', answer: 'Ja, wij plaatsen ook in Tilburg en de bredere regio Midden-Brabant.' },
+      ]}
     />
   );
 }
