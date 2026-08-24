@@ -47,8 +47,8 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 const stats = [
-  { value: '150+', label: 'Professionals' },
-  { value: '100+', label: 'Opdrachtgevers' },
+  { value: '350+', label: 'Professionals' },
+  { value: '250+', label: 'Opdrachtgevers' },
   { value: '< 24u', label: 'Reactietijd' },
 ];
 

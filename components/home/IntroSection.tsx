@@ -367,7 +367,7 @@ export default function IntroSection() {
                     {/* Counter 1 */}
                     <motion.div className="text-center" variants={counterItemVariants}>
                       <div className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gold mb-1 sm:mb-2">
-                        <Counter value={150} suffix="+" />
+                        <Counter value={350} suffix="+" />
                       </div>
                       <p 
                         className="font-inter text-[9px] sm:text-[10px] md:text-xs uppercase tracking-wider text-cream/90 leading-tight"

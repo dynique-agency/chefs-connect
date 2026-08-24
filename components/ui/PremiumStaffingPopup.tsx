@@ -48,9 +48,9 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 const stats = [
-  { value: '150+',   label: 'Professionals' },
+  { value: '350+',   label: 'Professionals' },
   { value: '< 24u', label: 'Reactietijd'    },
-  { value: '100+',   label: 'Tevreden klanten' },
+  { value: '250+',   label: 'Tevreden klanten' },
 ];
 
 export default function PremiumStaffingPopup({ showAfterMs = 3000 }: PremiumStaffingPopupProps) {
@@ -215,7 +215,7 @@ export default function PremiumStaffingPopup({ showAfterMs = 3000 }: PremiumStaf
                   Elke service zonder de juiste mensen kost je{' '}
                   <span className="text-cream/75 font-medium">omzet en reputatie</span>.
                   {' '}Ons netwerk van{' '}
-                  <span className="text-gold font-medium">150+ horecaprofessionals</span>{' '}
+                  <span className="text-gold font-medium">350+ horecaprofessionals</span>{' '}
                   staat klaar. Wij schakelen vandaag nog.
                 </motion.p>
 

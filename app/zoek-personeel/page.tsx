@@ -170,7 +170,7 @@ export default function ZoekPersoneelPage() {
               <span className="text-gold italic">vaak snel geregeld</span>
             </h2>
             <p className="font-inter text-lg md:text-xl text-cream/80 max-w-3xl mx-auto leading-relaxed">
-              Personeelstekort in de horeca vraagt om directe actie. Dankzij ons netwerk van meer dan <span className="font-semibold text-gold">150+ ervaren horeca­professionals</span> kunnen wij vaak snel de juiste medewerker voorstellen.
+              Personeelstekort in de horeca vraagt om directe actie. Dankzij ons netwerk van meer dan <span className="font-semibold text-gold">350+ ervaren horeca­professionals</span> kunnen wij vaak snel de juiste medewerker voorstellen.
             </p>
           </motion.div>
 
