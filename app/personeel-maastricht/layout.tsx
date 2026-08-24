@@ -3,12 +3,12 @@ import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Maastricht',
-  description: 'Chefs Connect bemiddelt freelance koks en keukenbrigades in Maastricht en de regio Zuid-Limburg, snel geregeld en zonder poespas.',
+  description: 'Binnen 24 tot 48 uur een ervaren freelance kok in Maastricht. Chefs Connect bemiddelt snel en zonder gedoe in Maastricht en de regio Zuid-Limburg.',
   keywords: ['freelance kok maastricht', 'kok inhuren maastricht', 'horecapersoneel maastricht', 'tijdelijke kok maastricht', 'spoed kok limburg', 'keukenpersoneel maastricht'],
   alternates: pageAlternates('https://chefs-connect.nl/personeel-maastricht'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Maastricht | Chefs Connect',
-    description: 'Chefs Connect bemiddelt freelance koks en keukenbrigades in Maastricht en de regio Zuid-Limburg, snel geregeld en zonder poespas.',
+    description: 'Binnen 24 tot 48 uur een ervaren freelance kok in Maastricht. Chefs Connect bemiddelt snel en zonder gedoe in Maastricht en de regio Zuid-Limburg.',
     url: siteUrl('https://chefs-connect.nl/personeel-maastricht'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

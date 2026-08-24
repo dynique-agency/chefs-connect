@@ -2,13 +2,13 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Freelance Horeca Opdrachten',
-  description: 'Ben je chef, kok of bediening en wil je freelancen? Sluit je aan bij Chefs Connect en werk bij top-locaties in NL & BE, flexibel en op jouw agenda.',
-  keywords: ['freelance chef kok opdrachten', 'zzp horeca opdrachten', 'werken als zzp kok', 'freelance horeca vacatures', 'freelance bediening'],
+  title: 'Horecaspecialist Worden: Freelance Opdrachten',
+  description: 'Ben jij chef, kok of bediening en wil je als horecaspecialist freelancen? Werk bij top-locaties in NL & BE, flexibel en op jouw agenda.',
+  keywords: ['horecaspecialist', 'freelance chef kok opdrachten', 'zzp horeca opdrachten', 'werken als zzp kok', 'freelance horeca vacatures', 'freelance bediening'],
   alternates: pageAlternates('https://chefs-connect.nl/horecaspecialist'),
   openGraph: {
-    title: 'Freelance Horeca Opdrachten | Chefs Connect',
-    description: 'Ben je chef, kok of bediening en wil je freelancen? Sluit je aan bij Chefs Connect en werk bij top-locaties in NL & BE, flexibel en op jouw agenda.',
+    title: 'Horecaspecialist Worden: Freelance Opdrachten | Chefs Connect',
+    description: 'Ben jij chef, kok of bediening en wil je als horecaspecialist freelancen? Werk bij top-locaties in NL & BE, flexibel en op jouw agenda.',
     url: siteUrl('https://chefs-connect.nl/horecaspecialist'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

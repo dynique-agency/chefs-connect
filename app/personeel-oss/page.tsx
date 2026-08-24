@@ -27,6 +27,7 @@ export default function PersoneelOssPage() {
       formLocation="Personeel Oss"
       relatedLinks={[
         { href: '/personeel-den-bosch', label: 'Kok inhuren Den Bosch' },
+        { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
         { href: '/personeel-tilburg', label: 'Kok inhuren Tilburg' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}

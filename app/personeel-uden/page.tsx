@@ -28,6 +28,7 @@ export default function PersoneelUdenPage() {
       relatedLinks={[
         { href: '/personeel-den-bosch', label: 'Kok inhuren Den Bosch' },
         { href: '/personeel-eindhoven', label: 'Kok inhuren Eindhoven' },
+        { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
       ]}
     />
   );

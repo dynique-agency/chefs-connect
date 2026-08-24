@@ -28,6 +28,7 @@ export default function PersoneelHelmondPage() {
       relatedLinks={[
         { href: '/personeel-eindhoven', label: 'Kok inhuren Eindhoven' },
         { href: '/personeel-tilburg', label: 'Kok inhuren Tilburg' },
+        { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
     />

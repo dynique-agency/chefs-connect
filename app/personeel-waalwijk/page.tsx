@@ -28,6 +28,7 @@ export default function PersoneelWaalwijkPage() {
       relatedLinks={[
         { href: '/personeel-tilburg', label: 'Kok inhuren Tilburg' },
         { href: '/personeel-den-bosch', label: 'Kok inhuren Den Bosch' },
+        { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
       ]}
     />
   );
