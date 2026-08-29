@@ -73,9 +73,6 @@ export default function TipsFreelanceBedieningPage() {
         <LI><strong>Dunne, hittebestendige handschoenen.</strong> Geen ovenwanten, gewoon een dun setje dat in je zak past. Warme borden dragen op een lang traject, bijvoorbeeld naar een tuinterras, doet zeer als je er geen hebt en de keuken de hare net kwijt is.</LI>
         <LI><strong>Notitieboekje en pen.</strong> Zodra het kassasysteem onbekend is, of gewoon plat ligt, val je terug op handmatig opschrijven. Dat overleeft de drukte beter dan je geheugen, en de gast merkt niets van je onzekerheid over het systeem.</LI>
         <LI><strong>Een tweede wit hemd of blouse.</strong> Rode wijn of jus over je voorkant is geen uitzondering, het is een kwestie van tijd. De rest van de dienst in een bevlekt hemd staan is geen optie, dus die reserve gaat altijd mee.</LI>
-        <LI><strong>Reserve zwarte sokken of panty.</strong> Een gescheurde panty of een sok met gat ontdek je meestal vlak voor je de zaal in loopt, nooit op een moment dat je nog naar huis kunt.</LI>
-        <LI><strong>Veiligheidsspelden.</strong> Voor een losse knoop, een zoom die loslaat, of een badge die niet meer wil vastklikken. Klein spulletje, voorkomt een groot ongemak.</LI>
-        <LI><strong>Een vlekkenstift.</strong> Niet om een vlek helemaal weg te werken, maar om te voorkomen dat hij intrekt voor je de kans krijgt om je om te kleden.</LI>
         <LI><strong>Ingelopen, representatieve schoenen.</strong> Nieuwe schoenen draag je niet op je eerste dienst bij een onbekende zaak. Acht uur op marmer of tegels is onvergevend voor voeten die dat nog moeten wennen.</LI>
       </UL>
       <TipBox title="Vaste plek, vaste tas">
