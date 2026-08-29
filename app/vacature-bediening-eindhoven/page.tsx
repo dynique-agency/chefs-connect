@@ -9,7 +9,7 @@ export default function VacatureBedieningEindhovenPage() {
     <CityFreelancerPage
       city="Eindhoven"
       regionLabel="Eindhoven en Noord-Brabant"
-      heroLead="Werk in de bediening"
+      heroLead="Vacature voor bediening"
       roleNoun="bedieningsmedewerker"
       functionOptions={BEDIENING_FUNCTIONS}
       heroAccent="in Eindhoven"
@@ -28,7 +28,7 @@ export default function VacatureBedieningEindhovenPage() {
         { question: "Moet ik zzp'er zijn om via Chefs Connect te werken?", answer: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint met een KvK-inschrijving, btw en verzekeringen, ook handig voor bediening." },
         { question: 'Wat verdien ik als freelance bediening in Eindhoven?', answer: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' },
         { question: 'Hoe snel kan ik aan de slag?', answer: 'Na je aanmelding nemen we vaak binnen 48 uur contact op. In de meeste gevallen kunnen we binnen één tot twee weken een eerste passende opdracht voorstellen.' },
-        { question: 'Werken jullie ook met medewerkers bediening, gastheren of gastvrouwen?', answer: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' },
+        { question: 'Werken jullie ook met medewerkers bediening in Eindhoven?', answer: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent in Eindhoven: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' },
       ]}
       formSubject="Chefs Connect: Aanmelding Freelance Bediening Eindhoven"
       formLocation="Vacature bediening Eindhoven"

@@ -45,7 +45,7 @@ const faqSchema = {
     { '@type': 'Question', name: 'Moet ik zelfstandige zijn om via Chefs Connect te werken?', acceptedAnswer: { '@type': 'Answer', text: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint met een inschrijving, btw en verzekeringen." } },
     { '@type': 'Question', name: 'Wat verdien ik als freelance kok in Oostende?', acceptedAnswer: { '@type': 'Answer', text: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' } },
     { '@type': 'Question', name: 'Is er ook in het laagseizoen werk in Oostende?', acceptedAnswer: { '@type': 'Answer', text: 'Zeker, al ligt de piek duidelijk in de zomer. Buiten het hoogseizoen bemiddelen we ook voor restaurants en hotels die het hele jaar door open zijn.' } },
-    { '@type': 'Question', name: 'Werken jullie ook met chefkoks, zelfstandig werkend koks of executive chefs?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu chefkok, zelfstandig werkend kok, executive chef of hulpkok bent: we bemiddelen op alle niveaus in de keuken en stemmen de opdracht af op jouw functie en ervaring.' } },
+    { '@type': 'Question', name: 'Werken jullie ook met chefkoks of zelfstandig werkend koks in Oostende?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu chefkok, zelfstandig werkend kok, executive chef of hulpkok bent in Oostende: we bemiddelen op alle niveaus in de keuken en stemmen de opdracht af op jouw functie en ervaring.' } },
   ],
 };
 

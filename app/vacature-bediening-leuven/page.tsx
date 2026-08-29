@@ -9,7 +9,7 @@ export default function VacatureBedieningLeuvenPage() {
     <CityFreelancerPage
       city="Leuven"
       regionLabel="Leuven en Vlaams-Brabant"
-      heroLead="Werk in de bediening"
+      heroLead="Vacature voor bediening"
       roleNoun="bedieningsmedewerker"
       functionOptions={BEDIENING_FUNCTIONS}
       heroAccent="in Leuven"
@@ -28,7 +28,7 @@ export default function VacatureBedieningLeuvenPage() {
         { question: "Moet ik zelfstandige zijn om via Chefs Connect te werken?", answer: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint, ook handig voor bediening." },
         { question: 'Wat verdien ik als freelance bediening in Leuven?', answer: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' },
         { question: 'Werken jullie ook in andere Belgische steden?', answer: 'Ja, Chefs Connect is actief in heel België, waaronder Brussel, Mechelen en Antwerpen. Ben je bereid iets verder te reizen, dan vergroot dat je kansen op passende opdrachten.' },
-        { question: 'Werken jullie ook met medewerkers bediening, gastheren of gastvrouwen?', answer: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' },
+        { question: 'Werken jullie ook met medewerkers bediening in Leuven?', answer: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent in Leuven: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' },
       ]}
       formSubject="Chefs Connect: Aanmelding Freelance Bediening Leuven"
       formLocation="Vacature bediening Leuven"

@@ -23,7 +23,7 @@ export default function VacatureKokVenloPage() {
         { question: "Moet ik zzp'er zijn om via Chefs Connect te werken?", answer: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint met een KvK-inschrijving, btw en verzekeringen." },
         { question: 'Wat verdien ik als freelance kok in Venlo?', answer: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' },
         { question: 'Werken jullie ook richting Maastricht en Duitsland?', answer: 'Ja, wij zijn actief in heel Limburg en plaatsen ook grensoverschrijdend. Ben je bereid iets verder te reizen, dan vergroot dat je kansen op passende opdrachten.' },
-        { question: 'Werken jullie ook met chefkoks, zelfstandig werkend koks of executive chefs?', answer: 'Ja. Of je nu chefkok, zelfstandig werkend kok, executive chef of hulpkok bent: we bemiddelen op alle niveaus in de keuken en stemmen de opdracht af op jouw functie en ervaring.' },
+        { question: 'Werken jullie ook met chefkoks of zelfstandig werkend koks in Venlo?', answer: 'Ja. Of je nu chefkok, zelfstandig werkend kok, executive chef of hulpkok bent in Venlo: we bemiddelen op alle niveaus in de keuken en stemmen de opdracht af op jouw functie en ervaring.' },
       ]}
       formSubject="Chefs Connect: Aanmelding Freelance Kok Venlo"
       formLocation="Vacature kok Venlo"

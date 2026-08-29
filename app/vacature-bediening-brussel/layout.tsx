@@ -5,12 +5,12 @@ const url = siteUrl('https://chefs-connect.nl/vacature-bediening-brussel');
 const description = 'Freelance werken in de bediening in Brussel? Chefs Connect koppelt je aan opdrachten bij topzaken in Brussel en het Brussels Hoofdstedelijk Gewest.';
 
 export const metadata: Metadata = {
-  title: 'Bediening Brussel? Werk als Freelancer',
+  title: 'Vacature Bediening Brussel? Werk als Freelancer',
   description,
   keywords: ['vacature bediening brussel', 'freelance bediening brussel', 'gastheer gastvrouw brussel', 'horeca bediening brussel', 'zelfstandig bediening brussel', 'bediening werk brussel'],
   alternates: pageAlternates('https://chefs-connect.nl/vacature-bediening-brussel'),
   openGraph: {
-    title: 'Werk in de Bediening in Brussel | Chefs Connect',
+    title: 'Vacature Bediening in Brussel | Chefs Connect',
     description,
     url,
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
@@ -45,7 +45,7 @@ const faqSchema = {
     { '@type': 'Question', name: 'Moet ik zelfstandige zijn om via Chefs Connect te werken?', acceptedAnswer: { '@type': 'Answer', text: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint, ook handig voor bediening." } },
     { '@type': 'Question', name: 'Wat verdien ik als freelance bediening in Brussel?', acceptedAnswer: { '@type': 'Answer', text: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' } },
     { '@type': 'Question', name: 'Werken jullie ook in andere Belgische steden?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, Chefs Connect is actief in heel België, waaronder Gent, Brugge en Antwerpen. Ben je bereid iets verder te reizen, dan vergroot dat je kansen op passende opdrachten.' } },
-    { '@type': 'Question', name: 'Werken jullie ook met medewerkers bediening, gastheren of gastvrouwen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' } },
+    { '@type': 'Question', name: 'Werken jullie ook met medewerkers bediening in Brussel?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent in Brussel: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' } },
   ],
 };
 

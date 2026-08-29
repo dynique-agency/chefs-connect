@@ -64,6 +64,12 @@ const WHY_CARDS = [
 
 const DEFAULT_FUNCTIONS = ['Head chef', 'Sous chef', 'Chef de partie', 'Zelfstandig werkend kok', 'Commis kok', 'Bedieningsmedewerker', 'Anders'];
 
+const STATS = [
+  { value: '350+', label: 'Professionals' },
+  { value: '250+', label: 'Opdrachtgevers' },
+  { value: '< 24u', label: 'Reactietijd' },
+];
+
 const GOOGLE_REVIEWS_URL =
   'https://www.google.com/maps/place/Chefsconnect/@51.5642759,4.8758051,663722m/data=!3m1!1e3!4m8!3m7!1s0x40f016df59b51bf:0xa54be2c98204141d!8m2!3d51.5642759!4d4.875805!9m1!1b1!16s%2Fg%2F11x204wxp_?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D';
 
@@ -203,6 +209,18 @@ export default function CityFreelancerPage({
             <span>Meld je aan</span>
             <ArrowRight className="w-5 h-5" />
           </motion.a>
+        </div>
+      </section>
+
+      {/* Trust stats - permanently on-page, not hidden inside the popup */}
+      <section className="relative py-9 px-6 bg-cream border-b border-brown/10">
+        <div className="max-w-3xl mx-auto grid grid-cols-3 divide-x divide-brown/10">
+          {STATS.map(({ value, label }) => (
+            <div key={label} className="text-center px-4">
+              <p className="font-playfair text-2xl sm:text-3xl text-gold-accessible font-light leading-none mb-1.5">{value}</p>
+              <p className="font-inter text-[10px] sm:text-xs uppercase tracking-[0.13em] text-brown-medium/70">{label}</p>
+            </div>
+          ))}
         </div>
       </section>
 

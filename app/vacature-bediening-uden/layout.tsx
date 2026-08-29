@@ -5,7 +5,7 @@ const url = siteUrl('https://chefs-connect.nl/vacature-bediening-uden');
 const description = 'Op zoek naar bedieningsopdrachten in Uden? Wij plaatsen freelance gastheren, gastvrouwen en bediening bij horecazaken in Uden en omstreken.';
 
 export const metadata: Metadata = {
-  title: 'Bediening Uden? Werk als Freelancer',
+  title: 'Vacature Bediening Uden? Werk als Freelancer',
   description,
   keywords: ['vacature bediening uden', 'freelance bediening uden', 'werken in de bediening uden', 'gastheer gastvrouw uden'],
   alternates: pageAlternates(url),
@@ -36,7 +36,7 @@ const faqSchema = {
     { '@type': 'Question', name: "Moet ik zzp'er zijn om via Chefs Connect te werken?", acceptedAnswer: { '@type': 'Answer', text: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint met een KvK-inschrijving, btw en verzekeringen, ook handig voor bediening." } },
     { '@type': 'Question', name: 'Wat verdien ik als freelance bediening in Uden?', acceptedAnswer: { '@type': 'Answer', text: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' } },
     { '@type': 'Question', name: 'Hoe snel kan ik aan de slag?', acceptedAnswer: { '@type': 'Answer', text: 'Na je aanmelding nemen we vaak binnen 48 uur contact op. In de meeste gevallen kunnen we binnen één tot twee weken een eerste passende opdracht voorstellen.' } },
-    { '@type': 'Question', name: 'Werken jullie ook met medewerkers bediening, gastheren of gastvrouwen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' } },
+    { '@type': 'Question', name: 'Werken jullie ook met medewerkers bediening in Uden?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent in Uden: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' } },
   ],
 };
 

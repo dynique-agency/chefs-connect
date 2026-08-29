@@ -23,7 +23,7 @@ export default function VacatureKokAntwerpenPage() {
         { question: "Moet ik zelfstandige zijn om via Chefs Connect te werken?", answer: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint met een inschrijving, btw en verzekeringen." },
         { question: 'Wat verdien ik als freelance kok in Antwerpen?', answer: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' },
         { question: 'Werken jullie ook in Nederland?', answer: 'Ja, Chefs Connect is actief in zowel Nederland als België. Ben je bereid over de grens te werken, dan vergroot dat je kansen op passende opdrachten.' },
-        { question: 'Werken jullie ook met chefkoks, zelfstandig werkend koks of executive chefs?', answer: 'Ja. Of je nu chefkok, zelfstandig werkend kok, executive chef of hulpkok bent: we bemiddelen op alle niveaus in de keuken en stemmen de opdracht af op jouw functie en ervaring.' },
+        { question: 'Werken jullie ook met chefkoks of zelfstandig werkend koks in Antwerpen?', answer: 'Ja. Of je nu chefkok, zelfstandig werkend kok, executive chef of hulpkok bent in Antwerpen: we bemiddelen op alle niveaus in de keuken en stemmen de opdracht af op jouw functie en ervaring.' },
       ]}
       formSubject="Chefs Connect: Aanmelding Freelance Kok Antwerpen"
       formLocation="Vacature kok Antwerpen"

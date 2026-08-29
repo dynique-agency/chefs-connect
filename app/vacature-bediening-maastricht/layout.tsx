@@ -5,12 +5,12 @@ const url = siteUrl('https://chefs-connect.nl/vacature-bediening-maastricht');
 const description = 'Freelance werken in de bediening in Maastricht? Chefs Connect koppelt je aan opdrachten bij topzaken in Maastricht en de regio Zuid-Limburg.';
 
 export const metadata: Metadata = {
-  title: 'Bediening Maastricht? Werk als Freelancer',
+  title: 'Vacature Bediening Maastricht? Werk als Freelancer',
   description,
   keywords: ['vacature bediening maastricht', 'freelance bediening maastricht', 'gastheer gastvrouw maastricht', 'horeca bediening maastricht', 'zzp bediening maastricht', 'vacature medewerker bediening maastricht'],
   alternates: pageAlternates(url),
   openGraph: {
-    title: 'Werk in de Bediening in Maastricht | Chefs Connect',
+    title: 'Vacature Bediening in Maastricht | Chefs Connect',
     description,
     url,
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
@@ -45,7 +45,7 @@ const faqSchema = {
     { '@type': 'Question', name: "Moet ik zzp'er zijn om via Chefs Connect te werken?", acceptedAnswer: { '@type': 'Answer', text: "Ja, je werkt als zelfstandige. Ben je nog niet ingeschreven? In ons artikel 'Freelance kok worden' lees je stap voor stap hoe je begint met een KvK-inschrijving, btw en verzekeringen, ook handig voor bediening." } },
     { '@type': 'Question', name: 'Wat verdien ik als freelance bediening in Maastricht?', acceptedAnswer: { '@type': 'Answer', text: 'Dat hangt af van je functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn daar vooraf transparant over.' } },
     { '@type': 'Question', name: 'Hoe snel kan ik aan de slag?', acceptedAnswer: { '@type': 'Answer', text: 'Na je aanmelding nemen we vaak binnen 48 uur contact op. In de meeste gevallen kunnen we binnen één tot twee weken een eerste passende opdracht voorstellen.' } },
-    { '@type': 'Question', name: 'Werken jullie ook met medewerkers bediening, gastheren of gastvrouwen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' } },
+    { '@type': 'Question', name: 'Werken jullie ook met medewerkers bediening in Maastricht?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Of je nu medewerker bediening, gastheer, gastvrouw of leidinggevende bediening bent in Maastricht: we bemiddelen op alle niveaus en stemmen de opdracht af op jouw functie en ervaring.' } },
   ],
 };
 
