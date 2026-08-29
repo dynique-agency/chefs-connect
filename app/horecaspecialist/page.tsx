@@ -835,8 +835,13 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-kok-aalst', label: 'Kok in Aalst' },
                 { href: '/vacature-kok-sint-niklaas', label: 'Kok in Sint-Niklaas' },
                 { href: '/vacature-kok-genk', label: 'Kok in Genk' },
+                { href: '/vacature-kok-middelburg', label: 'Kok in Middelburg' },
+                { href: '/vacature-kok-vlissingen', label: 'Kok in Vlissingen' },
+                { href: '/vacature-kok-goes', label: 'Kok in Goes' },
+                { href: '/vacature-kok-groningen', label: 'Kok in Groningen' },
                 { href: '/vacature-instellingskok', label: 'Instellingskok' },
                 { href: '/limburg', label: 'Heel Limburg' },
+                { href: '/zeeland', label: 'Heel Zeeland' },
               ].map((c) => (
                 <Link
                   key={c.href}
@@ -891,6 +896,10 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-bediening-aalst', label: 'Bediening in Aalst' },
                 { href: '/vacature-bediening-sint-niklaas', label: 'Bediening in Sint-Niklaas' },
                 { href: '/vacature-bediening-genk', label: 'Bediening in Genk' },
+                { href: '/vacature-bediening-middelburg', label: 'Bediening in Middelburg' },
+                { href: '/vacature-bediening-vlissingen', label: 'Bediening in Vlissingen' },
+                { href: '/vacature-bediening-goes', label: 'Bediening in Goes' },
+                { href: '/vacature-bediening-groningen', label: 'Bediening in Groningen' },
               ].map((c) => (
                 <Link
                   key={c.href}

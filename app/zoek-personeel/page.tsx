@@ -962,11 +962,46 @@ export default function ZoekPersoneelPage() {
                 index: 36,
               },
               {
+                name: 'Middelburg',
+                region: 'Walcheren',
+                cta: 'Kok inhuren',
+                href: '/personeel-middelburg',
+                index: 37,
+              },
+              {
+                name: 'Vlissingen',
+                region: 'Walcheren',
+                cta: 'Kok inhuren',
+                href: '/personeel-vlissingen',
+                index: 38,
+              },
+              {
+                name: 'Goes',
+                region: 'Zuid-Beveland',
+                cta: 'Kok inhuren',
+                href: '/personeel-goes',
+                index: 39,
+              },
+              {
+                name: 'Groningen',
+                region: 'Noord-Nederland',
+                cta: 'Kok inhuren',
+                href: '/personeel-groningen',
+                index: 40,
+              },
+              {
+                name: 'Heel Zeeland',
+                region: 'Alle Zeeuwse steden op één pagina',
+                cta: 'Bekijk regio',
+                href: '/zeeland',
+                index: 41,
+              },
+              {
                 name: 'Heel Limburg',
                 region: 'Alle Limburgse steden op één pagina',
                 cta: 'Bekijk regio',
                 href: '/limburg',
-                index: 37,
+                index: 42,
               },
             ].map((city, i) => (
               <motion.div
