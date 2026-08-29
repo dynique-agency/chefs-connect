@@ -50,6 +50,11 @@ export default function FreelanceKokWordenPage() {
           description: 'De echte cijfers uit onderzoek onder 20.000+ zzp\'ers, en wat jouw tarief bepaalt.',
         },
         {
+          href: '/kennisbank/eerste-freelance-opdracht-checklist',
+          label: 'Je eerste freelance horeca-opdracht: de checklist',
+          description: 'Ingeschreven en klaar om te beginnen? Dit regel je vooraf en op de dag zelf.',
+        },
+        {
           href: '/horecaspecialist',
           label: 'Word horecaspecialist',
           description: 'Sluit je aan bij ons netwerk en werk voor high-end locaties in NL & BE.',

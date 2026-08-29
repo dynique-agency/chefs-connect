@@ -37,6 +37,33 @@ const articles = [
     readingTime: '8 min',
     published: true,
   },
+  {
+    slug: 'tips-freelance-bediening',
+    category: 'Voor freelancers',
+    title: 'Tips voor freelance bediening: wat je altijd bij je hebt',
+    excerpt:
+      'Van je eigen kelnersmes tot een reserve wit hemd. Concrete tips van iemand die van de afwas tot assistent banqueting manager alle kanten van de zaal heeft gezien.',
+    readingTime: '7 min',
+    published: true,
+  },
+  {
+    slug: 'tips-freelance-kok-keuken',
+    category: 'Voor freelancers',
+    title: 'Tips voor freelance koks: klaarstaan in een onbekende keuken',
+    excerpt:
+      'Van je messenrol tot een precieze vraag stellen aan de pass. Praktische tips uit sterrenkeukens en een privékeuken in Oostenrijk.',
+    readingTime: '7 min',
+    published: true,
+  },
+  {
+    slug: 'eerste-freelance-opdracht-checklist',
+    category: 'Voor freelancers',
+    title: 'Je eerste freelance horeca-opdracht: de checklist',
+    excerpt:
+      'Wat je vooraf regelt, hoe je voorbereid aankomt, en hoe je je staande houdt op je allereerste dienst als zzp\'er.',
+    readingTime: '7 min',
+    published: true,
+  },
 ];
 
 const breadcrumbSchema = {

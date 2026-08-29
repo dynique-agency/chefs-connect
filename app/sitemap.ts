@@ -162,6 +162,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: siteUrl('https://chefs-connect.nl/kennisbank/freelance-kok-worden'), file: 'app/kennisbank/freelance-kok-worden/page.tsx', changeFrequency: 'monthly', priority: 0.6 },
     { url: siteUrl('https://chefs-connect.nl/kennisbank/freelancen-of-vast-in-de-horeca'), file: 'app/kennisbank/freelancen-of-vast-in-de-horeca/page.tsx', changeFrequency: 'monthly', priority: 0.6 },
     { url: siteUrl('https://chefs-connect.nl/kennisbank/freelance-kok-tarief'), file: 'app/kennisbank/freelance-kok-tarief/page.tsx', changeFrequency: 'monthly', priority: 0.6 },
+    { url: siteUrl('https://chefs-connect.nl/kennisbank/tips-freelance-bediening'), file: 'app/kennisbank/tips-freelance-bediening/page.tsx', changeFrequency: 'monthly', priority: 0.6 },
+    { url: siteUrl('https://chefs-connect.nl/kennisbank/tips-freelance-kok-keuken'), file: 'app/kennisbank/tips-freelance-kok-keuken/page.tsx', changeFrequency: 'monthly', priority: 0.6 },
+    { url: siteUrl('https://chefs-connect.nl/kennisbank/eerste-freelance-opdracht-checklist'), file: 'app/kennisbank/eerste-freelance-opdracht-checklist/page.tsx', changeFrequency: 'monthly', priority: 0.6 },
   ];
 
   return pages.map(({ url, file, changeFrequency, priority }) => ({
