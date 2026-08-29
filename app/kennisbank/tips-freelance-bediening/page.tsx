@@ -89,7 +89,7 @@ export default function TipsFreelanceBedieningPage() {
       <UL>
         <LI><strong>Bevestig de dresscode expliciet.</strong> &quot;Zwart-wit&quot; betekent bij de ene zaak een wit overhemd met zwarte broek, bij de andere een volledig zwart pak met vlinderdas. Vraag het na bij het bureau of de opdrachtgever, ga nooit uit van de conventie die je van je vorige zaak kent.</LI>
         <LI><strong>Reken met echte marge, niet met &quot;op tijd&quot;.</strong> Op tijd betekent op de vloer staan, omgekleed en ingewerkt, niet net het parkeerterrein oprijden. Reken tijd bij voor een personeelsingang die je niet kent, of een adres dat net iets anders ligt dan de navigatie aangeeft.</LI>
-        <LI><strong>Vraag vooraf om een plattegrond of menukaart, als die er is.</strong> Niet elke zaak heeft dit paraat, maar als het kan, bekijk het de avond ervoor. Vijf minuten voorbereiding thuis scheelt je twintig minuten onzekerheid op de vloer.</LI>
+        <LI><strong>Bekijk vooraf online de menukaart en wijnkaart van de zaak waar je gaat werken.</strong> Staan er wijnen of producten tussen die je niet kent, zoek ze dan even op via Google of een AI. Vijf minuten voorbereiding thuis scheelt je twintig minuten onzekerheid op de vloer.</LI>
       </UL>
 
       <H2 id="eerste-minuten">De eerste tien minuten op een nieuwe zaak</H2>
@@ -98,8 +98,8 @@ export default function TipsFreelanceBedieningPage() {
         altijd hetzelfde rijtje af, ongeacht of het een bedrijfsfeest is of een besloten diner.
       </P>
       <UL>
-        <LI>Zoek eerst de pass. Dat is het punt waar alles samenkomt: waar gerechten worden afgeroepen, waar je bestek, servetten en extra glazen vandaan komen. Ken je de pass, dan ken je de kortste route door de rest van de avond.</LI>
-        <LI>Stel je voor aan de collega naast je, niet alleen aan de leidinggevende. Die collega weet waar de wc voor personeel is, hoe de tafelnummering die avond loopt, en welke tafel net lastig is. Die informatie krijg je niet uit een briefing.</LI>
+        <LI>Zoek eerst de uitgifte, de plek waar de keuken de gerechten klaarzet om opgehaald te worden. Dat is het punt waar alles samenkomt: waar gerechten worden afgeroepen, waar je bestek, servetten en extra glazen vandaan komen. Ken je de uitgifte, dan ken je de kortste route door de rest van de avond.</LI>
+        <LI>Stel je voor aan je collega's in de bediening én aan de keuken, niet alleen aan de leidinggevende. Zo weet iedereen meteen wat je komt doen, en kun je vanaf de eerste minuut goed meewerken als onderdeel van het team, in plaats van dat mensen zich afvragen wie die nieuwe eigenlijk is.</LI>
         <LI>Bekijk de indeling van de zaal fysiek, lopend, voor de eerste gasten binnenkomen. Op papier lijkt elke plattegrond overzichtelijk, tot je er met een dienblad doorheen moet manoeuvreren.</LI>
       </UL>
 
@@ -118,20 +118,20 @@ export default function TipsFreelanceBedieningPage() {
 
       <H2 id="allergieen">Allergieën en dieetwensen: nooit gokken</H2>
       <P>
-        Iedere zaak heeft een eigen manier om allergieën te registreren: een fysieke allergiemap bij de pass, een
+        Iedere zaak heeft een eigen manier om allergieën te registreren: een fysieke allergiemap bij de uitgifte, een
         kleurcode op het besteltablet, of gewoon een mondelinge overdracht aan de kok. Vraag dit expliciet na bij
         binnenkomst, wacht niet tot je de eerste allergie aan tafel krijgt.
       </P>
       <UL>
         <LI>Herhaal een allergie of intolerantie altijd hardop terug naar de gast, zodat er geen misverstand ontstaat over wat er precies niet mag.</LI>
-        <LI>Meld het altijd zelf nog een keer mondeling bij de pass of de kok, ook als het systeem het al doorgeeft. Een dubbele check kost een paar seconden, een fout kost een gast die ziek naar huis gaat.</LI>
+        <LI>Meld het altijd zelf nog een keer mondeling bij de uitgifte of de kok, ook als het systeem het al doorgeeft. Een dubbele check kost een paar seconden, een fout kost een gast die ziek naar huis gaat.</LI>
         <LI>Twijfel je over een gerecht, serveer het niet totdat je het hebt nagevraagd. Dit is het enige punt in de bediening waar &quot;waarschijnlijk wel goed&quot; geen goed antwoord is.</LI>
       </UL>
 
       <H2 id="onbekende-chef">Meedraaien onder een leidinggevende die je niet kent</H2>
       <P>
         Elke maître of leidinggevende heeft een eigen manier van de zaal aansturen: sommigen werken met korte
-        seintjes over de vloer, anderen willen alles via de pass horen. In het begin observeer je, je stelt jezelf
+        seintjes over de vloer, anderen willen alles via de uitgifte horen. In het begin observeer je, je stelt jezelf
         niet meteen bij met jouw manier van werken uit een andere zaak.
       </P>
       <UL>
