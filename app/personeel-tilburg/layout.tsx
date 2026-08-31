@@ -61,6 +61,14 @@ const faqSchema = {
         text: 'Ja, wij plaatsen ook in Waalwijk, Oisterwijk en de bredere regio Midden-Brabant, en zijn daarnaast actief in Eindhoven en Den Bosch.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Kok gezocht in Tilburg? Is dat hetzelfde als bij Chefs Connect?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Niet helemaal: 'kok gezocht' of 'zzp kok gezocht' is meestal een vacaturetekst voor een vaste baan. Bij Chefs Connect huur je in Tilburg juist snel een zzp-kok in voor een tijdelijke opdracht, zonder sollicitatieprocedure. Heb je in Tilburg snel een kok nodig, vandaag of over twee weken? Dan zit je bij ons goed.",
+      },
+    },
   ],
 };
 

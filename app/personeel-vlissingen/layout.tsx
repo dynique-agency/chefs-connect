@@ -61,6 +61,14 @@ const faqSchema = {
         text: 'Ja, wij plaatsen ook in Middelburg, Goes en de bredere regio Walcheren en Zeeland.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Kok gezocht in Vlissingen? Is dat hetzelfde als bij Chefs Connect?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Niet helemaal: 'kok gezocht' of 'zzp kok gezocht' is meestal een vacaturetekst voor een vaste baan. Bij Chefs Connect huur je in Vlissingen juist snel een zzp-kok in voor een tijdelijke opdracht, zonder sollicitatieprocedure. Heb je in Vlissingen snel een kok nodig, vandaag of over twee weken? Dan zit je bij ons goed.",
+      },
+    },
   ],
 };
 

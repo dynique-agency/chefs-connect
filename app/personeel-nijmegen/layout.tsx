@@ -61,6 +61,14 @@ const faqSchema = {
         text: 'Ja. Juist tijdens piekperiodes zoals de Vierdaagse schakelen wij snel op basis van beschikbaarheid in ons netwerk. Wij plaatsen ook in Arnhem, Wijchen en de bredere regio.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Kok gezocht in Nijmegen? Is dat hetzelfde als bij Chefs Connect?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Niet helemaal: 'kok gezocht' of 'zzp kok gezocht' is meestal een vacaturetekst voor een vaste baan. Bij Chefs Connect huur je in Nijmegen juist snel een zzp-kok in voor een tijdelijke opdracht, zonder sollicitatieprocedure. Heb je in Nijmegen snel een kok nodig, vandaag of over twee weken? Dan zit je bij ons goed.",
+      },
+    },
   ],
 };
 

@@ -142,6 +142,14 @@ export default function CityStaffingPage({
   } | null>(null);
   const router = useRouter();
 
+  const displayFaq = [
+    ...(faq ?? []),
+    {
+      question: `Kok gezocht in ${city}? Is dat hetzelfde als bij Chefs Connect?`,
+      answer: `Niet helemaal: "kok gezocht" of "zzp kok gezocht" is meestal een vacaturetekst voor een vaste baan. Bij Chefs Connect huur je in ${city} juist snel een zzp-kok in voor een tijdelijke opdracht, zonder sollicitatieprocedure. Heb je in ${city} snel een kok nodig, vandaag of over twee weken? Dan zit je bij ons goed.`,
+    },
+  ];
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -439,7 +447,7 @@ export default function CityStaffingPage({
       </section>
 
       {/* FAQ */}
-      {faq && faq.length > 0 && <FaqSection items={faq} />}
+      <FaqSection items={displayFaq} />
 
       {/* Reviews - real, verifiable reassurance right before the ask */}
       <section className="relative py-20 md:py-28 px-6 bg-cream border-t border-brown/10">

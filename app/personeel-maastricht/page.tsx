@@ -8,6 +8,26 @@ import { CheckCircle2, ArrowRight, Clock, Award, Users } from 'lucide-react';
 import { submitToFormSubmit } from '@/lib/form-submit';
 import FormNotification from '@/components/ui/FormNotification';
 import PremiumStaffingPopup from '@/components/ui/PremiumStaffingPopup';
+import FaqSection from '@/components/ui/FaqSection';
+
+const FAQ_ITEMS = [
+  {
+    question: 'Hoe snel kan Chefs Connect een kok leveren in Maastricht?',
+    answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Maastricht en de regio Zuid-Limburg.',
+  },
+  {
+    question: 'Welke koks kunnen jullie leveren in de regio Maastricht?',
+    answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in en rond Maastricht.',
+  },
+  {
+    question: 'Is Chefs Connect ook actief buiten Maastricht in Limburg?',
+    answer: 'Ja, wij plaatsen ook in Valkenburg, Sittard, Heerlen en de omliggende grensregio richting Hasselt en Luik.',
+  },
+  {
+    question: 'Kok gezocht in Maastricht? Is dat hetzelfde als bij Chefs Connect?',
+    answer: 'Niet helemaal: "kok gezocht" of "zzp kok gezocht" is meestal een vacaturetekst voor een vaste baan. Bij Chefs Connect huur je in Maastricht juist snel een zzp-kok in voor een tijdelijke opdracht, zonder sollicitatieprocedure. Heb je in Maastricht snel een kok nodig, vandaag of over twee weken? Dan zit je bij ons goed.',
+  },
+];
 
 export default function PersoneelMaastrichtPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -348,6 +368,9 @@ export default function PersoneelMaastrichtPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FaqSection items={FAQ_ITEMS} />
 
       {/* Form */}
       <section id="aanvragen" className="relative py-20 md:py-32 px-6 bg-cream scroll-mt-8">

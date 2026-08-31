@@ -61,6 +61,14 @@ const faqSchema = {
         text: 'Ja, gezien de korte afstand plaatsen wij regelmatig personeel in zowel Helmond als Eindhoven.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Kok gezocht in Helmond? Is dat hetzelfde als bij Chefs Connect?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Niet helemaal: 'kok gezocht' of 'zzp kok gezocht' is meestal een vacaturetekst voor een vaste baan. Bij Chefs Connect huur je in Helmond juist snel een zzp-kok in voor een tijdelijke opdracht, zonder sollicitatieprocedure. Heb je in Helmond snel een kok nodig, vandaag of over twee weken? Dan zit je bij ons goed.",
+      },
+    },
   ],
 };
 

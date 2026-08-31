@@ -8,6 +8,26 @@ import { CheckCircle2, ArrowRight, Clock, Award, Users } from 'lucide-react';
 import { submitToFormSubmit } from '@/lib/form-submit';
 import FormNotification from '@/components/ui/FormNotification';
 import PremiumStaffingPopup from '@/components/ui/PremiumStaffingPopup';
+import FaqSection from '@/components/ui/FaqSection';
+
+const FAQ_ITEMS = [
+  {
+    question: 'Hoe snel kan Chefs Connect een kok leveren in Eindhoven?',
+    answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Eindhoven en de regio Noord-Brabant.',
+  },
+  {
+    question: 'Welke koks kunnen jullie leveren in Eindhoven?',
+    answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Eindhoven.',
+  },
+  {
+    question: 'Is Chefs Connect ook actief buiten Eindhoven in Noord-Brabant?',
+    answer: 'Ja, wij plaatsen ook in Helmond, Tilburg en de bredere regio Noord-Brabant.',
+  },
+  {
+    question: 'Kok gezocht in Eindhoven? Is dat hetzelfde als bij Chefs Connect?',
+    answer: 'Niet helemaal: "kok gezocht" of "zzp kok gezocht" is meestal een vacaturetekst voor een vaste baan. Bij Chefs Connect huur je in Eindhoven juist snel een zzp-kok in voor een tijdelijke opdracht, zonder sollicitatieprocedure. Heb je in Eindhoven snel een kok nodig, vandaag of over twee weken? Dan zit je bij ons goed.',
+  },
+];
 
 export default function PersoneelEindhovenPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -348,6 +368,9 @@ export default function PersoneelEindhovenPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FaqSection items={FAQ_ITEMS} />
 
       {/* Form */}
       <section id="aanvragen" className="relative py-20 md:py-32 px-6 bg-cream scroll-mt-8">

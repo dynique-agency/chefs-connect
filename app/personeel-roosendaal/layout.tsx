@@ -61,6 +61,14 @@ const faqSchema = {
         text: 'Ja, wij plaatsen ook in Bergen op Zoom, Zundert en de bredere regio West-Brabant, en zijn vanwege de ligging vlak bij de grens ook actief richting Antwerpen.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Kok gezocht in Roosendaal? Is dat hetzelfde als bij Chefs Connect?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Niet helemaal: 'kok gezocht' of 'zzp kok gezocht' is meestal een vacaturetekst voor een vaste baan. Bij Chefs Connect huur je in Roosendaal juist snel een zzp-kok in voor een tijdelijke opdracht, zonder sollicitatieprocedure. Heb je in Roosendaal snel een kok nodig, vandaag of over twee weken? Dan zit je bij ons goed.",
+      },
+    },
   ],
 };
 

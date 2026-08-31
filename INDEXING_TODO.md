@@ -8,19 +8,11 @@ Bijgewerkt: 29 augustus 2026 (echte oorzaak van 0 Bing-resultaten gevonden en op
 
 **Google**: geen automatische route, dit moet je zelf per URL doen via Search Console (zie stappen onderaan). Dit is waar de lijst hieronder voor is.
 
-Voortgang .nl: alles t/m `vacature-bediening-heerlen` en `/limburg` is geïndexeerd, plus de volledige triplet voor Roermond, en de personeel-pagina's van Weert, Kerkrade, Amsterdam, Rotterdam, Den Haag, Mechelen en Kortrijk. Volgende stap: de vacature-kok/vacature-bediening-varianten van die laatste 7 steden.
+Voortgang .nl: alles t/m `vacature-bediening-heerlen` en `/limburg` is geïndexeerd, plus de volledige triplet voor Roermond, de personeel-pagina's van Weert, Kerkrade, Amsterdam, Rotterdam, Den Haag, Mechelen en Kortrijk, en nu ook de vacature-kok/vacature-bediening-varianten van Weert, Kerkrade, Amsterdam en Rotterdam. Volgende stap: Den Haag (vacature-kok/vacature-bediening), daarna Leuven.
 Voortgang .be: `/limburg` is geïndexeerd, de rest nog niet gestart.
 
-## .nl (42 resterend)
+## .nl (34 resterend)
 
-- [ ] https://chefs-connect.nl/vacature-kok-weert
-- [ ] https://chefs-connect.nl/vacature-bediening-weert
-- [ ] https://chefs-connect.nl/vacature-kok-kerkrade
-- [ ] https://chefs-connect.nl/vacature-bediening-kerkrade
-- [ ] https://chefs-connect.nl/vacature-kok-amsterdam
-- [ ] https://chefs-connect.nl/vacature-bediening-amsterdam
-- [ ] https://chefs-connect.nl/vacature-kok-rotterdam
-- [ ] https://chefs-connect.nl/vacature-bediening-rotterdam
 - [ ] https://chefs-connect.nl/vacature-kok-den-haag
 - [ ] https://chefs-connect.nl/vacature-bediening-den-haag
 - [ ] https://chefs-connect.nl/personeel-leuven

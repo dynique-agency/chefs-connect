@@ -61,6 +61,14 @@ const faqSchema = {
         text: 'Ja, wij plaatsen ook in Sittard-Geleen, Maastricht en de bredere regio Zuid-Limburg.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Kok gezocht in Heerlen? Is dat hetzelfde als bij Chefs Connect?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Niet helemaal: 'kok gezocht' of 'zzp kok gezocht' is meestal een vacaturetekst voor een vaste baan. Bij Chefs Connect huur je in Heerlen juist snel een zzp-kok in voor een tijdelijke opdracht, zonder sollicitatieprocedure. Heb je in Heerlen snel een kok nodig, vandaag of over twee weken? Dan zit je bij ons goed.",
+      },
+    },
   ],
 };
 

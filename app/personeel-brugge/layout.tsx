@@ -52,6 +52,14 @@ const faqSchema = {
       name: 'Is Chefs Connect ook actief buiten Brugge?',
       acceptedAnswer: { '@type': 'Answer', text: 'Ja, wij plaatsen ook in Gent, Brussel en de bredere regio West-Vlaanderen.' },
     },
+    {
+      '@type': 'Question',
+      name: 'Kok gezocht in Brugge? Is dat hetzelfde als bij Chefs Connect?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Niet helemaal: 'kok gezocht' of 'zzp kok gezocht' is meestal een vacaturetekst voor een vaste baan. Bij Chefs Connect huur je in Brugge juist snel een zzp-kok in voor een tijdelijke opdracht, zonder sollicitatieprocedure. Heb je in Brugge snel een kok nodig, vandaag of over twee weken? Dan zit je bij ons goed.",
+      },
+    },
   ],
 };
 

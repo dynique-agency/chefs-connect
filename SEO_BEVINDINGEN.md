@@ -6,6 +6,29 @@ Andere trackers in deze map: [CONVERSIE_STRATEGIE.md](CONVERSIE_STRATEGIE.md) (c
 
 ---
 
+## Woordvolgorde en "gezocht" versus "nodig": rankingverschil per zoekvariant (31 augustus 2026)
+
+**Aanleiding**: de vraag waarom we bij "kok nodig + stad" bovenaan staan, maar niet meer bij omgekeerde volgorde of varianten als "snel kok gezocht + stad" en "zzp kok gezocht + stad". Live getoetst op Google.nl (hl=nl, gl=nl) met Maastricht als testcase, 4 varianten:
+
+- **"kok nodig maastricht"**: chefs-connect.nl staat bovenaan de organische resultaten. Bevestigt de eigen waarneming.
+- **"maastricht kok nodig"** (omgekeerde volgorde): zelfde pagina staat er nog wel, maar zakt naar positie 5-6 organisch. Een reële, meetbare terugval, geen inbeelding.
+- **"snel kok gezocht maastricht"**: chefs-connect.nl staat helemaal niet op pagina 1. De hele SERP wordt gedomineerd door vacaturesites (Indeed, Jooble, LinkedIn, Nationale Vacaturebank, Tempo Team). Google interpreteert "gezocht" hier als een vacaturetekst-zoekopdracht, niet als "ik wil een bemiddelingsbureau inhuren".
+- **"zzp kok gezocht maastricht"**: chefs-connect.nl staat weer op positie 1 organisch. Het woord "zzp" trekt de intentie terug naar zelfstandige/freelance-inhuur, waar onze pagina wel als relevant wordt gezien.
+
+**Conclusie**: twee verschillende problemen, twee verschillende oplossingen.
+1. Woordvolgorde en "snel"/"zzp"-varianten: oplosbaar met on-page content. Elke `personeel-{stad}`-pagina heeft nu een extra FAQ-vraag die deze varianten natuurlijk in de tekst verwerkt.
+2. Kaal "kok gezocht" (zonder zzp-signaal): dit is een intentie-classificatieprobleem bij Google, niet een contentprobleem. De hele eerste pagina bestaat uit grote vacature-aggregators met veel meer domeinautoriteit op die specifieke zoekintentie. On-page tekst alleen gaat dit niet doorbreken. Bevestigt nogmaals de eerder vastgestelde koerswijziging: voor dit soort concurrentie is autoriteit (backlinks) de hefboom, niet meer content.
+
+**Uitgevoerd**: één nieuwe FAQ-vraag ("Kok gezocht in {stad}? Is dat hetzelfde als bij Chefs Connect?") toegevoegd aan alle 40 `personeel-{stad}`-pagina's. De vraag legt eerlijk uit dat "kok gezocht" meestal een vacaturetekst is, en verwerkt daarbij natuurlijk de omgekeerde woordvolgorde ("in {stad} snel een kok nodig") en de zzp-variant. Voor de 38 pagina's op het gedeelde `CityStaffingPage`-component is dit één centrale code-wijziging die overal automatisch doorwerkt. Voor Maastricht en Eindhoven (twee losstaande, niet-gedeelde pagina's) is de vraag rechtstreeks toegevoegd.
+
+**Bijvangst, los van deze vraag maar wel gevonden en meteen gefixt**: de `personeel-maastricht`- en `personeel-eindhoven`-pagina's bleken een FAQPage-schema van 3 vragen in hun `layout.tsx` te hebben zonder dat er ook maar één FAQ-sectie zichtbaar op de pagina zelf stond. Onzichtbare structured data die niet overeenkomt met de zichtbare pagina is tegen Google's eigen richtlijnen voor rijke resultaten. Beide pagina's hebben nu de bijbehorende zichtbare FAQ-sectie gekregen (de 3 bestaande vragen plus de nieuwe).
+
+**Nog openstaand, bewust niet meegenomen**: Maastricht en Eindhoven zijn de enige twee `personeel-{stad}`-pagina's die nog met losse, verouderde code werken in plaats van het gedeelde `CityStaffingPage`-component. Daardoor missen ze ook de stats-balk en reviews-sectie die de overige 38 steden wel hebben. Dat is een aparte, grotere opschoning (migratie naar het gedeelde component) die verder gaat dan deze specifieke vraag over zoekvarianten, en is apart als taak gemarkeerd.
+
+**Verificatie**: `npm run build` slaagt (155+ statische pagina's), geen em-dashes/en-dashes, live gecontroleerd in de browser dat de nieuwe FAQ-vraag zowel zichtbaar op de pagina als in de FAQPage-schema staat, voor zowel een gedeeld-component-pagina (Weert) als de losse Maastricht-pagina.
+
+---
+
 ## Stand van zaken en strategische koerswijziging (26 augustus 2026)
 
 **Aanleiding**: de vraag "gaat het eigenlijk wel goed met onze SEO?", grondig onderzocht in plaats van op gevoel beantwoord. Drie sporen tegelijk uitgezocht: de volledige historische GSC-trend (via een 16-maanden export, chefs-connect-13, gecombineerd met alle eerdere exports), wie er live daadwerkelijk bovenaan staat voor de kernzoektermen, en de echte staat van de linkautoriteit van het domein.
