@@ -6,6 +6,28 @@ Andere trackers in deze map: [CONVERSIE_STRATEGIE.md](CONVERSIE_STRATEGIE.md) (c
 
 ---
 
+## Regionale dekking Limburg, Noord-Brabant en Zeeland volledig gemaakt (31 augustus 2026)
+
+**Aanleiding**: expliciet klantverzoek om alle genoemde steden in Limburg, Noord-Brabant en Zeeland te dekken: Sittard, Kerkrade, Valkenburg, Echt, Roermond, Weert, Venlo, Tilburg, Breda, Eindhoven, Roosendaal, Waalwijk, Oss, Helmond, Best, Terneuzen, Vlissingen, Middelburg, Domburg, Goes, Renesse.
+
+**Verschil met de eerdere afwijzing van 29 augustus**: dit is bewust NIET hetzelfde behandeld als het eerdere verzoek om alle Nederlandse steden en provincies te bouwen (dat is toen afgewezen wegens gebrek aan bewijs en het risico op dunne contentpagina's, zie hierboven). Dit verzoek is wel uitgevoerd zonder verder onderzoek, om drie redenen: het is expliciet begrensd tot 3 regio's waarin Chefs Connect al actief bouwt en al de meeste steden dekt, 15 van de 21 genoemde steden bestonden al (zie hieronder), en de resterende 6 zijn reële, verklaarbare aanvullingen op regio's die al bewezen zoekvolume en actieve opdrachten hebben, niet een blinde uitbreiding naar onbewezen nieuwe regio's.
+
+**Al bestaand (15 van 21, geen actie nodig)**: Sittard (gedekt via de bestaande gecombineerde `personeel-sittard-geleen`), Kerkrade, Roermond, Weert, Venlo, Tilburg, Breda, Eindhoven, Roosendaal, Waalwijk, Oss, Helmond, Vlissingen, Middelburg, Goes.
+
+**Nieuw gebouwd (6 steden, elk personeel + vacature-kok + vacature-bediening)**:
+- **Valkenburg** (Zuid-Limburg): toegevoegd aan `/limburg`-hub. Toeristenstadje met kasteel, mergelgrotten en kerstmarkten, buitengewoon hoge horecadichtheid voor zijn omvang.
+- **Echt** (Midden-Limburg, gemeente Echt-Susteren): toegevoegd aan `/limburg`-hub. Kleinschaliger, landelijke horeca dicht bij Roermond en Weert.
+- **Best** (Noord-Brabant, Brainportregio): geen provinciehub beschikbaar (Noord-Brabant heeft er geen), staat los in `/zoek-personeel` en `/horecaspecialist`, net als de bestaande Brabantse steden.
+- **Terneuzen** (Zeeuws-Vlaanderen): toegevoegd aan `/zeeland`-hub. Grootste gemeente van Zeeuws-Vlaanderen, havenstad met internationale industrie.
+- **Domburg** (Walcheren): toegevoegd aan `/zeeland`-hub. Kleine vaste bevolking maar een van de bekendste Zeeuwse badplaatsen, sterk seizoensgebonden horecavraag.
+- **Renesse** (Schouwen-Duiveland): toegevoegd aan `/zeeland`-hub. Drukste badplaats van Schouwen-Duiveland, vergelijkbaar seizoenspatroon als Domburg.
+
+**Wiring**: `app/sitemap.ts` (18 nieuwe URL's), `/limburg` en `/zeeland` provinciehubs bijgewerkt (steden toegevoegd aan de lijsten, hero-tekst en FAQ-antwoorden aangepast, schema in de bijbehorende `layout.tsx` in sync gehouden), `/zoek-personeel` en `/horecaspecialist` stedenlijsten uitgebreid, `INDEXING_TODO.md` (18 nieuwe URL's × 2 domeinen).
+
+**Verificatie**: `npm run build` slaagt (172 statische routes), geen em-dashes/en-dashes, geen dubbele of overschreven bestaande stad, FAQ-tekst programmatisch gecontroleerd op overeenkomst tussen elke `page.tsx` en de bijbehorende `layout.tsx`-schema (18 pagina's, alle geslaagd), live gecontroleerd in de browser (personeel-domburg: stats-balk, reviews, FAQ inclusief de automatisch toegevoegde "Kok gezocht"-vraag, en de relatedLinks naar Middelburg/Vlissingen kloppen).
+
+---
+
 ## Woordvolgorde en "gezocht" versus "nodig": rankingverschil per zoekvariant (31 augustus 2026)
 
 **Aanleiding**: de vraag waarom we bij "kok nodig + stad" bovenaan staan, maar niet meer bij omgekeerde volgorde of varianten als "snel kok gezocht + stad" en "zzp kok gezocht + stad". Live getoetst op Google.nl (hl=nl, gl=nl) met Maastricht als testcase, 4 varianten:

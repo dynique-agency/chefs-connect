@@ -839,6 +839,12 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-kok-vlissingen', label: 'Kok in Vlissingen' },
                 { href: '/vacature-kok-goes', label: 'Kok in Goes' },
                 { href: '/vacature-kok-groningen', label: 'Kok in Groningen' },
+                { href: '/vacature-kok-valkenburg', label: 'Kok in Valkenburg' },
+                { href: '/vacature-kok-echt', label: 'Kok in Echt' },
+                { href: '/vacature-kok-best', label: 'Kok in Best' },
+                { href: '/vacature-kok-terneuzen', label: 'Kok in Terneuzen' },
+                { href: '/vacature-kok-domburg', label: 'Kok in Domburg' },
+                { href: '/vacature-kok-renesse', label: 'Kok in Renesse' },
                 { href: '/vacature-instellingskok', label: 'Instellingskok' },
                 { href: '/limburg', label: 'Heel Limburg' },
                 { href: '/zeeland', label: 'Heel Zeeland' },
@@ -900,6 +906,12 @@ export default function HorecaSpecialistPage() {
                 { href: '/vacature-bediening-vlissingen', label: 'Bediening in Vlissingen' },
                 { href: '/vacature-bediening-goes', label: 'Bediening in Goes' },
                 { href: '/vacature-bediening-groningen', label: 'Bediening in Groningen' },
+                { href: '/vacature-bediening-valkenburg', label: 'Bediening in Valkenburg' },
+                { href: '/vacature-bediening-echt', label: 'Bediening in Echt' },
+                { href: '/vacature-bediening-best', label: 'Bediening in Best' },
+                { href: '/vacature-bediening-terneuzen', label: 'Bediening in Terneuzen' },
+                { href: '/vacature-bediening-domburg', label: 'Bediening in Domburg' },
+                { href: '/vacature-bediening-renesse', label: 'Bediening in Renesse' },
               ].map((c) => (
                 <Link
                   key={c.href}

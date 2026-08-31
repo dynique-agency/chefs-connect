@@ -8,28 +8,32 @@ import FaqSection from '@/components/ui/FaqSection';
 
 const PERSONEEL_CITIES = [
   { name: 'Maastricht', region: 'Zuid-Limburg', href: '/personeel-maastricht' },
+  { name: 'Valkenburg', region: 'Zuid-Limburg', href: '/personeel-valkenburg' },
   { name: 'Sittard-Geleen', region: 'Zuid-Limburg', href: '/personeel-sittard-geleen' },
   { name: 'Heerlen', region: 'Zuid-Limburg', href: '/personeel-heerlen' },
   { name: 'Kerkrade', region: 'Zuid-Limburg', href: '/personeel-kerkrade' },
   { name: 'Roermond', region: 'Midden-Limburg', href: '/personeel-roermond' },
   { name: 'Weert', region: 'Midden-Limburg', href: '/personeel-weert' },
+  { name: 'Echt', region: 'Midden-Limburg', href: '/personeel-echt' },
   { name: 'Venlo', region: 'Noord-Limburg', href: '/personeel-venlo' },
 ];
 
 const FREELANCE_CITIES = [
   { name: 'Maastricht', kok: '/vacature-kok-maastricht', bediening: '/vacature-bediening-maastricht' },
+  { name: 'Valkenburg', kok: '/vacature-kok-valkenburg', bediening: '/vacature-bediening-valkenburg' },
   { name: 'Sittard-Geleen', kok: '/vacature-kok-sittard-geleen', bediening: '/vacature-bediening-sittard-geleen' },
   { name: 'Heerlen', kok: '/vacature-kok-heerlen', bediening: '/vacature-bediening-heerlen' },
   { name: 'Kerkrade', kok: '/vacature-kok-kerkrade', bediening: '/vacature-bediening-kerkrade' },
   { name: 'Roermond', kok: '/vacature-kok-roermond', bediening: '/vacature-bediening-roermond' },
   { name: 'Weert', kok: '/vacature-kok-weert', bediening: '/vacature-bediening-weert' },
+  { name: 'Echt', kok: '/vacature-kok-echt', bediening: '/vacature-bediening-echt' },
   { name: 'Venlo', kok: '/vacature-kok-venlo', bediening: '/vacature-bediening-venlo' },
 ];
 
 const FAQ_ITEMS = [
   {
     question: 'Is Chefs Connect actief in heel Limburg?',
-    answer: 'Ja, wij bemiddelen freelance horecapersoneel door heel Limburg, van Maastricht en Sittard-Geleen tot Heerlen, Kerkrade, Roermond, Weert en Venlo.',
+    answer: 'Ja, wij bemiddelen freelance horecapersoneel door heel Limburg, van Maastricht, Valkenburg en Sittard-Geleen tot Heerlen, Kerkrade, Roermond, Weert, Echt en Venlo.',
   },
   {
     question: 'Bemiddelen jullie ook instellingskoks in Limburg?',
@@ -94,7 +98,7 @@ export default function LimburgPage() {
             transition={{ duration: 1, delay: 0.4 }}
             className="font-inter text-lg md:text-xl text-cream/85 max-w-2xl mx-auto leading-relaxed"
           >
-            Van Maastricht en Sittard-Geleen tot Heerlen, Kerkrade, Roermond, Weert en Venlo. Chefs Connect bemiddelt freelance koks en bediening door heel Limburg, voor werkgevers, freelancers en particulieren.
+            Van Maastricht, Valkenburg en Sittard-Geleen tot Heerlen, Kerkrade, Roermond, Weert, Echt en Venlo. Chefs Connect bemiddelt freelance koks en bediening door heel Limburg, voor werkgevers, freelancers en particulieren.
           </motion.p>
         </div>
       </section>

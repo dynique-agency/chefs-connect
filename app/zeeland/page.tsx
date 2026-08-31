@@ -9,19 +9,25 @@ import FaqSection from '@/components/ui/FaqSection';
 const PERSONEEL_CITIES = [
   { name: 'Middelburg', region: 'Walcheren', href: '/personeel-middelburg' },
   { name: 'Vlissingen', region: 'Walcheren', href: '/personeel-vlissingen' },
+  { name: 'Domburg', region: 'Walcheren', href: '/personeel-domburg' },
   { name: 'Goes', region: 'Zuid-Beveland', href: '/personeel-goes' },
+  { name: 'Terneuzen', region: 'Zeeuws-Vlaanderen', href: '/personeel-terneuzen' },
+  { name: 'Renesse', region: 'Schouwen-Duiveland', href: '/personeel-renesse' },
 ];
 
 const FREELANCE_CITIES = [
   { name: 'Middelburg', kok: '/vacature-kok-middelburg', bediening: '/vacature-bediening-middelburg' },
   { name: 'Vlissingen', kok: '/vacature-kok-vlissingen', bediening: '/vacature-bediening-vlissingen' },
+  { name: 'Domburg', kok: '/vacature-kok-domburg', bediening: '/vacature-bediening-domburg' },
   { name: 'Goes', kok: '/vacature-kok-goes', bediening: '/vacature-bediening-goes' },
+  { name: 'Terneuzen', kok: '/vacature-kok-terneuzen', bediening: '/vacature-bediening-terneuzen' },
+  { name: 'Renesse', kok: '/vacature-kok-renesse', bediening: '/vacature-bediening-renesse' },
 ];
 
 const FAQ_ITEMS = [
   {
     question: 'Is Chefs Connect actief in heel Zeeland?',
-    answer: 'Ja, wij bemiddelen freelance horecapersoneel in Middelburg, Vlissingen, Goes en de rest van Zeeland, waaronder Walcheren en Zuid-Beveland.',
+    answer: 'Ja, wij bemiddelen freelance horecapersoneel in Middelburg, Vlissingen, Domburg, Goes, Terneuzen, Renesse en de rest van Zeeland, waaronder Walcheren, Zuid-Beveland, Zeeuws-Vlaanderen en Schouwen-Duiveland.',
   },
   {
     question: 'Bemiddelen jullie ook instellingskoks in Zeeland?',
@@ -33,7 +39,7 @@ const FAQ_ITEMS = [
   },
   {
     question: 'Werken jullie ook op de Zeeuwse eilanden en in de rest van de provincie?',
-    answer: 'Ja, naast Middelburg, Vlissingen en Goes plaatsen we regelmatig in de bredere regio, van Walcheren en Zuid-Beveland tot Schouwen-Duiveland en Zeeuws-Vlaanderen.',
+    answer: 'Ja, naast Middelburg, Vlissingen, Domburg, Goes, Terneuzen en Renesse plaatsen we ook in de rest van de provincie, van Walcheren en Zuid-Beveland tot Schouwen-Duiveland en Zeeuws-Vlaanderen.',
   },
   {
     question: 'Hoe snel kan ik personeel of een opdracht krijgen in Zeeland?',
@@ -87,7 +93,7 @@ export default function ZeelandPage() {
             transition={{ duration: 1, delay: 0.4 }}
             className="font-inter text-lg md:text-xl text-cream/85 max-w-2xl mx-auto leading-relaxed"
           >
-            Van Middelburg en Vlissingen tot Goes. Chefs Connect bemiddelt freelance koks en bediening door heel Zeeland, voor werkgevers, freelancers en particulieren.
+            Van Middelburg en Vlissingen tot Terneuzen, Domburg, Goes en Renesse. Chefs Connect bemiddelt freelance koks en bediening door heel Zeeland, voor werkgevers, freelancers en particulieren.
           </motion.p>
         </div>
       </section>
@@ -223,7 +229,7 @@ export default function ZeelandPage() {
               Kok aan huis in Zeeland
             </h2>
             <p className="font-inter text-lg text-cream/70 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Een privéchef die bij u thuis kookt en serveert, in Middelburg, Vlissingen, Goes en de rest van Zeeland. Voor een romantisch diner, verjaardag of familiefeest.
+              Een privéchef die bij u thuis kookt en serveert, in Middelburg, Vlissingen, Domburg, Goes, Terneuzen, Renesse en de rest van Zeeland. Voor een romantisch diner, verjaardag of familiefeest.
             </p>
             <Link
               href="/kok-aan-huis"

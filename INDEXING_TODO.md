@@ -1,8 +1,10 @@
 # Indexering: nog te doen
 
-Bijgewerkt: 29 augustus 2026 (echte oorzaak van 0 Bing-resultaten gevonden en opgelost, zie hieronder; plus 13 nieuwe URL's toegevoegd voor de nieuwgebouwde Zeeland- en Groningen-pagina's). Bijhouden zodra er weer wat is ingediend in Search Console.
+Bijgewerkt: 31 augustus 2026 (18 nieuwe URL's toegevoegd voor 6 nieuwe steden in Limburg, Noord-Brabant en Zeeland, op klantverzoek). Bijhouden zodra er weer wat is ingediend in Search Console.
 
-**Nieuw op 29 augustus**: Middelburg, Vlissingen en Goes (personeel + vacature-kok + vacature-bediening, plus de provinciehub `/zeeland`) en Groningen (personeel + vacature-kok + vacature-bediening) zijn gebouwd. Zie SEO_BEVINDINGEN.md voor de onderzoeksbasis hiervoor.
+**Nieuw op 31 augustus**: Valkenburg en Echt (Limburg), Best (Noord-Brabant), Terneuzen, Domburg en Renesse (Zeeland) gebouwd, elk personeel + vacature-kok + vacature-bediening, op klantverzoek om Limburg/Noord-Brabant/Zeeland volledig te dekken. `/limburg` en `/zeeland` provinciehubs bijgewerkt met de nieuwe steden.
+
+**Eerder, 29 augustus**: Middelburg, Vlissingen en Goes (personeel + vacature-kok + vacature-bediening, plus de provinciehub `/zeeland`) en Groningen (personeel + vacature-kok + vacature-bediening) zijn gebouwd. Zie SEO_BEVINDINGEN.md voor de onderzoeksbasis hiervoor.
 
 **Bing**: bleek toch NIET automatisch goed te staan, ondanks eerdere IndexNow 200's. Live gecheckt op 29 augustus: `site:chefs-connect.nl` op Bing gaf nul echte resultaten, en een zoekopdracht op "chefs connect horeca personeel" toonde de site nergens (wel een ander, ongerelateerd bedrijf met een vergelijkbare naam, ChefConnect.nl, GVVA-werving voor Aziatische koks). Bing Webmaster Tools bleek al wel geverifieerd te staan voor beide domeinen, maar de sitemap was er nooit binnen de tool zelf ingediend, IndexNow's 200-status betekent alleen "ontvangen", niet "geïndexeerd", en zonder sitemap had Bing geen directe lijst met URL's om te crawlen. Op 29 augustus alsnog ingediend: `https://chefs-connect.be/sitemap.xml`, en `https://chefs-connect.nl/sitemap.xml` moet nog. Verwacht enkele dagen tot een paar weken voordat de eerste pagina's verschijnen.
 
@@ -11,7 +13,7 @@ Bijgewerkt: 29 augustus 2026 (echte oorzaak van 0 Bing-resultaten gevonden en op
 Voortgang .nl: alles t/m `vacature-bediening-heerlen` en `/limburg` is geïndexeerd, plus de volledige triplet voor Roermond, de personeel-pagina's van Weert, Kerkrade, Amsterdam, Rotterdam, Den Haag, Mechelen en Kortrijk, en nu ook de vacature-kok/vacature-bediening-varianten van Weert, Kerkrade, Amsterdam en Rotterdam. Volgende stap: Den Haag (vacature-kok/vacature-bediening), daarna Leuven.
 Voortgang .be: `/limburg` is geïndexeerd, de rest nog niet gestart.
 
-## .nl (34 resterend)
+## .nl (52 resterend)
 
 - [ ] https://chefs-connect.nl/vacature-kok-den-haag
 - [ ] https://chefs-connect.nl/vacature-bediening-den-haag
@@ -47,8 +49,26 @@ Voortgang .be: `/limburg` is geïndexeerd, de rest nog niet gestart.
 - [ ] https://chefs-connect.nl/personeel-groningen
 - [ ] https://chefs-connect.nl/vacature-kok-groningen
 - [ ] https://chefs-connect.nl/vacature-bediening-groningen
+- [ ] https://chefs-connect.nl/personeel-valkenburg
+- [ ] https://chefs-connect.nl/vacature-kok-valkenburg
+- [ ] https://chefs-connect.nl/vacature-bediening-valkenburg
+- [ ] https://chefs-connect.nl/personeel-echt
+- [ ] https://chefs-connect.nl/vacature-kok-echt
+- [ ] https://chefs-connect.nl/vacature-bediening-echt
+- [ ] https://chefs-connect.nl/personeel-best
+- [ ] https://chefs-connect.nl/vacature-kok-best
+- [ ] https://chefs-connect.nl/vacature-bediening-best
+- [ ] https://chefs-connect.nl/personeel-terneuzen
+- [ ] https://chefs-connect.nl/vacature-kok-terneuzen
+- [ ] https://chefs-connect.nl/vacature-bediening-terneuzen
+- [ ] https://chefs-connect.nl/personeel-domburg
+- [ ] https://chefs-connect.nl/vacature-kok-domburg
+- [ ] https://chefs-connect.nl/vacature-bediening-domburg
+- [ ] https://chefs-connect.nl/personeel-renesse
+- [ ] https://chefs-connect.nl/vacature-kok-renesse
+- [ ] https://chefs-connect.nl/vacature-bediening-renesse
 
-## .be (66 resterend)
+## .be (84 resterend)
 
 - [ ] https://chefs-connect.be/personeel-oss
 - [ ] https://chefs-connect.be/vacature-kok-oss
@@ -116,6 +136,24 @@ Voortgang .be: `/limburg` is geïndexeerd, de rest nog niet gestart.
 - [ ] https://chefs-connect.be/personeel-groningen
 - [ ] https://chefs-connect.be/vacature-kok-groningen
 - [ ] https://chefs-connect.be/vacature-bediening-groningen
+- [ ] https://chefs-connect.be/personeel-valkenburg
+- [ ] https://chefs-connect.be/vacature-kok-valkenburg
+- [ ] https://chefs-connect.be/vacature-bediening-valkenburg
+- [ ] https://chefs-connect.be/personeel-echt
+- [ ] https://chefs-connect.be/vacature-kok-echt
+- [ ] https://chefs-connect.be/vacature-bediening-echt
+- [ ] https://chefs-connect.be/personeel-best
+- [ ] https://chefs-connect.be/vacature-kok-best
+- [ ] https://chefs-connect.be/vacature-bediening-best
+- [ ] https://chefs-connect.be/personeel-terneuzen
+- [ ] https://chefs-connect.be/vacature-kok-terneuzen
+- [ ] https://chefs-connect.be/vacature-bediening-terneuzen
+- [ ] https://chefs-connect.be/personeel-domburg
+- [ ] https://chefs-connect.be/vacature-kok-domburg
+- [ ] https://chefs-connect.be/vacature-bediening-domburg
+- [ ] https://chefs-connect.be/personeel-renesse
+- [ ] https://chefs-connect.be/vacature-kok-renesse
+- [ ] https://chefs-connect.be/vacature-bediening-renesse
 
 ## Hoe dien je een URL in bij Google Search Console
 

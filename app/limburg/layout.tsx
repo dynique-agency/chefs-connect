@@ -42,7 +42,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'Is Chefs Connect actief in heel Limburg?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Ja, wij bemiddelen freelance horecapersoneel door heel Limburg, van Maastricht en Sittard-Geleen tot Heerlen, Kerkrade, Roermond, Weert en Venlo.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Ja, wij bemiddelen freelance horecapersoneel door heel Limburg, van Maastricht, Valkenburg en Sittard-Geleen tot Heerlen, Kerkrade, Roermond, Weert, Echt en Venlo.' },
     },
     {
       '@type': 'Question',
