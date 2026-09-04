@@ -17,7 +17,7 @@ export default function PersoneelOssPage() {
         'Die combinatie zorgt voor een gevarieerde vraag. De wekelijkse markt in Oss geldt van oudsher als een van de grotere van Nederland en trekt bezoekers uit de wijde omgeving, terwijl bedrijven in de life sciences en logistiek regelmatig zakelijke lunches, recepties en diners organiseren. Een goede kok in Oss is dan ook breed inzetbaar: net zo goed thuis in gewoon goed eten voor een volle zaak als in representatief werk voor een zakelijk gezelschap.',
         'Wij zijn actief in Oss en plaatsen ook in Uden, Veghel en de bredere regio Noordoost-Brabant, tot aan Den Bosch.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,9 +26,9 @@ export default function PersoneelOssPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Oss"
       formLocation="Personeel Oss"
       relatedLinks={[
-        { href: '/personeel-den-bosch', label: 'Kok inhuren Den Bosch' },
-        { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
-        { href: '/personeel-tilburg', label: 'Kok inhuren Tilburg' },
+        { href: '/personeel-den-bosch', label: 'Kok verbinden Den Bosch' },
+        { href: '/personeel-nijmegen', label: 'Kok verbinden Nijmegen' },
+        { href: '/personeel-tilburg', label: 'Kok verbinden Tilburg' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

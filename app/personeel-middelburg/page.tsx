@@ -17,7 +17,7 @@ export default function PersoneelMiddelburgPage() {
         'Die combinatie van bestuurlijk centrum, studentenstad en toeristische trekpleister zorgt voor een gevarieerde vraag naar personeel. HZ University of Applied Sciences brengt het hele jaar door studenten naar de stad, terwijl de ligging op Walcheren, dicht bij de Zeeuwse kust, in het voor- en naseizoen extra drukte in de binnenstad brengt. Een goede kok in Middelburg schakelt moeiteloos tussen een rustige doordeweekse lunch voor ambtenaren en een volle terrasavond in het hoogseizoen.',
         'Wij zijn actief in Middelburg en plaatsen ook in Vlissingen, Goes en de bredere regio Walcheren.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het klappen kennen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelMiddelburgPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Middelburg"
       formLocation="Personeel Middelburg"
       relatedLinks={[
-        { href: '/personeel-vlissingen', label: 'Kok inhuren Vlissingen' },
-        { href: '/personeel-goes', label: 'Kok inhuren Goes' },
+        { href: '/personeel-vlissingen', label: 'Kok verbinden Vlissingen' },
+        { href: '/personeel-goes', label: 'Kok verbinden Goes' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

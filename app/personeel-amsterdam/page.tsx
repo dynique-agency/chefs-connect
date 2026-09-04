@@ -26,8 +26,8 @@ export default function PersoneelAmsterdamPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Amsterdam"
       formLocation="Personeel Amsterdam"
       relatedLinks={[
-        { href: '/personeel-utrecht', label: 'Kok inhuren Utrecht' },
-        { href: '/personeel-rotterdam', label: 'Kok inhuren Rotterdam' },
+        { href: '/personeel-utrecht', label: 'Kok verbinden Utrecht' },
+        { href: '/personeel-rotterdam', label: 'Kok verbinden Rotterdam' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

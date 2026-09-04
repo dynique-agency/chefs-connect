@@ -6,6 +6,26 @@ Andere trackers in deze map: [CONVERSIE_STRATEGIE.md](CONVERSIE_STRATEGIE.md) (c
 
 ---
 
+## DBA-check ronde 2: strenge deepscan op schijnzelfstandigheid, "inhuren" uit alle zichtbare tekst (3 september 2026)
+
+**Aanleiding**: klant vroeg om een strenge, volledige deepscan op alles wat op schijnzelfstandigheid kan duiden, los van de eerste ronde (leveren/versterken/sous chef/commis kok, zie hierboven bij "DBA-proof gemaakt"). Eerst gerapporteerd, daarna op klantverzoek volledig doorgevoerd.
+
+**Nieuwe bevindingen uit de deepscan, met acties**:
+1. **"Wij sturen je mensen"**: 36 instanties, de `whyHeadingLead` in de "Waarom Chefs Connect"-sectie op vrijwel elke personeel-{stad}-pagina. Geen onderdeel van ronde 1 (die ging over "leveren"/"versterken"), maar hetzelfde probleem: impliceert dat Chefs Connect bepaalt wie waar wordt ingezet. → vervangen door "Wij verbinden je met mensen".
+2. **"[rol] van Chefs Connect" in foto-alt-teksten**: 7 plekken, waaronder de gedeelde component `CityStaffingPage.tsx` (cascadeert naar tientallen pagina's). De bezitsvorm naast een freelancer-functietitel impliceert dienstverband. → "van Chefs Connect" weggehaald, alt-tekst blijft verder inhoudelijk gelijk. Bewust ongewijzigd gelaten: "van Chefs Connect" bij het eigen team/oprichters (over-ons, TeamStack, kennisbank-auteurs), dat klopt gewoon.
+3. **"geleverd door Chefs Connect"** in een alt-tekst (zoek-personeel): zelfde categorie als 2, weggehaald.
+4. **"de juiste medewerker voorstellen"**: verzacht naar "de juiste professional voorstellen".
+
+**Grote vervolgstap, op expliciet klantverzoek**: "ons personeel" en "inhuren" mogen nergens meer voorkomen, met de kernboodschap "Chefs Connect is een platform dat horeca-zzp'ers verbindt met horecazaken, wij zijn geen uitzendbureau." "Ons personeel" bleek al nergens te bestaan (bevestigd in ronde 2 zelf). Voor "inhuren" (388 instanties in de hele codebase) is expliciet aan de klant voorgelegd of dit ook de SEO-titels/keywords/meta-descriptions moet raken, gezien het risico dat dit de bestaande rankings op "kok inhuren {stad}" kan laten zakken. Klant koos voor de veilige optie: **"inhuren" blijft staan in title-tags, keywords-arrays, meta-descriptions en schema.org `serviceType`-velden (236 instanties, onzichtbaar voor bezoekers, blijft de SEO-strategie intact), en is volledig verwijderd uit alle zichtbare pagina-tekst** (144 instanties in page.tsx-bestanden plus 5 in gedeelde/homepage-componenten: `ServicesGrid.tsx`, `Reviews.tsx`, `Footer.tsx`). Belangrijkste patronen: `cta: 'Kok inhuren'` (stedenlijst-CTA's) en `label: 'Kok inhuren {Stad}'` (relatedLinks tussen steden) zijn overal vervangen door "Kok verbinden"/"Kok verbinden {Stad}", de H1 op `/zoek-personeel` ("Koks en bediening inhuren") is "Koks en bediening verbinden" geworden.
+
+**Nog open, klant heeft zelf gekozen dit niet mee te nemen**: `cateringpartner`-pagina ("zonder zelf een keukenbrigade te hoeven aansturen") gaat over een andere dienst (Connect Events & Dining, catering-partnerschap, niet zzp-bemiddeling). Of dit een risico is hangt af van of die chefs in loondienst zijn of ook zzp'er, dat kon niet uit de code worden afgeleid. Nog niet uitgezocht of aangepast.
+
+**Bewust ongewijzigd gelaten (laag risico, geen actie)**: "bedieningsmedewerker" als functienaam (standaardterm, geen alternatief), salaris/loon-taal in kennisbank-educatie (legitiem contrast met loondienst), de FAQ "Wat maakt Chefs Connect anders dan andere uitzendbureaus?" (positieve framing, onderscheidt juist van een uitzendbureau), "aansturen" bij Robins eigen biografie en bij de klant die op locatie de zaal leidt.
+
+**Verificatie**: `npm run build` slaagt, geen fouten, em-dash-check schoon, live gecontroleerd op `/zoek-personeel` (H1 en alle stedenlijst-CTA's tonen "verbinden", browser-tab-titel toont nog steeds de originele SEO-titel met "Inhuren" zoals bedoeld).
+
+---
+
 ## DBA-proof gemaakt: taalgebruik, adres en juridische gegevens aangepast (3 september 2026)
 
 **Aanleiding**: klantverzoek om de site "DBA-proof" te maken, met een concrete lijst van aanpassingen. Eerst een deepscan gedaan (grep over de hele codebase) om de precieze omvang van elk punt te bepalen voordat er iets werd aangepast, gezien de reële juridische/financiële risico's (schijnzelfstandigheid) en de kans op sitebrede SEO-schade als "inhuren" overal zou worden vervangen.

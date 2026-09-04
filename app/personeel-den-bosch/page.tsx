@@ -17,7 +17,7 @@ export default function PersoneelDenBoschPage() {
         'De stad is bovendien een serieuze evenementenbestemming. De Brabanthallen trekken het hele jaar door grote beurzen en congressen, en het historische centrum loopt vol tijdens carnaval en de zomermaanden. Dat zorgt voor pieken waarin keukens en cateraars ineens flink moeten opschalen.',
         'Wij zijn actief in Den Bosch en plaatsen ook in Oss, Vught, Rosmalen en de bredere regio Noordoost-Brabant.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,9 +26,9 @@ export default function PersoneelDenBoschPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Den Bosch"
       formLocation="Personeel Den Bosch"
       relatedLinks={[
-        { href: '/personeel-tilburg', label: 'Kok inhuren Tilburg' },
-        { href: '/personeel-eindhoven', label: 'Kok inhuren Eindhoven' },
-        { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
+        { href: '/personeel-tilburg', label: 'Kok verbinden Tilburg' },
+        { href: '/personeel-eindhoven', label: 'Kok verbinden Eindhoven' },
+        { href: '/personeel-nijmegen', label: 'Kok verbinden Nijmegen' },
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Den Bosch?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Den Bosch en de regio Noordoost-Brabant.' },

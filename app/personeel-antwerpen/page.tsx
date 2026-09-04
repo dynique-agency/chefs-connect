@@ -17,7 +17,7 @@ export default function PersoneelAntwerpenPage() {
         'De stad organiseert het hele jaar door beurzen, modeshows en zakelijke events rond de haven, met pieken waarin je ineens snel extra keukenpersoneel nodig hebt. Dat vraagt om een partner die net zo snel kan schakelen als jouw agenda vereist.',
         'Wij zijn actief in Antwerpen en plaatsen ook in de grensregio richting Breda en Hasselt.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelAntwerpenPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Antwerpen"
       formLocation="Personeel Antwerpen"
       relatedLinks={[
-        { href: '/personeel-hasselt', label: 'Kok inhuren Hasselt' },
-        { href: '/personeel-breda', label: 'Kok inhuren Breda' },
+        { href: '/personeel-hasselt', label: 'Kok verbinden Hasselt' },
+        { href: '/personeel-breda', label: 'Kok verbinden Breda' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

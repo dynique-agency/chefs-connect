@@ -17,7 +17,7 @@ export default function PersoneelOosterhoutPage() {
         'De horeca in Oosterhout draait vooral op de eigen inwoners en de dorpskernen eromheen, zoals Dorst, Oosteind en Den Hout. Minder grote toeristenstromen dan in een stad, maar wel gasten die honkvast zijn en een goede zaak trouw blijven.',
         'Door de ligging vlak bij Breda lopen klandizie en personeel regelmatig over en weer tussen beide plaatsen. Wij zijn actief in Oosterhout en plaatsen ook in Breda en de bredere regio West-Brabant.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelOosterhoutPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Oosterhout"
       formLocation="Personeel Oosterhout"
       relatedLinks={[
-        { href: '/personeel-breda', label: 'Kok inhuren Breda' },
-        { href: '/personeel-tilburg', label: 'Kok inhuren Tilburg' },
+        { href: '/personeel-breda', label: 'Kok verbinden Breda' },
+        { href: '/personeel-tilburg', label: 'Kok verbinden Tilburg' },
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Oosterhout?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Oosterhout en de regio West-Brabant.' },

@@ -26,8 +26,8 @@ export default function PersoneelHeerlenPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Heerlen"
       formLocation="Personeel Heerlen"
       relatedLinks={[
-        { href: '/personeel-sittard-geleen', label: 'Kok inhuren Sittard-Geleen' },
-        { href: '/personeel-maastricht', label: 'Kok inhuren Maastricht' },
+        { href: '/personeel-sittard-geleen', label: 'Kok verbinden Sittard-Geleen' },
+        { href: '/personeel-maastricht', label: 'Kok verbinden Maastricht' },
         { href: '/limburg', label: 'Heel Limburg' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}

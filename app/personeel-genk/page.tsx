@@ -17,7 +17,7 @@ export default function PersoneelGenkPage() {
         'Die mijngeschiedenis bracht decennia van immigratie met zich mee, waardoor Genk vandaag een van de meest divers samengestelde steden van Vlaanderen is. Die diversiteit is ook terug te vinden in het horeca-aanbod.',
         'Wij zijn actief in Genk en plaatsen ook in Hasselt en de bredere regio Belgisch Limburg.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelGenkPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Genk"
       formLocation="Personeel Genk"
       relatedLinks={[
-        { href: '/personeel-hasselt', label: 'Kok inhuren Hasselt' },
-        { href: '/personeel-maastricht', label: 'Kok inhuren Maastricht' },
+        { href: '/personeel-hasselt', label: 'Kok verbinden Hasselt' },
+        { href: '/personeel-maastricht', label: 'Kok verbinden Maastricht' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

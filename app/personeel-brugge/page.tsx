@@ -17,7 +17,7 @@ export default function PersoneelBruggePage() {
         'Die combinatie van massatoerisme en culinaire reputatie zorgt voor een structureel hoge vraag naar keukenpersoneel, met duidelijke seizoenspieken in het voor- en najaar en rond de feestdagen, wanneer restaurants en hotels snel moeten kunnen opschalen.',
         'Wij zijn actief in Brugge en plaatsen ook in de bredere regio West-Vlaanderen.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelBruggePage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Brugge"
       formLocation="Personeel Brugge"
       relatedLinks={[
-        { href: '/personeel-gent', label: 'Kok inhuren Gent' },
-        { href: '/personeel-brussel', label: 'Kok inhuren Brussel' },
+        { href: '/personeel-gent', label: 'Kok verbinden Gent' },
+        { href: '/personeel-brussel', label: 'Kok verbinden Brussel' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

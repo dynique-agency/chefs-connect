@@ -17,7 +17,7 @@ export default function PersoneelSintNiklaasPage() {
         'Als regionaal winkelcentrum trekt Sint-Niklaas het hele jaar door bezoekers uit de wijde omgeving. Dat winkelend publiek zorgt voor een constante vraag naar horeca overdag, naast de reguliere avondzaken.',
         'Wij zijn actief in Sint-Niklaas en plaatsen ook in Gent, Antwerpen en de rest van Oost-Vlaanderen.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelSintNiklaasPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Sint-Niklaas"
       formLocation="Personeel Sint-Niklaas"
       relatedLinks={[
-        { href: '/personeel-gent', label: 'Kok inhuren Gent' },
-        { href: '/personeel-antwerpen', label: 'Kok inhuren Antwerpen' },
+        { href: '/personeel-gent', label: 'Kok verbinden Gent' },
+        { href: '/personeel-antwerpen', label: 'Kok verbinden Antwerpen' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

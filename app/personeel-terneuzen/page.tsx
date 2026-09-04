@@ -17,7 +17,7 @@ export default function PersoneelTerneuzenPage() {
         'Die combinatie zorgt voor een gevarieerde vraag naar personeel. Zeeuws-Vlaanderen ligt fysiek gescheiden van de rest van Zeeland, ten zuiden van de Westerschelde en alleen bereikbaar via de Westerscheldetunnel, waardoor Terneuzen een eigen regionale horeca-economie heeft opgebouwd. Havenwerkers, internationale technici en expats van de bedrijven aan het water vormen samen met lokale bewoners een gemengd publiek, van een snelle lunch tot een zakelijk diner met uitzicht op de Scheldeboulevard.',
         'Wij zijn actief in Terneuzen en plaatsen ook in Middelburg, Vlissingen en Goes, de rest van Zeeland die bereikbaar is via de Westerscheldetunnel.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die overal mee overweg kunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelTerneuzenPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Terneuzen"
       formLocation="Personeel Terneuzen"
       relatedLinks={[
-        { href: '/personeel-middelburg', label: 'Kok inhuren Middelburg' },
-        { href: '/personeel-vlissingen', label: 'Kok inhuren Vlissingen' },
+        { href: '/personeel-middelburg', label: 'Kok verbinden Middelburg' },
+        { href: '/personeel-vlissingen', label: 'Kok verbinden Vlissingen' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

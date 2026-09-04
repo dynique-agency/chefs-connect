@@ -311,7 +311,7 @@ export default function CityStaffingPage({
             >
               <Image
                 src={contextImage}
-                alt={`Professionele horecamedewerker van Chefs Connect aan het werk in ${city}`}
+                alt={`Professionele horecamedewerker aan het werk in ${city}`}
                 fill
                 className="object-cover brightness-[0.85]"
                 sizes="(max-width: 1024px) 100vw, 50vw"

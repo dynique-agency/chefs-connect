@@ -17,7 +17,7 @@ export default function PersoneelBrusselPage() {
         'Als grote conferentie- en evenementenstad is er een structurele vraag naar keukenpersoneel voor zakelijke diners, EU-gerelateerde events en internationale bijeenkomsten, naast het reguliere restaurantwerk in wijken als de Zavel en het centrum.',
         'Wij zijn actief in Brussel en plaatsen ook in Gent, Brugge en de bredere regio.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelBrusselPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Brussel"
       formLocation="Personeel Brussel"
       relatedLinks={[
-        { href: '/personeel-gent', label: 'Kok inhuren Gent' },
-        { href: '/personeel-brugge', label: 'Kok inhuren Brugge' },
+        { href: '/personeel-gent', label: 'Kok verbinden Gent' },
+        { href: '/personeel-brugge', label: 'Kok verbinden Brugge' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

@@ -17,7 +17,7 @@ export default function PersoneelVenloPage() {
         'Sinds de Floriade heeft de stad geïnvesteerd in een groenere, aantrekkelijkere binnenstad, met een groeiend aanbod aan restaurants. Het tempo ligt hier iets rustiger dan in grote steden, maar de kwaliteitseisen van eigenaren zijn niet minder.',
         'Wij zijn actief in Venlo en plaatsen ook in Maastricht en de bredere regio Limburg.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelVenloPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Venlo"
       formLocation="Personeel Venlo"
       relatedLinks={[
-        { href: '/personeel-maastricht', label: 'Kok inhuren Maastricht' },
-        { href: '/personeel-hasselt', label: 'Kok inhuren Hasselt' },
+        { href: '/personeel-maastricht', label: 'Kok verbinden Maastricht' },
+        { href: '/personeel-hasselt', label: 'Kok verbinden Hasselt' },
         { href: '/limburg', label: 'Heel Limburg' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}

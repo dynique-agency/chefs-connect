@@ -26,8 +26,8 @@ export default function PersoneelSittardGeleenPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Sittard-Geleen"
       formLocation="Personeel Sittard-Geleen"
       relatedLinks={[
-        { href: '/personeel-heerlen', label: 'Kok inhuren Heerlen' },
-        { href: '/personeel-maastricht', label: 'Kok inhuren Maastricht' },
+        { href: '/personeel-heerlen', label: 'Kok verbinden Heerlen' },
+        { href: '/personeel-maastricht', label: 'Kok verbinden Maastricht' },
         { href: '/limburg', label: 'Heel Limburg' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}

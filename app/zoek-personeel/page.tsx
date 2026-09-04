@@ -101,7 +101,7 @@ export default function ZoekPersoneelPage() {
               <div className="h-px bg-gold/30 w-32" />
               
               <h1 className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-brown leading-[1.1]">
-                Koks en bediening <span className="text-gold italic">inhuren</span>
+                Koks en bediening <span className="text-gold italic">verbinden</span>
               </h1>
 
               <div className="space-y-6 font-inter text-base md:text-lg text-brown-medium leading-relaxed max-w-xl">
@@ -133,7 +133,7 @@ export default function ZoekPersoneelPage() {
               >
                 <Image
                   src="/chef-plating-vertical.png"
-                  alt="Freelance chef die een gerecht opmaakt, geleverd door Chefs Connect"
+                  alt="Freelance chef die een gerecht opmaakt"
                   fill
                   className="object-cover brightness-[0.85]"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -170,7 +170,7 @@ export default function ZoekPersoneelPage() {
               <span className="text-gold italic">vaak snel geregeld</span>
             </h2>
             <p className="font-inter text-lg md:text-xl text-cream/80 max-w-3xl mx-auto leading-relaxed">
-              Personeelstekort in de horeca vraagt om directe actie. Dankzij ons netwerk van meer dan <span className="font-semibold text-gold">350+ ervaren, KVK-geregistreerde horeca­professionals</span> kunnen wij vaak snel de juiste medewerker voorstellen.
+              Personeelstekort in de horeca vraagt om directe actie. Dankzij ons netwerk van meer dan <span className="font-semibold text-gold">350+ ervaren, KVK-geregistreerde horeca­professionals</span> kunnen wij vaak snel de juiste professional voorstellen.
             </p>
           </motion.div>
 
@@ -300,7 +300,7 @@ export default function ZoekPersoneelPage() {
             >
               <Image
                 src="/freelancer-bediening.webp"
-                alt="Freelance bedieningsmedewerker van Chefs Connect tapt een biertje"
+                alt="Freelance bedieningsmedewerker tapt een biertje"
                 fill
                 className="object-cover brightness-[0.85]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -712,322 +712,322 @@ export default function ZoekPersoneelPage() {
               {
                 name: 'Maastricht',
                 region: 'Limburg & omgeving',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-maastricht',
                 index: 1,
               },
               {
                 name: 'Eindhoven',
                 region: 'Noord-Brabant & omgeving',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-eindhoven',
                 index: 2,
               },
               {
                 name: 'Tilburg',
                 region: 'Midden-Brabant & omgeving',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-tilburg',
                 index: 3,
               },
               {
                 name: 'Breda',
                 region: 'West-Brabant & omgeving',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-breda',
                 index: 4,
               },
               {
                 name: 'Den Bosch',
                 region: 'Noordoost-Brabant & omgeving',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-den-bosch',
                 index: 5,
               },
               {
                 name: 'Nijmegen',
                 region: 'Arnhem-Nijmegen & omgeving',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-nijmegen',
                 index: 6,
               },
               {
                 name: 'Utrecht',
                 region: 'Midden-Nederland & omgeving',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-utrecht',
                 index: 7,
               },
               {
                 name: 'Venlo',
                 region: 'Noord-Limburg & omgeving',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-venlo',
                 index: 8,
               },
               {
                 name: 'Helmond',
                 region: 'Brainportregio & omgeving',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-helmond',
                 index: 9,
               },
               {
                 name: 'Antwerpen',
                 region: 'Belgisch Vlaanderen',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-antwerpen',
                 index: 10,
               },
               {
                 name: 'Hasselt',
                 region: 'Belgisch Limburg',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-hasselt',
                 index: 11,
               },
               {
                 name: 'Gent',
                 region: 'Oost-Vlaanderen',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-gent',
                 index: 12,
               },
               {
                 name: 'Brugge',
                 region: 'West-Vlaanderen',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-brugge',
                 index: 13,
               },
               {
                 name: 'Brussel',
                 region: 'Hoofdstedelijk Gewest',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-brussel',
                 index: 14,
               },
               {
                 name: 'Houten',
                 region: 'Regio Utrecht',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-houten',
                 index: 15,
               },
               {
                 name: 'Oss',
                 region: 'Noordoost-Brabant',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-oss',
                 index: 16,
               },
               {
                 name: 'Roosendaal',
                 region: 'West-Brabant',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-roosendaal',
                 index: 17,
               },
               {
                 name: 'Bergen op Zoom',
                 region: 'West-Brabant',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-bergen-op-zoom',
                 index: 18,
               },
               {
                 name: 'Oosterhout',
                 region: 'West-Brabant',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-oosterhout',
                 index: 19,
               },
               {
                 name: 'Waalwijk',
                 region: 'Midden-Brabant',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-waalwijk',
                 index: 20,
               },
               {
                 name: 'Uden',
                 region: 'Noordoost-Brabant',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-uden',
                 index: 21,
               },
               {
                 name: 'Sittard-Geleen',
                 region: 'Zuid-Limburg',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-sittard-geleen',
                 index: 22,
               },
               {
                 name: 'Heerlen',
                 region: 'Oostelijk Zuid-Limburg',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-heerlen',
                 index: 23,
               },
               {
                 name: 'Roermond',
                 region: 'Midden-Limburg',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-roermond',
                 index: 24,
               },
               {
                 name: 'Weert',
                 region: 'Midden-Limburg',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-weert',
                 index: 25,
               },
               {
                 name: 'Kerkrade',
                 region: 'Parkstad Limburg',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-kerkrade',
                 index: 26,
               },
               {
                 name: 'Amsterdam',
                 region: 'Amsterdam en de regio',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-amsterdam',
                 index: 27,
               },
               {
                 name: 'Rotterdam',
                 region: 'Rijnmond',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-rotterdam',
                 index: 28,
               },
               {
                 name: 'Den Haag',
                 region: 'Zuid-Holland',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-den-haag',
                 index: 29,
               },
               {
                 name: 'Leuven',
                 region: 'Vlaams-Brabant',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-leuven',
                 index: 30,
               },
               {
                 name: 'Mechelen',
                 region: 'Regio Antwerpen-Brussel',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-mechelen',
                 index: 31,
               },
               {
                 name: 'Kortrijk',
                 region: 'West-Vlaanderen',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-kortrijk',
                 index: 32,
               },
               {
                 name: 'Oostende',
                 region: 'Belgische kust',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-oostende',
                 index: 33,
               },
               {
                 name: 'Aalst',
                 region: 'Oost-Vlaanderen',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-aalst',
                 index: 34,
               },
               {
                 name: 'Sint-Niklaas',
                 region: 'Waasland',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-sint-niklaas',
                 index: 35,
               },
               {
                 name: 'Genk',
                 region: 'Belgisch Limburg',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-genk',
                 index: 36,
               },
               {
                 name: 'Middelburg',
                 region: 'Walcheren',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-middelburg',
                 index: 37,
               },
               {
                 name: 'Vlissingen',
                 region: 'Walcheren',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-vlissingen',
                 index: 38,
               },
               {
                 name: 'Goes',
                 region: 'Zuid-Beveland',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-goes',
                 index: 39,
               },
               {
                 name: 'Groningen',
                 region: 'Noord-Nederland',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-groningen',
                 index: 40,
               },
               {
                 name: 'Valkenburg',
                 region: 'Zuid-Limburg',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-valkenburg',
                 index: 41,
               },
               {
                 name: 'Echt',
                 region: 'Midden-Limburg',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-echt',
                 index: 42,
               },
               {
                 name: 'Best',
                 region: 'Brainportregio',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-best',
                 index: 43,
               },
               {
                 name: 'Terneuzen',
                 region: 'Zeeuws-Vlaanderen',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-terneuzen',
                 index: 44,
               },
               {
                 name: 'Domburg',
                 region: 'Walcheren',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-domburg',
                 index: 45,
               },
               {
                 name: 'Renesse',
                 region: 'Schouwen-Duiveland',
-                cta: 'Kok inhuren',
+                cta: 'Kok verbinden',
                 href: '/personeel-renesse',
                 index: 46,
               },

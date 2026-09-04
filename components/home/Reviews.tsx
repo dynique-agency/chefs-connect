@@ -332,7 +332,7 @@ export default function Reviews() {
               href="/zoek-personeel"
               className="group inline-flex items-center gap-3 px-8 py-4 font-inter text-sm uppercase tracking-wider text-brown bg-gold hover:bg-gold-dark transition-colors duration-300"
             >
-              <span>Personeel inhuren</span>
+              <span>Personeel verbinden</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
             <Link

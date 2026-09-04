@@ -17,7 +17,7 @@ export default function PersoneelUdenPage() {
         'Uden is daarbij allesbehalve afgelegen. Ziekenhuis Bernhoven trekt personeel en bezoekers van ver buiten de regio, en bedrijventerreinen als Loopkant en Liessent zorgen voor een stevige zakelijke basis langs de A50. Dat vertaalt zich in vraag naar keukenpersoneel bij restaurants, zalencentra en bedrijfscatering.',
         'Wij zijn actief in Uden en plaatsen ook in Den Bosch en de bredere regio Noordoost-Brabant.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,9 +26,9 @@ export default function PersoneelUdenPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Uden"
       formLocation="Personeel Uden"
       relatedLinks={[
-        { href: '/personeel-den-bosch', label: 'Kok inhuren Den Bosch' },
-        { href: '/personeel-eindhoven', label: 'Kok inhuren Eindhoven' },
-        { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
+        { href: '/personeel-den-bosch', label: 'Kok verbinden Den Bosch' },
+        { href: '/personeel-eindhoven', label: 'Kok verbinden Eindhoven' },
+        { href: '/personeel-nijmegen', label: 'Kok verbinden Nijmegen' },
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Uden?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Uden en de regio Noordoost-Brabant.' },

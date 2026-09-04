@@ -17,7 +17,7 @@ export default function PersoneelHasseltPage() {
         'Door de ligging vlak bij de Nederlandse grens, op korte afstand van Maastricht, is er een levendige uitwisseling tussen de twee culinaire culturen en een breder werkgebied om personeel uit te putten.',
         'Wij zijn actief in Hasselt en plaatsen ook in Maastricht en de bredere grensregio.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelHasseltPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Hasselt"
       formLocation="Personeel Hasselt"
       relatedLinks={[
-        { href: '/personeel-antwerpen', label: 'Kok inhuren Antwerpen' },
-        { href: '/personeel-maastricht', label: 'Kok inhuren Maastricht' },
+        { href: '/personeel-antwerpen', label: 'Kok verbinden Antwerpen' },
+        { href: '/personeel-maastricht', label: 'Kok verbinden Maastricht' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

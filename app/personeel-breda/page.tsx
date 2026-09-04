@@ -17,7 +17,7 @@ export default function PersoneelBredaPage() {
         'De stad bruist daarnaast tijdens evenementen. Breda Jazz, het carnaval en de drukte rond NAC zorgen voor pieken waarin keukens ineens een tandje bij moeten zetten. En door de ligging vlak bij de Belgische grens is er een natuurlijke uitwisseling van smaken en gasten tussen Brabant en Vlaanderen.',
         'Wij zijn actief in Breda en plaatsen ook in Oosterhout, Etten-Leur en de bredere regio West-Brabant.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,9 +26,9 @@ export default function PersoneelBredaPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Breda"
       formLocation="Personeel Breda"
       relatedLinks={[
-        { href: '/personeel-tilburg', label: 'Kok inhuren Tilburg' },
-        { href: '/personeel-eindhoven', label: 'Kok inhuren Eindhoven' },
-        { href: '/personeel-den-bosch', label: 'Kok inhuren Den Bosch' },
+        { href: '/personeel-tilburg', label: 'Kok verbinden Tilburg' },
+        { href: '/personeel-eindhoven', label: 'Kok verbinden Eindhoven' },
+        { href: '/personeel-den-bosch', label: 'Kok verbinden Den Bosch' },
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Breda?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Breda en de regio West-Brabant.' },

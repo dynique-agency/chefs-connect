@@ -26,8 +26,8 @@ export default function PersoneelRenessePage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Renesse"
       formLocation="Personeel Renesse"
       relatedLinks={[
-        { href: '/personeel-goes', label: 'Kok inhuren Goes' },
-        { href: '/personeel-middelburg', label: 'Kok inhuren Middelburg' },
+        { href: '/personeel-goes', label: 'Kok verbinden Goes' },
+        { href: '/personeel-middelburg', label: 'Kok verbinden Middelburg' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

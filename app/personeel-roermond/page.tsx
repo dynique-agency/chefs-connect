@@ -17,7 +17,7 @@ export default function PersoneelRoermondPage() {
         'Die drukte beperkt zich niet tot het outletcentrum. Ook de historische binnenstad, met terrassen rond de Munsterkerk en de Markt, merkt de aanloop van dagjesmensen. En wie in het weekend uitwaait naar de Maasplassen vindt er een eigen horecascene rond het water.',
         'Wij zijn actief in Roermond en de bredere regio Midden-Limburg, van Weert tot Echt en Roerdalen.',
       ]}
-      whyHeadingLead="Wij sturen mensen die"
+      whyHeadingLead="Wij verbinden je met mensen die"
       whyHeadingAccent="tegen een piekdag kunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten, van rustige familiezaken tot bediening onder hoogseizoendruk. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het druk wordt.',
@@ -26,8 +26,8 @@ export default function PersoneelRoermondPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Roermond"
       formLocation="Personeel Roermond"
       relatedLinks={[
-        { href: '/personeel-weert', label: 'Kok inhuren Weert' },
-        { href: '/personeel-maastricht', label: 'Kok inhuren Maastricht' },
+        { href: '/personeel-weert', label: 'Kok verbinden Weert' },
+        { href: '/personeel-maastricht', label: 'Kok verbinden Maastricht' },
         { href: '/limburg', label: 'Heel Limburg' },
         { href: '/zoek-personeel', label: "Alle regio's" },
       ]}

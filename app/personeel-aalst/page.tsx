@@ -17,7 +17,7 @@ export default function PersoneelAalstPage() {
         'Internationaal is Aalst vooral bekend van Aalst Carnaval, een eeuwenoude traditie die ooit door UNESCO werd erkend als immaterieel cultureel erfgoed, een erkenning die later weer werd ingetrokken na ophef over de inhoud van sommige praalwagens. Tijdens die periode draait de horeca in de stad op volle toeren.',
         'Ook buiten carnaval zorgt de wekelijkse markt voor een vaste stroom bezoekers naar het centrum. Wij zijn actief in Aalst en plaatsen ook in Gent, Brussel en de rest van Oost-Vlaanderen.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelAalstPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Aalst"
       formLocation="Personeel Aalst"
       relatedLinks={[
-        { href: '/personeel-gent', label: 'Kok inhuren Gent' },
-        { href: '/personeel-brussel', label: 'Kok inhuren Brussel' },
+        { href: '/personeel-gent', label: 'Kok verbinden Gent' },
+        { href: '/personeel-brussel', label: 'Kok verbinden Brussel' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

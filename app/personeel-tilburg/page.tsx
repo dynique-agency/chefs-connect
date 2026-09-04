@@ -17,7 +17,7 @@ export default function PersoneelTilburgPage() {
         'Daarbij is Tilburg een uitgesproken evenementenstad. Met 013, de Spoorzone en grote festivals als Roadburn en Festival Mundial zijn er pieken waarin de hele horeca tegelijk op volle toeren draait. En als studentenstad rondom Tilburg University zit er het hele jaar door beweging in de vraag.',
         'Wij zijn actief in Tilburg en plaatsen ook in Waalwijk, Oisterwijk en de bredere regio Midden-Brabant.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,9 +26,9 @@ export default function PersoneelTilburgPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Tilburg"
       formLocation="Personeel Tilburg"
       relatedLinks={[
-        { href: '/personeel-eindhoven', label: 'Kok inhuren Eindhoven' },
-        { href: '/personeel-den-bosch', label: 'Kok inhuren Den Bosch' },
-        { href: '/personeel-breda', label: 'Kok inhuren Breda' },
+        { href: '/personeel-eindhoven', label: 'Kok verbinden Eindhoven' },
+        { href: '/personeel-den-bosch', label: 'Kok verbinden Den Bosch' },
+        { href: '/personeel-breda', label: 'Kok verbinden Breda' },
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Tilburg?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Tilburg en de regio Midden-Brabant.' },

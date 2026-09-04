@@ -26,8 +26,8 @@ export default function PersoneelValkenburgPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Valkenburg"
       formLocation="Personeel Valkenburg"
       relatedLinks={[
-        { href: '/personeel-maastricht', label: 'Kok inhuren Maastricht' },
-        { href: '/personeel-heerlen', label: 'Kok inhuren Heerlen' },
+        { href: '/personeel-maastricht', label: 'Kok verbinden Maastricht' },
+        { href: '/personeel-heerlen', label: 'Kok verbinden Heerlen' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

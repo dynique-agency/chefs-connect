@@ -17,7 +17,7 @@ export default function PersoneelUtrechtPage() {
         'Als grootste studentenstad van Nederland en met een centrale ligging middenin het land, is Utrecht bovendien een populaire locatie voor congressen en zakelijke events. Dat zorgt voor een constante, afwisselende vraag naar goed keukenpersoneel.',
         'Wij zijn actief in Utrecht en plaatsen ook in de bredere regio Midden-Nederland.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelUtrechtPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Utrecht"
       formLocation="Personeel Utrecht"
       relatedLinks={[
-        { href: '/personeel-houten', label: 'Kok inhuren Houten' },
-        { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
+        { href: '/personeel-houten', label: 'Kok verbinden Houten' },
+        { href: '/personeel-nijmegen', label: 'Kok verbinden Nijmegen' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

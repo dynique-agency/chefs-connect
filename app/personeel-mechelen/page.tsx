@@ -17,7 +17,7 @@ export default function PersoneelMechelenPage() {
         'Rond de Grote Markt en de Sint-Romboutstoren, een door UNESCO erkende beiaardtoren middenin een goed bewaard historisch centrum, is een horecascene ontstaan die kleinschaliger en persoonlijker aanvoelt dan in Antwerpen of Brussel, maar wel steeds sneller groeit.',
         'Wij zijn actief in Mechelen en plaatsen ook in de bredere regio tussen Antwerpen en Brussel.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelMechelenPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Mechelen"
       formLocation="Personeel Mechelen"
       relatedLinks={[
-        { href: '/personeel-antwerpen', label: 'Kok inhuren Antwerpen' },
-        { href: '/personeel-leuven', label: 'Kok inhuren Leuven' },
+        { href: '/personeel-antwerpen', label: 'Kok verbinden Antwerpen' },
+        { href: '/personeel-leuven', label: 'Kok verbinden Leuven' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

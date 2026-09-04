@@ -17,7 +17,7 @@ export default function PersoneelVlissingenPage() {
         'Die havenidentiteit loopt door tot aan de kustlijn. Op de Boulevard, met uitzicht op de Westerschelde en de Noordzee, wisselen strandpaviljoens en terrassen elkaar af, populair bij dagjesmensen uit de hele provincie en bij toeristen. Voor een keuken in Vlissingen betekent dat een breed publiek: van havenwerkers die snel en stevig willen eten tot bezoekers die op een zonnige dag een lange lunch op het terras zoeken.',
         'Wij zijn actief in Vlissingen en plaatsen ook in Middelburg, Goes en de bredere regio Walcheren en Zeeland.',
       ]}
-      whyHeadingLead="Wij sturen mensen die"
+      whyHeadingLead="Wij verbinden je met mensen die"
       whyHeadingAccent="het tempo van de kust aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelVlissingenPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Vlissingen"
       formLocation="Personeel Vlissingen"
       relatedLinks={[
-        { href: '/personeel-middelburg', label: 'Kok inhuren Middelburg' },
-        { href: '/personeel-goes', label: 'Kok inhuren Goes' },
+        { href: '/personeel-middelburg', label: 'Kok verbinden Middelburg' },
+        { href: '/personeel-goes', label: 'Kok verbinden Goes' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

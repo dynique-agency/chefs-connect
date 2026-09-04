@@ -17,7 +17,7 @@ export default function PersoneelBergenOpZoomPage() {
         'Die historische kern komt eens per jaar goed tot zijn recht tijdens de Bergse Carnaval, een van de grotere carnavalsvieringen van het zuiden, waarbij de stad tijdelijk omgedoopt wordt tot Krabbegat. De rest van het jaar draait de horeca vooral op een trouw lokaal publiek en bezoekers die de oude binnenstad komen bekijken.',
         'Wij zijn actief in Bergen op Zoom en plaatsen ook in Roosendaal, Steenbergen en de bredere regio West-Brabant.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelBergenOpZoomPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Bergen op Zoom"
       formLocation="Personeel Bergen op Zoom"
       relatedLinks={[
-        { href: '/personeel-roosendaal', label: 'Kok inhuren Roosendaal' },
-        { href: '/personeel-breda', label: 'Kok inhuren Breda' },
+        { href: '/personeel-roosendaal', label: 'Kok verbinden Roosendaal' },
+        { href: '/personeel-breda', label: 'Kok verbinden Breda' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

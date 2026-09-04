@@ -17,7 +17,7 @@ export default function PersoneelOostendePage() {
         'Die combinatie van toerisme, visserij en horeca zorgt voor een uitgesproken seizoenspatroon: in de zomermaanden loopt de vraag naar personeel sterk op, wanneer restaurants, brasserieën en strandbars langs de zeedijk vol zitten met dagjesmensen en vakantiegangers.',
         'Wij zijn actief in Oostende en plaatsen ook in de bredere regio langs de Belgische kust.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelOostendePage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Oostende"
       formLocation="Personeel Oostende"
       relatedLinks={[
-        { href: '/personeel-brugge', label: 'Kok inhuren Brugge' },
-        { href: '/personeel-kortrijk', label: 'Kok inhuren Kortrijk' },
+        { href: '/personeel-brugge', label: 'Kok verbinden Brugge' },
+        { href: '/personeel-kortrijk', label: 'Kok verbinden Kortrijk' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

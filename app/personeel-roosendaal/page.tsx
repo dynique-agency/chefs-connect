@@ -17,7 +17,7 @@ export default function PersoneelRoosendaalPage() {
         'Het centrum van Roosendaal is een geliefde bestemming voor winkelend publiek uit binnen- en buitenland, versterkt door Rosada Fashion Outlet, een van de bekendere fashion outlets van Nederland. Die drukte in de winkelstraten vertaalt zich direct naar volle terrassen en lunchzaken, vooral in het weekend.',
         'Wij zijn actief in Roosendaal en plaatsen ook in Bergen op Zoom, Zundert en de bredere regio West-Brabant.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelRoosendaalPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Roosendaal"
       formLocation="Personeel Roosendaal"
       relatedLinks={[
-        { href: '/personeel-bergen-op-zoom', label: 'Kok inhuren Bergen op Zoom' },
-        { href: '/personeel-breda', label: 'Kok inhuren Breda' },
+        { href: '/personeel-bergen-op-zoom', label: 'Kok verbinden Bergen op Zoom' },
+        { href: '/personeel-breda', label: 'Kok verbinden Breda' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

@@ -66,7 +66,7 @@ export default function IntroSection() {
             <div className="relative w-full">
               <Image
                 src="/event-service-detail.png"
-                alt="Freelance bedieningsmedewerker van Chefs Connect serveert hapjes tijdens een receptie"
+                alt="Freelance bedieningsmedewerker serveert hapjes tijdens een receptie"
                 width={600}
                 height={800}
                 className="w-full h-auto object-contain brightness-[0.85]"

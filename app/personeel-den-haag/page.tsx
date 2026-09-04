@@ -17,7 +17,7 @@ export default function PersoneelDenHaagPage() {
         'Tegelijkertijd heeft Den Haag met Scheveningen een eigen badplaats binnen de gemeentegrenzen. Strandtenten, hotels en terrassen zorgen daar voor een heel andere, seizoensgebonden horeca die in de zomer overuren draait. Dezelfde stad huisvest dus twee horecamarkten met heel verschillende eisen.',
         'Wij zijn actief in Den Haag en plaatsen ook in de bredere regio Zuid-Holland.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelDenHaagPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Den Haag"
       formLocation="Personeel Den Haag"
       relatedLinks={[
-        { href: '/personeel-rotterdam', label: 'Kok inhuren Rotterdam' },
-        { href: '/personeel-amsterdam', label: 'Kok inhuren Amsterdam' },
+        { href: '/personeel-rotterdam', label: 'Kok verbinden Rotterdam' },
+        { href: '/personeel-amsterdam', label: 'Kok verbinden Amsterdam' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

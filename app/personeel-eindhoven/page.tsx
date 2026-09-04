@@ -174,7 +174,7 @@ export default function PersoneelEindhovenPage() {
             >
               <Image
                 src="/service-professional.png"
-                alt="Professionele horecamedewerker van Chefs Connect aan het werk in Eindhoven"
+                alt="Professionele horecamedewerker aan het werk in Eindhoven"
                 fill
                 className="object-cover brightness-[0.85]"
                 sizes="(max-width: 1024px) 100vw, 50vw"

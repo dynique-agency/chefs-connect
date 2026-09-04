@@ -17,7 +17,7 @@ export default function PersoneelRotterdamPage() {
         'Die vernieuwingsdrang zit ook in de keuken. Rotterdam wordt in de foodmedia steeds vaker genoemd als een van de interessantste opkomende culinaire steden van Nederland, met een diverser, experimenteler en informeler eetlandschap dan de klassieke fine dining van andere grote steden.',
         'Daarnaast huisvest Rotterdam de grootste zeehaven van Europa, wat zorgt voor een structurele stroom aan zakelijke en corporate horeca, van vergaderlunches tot grote bedrijfsevenementen. Wij zijn actief in Rotterdam en plaatsen ook in de bredere regio Rijnmond.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelRotterdamPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Rotterdam"
       formLocation="Personeel Rotterdam"
       relatedLinks={[
-        { href: '/personeel-den-haag', label: 'Kok inhuren Den Haag' },
-        { href: '/personeel-utrecht', label: 'Kok inhuren Utrecht' },
+        { href: '/personeel-den-haag', label: 'Kok verbinden Den Haag' },
+        { href: '/personeel-utrecht', label: 'Kok verbinden Utrecht' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

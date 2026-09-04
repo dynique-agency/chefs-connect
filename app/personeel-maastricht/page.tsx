@@ -174,7 +174,7 @@ export default function PersoneelMaastrichtPage() {
             >
               <Image
                 src="/freelancer-bediening.webp"
-                alt="Freelance bedieningsmedewerker van Chefs Connect aan het werk in Maastricht"
+                alt="Freelance bedieningsmedewerker aan het werk in Maastricht"
                 fill
                 className="object-cover brightness-[0.85]"
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -17,7 +17,7 @@ export default function PersoneelGentPage() {
         'Als grote studentenstad rondom de Universiteit Gent is er het hele jaar door een constante vraag naar horecapersoneel, met een uitschieter tijdens de Gentse Feesten: tien dagen waarin de hele stad op volle toeren draait en keukens fors moeten opschalen.',
         'Wij zijn actief in Gent en plaatsen ook in de bredere regio Oost-Vlaanderen.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelGentPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Gent"
       formLocation="Personeel Gent"
       relatedLinks={[
-        { href: '/personeel-brugge', label: 'Kok inhuren Brugge' },
-        { href: '/personeel-brussel', label: 'Kok inhuren Brussel' },
+        { href: '/personeel-brugge', label: 'Kok verbinden Brugge' },
+        { href: '/personeel-brussel', label: 'Kok verbinden Brussel' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

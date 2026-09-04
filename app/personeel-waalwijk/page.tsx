@@ -17,7 +17,7 @@ export default function PersoneelWaalwijkPage() {
         'Wat veel mensen niet weten: de Efteling ligt vlak onder de rook van Waalwijk. Een van de grootste en meest bezochte attractieparken van Nederland trekt het hele jaar door bezoekers, en dat zorgt voor extra vraag naar horecapersoneel in de wijde omgeving, van hotels tot cateringbedrijven.',
         'Wij zijn actief in Waalwijk en plaatsen ook in Tilburg en de bredere regio Midden-Brabant.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,9 +26,9 @@ export default function PersoneelWaalwijkPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Waalwijk"
       formLocation="Personeel Waalwijk"
       relatedLinks={[
-        { href: '/personeel-tilburg', label: 'Kok inhuren Tilburg' },
-        { href: '/personeel-den-bosch', label: 'Kok inhuren Den Bosch' },
-        { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
+        { href: '/personeel-tilburg', label: 'Kok verbinden Tilburg' },
+        { href: '/personeel-den-bosch', label: 'Kok verbinden Den Bosch' },
+        { href: '/personeel-nijmegen', label: 'Kok verbinden Nijmegen' },
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Waalwijk?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Waalwijk en de regio Midden-Brabant.' },

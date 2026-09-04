@@ -140,7 +140,7 @@ export default function ZeelandPage() {
                       </p>
                     </div>
                     <div className="flex items-center gap-3 text-cream/30 group-hover:text-gold transition-all duration-300 flex-shrink-0">
-                      <span className="font-inter text-sm uppercase tracking-[0.15em] hidden sm:block">Kok inhuren</span>
+                      <span className="font-inter text-sm uppercase tracking-[0.15em] hidden sm:block">Kok verbinden</span>
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
                     </div>
                   </div>

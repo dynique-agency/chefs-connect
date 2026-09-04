@@ -147,7 +147,7 @@ export default function Footer() {
             {/* Locaties */}
             <div>
               <h4 className="font-inter text-sm uppercase tracking-[0.2em] text-gold mb-6">
-                Kok inhuren
+                Kok verbinden
               </h4>
               <nav className="flex flex-col gap-3">
                 {[

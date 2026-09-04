@@ -26,8 +26,8 @@ export default function PersoneelEchtPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Echt"
       formLocation="Personeel Echt"
       relatedLinks={[
-        { href: '/personeel-roermond', label: 'Kok inhuren Roermond' },
-        { href: '/personeel-weert', label: 'Kok inhuren Weert' },
+        { href: '/personeel-roermond', label: 'Kok verbinden Roermond' },
+        { href: '/personeel-weert', label: 'Kok verbinden Weert' },
         { href: '/zoek-personeel', label: "Alle regio's" },
       ]}
       faq={[

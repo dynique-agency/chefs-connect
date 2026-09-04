@@ -17,7 +17,7 @@ export default function PersoneelGoesPage() {
         'Waar Middelburg en Vlissingen vooral leunen op dagjesmensen en toeristen, draait de horeca in Goes juist op een trouw, regionaal publiek. Gasten uit Zuid-Beveland komen gericht naar de stad, niet toevallig langslopen. Voor een keuken betekent dat gasten die weten wat ze willen en het waarderen als het klopt, dienst na dienst.',
         'Wij zijn actief in Goes en plaatsen ook in Middelburg, Vlissingen en de bredere regio Zuid-Beveland en Walcheren.',
       ]}
-      whyHeadingLead="Wij sturen mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het waarmaken"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen, maar weten wat iemand in de praktijk waard is.',
@@ -26,8 +26,8 @@ export default function PersoneelGoesPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Goes"
       formLocation="Personeel Goes"
       relatedLinks={[
-        { href: '/personeel-middelburg', label: 'Kok inhuren Middelburg' },
-        { href: '/personeel-vlissingen', label: 'Kok inhuren Vlissingen' },
+        { href: '/personeel-middelburg', label: 'Kok verbinden Middelburg' },
+        { href: '/personeel-vlissingen', label: 'Kok verbinden Vlissingen' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

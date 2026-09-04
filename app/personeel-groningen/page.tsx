@@ -17,7 +17,7 @@ export default function PersoneelGroningenPage() {
         'Rond de Grote Markt en de Poelestraat ligt een van de drukste en meest levendige uitgaansgebieden van Nederland, waar op piekavonden een enorme hoeveelheid gasten wordt bediend. Tegelijk is Groningen veel meer dan een studentenstad: als economisch en cultureel centrum van heel Noord-Nederland trekt de stad ook een breder publiek uit Friesland en Drenthe, voor werk, winkelen en cultuur.',
         'Wij zijn actief in Groningen en de bredere regio Noord-Nederland, van Friesland tot Drenthe.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',

@@ -17,7 +17,7 @@ export default function PersoneelKortrijkPage() {
         'Kortrijk Xpo, een van de grotere beurs- en congreslocaties van België, brengt het hele jaar door zakelijke bezoekers en beursgangers naar de stad, met pieken waarin restaurants en cateraars snel moeten kunnen opschalen. De ligging vlak bij de Franse grens zorgt bovendien voor een divers publiek.',
         'Wij zijn actief in Kortrijk en plaatsen ook in de bredere regio West-Vlaanderen.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelKortrijkPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Kortrijk"
       formLocation="Personeel Kortrijk"
       relatedLinks={[
-        { href: '/personeel-brugge', label: 'Kok inhuren Brugge' },
-        { href: '/personeel-gent', label: 'Kok inhuren Gent' },
+        { href: '/personeel-brugge', label: 'Kok verbinden Brugge' },
+        { href: '/personeel-gent', label: 'Kok verbinden Gent' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

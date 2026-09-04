@@ -17,7 +17,7 @@ export default function PersoneelBestPage() {
         'Een deel van die bedrijvigheid draait op het bedrijventerrein Batadorp, vernoemd naar de schoenfabrikant Bata die hier ooit een grote fabriek had. Die combinatie van forensen, bedrijfsleven en een compact eigen centrum zorgt voor een horecavraag die deels zakelijk is, denk aan bedrijfslunches, borrels en catering, en deels lokaal en buurtgericht.',
         'Wij zijn actief in Best en plaatsen ook in Eindhoven, Helmond en Tilburg, de bredere regio rond Best.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelBestPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Best"
       formLocation="Personeel Best"
       relatedLinks={[
-        { href: '/personeel-eindhoven', label: 'Kok inhuren Eindhoven' },
-        { href: '/personeel-helmond', label: 'Kok inhuren Helmond' },
+        { href: '/personeel-eindhoven', label: 'Kok verbinden Eindhoven' },
+        { href: '/personeel-helmond', label: 'Kok verbinden Helmond' },
         { href: '/zoek-personeel', label: "Alle regio's" },
       ]}
       faq={[

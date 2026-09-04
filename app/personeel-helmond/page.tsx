@@ -17,7 +17,7 @@ export default function PersoneelHelmondPage() {
         'Dankzij de nabijheid van Eindhoven profiteert Helmond mee van de bedrijvigheid in de tech- en designsector, met zakelijke diners en events die om betrouwbaar, snel inzetbaar keukenpersoneel vragen.',
         'Wij zijn actief in Helmond en plaatsen ook in Eindhoven en de bredere regio Noord-Brabant.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,9 +26,9 @@ export default function PersoneelHelmondPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Helmond"
       formLocation="Personeel Helmond"
       relatedLinks={[
-        { href: '/personeel-eindhoven', label: 'Kok inhuren Eindhoven' },
-        { href: '/personeel-tilburg', label: 'Kok inhuren Tilburg' },
-        { href: '/personeel-nijmegen', label: 'Kok inhuren Nijmegen' },
+        { href: '/personeel-eindhoven', label: 'Kok verbinden Eindhoven' },
+        { href: '/personeel-tilburg', label: 'Kok verbinden Tilburg' },
+        { href: '/personeel-nijmegen', label: 'Kok verbinden Nijmegen' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

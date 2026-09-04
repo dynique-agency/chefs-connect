@@ -289,7 +289,7 @@ export default function ContactPage() {
                   <div className="relative w-full">
                     <Image
                       src="/contact-service.png"
-                      alt="Freelance bedieningsmedewerker van Chefs Connect schenkt champagne tijdens een receptie"
+                      alt="Freelance bedieningsmedewerker schenkt champagne tijdens een receptie"
                       width={600}
                       height={800}
                       className="w-full h-auto object-contain"

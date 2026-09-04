@@ -17,7 +17,7 @@ export default function PersoneelDomburgPage() {
         'Die schaal zorgt voor een uitgesproken horecaritme. Buiten het seizoen is Domburg een rustig dorp, maar zodra de zomer aanbreekt groeit de bevolking door toeristen vele malen groter en draaien hotels, strandtenten en restaurants op volle toeren. Een kok in Domburg moet dan ook net zo goed een rustige voorjaarsdienst aankunnen als een volle augustusavond waarin de keuken non-stop doorgaat.',
         'Wij zijn actief in Domburg en plaatsen ook in Middelburg, Vlissingen en de bredere regio Walcheren.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het seizoen aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelDomburgPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Domburg"
       formLocation="Personeel Domburg"
       relatedLinks={[
-        { href: '/personeel-middelburg', label: 'Kok inhuren Middelburg' },
-        { href: '/personeel-vlissingen', label: 'Kok inhuren Vlissingen' },
+        { href: '/personeel-middelburg', label: 'Kok verbinden Middelburg' },
+        { href: '/personeel-vlissingen', label: 'Kok verbinden Vlissingen' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[

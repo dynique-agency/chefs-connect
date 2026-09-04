@@ -17,7 +17,7 @@ export default function PersoneelLeuvenPage() {
         'Leuven is bovendien al generaties een bierstad, met brouwreus AB InBev die er zijn hoofdkantoor heeft. Die combinatie van studenten, bierliefhebbers en een constante stroom bezoekers zorgt voor een horeca die zelden stilvalt, en dus voor een structurele vraag naar keukenpersoneel dat een hoog tempo aankan.',
         'Wij zijn actief in Leuven en plaatsen ook in de bredere regio Vlaams-Brabant.',
       ]}
-      whyHeadingLead="Wij sturen je mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="die het aankunnen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als het aankomt op de service.',
@@ -26,8 +26,8 @@ export default function PersoneelLeuvenPage() {
       formSubject="Chefs Connect: Aanvraag Keukenpersoneel Leuven"
       formLocation="Personeel Leuven"
       relatedLinks={[
-        { href: '/personeel-brussel', label: 'Kok inhuren Brussel' },
-        { href: '/personeel-mechelen', label: 'Kok inhuren Mechelen' },
+        { href: '/personeel-brussel', label: 'Kok verbinden Brussel' },
+        { href: '/personeel-mechelen', label: 'Kok verbinden Mechelen' },
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[
