@@ -8,7 +8,7 @@ export default function PersoneelGroningenPage() {
       city="Groningen"
       regionLabel="Groningen en Noord-Nederland"
       heroAccent="in Groningen?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Groningen als horecastad"
       contextHeadingLead="Een studentenstad"
       contextHeadingAccent="die heel het noorden bedient"
@@ -30,7 +30,7 @@ export default function PersoneelGroningenPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Groningen?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Groningen en de regio Noord-Nederland.' },
-        { question: 'Welke koks kunnen jullie leveren in Groningen?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Groningen.' },
+        { question: 'Welke koks kunnen jullie leveren in Groningen?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Groningen.' },
         { question: 'Is Chefs Connect ook actief buiten Groningen?', answer: 'Ja, wij plaatsen ook in de bredere regio Noord-Nederland, van Friesland tot Drenthe.' },
       ]}
     />

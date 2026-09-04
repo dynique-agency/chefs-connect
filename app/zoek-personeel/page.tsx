@@ -170,7 +170,7 @@ export default function ZoekPersoneelPage() {
               <span className="text-gold italic">vaak snel geregeld</span>
             </h2>
             <p className="font-inter text-lg md:text-xl text-cream/80 max-w-3xl mx-auto leading-relaxed">
-              Personeelstekort in de horeca vraagt om directe actie. Dankzij ons netwerk van meer dan <span className="font-semibold text-gold">350+ ervaren horeca­professionals</span> kunnen wij vaak snel de juiste medewerker voorstellen.
+              Personeelstekort in de horeca vraagt om directe actie. Dankzij ons netwerk van meer dan <span className="font-semibold text-gold">350+ ervaren, KVK-geregistreerde horeca­professionals</span> kunnen wij vaak snel de juiste medewerker voorstellen.
             </p>
           </motion.div>
 
@@ -187,7 +187,7 @@ export default function ZoekPersoneelPage() {
               <ul className="space-y-3 font-inter text-base text-cream/90">
                 {[
                   'Head chefs',
-                  'Sous chefs',
+                  'Plaatsvervangend keukenchefs',
                   'Zelfstandig werkend koks',
                   'Bedieningsmedewerkers',
                   'Leidinggevenden bediening',
@@ -586,7 +586,7 @@ export default function ZoekPersoneelPage() {
                   type="text"
                   id="function"
                   name="function"
-                  placeholder="Bijv. Sous chef, bedieningsmedewerker, etc."
+                  placeholder="Bijv. Plaatsvervangend keukenchef, bedieningsmedewerker, etc."
                   className="w-full px-4 py-3 bg-white border border-brown/20 focus:border-gold focus:outline-none transition-colors font-inter text-brown"
                 />
               </div>
@@ -666,7 +666,7 @@ export default function ZoekPersoneelPage() {
           },
           {
             question: 'Welke functies bemiddelen jullie?',
-            answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks, bedieningsmedewerkers, leidinggevenden bediening en complete keuken- of bedieningsteams voor zowel korte als langere periodes.',
+            answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks, bedieningsmedewerkers, leidinggevenden bediening en complete keuken- of bedieningsteams voor zowel korte als langere periodes.',
           },
           {
             question: 'Werken jullie ook in België?',

@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'Welke koks kunnen jullie leveren in Bergen op Zoom?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in de historische binnenstad van Bergen op Zoom en daarbuiten.',
+        text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in de historische binnenstad van Bergen op Zoom en daarbuiten.',
       },
     },
     {

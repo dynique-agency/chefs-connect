@@ -57,9 +57,9 @@ export interface CityStaffingContent {
 
 const ROLES = [
   { title: 'Head chef', description: 'Iemand die je keuken leidt en direct zijn eigen stempel zet. Voor als het écht moet kloppen.' },
-  { title: 'Sous chef', description: 'De rechterhand die structuur houdt in de brigade. Ervaren, stabiel en gewend aan druk.' },
+  { title: 'Plaatsvervangend keukenchef', description: 'De rechterhand die structuur houdt in de brigade. Ervaren, stabiel en gewend aan druk.' },
   { title: 'Zelfstandig werkend kok', description: 'Kan zelfstandig een sectie draaien zonder voortdurende begeleiding. Gewoon aan de slag.' },
-  { title: 'Commis kok', description: 'Extra handen op het juiste moment kunnen het verschil maken. Wij leveren ze snel.' },
+  { title: 'Altijd DBA-proof', description: 'Elke plaatsing is juridisch getoetst en voldoet aan de regels rond zelfstandig ondernemerschap. Geen risico voor jou.' },
   { title: 'Complete keukenbrigade', description: 'Voor grotere evenementen of drukke periodes waarbij je meerdere mensen tegelijk nodig hebt.' },
   { title: 'Maatwerk op aanvraag', description: 'Staat jouw vraag hier niet tussen? Neem contact op. We denken graag mee over wat past.' },
 ];
@@ -334,7 +334,7 @@ export default function CityStaffingPage({
             className="text-center mb-16"
           >
             <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">
-              Wat wij leveren
+              Waarmee wij verbinden
             </span>
             <h2 className="font-playfair text-4xl md:text-5xl font-light text-cream mb-6">
               Koks op elk niveau
@@ -595,9 +595,8 @@ export default function CityStaffingPage({
                 >
                   <option value="">Selecteer een functie</option>
                   <option value="Head chef">Head chef</option>
-                  <option value="Sous chef">Sous chef</option>
+                  <option value="Plaatsvervangend keukenchef">Plaatsvervangend keukenchef</option>
                   <option value="Zelfstandig werkend kok">Zelfstandig werkend kok</option>
-                  <option value="Commis kok">Commis kok</option>
                   <option value="Complete keukenbrigade">Complete keukenbrigade</option>
                   <option value="Anders">Anders</option>
                 </select>

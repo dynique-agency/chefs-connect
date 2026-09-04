@@ -8,7 +8,7 @@ export default function PersoneelHeerlenPage() {
       city="Heerlen"
       regionLabel="Heerlen en Oostelijk Zuid-Limburg"
       heroAccent="in Heerlen?"
-      heroSubtext="Van gezellige horeca in het centrum van Heerlen tot zakelijke catering in de regio Parkstad: wij leveren ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Van gezellige horeca in het centrum van Heerlen tot zakelijke catering in de regio Parkstad: wij verbinden je met ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Heerlen als horecastad"
       contextHeadingLead="Van mijnstad tot"
       contextHeadingAccent="moderne dienstenstad"
@@ -33,7 +33,7 @@ export default function PersoneelHeerlenPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Heerlen?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Heerlen en de Oostelijke Mijnstreek.' },
-        { question: 'Welke koks kunnen jullie leveren in de regio Heerlen?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en zakelijke locaties in en rond Heerlen.' },
+        { question: 'Welke koks kunnen jullie leveren in de regio Heerlen?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en zakelijke locaties in en rond Heerlen.' },
         { question: 'Is Chefs Connect ook actief buiten Heerlen in Limburg?', answer: 'Ja, wij plaatsen ook in Sittard-Geleen, Maastricht en de bredere regio Zuid-Limburg.' },
       ]}
     />

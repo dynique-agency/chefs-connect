@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'Welke koks kunnen jullie leveren in Eindhoven?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Eindhoven.',
+        text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Eindhoven.',
       },
     },
     {

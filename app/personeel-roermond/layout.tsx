@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'Welke koks kunnen jullie leveren in de regio Roermond?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in en rond Roermond, ook tijdens drukke periodes rond het outletcentrum.',
+        text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in en rond Roermond, ook tijdens drukke periodes rond het outletcentrum.',
       },
     },
     {

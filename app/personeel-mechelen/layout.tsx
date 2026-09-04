@@ -45,7 +45,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'Welke koks kunnen jullie leveren in Mechelen?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants en horecazaken in Mechelen en omgeving.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants en horecazaken in Mechelen en omgeving.' },
     },
     {
       '@type': 'Question',

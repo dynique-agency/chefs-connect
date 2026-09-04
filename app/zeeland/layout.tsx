@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/zeeland');
-const description = 'Freelance koks en bediening inhuren of zoeken in heel Zeeland: Middelburg, Vlissingen, Domburg, Goes, Terneuzen en Renesse. Ook kok aan huis.';
+const description = 'Chefs Connect verbindt freelance koks en bediening in heel Zeeland: Middelburg, Vlissingen, Domburg, Goes, Terneuzen en Renesse. Ook kok aan huis.';
 
 export const metadata: Metadata = {
   title: 'Horecapersoneel en Freelance Koks in Zeeland',
@@ -31,7 +31,7 @@ const serviceSchema = {
   '@type': 'Service',
   serviceType: 'Freelance Horecapersoneel Inhuren en Bemiddeling',
   provider: { '@type': 'EmploymentAgency', name: 'Chefs Connect' },
-  description: 'Freelance koks en bediening inhuren of zoeken door heel Zeeland, inclusief kok aan huis.',
+  description: 'Chefs Connect verbindt freelance koks en bediening door heel Zeeland, inclusief kok aan huis.',
   areaServed: { '@type': 'State', name: 'Zeeland' },
 };
 

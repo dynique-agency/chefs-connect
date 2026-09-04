@@ -8,7 +8,7 @@ export default function PersoneelOostendePage() {
       city="Oostende"
       regionLabel="Oostende en de Belgische kust"
       heroAccent="in Oostende?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Oostende als horecastad"
       contextHeadingLead="De koningin"
       contextHeadingAccent="van de Belgische kust"
@@ -32,7 +32,7 @@ export default function PersoneelOostendePage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Oostende?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Oostende.' },
-        { question: 'Welke koks kunnen jullie leveren in Oostende?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, brasserieën en strandzaken in Oostende.' },
+        { question: 'Welke koks kunnen jullie leveren in Oostende?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, brasserieën en strandzaken in Oostende.' },
         { question: 'Is Chefs Connect ook actief buiten Oostende?', answer: 'Ja, wij plaatsen ook in Brugge, Kortrijk en de bredere regio langs de Belgische kust.' },
       ]}
     />

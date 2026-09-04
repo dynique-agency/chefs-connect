@@ -8,7 +8,7 @@ export default function PersoneelSintNiklaasPage() {
       city="Sint-Niklaas"
       regionLabel="Sint-Niklaas en het Waasland"
       heroAccent="in Sint-Niklaas?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau in Sint-Niklaas en het Waasland. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort, ook op de drukste dagen rond de Grote Markt."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau in Sint-Niklaas en het Waasland. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort, ook op de drukste dagen rond de Grote Markt."
       contextEyebrow="Sint-Niklaas als horecastad"
       contextHeadingLead="Een stad met"
       contextHeadingAccent="een van de grootste pleinen van Europa"
@@ -32,7 +32,7 @@ export default function PersoneelSintNiklaasPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Sint-Niklaas?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Sint-Niklaas.' },
-        { question: 'Welke koks kunnen jullie leveren in Sint-Niklaas?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Sint-Niklaas.' },
+        { question: 'Welke koks kunnen jullie leveren in Sint-Niklaas?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Sint-Niklaas.' },
         { question: 'Is Chefs Connect ook actief buiten Sint-Niklaas?', answer: 'Ja, wij plaatsen ook in Gent, Antwerpen en de bredere regio Oost-Vlaanderen.' },
       ]}
     />

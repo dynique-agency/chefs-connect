@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { pageAlternates, siteUrl } from '@/lib/seo';
 
 const url = siteUrl('https://chefs-connect.nl/limburg');
-const description = 'Freelance koks en bediening inhuren of zoeken in heel Limburg: Maastricht, Sittard-Geleen, Heerlen, Kerkrade, Roermond, Weert en Venlo. Ook kok aan huis.';
+const description = 'Chefs Connect verbindt freelance koks en bediening in heel Limburg: Maastricht, Sittard-Geleen, Heerlen, Kerkrade, Roermond, Weert en Venlo. Ook kok aan huis.';
 
 export const metadata: Metadata = {
   title: 'Horecapersoneel en Freelance Koks in Limburg',
@@ -31,7 +31,7 @@ const serviceSchema = {
   '@type': 'Service',
   serviceType: 'Freelance Horecapersoneel Inhuren en Bemiddeling',
   provider: { '@type': 'EmploymentAgency', name: 'Chefs Connect' },
-  description: 'Freelance koks en bediening inhuren of zoeken door heel Limburg, inclusief kok aan huis in Zuid-Limburg.',
+  description: 'Chefs Connect verbindt freelance koks en bediening door heel Limburg, inclusief kok aan huis in Zuid-Limburg.',
   areaServed: { '@type': 'State', name: 'Limburg' },
 };
 

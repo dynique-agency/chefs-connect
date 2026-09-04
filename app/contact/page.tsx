@@ -4,7 +4,7 @@ import { useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { Send, Mail, Phone, MapPin } from 'lucide-react';
+import { Send, Phone, MapPin, Clock } from 'lucide-react';
 import { submitToFormSubmit } from '@/lib/form-submit';
 import FormNotification from '@/components/ui/FormNotification';
 
@@ -223,21 +223,6 @@ export default function ContactPage() {
 
                 <div className="space-y-6">
                   <a
-                    href="mailto:info@chefs-connect.nl"
-                    className="flex items-start gap-4 group transition-all duration-300"
-                  >
-                    <div className="flex-shrink-0 w-12 h-12 bg-gold/10 group-hover:bg-gold flex items-center justify-center transition-colors duration-300">
-                      <Mail className="w-5 h-5 text-gold group-hover:text-brown transition-colors duration-300" />
-                    </div>
-                    <div>
-                      <p className="font-inter text-xs uppercase tracking-wider text-brown/60 mb-1">E-mail</p>
-                      <p className="font-inter text-base text-brown group-hover:text-gold transition-colors duration-300">
-                        info@chefs-connect.nl
-                      </p>
-                    </div>
-                  </a>
-
-                  <a
                     href="tel:+31641875803"
                     className="flex items-start gap-4 group transition-all duration-300"
                   >
@@ -259,7 +244,19 @@ export default function ContactPage() {
                     <div>
                       <p className="font-inter text-xs uppercase tracking-wider text-brown/60 mb-1">Locatie</p>
                       <p className="font-inter text-base text-brown">
-                        Gasthuisstraat 3.1 Lanaken
+                        Stationsstraat 2 Lanaken
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gold/10 flex items-center justify-center">
+                      <Clock className="w-5 h-5 text-gold" />
+                    </div>
+                    <div>
+                      <p className="font-inter text-xs uppercase tracking-wider text-brown/60 mb-1">Openingstijden</p>
+                      <p className="font-inter text-base text-brown">
+                        Ma t/m vr: 09:00 - 15:00
                       </p>
                     </div>
                   </div>
@@ -320,7 +317,7 @@ export default function ContactPage() {
               Liever direct contact?
             </h2>
             <p className="font-inter text-base md:text-lg text-cream/70 leading-relaxed mb-8">
-              Bel ons of stuur een e-mail. We staan voor je klaar.
+              Bel ons. We staan voor je klaar.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -332,17 +329,6 @@ export default function ContactPage() {
                   Bel ons
                 </span>
                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-brown/20 to-transparent" />
-              </a>
-
-              <a
-                href="mailto:info@chefs-connect.nl"
-                className="group px-8 py-4 bg-transparent hover:bg-cream/10 text-cream border-2 border-cream flex items-center justify-center gap-3 transition-all duration-300 overflow-hidden relative"
-              >
-                <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                <span className="font-inter text-sm font-medium uppercase tracking-wider">
-                  E-mail ons
-                </span>
-                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-cream/20 to-transparent" />
               </a>
             </div>
           </motion.div>

@@ -244,7 +244,6 @@ export default function CookiesPage() {
               </p>
               <p className="font-inter text-sm">
                 <strong>ChefsConnect</strong><br />
-                E-mail: <a href="mailto:info@chefs-connect.nl" className="text-gold-accessible underline">info@chefs-connect.nl</a><br />
                 Telefoon: <a href="tel:+31641875803" className="text-gold-accessible underline">+31 6 41875803</a>
               </p>
             </div>

@@ -28,9 +28,15 @@ const localBusinessSchema = {
   description: 'Premium bemiddelingsbureau voor freelance horecaprofessionals en verzorger van exclusieve fine dining catering voor evenementen.',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Gasthuisstraat 3.1',
+    streetAddress: 'Stationsstraat 2',
     addressLocality: 'Lanaken',
     addressCountry: 'BE',
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '09:00',
+    closes: '15:00',
   },
   areaServed: [
     { '@type': 'Country', name: 'Netherlands' },

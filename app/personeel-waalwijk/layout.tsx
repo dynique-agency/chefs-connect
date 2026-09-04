@@ -52,7 +52,7 @@ const faqSchema = {
       name: 'Welke koks kunnen jullie leveren in Waalwijk?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Waalwijk.',
+        text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Waalwijk.',
       },
     },
     {

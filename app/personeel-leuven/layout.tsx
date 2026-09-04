@@ -45,7 +45,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'Welke koks kunnen jullie leveren in Leuven?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, cafés en studentenhoreca in Leuven.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, cafés en studentenhoreca in Leuven.' },
     },
     {
       '@type': 'Question',

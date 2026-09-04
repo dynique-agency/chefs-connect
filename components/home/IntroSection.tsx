@@ -255,7 +255,7 @@ export default function IntroSection() {
                   textWrap: 'pretty'
                 }}
               >
-                Bij <span className="whitespace-nowrap">Chefs Connect</span> versterken wij{' '}
+                Bij <span className="whitespace-nowrap">Chefs Connect</span> verbinden wij{' '}
                 <br className="md:hidden" />
                 horecazaken met{' '}
                 <span className="text-gold font-medium whitespace-nowrap">ervaren chefs</span> en{' '}

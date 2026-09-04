@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'Welke koks kunnen jullie leveren in Domburg?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor hotels, strandtenten en restaurants in Domburg, ook als de zomerdrukte om extra handen vraagt.',
+        text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor hotels, strandtenten en restaurants in Domburg, ook als de zomerdrukte om extra handen vraagt.',
       },
     },
     {

@@ -8,7 +8,7 @@ export default function PersoneelMechelenPage() {
       city="Mechelen"
       regionLabel="Mechelen en de regio Antwerpen-Brussel"
       heroAccent="in Mechelen?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Mechelen als horecastad"
       contextHeadingLead="Een stad tussen"
       contextHeadingAccent="twee grootsteden"
@@ -32,7 +32,7 @@ export default function PersoneelMechelenPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Mechelen?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Mechelen.' },
-        { question: 'Welke koks kunnen jullie leveren in Mechelen?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants en horecazaken in Mechelen en omgeving.' },
+        { question: 'Welke koks kunnen jullie leveren in Mechelen?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants en horecazaken in Mechelen en omgeving.' },
         { question: 'Is Chefs Connect ook actief buiten Mechelen?', answer: 'Ja, wij plaatsen ook in Antwerpen, Brussel, Leuven en de bredere regio daartussen.' },
       ]}
     />

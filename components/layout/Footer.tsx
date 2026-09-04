@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ArrowUp, Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
+import { ArrowUp, Phone, MapPin, Clock, Instagram, Facebook } from 'lucide-react';
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -60,20 +60,13 @@ export default function Footer() {
                 Chefs Connect
               </h3>
               <p data-nosnippet className="font-inter text-base text-cream/70 leading-relaxed max-w-md mb-6">
-                Wij leveren <span className="text-gold italic">chefs en bediening</span>, snel en professioneel.
+                Wij verbinden je met <span className="text-gold italic">chefs en bediening</span>, snel en professioneel.
                 <br />
                 Van <span className="text-gold italic">private dining</span> tot <span className="text-gold italic">grote events</span>.
                 <br />
                 Van <span className="text-gold italic">brasserie</span> tot <span className="text-gold italic">fine dining</span>.
               </p>
               <div data-nosnippet className="flex flex-col gap-3">
-                <a
-                  href="mailto:info@chefs-connect.nl"
-                  className="flex items-center gap-3 font-inter text-sm text-cream/80 hover:text-gold transition-colors duration-300"
-                >
-                  <Mail className="w-4 h-4" />
-                  <span>info@chefs-connect.nl</span>
-                </a>
                 <a
                   href="tel:+31641875803"
                   className="flex items-center gap-3 font-inter text-sm text-cream/80 hover:text-gold transition-colors duration-300"
@@ -83,7 +76,11 @@ export default function Footer() {
                 </a>
                 <div className="flex items-center gap-3 font-inter text-sm text-cream/80">
                   <MapPin className="w-4 h-4" />
-                  <span>Gasthuisstraat 3.1 Lanaken</span>
+                  <span>Stationsstraat 2 Lanaken</span>
+                </div>
+                <div className="flex items-center gap-3 font-inter text-sm text-cream/80">
+                  <Clock className="w-4 h-4" />
+                  <span>Ma t/m vr: 09:00 - 15:00</span>
                 </div>
               </div>
               <div className="flex items-center gap-4 mt-6">

@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'Welke koks kunnen jullie leveren in Echt?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Wij bemiddelen zelfstandig werkende koks, sous chefs en head chefs voor dorpsrestaurants, cafés en feestlocaties in en rond Echt, ook voor grotere gelegenheden zoals bruiloften en jubilea.',
+        text: 'Wij bemiddelen zelfstandig werkende koks, plaatsvervangend keukenchefs en head chefs voor dorpsrestaurants, cafés en feestlocaties in en rond Echt, ook voor grotere gelegenheden zoals bruiloften en jubilea.',
       },
     },
     {

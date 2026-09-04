@@ -8,7 +8,7 @@ export default function PersoneelRotterdamPage() {
       city="Rotterdam"
       regionLabel="Rotterdam en de Rijnmond"
       heroAccent="in Rotterdam?"
-      heroSubtext="Van zakelijke catering rond de haven tot de eigenzinnige keukens bij de Markthal: Rotterdam vraagt om koks die overal raad mee weten. Wij leveren ze snel geregeld en goed gescreend."
+      heroSubtext="Van zakelijke catering rond de haven tot de eigenzinnige keukens bij de Markthal: Rotterdam vraagt om koks die overal raad mee weten. Wij verbinden je snel met de juiste kok, goed gescreend."
       contextEyebrow="Rotterdam als horecastad"
       contextHeadingLead="Een stad die zichzelf"
       contextHeadingAccent="steeds opnieuw uitvindt"
@@ -32,7 +32,7 @@ export default function PersoneelRotterdamPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Rotterdam?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Rotterdam.' },
-        { question: 'Welke koks kunnen jullie leveren in Rotterdam?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Rotterdam.' },
+        { question: 'Welke koks kunnen jullie leveren in Rotterdam?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Rotterdam.' },
         { question: 'Is Chefs Connect ook actief buiten Rotterdam?', answer: 'Ja, wij plaatsen ook in de bredere regio Rijnmond.' },
       ]}
     />

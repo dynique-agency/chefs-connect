@@ -8,7 +8,7 @@ export default function PersoneelTerneuzenPage() {
       city="Terneuzen"
       regionLabel="Terneuzen en Zeeuws-Vlaanderen"
       heroAccent="in Terneuzen?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Terneuzen als horecastad"
       contextHeadingLead="Een havenstad"
       contextHeadingAccent="met internationale allure"
@@ -32,7 +32,7 @@ export default function PersoneelTerneuzenPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Terneuzen?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Terneuzen en de regio Zeeuws-Vlaanderen.' },
-        { question: 'Welke koks kunnen jullie leveren in Terneuzen?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en bedrijfscatering in Terneuzen.' },
+        { question: 'Welke koks kunnen jullie leveren in Terneuzen?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en bedrijfscatering in Terneuzen.' },
         { question: 'Is Chefs Connect ook actief buiten Terneuzen?', answer: 'Ja, wij plaatsen ook in Middelburg, Vlissingen, Goes en de rest van Zeeland, bereikbaar via de Westerscheldetunnel.' },
       ]}
     />

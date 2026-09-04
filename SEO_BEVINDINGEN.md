@@ -6,6 +6,29 @@ Andere trackers in deze map: [CONVERSIE_STRATEGIE.md](CONVERSIE_STRATEGIE.md) (c
 
 ---
 
+## DBA-proof gemaakt: taalgebruik, adres en juridische gegevens aangepast (3 september 2026)
+
+**Aanleiding**: klantverzoek om de site "DBA-proof" te maken, met een concrete lijst van aanpassingen. Eerst een deepscan gedaan (grep over de hele codebase) om de precieze omvang van elk punt te bepalen voordat er iets werd aangepast, gezien de reële juridische/financiële risico's (schijnzelfstandigheid) en de kans op sitebrede SEO-schade als "inhuren" overal zou worden vervangen.
+
+**Uitgevoerd**:
+- "Wij leveren" → "Wij verbinden (je met)": 59+ instanties over vrijwel alle personeel-{stad}-pagina's, plus homepage en footer-taglines.
+- "Versterken" → "Verbinden": 3 instanties (contactpagina-meta, homepage IntroSection).
+- "Koks en bediening inhuren" → herschreven met "verbinden": alleen de 3 specifieke meta-omschrijvingen (`/zoek-personeel`, `/limburg`, `/zeeland`) die deze exacte zin bevatten. De overige ~390 "inhuren"-vermeldingen in titels/keywords sitewide zijn bewust ongemoeid gelaten, dat is de kern van maanden SEO-targeting en had zonder expliciete opdracht niet aangeraakt mogen worden.
+- "350+"-stat: KVK-registratie toegevoegd in de twee plekken waar dit als lopende zin voorkomt (`/zoek-personeel`, `PremiumStaffingPopup`). De compacte statistiek-tegels (`350+ / Professionals`) zelf zijn ongewijzigd gelaten, "KVK-geregistreerd" past niet leesbaar in dat kleine tegelformaat.
+- Adres Gasthuisstraat 3.1 → Stationsstraat 2, Lanaken: 4 bestanden (homepage schema.org, contactpagina, privacypagina, footer).
+- Openingstijden (ma-vr 09:00-15:00) toegevoegd: footer, contactpagina, en schema.org `OpeningHoursSpecification` op de homepage `EmploymentAgency`-schema. Bestond nog nergens op de site.
+- E-mailadres (info@chefs-connect.nl, geen .be-variant bestaat in de code) volledig weggehaald uit zichtbare tekst: contactpagina (2x), privacypagina (2x), footer, over-ons, cookies. De achterliggende ontvanger in `lib/form-submit.ts` is bewust ongewijzigd gelaten, dat is waar alle formulieren van de hele site naartoe gaan; verwijderen had ingezonden aanvragen laten verdwijnen.
+- "Commis kok" volledig verwijderd (rol-tegel én functie-dropdown) uit de 2 gedeelde componenten (`CityStaffingPage.tsx`, `CityFreelancerPage.tsx`) plus de 2 legacy pagina's (Maastricht, Eindhoven) die geen gebruik maken van de gedeelde component. De rol-tegel is vervangen door een nieuwe tegel "Altijd DBA-proof" (juridisch getoetste plaatsingen), de dropdown-optie is gewoon verwijderd zonder vervanging.
+- "Sous chef" → "Plaatsvervangend keukenchef": overal, inclusief de FAQ-zin "Wij bemiddelen head chefs, sous chefs..." op ~49 stedenparen (page.tsx + layout.tsx). Bewust NIET aangepast: de biografie van teamlid Robin in `TeamStack.tsx`, die beschrijft zijn eigen, echte carrièregeschiedenis als "sous chef", geen Chefs Connect-functieomschrijving.
+
+**Bijvangst, apart gecorrigeerd op verzoek**: de privacypagina toonde een Nederlands KVK-nummer (95845445) en NL-btw-nummer (NL866528476B01), terwijl eerder onderzoek deze engagement (29 augustus) via een live KVK-check bevestigde dat er geen Nederlandse inschrijving bestaat. Vervangen door het geverifieerde Belgische ondernemingsnummer (BE1017.734.787) als zowel ondernemingsnummer als btw-nummer.
+
+**Nog open, wacht op klant**: de "50+"-stat kon nergens op de site worden gevonden (alleen 150+/250+/350+ bestaan), klant zoekt dit apart na.
+
+**Verificatie**: `npm run build` slaagt (172 statische routes, geen fouten), em-dash-check schoon op alle gewijzigde bestanden, FAQ-tekst steekproefsgewijs programmatisch gecontroleerd op overeenkomst tussen page.tsx en layout.tsx na de sitebrede sous-chef-vervanging, live gecontroleerd in de browser (contactpagina, personeel-groningen, privacypagina).
+
+---
+
 ## Kwartaalcheck op klantverzoek: bevestigt dat contentwerk nog geen return heeft opgeleverd (3 september 2026)
 
 **Aanleiding**: klant vroeg direct om een eerlijke beoordeling van de afgelopen 3 maanden, expliciet gekoppeld aan de €375/maand die betaald wordt. Bron: chefs-connect-14 (.nl-export) en chefs-connect-15 (.be-export), beide "afgelopen 3 maanden" (2 juni t/m 1 september 2026).

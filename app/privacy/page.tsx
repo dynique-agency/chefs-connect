@@ -51,10 +51,9 @@ export default function PrivacyPage() {
               </p>
               <div className="mt-4 p-4 bg-white border border-brown/10">
                 <p className="font-inter text-sm text-brown mb-2"><strong>Bedrijfsnaam:</strong> ChefsConnect</p>
-                <p className="font-inter text-sm text-brown mb-2"><strong>Adres:</strong> Gasthuisstraat 3.1 Lanaken</p>
-                <p className="font-inter text-sm text-brown mb-2"><strong>KVK:</strong> 95845445</p>
-                <p className="font-inter text-sm text-brown mb-2"><strong>BTW:</strong> NL866528476B01</p>
-                <p className="font-inter text-sm text-brown"><strong>E-mail:</strong> info@chefs-connect.nl</p>
+                <p className="font-inter text-sm text-brown mb-2"><strong>Adres:</strong> Stationsstraat 2 Lanaken</p>
+                <p className="font-inter text-sm text-brown mb-2"><strong>Ondernemingsnummer (KBO):</strong> BE1017.734.787</p>
+                <p className="font-inter text-sm text-brown"><strong>BTW-nummer:</strong> BE1017.734.787</p>
               </div>
             </div>
 
@@ -241,9 +240,8 @@ export default function PrivacyPage() {
                   </p>
                   <p className="font-inter text-sm">
                     <strong>ChefsConnect</strong><br />
-                    Gasthuisstraat 3.1 Lanaken<br />
-                    Telefoon: <a href="tel:+31641875803" className="text-gold-accessible underline">+31 6 41875803</a><br />
-                    E-mail: <a href="mailto:info@chefs-connect.nl" className="text-gold-accessible underline">info@chefs-connect.nl</a>
+                    Stationsstraat 2 Lanaken<br />
+                    Telefoon: <a href="tel:+31641875803" className="text-gold-accessible underline">+31 6 41875803</a>
                   </p>
                 </div>
               </div>

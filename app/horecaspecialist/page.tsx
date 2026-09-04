@@ -600,7 +600,7 @@ export default function HorecaSpecialistPage() {
                     id="function"
                     name="function"
                     required
-                    placeholder="Bijv. Chef-kok, Sous chef, etc."
+                    placeholder="Bijv. Chef-kok, Plaatsvervangend keukenchef, etc."
                     className="w-full px-4 py-3 bg-white border border-brown/20 focus:border-gold focus:outline-none transition-colors font-inter text-brown"
                   />
                 </div>

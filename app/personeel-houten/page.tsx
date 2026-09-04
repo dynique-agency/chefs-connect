@@ -8,7 +8,7 @@ export default function PersoneelHoutenPage() {
       city="Houten"
       regionLabel="Houten en de regio Utrecht"
       heroAccent="in Houten?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Houten als horecagemeente"
       contextHeadingLead="Een gemeente die"
       contextHeadingAccent="meegroeit met Utrecht"
@@ -31,7 +31,7 @@ export default function PersoneelHoutenPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Houten?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Houten.' },
-        { question: 'Welke koks kunnen jullie leveren in Houten?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Houten.' },
+        { question: 'Welke koks kunnen jullie leveren in Houten?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Houten.' },
         { question: 'Is Chefs Connect ook actief buiten Houten?', answer: 'Ja, wij plaatsen ook in de bredere regio Utrecht.' },
       ]}
     />

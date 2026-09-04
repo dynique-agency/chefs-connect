@@ -215,7 +215,7 @@ export default function PremiumStaffingPopup({ showAfterMs = 3000 }: PremiumStaf
                   Elke service zonder de juiste mensen kost je{' '}
                   <span className="text-cream/75 font-medium">omzet en reputatie</span>.
                   {' '}Ons netwerk van{' '}
-                  <span className="text-gold font-medium">350+ horecaprofessionals</span>{' '}
+                  <span className="text-gold font-medium">350+ KVK-geregistreerde horecaprofessionals</span>{' '}
                   staat klaar. Wij schakelen vandaag nog.
                 </motion.p>
 

@@ -8,7 +8,7 @@ export default function PersoneelWeertPage() {
       city="Weert"
       regionLabel="Weert en Midden-Limburg"
       heroAccent="in Weert?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau, van de vaste horeca in Weert tot bedrijfscatering in de logistieke regio eromheen. Snel geregeld, goed gescreend."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau, van de vaste horeca in Weert tot bedrijfscatering in de logistieke regio eromheen. Snel geregeld, goed gescreend."
       contextEyebrow="Weert als horecastad"
       contextHeadingLead="Een stad met een"
       contextHeadingAccent="eigen, stabiel ritme"
@@ -17,7 +17,7 @@ export default function PersoneelWeertPage() {
         'De streek rond Weert leunt sterk op landbouw en logistiek, met bedrijven en bedrijventerreinen die zorgen voor een gestage stroom aan zakelijke lunches, bedrijfsfeesten en catering naast de reguliere horeca in het centrum.',
         'Door de ligging vlak bij de Belgische grens werkt Weert ook regelmatig samen over de grens heen. Wij zijn actief in Weert en de bredere regio Midden-Limburg, van Roermond tot Nederweert.',
       ]}
-      whyHeadingLead="Wij leveren mensen"
+      whyHeadingLead="Wij verbinden je met mensen"
       whyHeadingAccent="waar je op kunt bouwen"
       whyParagraphs={[
         'Onze achtergrond zit in de keuken zelf. Meer dan 30 jaar ervaring als head chef in verschillende concepten. Dat betekent dat wij niet alleen een cv beoordelen maar weten wat iemand waard is als de druk oploopt.',
@@ -33,7 +33,7 @@ export default function PersoneelWeertPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Weert?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Weert en de regio Midden-Limburg.' },
-        { question: 'Welke koks kunnen jullie leveren in de regio Weert?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en bedrijfscatering in en rond Weert.' },
+        { question: 'Welke koks kunnen jullie leveren in de regio Weert?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en bedrijfscatering in en rond Weert.' },
         { question: 'Is Chefs Connect ook actief buiten Weert in Limburg?', answer: 'Ja, wij plaatsen ook in Roermond en de bredere regio Midden-Limburg.' },
       ]}
     />

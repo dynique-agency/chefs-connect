@@ -8,7 +8,7 @@ export default function PersoneelSittardGeleenPage() {
       city="Sittard-Geleen"
       regionLabel="Sittard-Geleen en Zuid-Limburg"
       heroAccent="in Sittard-Geleen?"
-      heroSubtext="Van de statige horeca in het historische centrum van Sittard tot bedrijfscatering rond Chemelot: wij leveren ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Van de statige horeca in het historische centrum van Sittard tot bedrijfscatering rond Chemelot: wij verbinden je met ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Sittard-Geleen als horecagemeente"
       contextHeadingLead="Eén gemeente met"
       contextHeadingAccent="het karakter van twee steden"
@@ -33,7 +33,7 @@ export default function PersoneelSittardGeleenPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Sittard-Geleen?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Sittard-Geleen en de regio Zuid-Limburg.' },
-        { question: 'Welke koks kunnen jullie leveren in de regio Sittard-Geleen?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en bedrijfscatering in en rond Sittard-Geleen.' },
+        { question: 'Welke koks kunnen jullie leveren in de regio Sittard-Geleen?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en bedrijfscatering in en rond Sittard-Geleen.' },
         { question: 'Is Chefs Connect ook actief buiten Sittard-Geleen in Limburg?', answer: 'Ja, wij plaatsen ook in Maastricht, Heerlen en de bredere regio Zuid-Limburg.' },
       ]}
     />

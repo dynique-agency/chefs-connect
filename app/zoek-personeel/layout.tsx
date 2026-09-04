@@ -3,12 +3,12 @@ import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Koks & Bediening Inhuren',
-  description: 'Koks en bediening inhuren voor uw horecazaak? Chefs Connect levert freelance professionals snel en zonder gedoe, met gegarandeerde kwaliteit in NL & BE.',
+  description: 'Op zoek naar koks en bediening? Chefs Connect verbindt freelance professionals snel en zonder gedoe aan uw horecazaak, met gegarandeerde kwaliteit in NL & BE.',
   keywords: ['koks inhuren', 'tijdelijk horeca personeel inhuren', 'freelance kok gezocht', 'extra bediening inhuren', 'spoed chef kok', 'flexibel horeca personeel'],
   alternates: pageAlternates('https://chefs-connect.nl/zoek-personeel'),
   openGraph: {
     title: 'Freelance Koks & Bediening Inhuren | Chefs Connect',
-    description: 'Koks en bediening inhuren voor uw horecazaak? Chefs Connect levert freelance professionals snel en zonder gedoe, met gegarandeerde kwaliteit in NL & BE.',
+    description: 'Op zoek naar koks en bediening? Chefs Connect verbindt freelance professionals snel en zonder gedoe aan uw horecazaak, met gegarandeerde kwaliteit in NL & BE.',
     url: siteUrl('https://chefs-connect.nl/zoek-personeel'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
@@ -40,7 +40,7 @@ const faqSchema = {
       name: 'Welke functies bemiddelen jullie?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks, bedieningsmedewerkers, leidinggevenden bediening en complete keuken- of bedieningsteams voor zowel korte als langere periodes.',
+        text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks, bedieningsmedewerkers, leidinggevenden bediening en complete keuken- of bedieningsteams voor zowel korte als langere periodes.',
       },
     },
     {

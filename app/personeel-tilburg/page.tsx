@@ -8,7 +8,7 @@ export default function PersoneelTilburgPage() {
       city="Tilburg"
       regionLabel="Tilburg en Midden-Brabant"
       heroAccent="in Tilburg?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Tilburg als horecastad"
       contextHeadingLead="Een stad die haar eigen smaak"
       contextHeadingAccent="heeft ontdekt"
@@ -32,7 +32,7 @@ export default function PersoneelTilburgPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Tilburg?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Tilburg en de regio Midden-Brabant.' },
-        { question: 'Welke koks kunnen jullie leveren in Tilburg?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Tilburg.' },
+        { question: 'Welke koks kunnen jullie leveren in Tilburg?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Tilburg.' },
         { question: 'Is Chefs Connect ook actief buiten Tilburg in Midden-Brabant?', answer: 'Ja, wij plaatsen ook in Waalwijk, Oisterwijk en de bredere regio Midden-Brabant, en zijn daarnaast actief in Eindhoven en Den Bosch.' },
       ]}
     />

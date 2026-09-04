@@ -420,7 +420,7 @@ export default function MaastrichtPage() {
                   >
                     <option value="">Selecteer je functie</option>
                     <option value="Head chef">Head chef</option>
-                    <option value="Sous chef">Sous chef</option>
+                    <option value="Plaatsvervangend keukenchef">Plaatsvervangend keukenchef</option>
                     <option value="Zelfstandig werkend kok">Zelfstandig werkend kok</option>
                     <option value="Bedieningsmedewerker">Bedieningsmedewerker</option>
                     <option value="Leidinggevende bediening">Leidinggevende bediening</option>

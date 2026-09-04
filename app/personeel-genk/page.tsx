@@ -8,7 +8,7 @@ export default function PersoneelGenkPage() {
       city="Genk"
       regionLabel="Genk en Belgisch Limburg"
       heroAccent="in Genk?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau in Genk en de rest van Belgisch Limburg. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau in Genk en de rest van Belgisch Limburg. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Genk als horecastad"
       contextHeadingLead="Van mijnstad tot"
       contextHeadingAccent="groene stad"
@@ -32,7 +32,7 @@ export default function PersoneelGenkPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Genk?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Genk.' },
-        { question: 'Welke koks kunnen jullie leveren in Genk?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Genk.' },
+        { question: 'Welke koks kunnen jullie leveren in Genk?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Genk.' },
         { question: 'Is Chefs Connect ook actief buiten Genk in Limburg?', answer: 'Ja, wij plaatsen ook in Hasselt en de bredere regio Belgisch Limburg.' },
       ]}
     />

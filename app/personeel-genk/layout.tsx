@@ -3,12 +3,12 @@ import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Freelance Kok Inhuren in Genk',
-  description: 'Op zoek naar keukenpersoneel in Genk? Wij leveren snel een ervaren freelance kok voor Genk en de rest van Belgisch Limburg.',
+  description: 'Op zoek naar keukenpersoneel in Genk? Wij verbinden je snel met een ervaren freelance kok voor Genk en de rest van Belgisch Limburg.',
   keywords: ['freelance kok genk', 'kok inhuren genk', 'horecapersoneel genk', 'tijdelijke kok genk', 'spoed kok genk', 'keukenpersoneel genk'],
   alternates: pageAlternates('https://chefs-connect.nl/personeel-genk'),
   openGraph: {
     title: 'Freelance Kok Inhuren in Genk | Chefs Connect',
-    description: 'Op zoek naar keukenpersoneel in Genk? Wij leveren snel een ervaren freelance kok voor Genk en de rest van Belgisch Limburg.',
+    description: 'Op zoek naar keukenpersoneel in Genk? Wij verbinden je snel met een ervaren freelance kok voor Genk en de rest van Belgisch Limburg.',
     url: siteUrl('https://chefs-connect.nl/personeel-genk'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },
@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'Welke koks kunnen jullie leveren in Genk?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Genk.',
+        text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Genk.',
       },
     },
     {

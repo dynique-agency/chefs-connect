@@ -3,12 +3,12 @@ import { pageAlternates, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Neem Direct Contact Op',
-  description: 'Klaar om uw keukenbrigade te versterken of een exclusief evenement te plannen? Neem contact op met Chefs Connect voor een vrijblijvende kennismaking.',
+  description: 'Klaar om uw keukenbrigade te verbinden met de juiste professionals, of een exclusief evenement te plannen? Neem contact op met Chefs Connect.',
   keywords: ['contact chefs connect', 'horeca personeel aanvragen', 'catering offerte aanvragen', 'freelance kok boeken'],
   alternates: pageAlternates('https://chefs-connect.nl/contact'),
   openGraph: {
     title: 'Contact | Chefs Connect',
-    description: 'Klaar om uw keukenbrigade te versterken of een exclusief evenement te plannen? Neem contact op met Chefs Connect voor een vrijblijvende kennismaking.',
+    description: 'Klaar om uw keukenbrigade te verbinden met de juiste professionals, of een exclusief evenement te plannen? Neem contact op met Chefs Connect.',
     url: siteUrl('https://chefs-connect.nl/contact'),
     images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: 'Chefs Connect - Premium Horeca Professionals' }],
   },

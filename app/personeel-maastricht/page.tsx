@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   },
   {
     question: 'Welke koks kunnen jullie leveren in de regio Maastricht?',
-    answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in en rond Maastricht.',
+    answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in en rond Maastricht.',
   },
   {
     question: 'Is Chefs Connect ook actief buiten Maastricht in Limburg?',
@@ -119,7 +119,7 @@ export default function PersoneelMaastrichtPage() {
             transition={{ duration: 1, delay: 0.4 }}
             className="font-inter text-lg md:text-xl text-cream/85 max-w-2xl mx-auto leading-relaxed mb-10"
           >
-            Wij leveren ervaren freelance koks op alle niveaus. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals je dat wil.
+            Wij verbinden je met ervaren freelance koks op alle niveaus. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals je dat wil.
           </motion.p>
 
           <motion.a
@@ -197,7 +197,7 @@ export default function PersoneelMaastrichtPage() {
             className="text-center mb-16"
           >
             <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">
-              Wat wij leveren
+              Waarmee wij verbinden
             </span>
             <h2 className="font-playfair text-4xl md:text-5xl font-light text-cream mb-6">
               Koks op elk niveau
@@ -214,7 +214,7 @@ export default function PersoneelMaastrichtPage() {
                 description: 'Iemand die de keuken overneemt en direct zijn eigen stempel zet. Voor als het écht moet kloppen.',
               },
               {
-                title: 'Sous chef',
+                title: 'Plaatsvervangend keukenchef',
                 description: 'De rechterhand die structuur houdt in je brigade. Stabiel, ervaren en gewend aan druk.',
               },
               {
@@ -222,8 +222,8 @@ export default function PersoneelMaastrichtPage() {
                 description: 'Kan zelfstandig een sectie draaien zonder dat je hem of haar elk uur hoeft te begeleiden.',
               },
               {
-                title: 'Commis kok',
-                description: 'Extra handen op de verkeerde moment kunnen het verschil maken. Wij leveren ze snel.',
+                title: 'Altijd DBA-proof',
+                description: 'Elke plaatsing is juridisch getoetst en voldoet aan de regels rond zelfstandig ondernemerschap. Geen risico voor jou.',
               },
               {
                 title: 'Complete keukenbrigade',
@@ -467,10 +467,8 @@ export default function PersoneelMaastrichtPage() {
                 >
                   <option value="">Selecteer een functie</option>
                   <option value="Head chef">Head chef</option>
-                  <option value="Sous chef">Sous chef</option>
-                  <option value="Zelfstandig werkend kok">Zelfstandig werkend kok</option>
-                  <option value="Commis kok">Commis kok</option>
-                  <option value="Complete keukenbrigade">Complete keukenbrigade</option>
+                  <option value="Plaatsvervangend keukenchef">Plaatsvervangend keukenchef</option>
+                  <option value="Zelfstandig werkend kok">Zelfstandig werkend kok</option>                  <option value="Complete keukenbrigade">Complete keukenbrigade</option>
                   <option value="Anders">Anders</option>
                 </select>
               </div>

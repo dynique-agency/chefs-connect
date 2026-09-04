@@ -8,7 +8,7 @@ export default function PersoneelHelmondPage() {
       city="Helmond"
       regionLabel="Helmond en de Brainportregio"
       heroAccent="in Helmond?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Helmond als horecastad"
       contextHeadingLead="Een stad in"
       contextHeadingAccent="volle transformatie"
@@ -33,7 +33,7 @@ export default function PersoneelHelmondPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Helmond?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Helmond.' },
-        { question: 'Welke koks kunnen jullie leveren in Helmond?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Helmond.' },
+        { question: 'Welke koks kunnen jullie leveren in Helmond?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Helmond.' },
         { question: 'Is Chefs Connect ook actief in Eindhoven?', answer: 'Ja, gezien de korte afstand plaatsen wij regelmatig personeel in zowel Helmond als Eindhoven.' },
       ]}
     />

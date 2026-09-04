@@ -8,7 +8,7 @@ export default function PersoneelAalstPage() {
       city="Aalst"
       regionLabel="Aalst en Oost-Vlaanderen"
       heroAccent="in Aalst?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau in Aalst, van een gewone doordeweekse service tot de drukte rond carnaval. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau in Aalst, van een gewone doordeweekse service tot de drukte rond carnaval. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Aalst als horecastad"
       contextHeadingLead="De carnavalsstad"
       contextHeadingAccent="met een eigen keuken"
@@ -32,7 +32,7 @@ export default function PersoneelAalstPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Aalst?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Aalst.' },
-        { question: 'Welke koks kunnen jullie leveren in Aalst?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Aalst.' },
+        { question: 'Welke koks kunnen jullie leveren in Aalst?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Aalst.' },
         { question: 'Is Chefs Connect ook actief buiten Aalst?', answer: 'Ja, wij plaatsen ook in Gent, Brussel en de bredere regio Oost-Vlaanderen.' },
       ]}
     />

@@ -8,7 +8,7 @@ export default function PersoneelVlissingenPage() {
       city="Vlissingen"
       regionLabel="Vlissingen en Walcheren"
       heroAccent="in Vlissingen?"
-      heroSubtext="Van strandpaviljoens op de Boulevard tot zakelijke catering rond de scheepswerven: wij leveren ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Van strandpaviljoens op de Boulevard tot zakelijke catering rond de scheepswerven: wij verbinden je met ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend, zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Vlissingen als horecastad"
       contextHeadingLead="Een stad met"
       contextHeadingAccent="zout in de lucht"
@@ -32,7 +32,7 @@ export default function PersoneelVlissingenPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Vlissingen?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Vlissingen en de regio Walcheren.' },
-        { question: 'Welke koks kunnen jullie leveren in Vlissingen?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en strandpaviljoens in Vlissingen.' },
+        { question: 'Welke koks kunnen jullie leveren in Vlissingen?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en strandpaviljoens in Vlissingen.' },
         { question: 'Is Chefs Connect ook actief buiten Vlissingen?', answer: 'Ja, wij plaatsen ook in Middelburg, Goes en de bredere regio Walcheren en Zeeland.' },
       ]}
     />

@@ -62,7 +62,7 @@ const WHY_CARDS = [
   { icon: ChefHat, label: 'Eerlijk en transparant', desc: 'Duidelijke afspraken vooraf, geen verrassingen achteraf.' },
 ];
 
-const DEFAULT_FUNCTIONS = ['Head chef', 'Sous chef', 'Chef de partie', 'Zelfstandig werkend kok', 'Commis kok', 'Bedieningsmedewerker', 'Anders'];
+const DEFAULT_FUNCTIONS = ['Head chef', 'Plaatsvervangend keukenchef', 'Chef de partie', 'Zelfstandig werkend kok', 'Bedieningsmedewerker', 'Anders'];
 
 const STATS = [
   { value: '350+', label: 'Professionals' },

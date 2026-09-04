@@ -8,7 +8,7 @@ export default function PersoneelWaalwijkPage() {
       city="Waalwijk"
       regionLabel="Waalwijk en Midden-Brabant"
       heroAccent="in Waalwijk?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau. Snel geregeld, goed gescreend. Zodat jij je keuken kunt draaien zoals het hoort."
       contextEyebrow="Waalwijk als horecagemeente"
       contextHeadingLead="Bekend om schoenen,"
       contextHeadingAccent="en meer dan dat"
@@ -32,7 +32,7 @@ export default function PersoneelWaalwijkPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Waalwijk?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Waalwijk en de regio Midden-Brabant.' },
-        { question: 'Welke koks kunnen jullie leveren in Waalwijk?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Waalwijk.' },
+        { question: 'Welke koks kunnen jullie leveren in Waalwijk?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Waalwijk.' },
         { question: 'Is Chefs Connect ook actief buiten Waalwijk?', answer: 'Ja, wij plaatsen ook in Tilburg en de bredere regio Midden-Brabant.' },
       ]}
     />

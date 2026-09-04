@@ -50,7 +50,7 @@ const faqSchema = {
       name: 'Welke koks kunnen jullie leveren in de regio Kerkrade?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, zalen en evenementenlocaties in en rond Kerkrade, ook tijdens grote evenementen zoals het World Music Contest.',
+        text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, zalen en evenementenlocaties in en rond Kerkrade, ook tijdens grote evenementen zoals het World Music Contest.',
       },
     },
     {

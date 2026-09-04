@@ -8,7 +8,7 @@ export default function PersoneelBestPage() {
       city="Best"
       regionLabel="Best en de Brainportregio"
       heroAccent="in Best?"
-      heroSubtext="Wij leveren ervaren freelance koks op elk niveau, voor de horeca in Best en het zakelijke Brainport-netwerk eromheen. Snel geregeld, goed gescreend."
+      heroSubtext="Wij verbinden je met ervaren freelance koks op elk niveau, voor de horeca in Best en het zakelijke Brainport-netwerk eromheen. Snel geregeld, goed gescreend."
       contextEyebrow="Best als horecastad"
       contextHeadingLead="Een compacte stad"
       contextHeadingAccent="met een zakelijk hart"
@@ -32,7 +32,7 @@ export default function PersoneelBestPage() {
       ]}
       faq={[
         { question: 'Hoe snel kan Chefs Connect een kok leveren in Best?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Best en de Brainportregio.' },
-        { question: 'Welke koks kunnen jullie leveren in Best?', answer: 'Wij bemiddelen head chefs, sous chefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, bedrijfscatering en evenementenlocaties in Best.' },
+        { question: 'Welke koks kunnen jullie leveren in Best?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, bedrijfscatering en evenementenlocaties in Best.' },
         { question: 'Is Chefs Connect ook actief buiten Best?', answer: 'Ja, wij plaatsen ook in Eindhoven, Helmond en Tilburg, de bredere regio rond Best.' },
       ]}
     />
