@@ -10,10 +10,10 @@ Bijgewerkt: 31 augustus 2026 (18 nieuwe URL's toegevoegd voor 6 nieuwe steden in
 
 **Google**: geen automatische route, dit moet je zelf per URL doen via Search Console (zie stappen onderaan). Dit is waar de lijst hieronder voor is.
 
-Voortgang .nl: alles t/m `vacature-bediening-heerlen` en `/limburg` is geïndexeerd, plus de volledige triplet voor Roermond, de personeel-pagina's van Weert, Kerkrade, Amsterdam, Rotterdam, Den Haag, Mechelen en Kortrijk, en nu ook de vacature-kok/vacature-bediening-varianten van Weert, Kerkrade, Amsterdam en Rotterdam. Volgende stap: Den Haag (vacature-kok/vacature-bediening), daarna Leuven.
-Voortgang .be: `/limburg` is geïndexeerd, de rest nog niet gestart.
+Voortgang .nl: alles t/m `vacature-bediening-heerlen` en `/limburg` is geïndexeerd, plus de volledige triplet voor Roermond, de personeel-pagina's van Weert, Kerkrade, Amsterdam, Rotterdam, Den Haag, Mechelen, Kortrijk en Genk, de vacature-kok/vacature-bediening-varianten van Weert, Kerkrade, Amsterdam en Rotterdam, en nu ook de personeel-pagina's van Middelburg, Vlissingen, Goes, Valkenburg, Echt, Best, Terneuzen, Domburg en Renesse. Volgende stap: Den Haag (vacature-kok/vacature-bediening), daarna Leuven.
+Voortgang .be: `/limburg` is geïndexeerd, plus nu `vacature-bediening-renesse`, de rest nog niet gestart.
 
-## .nl (52 resterend)
+## .nl (42 resterend)
 
 - [ ] https://chefs-connect.nl/vacature-kok-den-haag
 - [ ] https://chefs-connect.nl/vacature-bediening-den-haag
@@ -33,42 +33,32 @@ Voortgang .be: `/limburg` is geïndexeerd, de rest nog niet gestart.
 - [ ] https://chefs-connect.nl/personeel-sint-niklaas
 - [ ] https://chefs-connect.nl/vacature-kok-sint-niklaas
 - [ ] https://chefs-connect.nl/vacature-bediening-sint-niklaas
-- [ ] https://chefs-connect.nl/personeel-genk
 - [ ] https://chefs-connect.nl/vacature-kok-genk
 - [ ] https://chefs-connect.nl/vacature-bediening-genk
 - [ ] https://chefs-connect.nl/zeeland
-- [ ] https://chefs-connect.nl/personeel-middelburg
 - [ ] https://chefs-connect.nl/vacature-kok-middelburg
 - [ ] https://chefs-connect.nl/vacature-bediening-middelburg
-- [ ] https://chefs-connect.nl/personeel-vlissingen
 - [ ] https://chefs-connect.nl/vacature-kok-vlissingen
 - [ ] https://chefs-connect.nl/vacature-bediening-vlissingen
-- [ ] https://chefs-connect.nl/personeel-goes
 - [ ] https://chefs-connect.nl/vacature-kok-goes
 - [ ] https://chefs-connect.nl/vacature-bediening-goes
 - [ ] https://chefs-connect.nl/personeel-groningen
 - [ ] https://chefs-connect.nl/vacature-kok-groningen
 - [ ] https://chefs-connect.nl/vacature-bediening-groningen
-- [ ] https://chefs-connect.nl/personeel-valkenburg
 - [ ] https://chefs-connect.nl/vacature-kok-valkenburg
 - [ ] https://chefs-connect.nl/vacature-bediening-valkenburg
-- [ ] https://chefs-connect.nl/personeel-echt
 - [ ] https://chefs-connect.nl/vacature-kok-echt
 - [ ] https://chefs-connect.nl/vacature-bediening-echt
-- [ ] https://chefs-connect.nl/personeel-best
 - [ ] https://chefs-connect.nl/vacature-kok-best
 - [ ] https://chefs-connect.nl/vacature-bediening-best
-- [ ] https://chefs-connect.nl/personeel-terneuzen
 - [ ] https://chefs-connect.nl/vacature-kok-terneuzen
 - [ ] https://chefs-connect.nl/vacature-bediening-terneuzen
-- [ ] https://chefs-connect.nl/personeel-domburg
 - [ ] https://chefs-connect.nl/vacature-kok-domburg
 - [ ] https://chefs-connect.nl/vacature-bediening-domburg
-- [ ] https://chefs-connect.nl/personeel-renesse
 - [ ] https://chefs-connect.nl/vacature-kok-renesse
 - [ ] https://chefs-connect.nl/vacature-bediening-renesse
 
-## .be (84 resterend)
+## .be (83 resterend)
 
 - [ ] https://chefs-connect.be/personeel-oss
 - [ ] https://chefs-connect.be/vacature-kok-oss
@@ -153,7 +143,6 @@ Voortgang .be: `/limburg` is geïndexeerd, de rest nog niet gestart.
 - [ ] https://chefs-connect.be/vacature-bediening-domburg
 - [ ] https://chefs-connect.be/personeel-renesse
 - [ ] https://chefs-connect.be/vacature-kok-renesse
-- [ ] https://chefs-connect.be/vacature-bediening-renesse
 
 ## Hoe dien je een URL in bij Google Search Console
 

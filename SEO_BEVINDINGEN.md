@@ -6,6 +6,26 @@ Andere trackers in deze map: [CONVERSIE_STRATEGIE.md](CONVERSIE_STRATEGIE.md) (c
 
 ---
 
+## Kwartaalcheck op klantverzoek: bevestigt dat contentwerk nog geen return heeft opgeleverd (3 september 2026)
+
+**Aanleiding**: klant vroeg direct om een eerlijke beoordeling van de afgelopen 3 maanden, expliciet gekoppeld aan de €375/maand die betaald wordt. Bron: chefs-connect-14 (.nl-export) en chefs-connect-15 (.be-export), beide "afgelopen 3 maanden" (2 juni t/m 1 september 2026).
+
+**Kernmeting, niet-merk-klikken (de enige eerlijke maat voor organisch bereik)**: 10 klikken op 5.095 vertoningen in 3 maanden op .nl (waarvan zo'n 5 pure ruis: "graag", "who is the boss", "kok"). Op .be: 1 klik op 85 vertoningen. Merk-klikken (chefs connect/chefsconnect/chef connect/chefconnect): 342 van de 568 totale .nl-klikken zijn met zekerheid te classificeren als merk, de rest van de 568 zit in een GSC-anonimiseringsbucket zonder querytekst, vermoedelijk grotendeels ook merkvarianten gezien het patroon.
+
+**Zichtbaarheid is er wel, ranking niet**: hoge vertoningsvolumes op precies de juiste termen ("kok aan huis maastricht" 330 vert., "kok aan huis nijmegen" 284, "vacature kok nijmegen" 172, "kok zuid-limburg" 151, "private dining nijmegen" 143), allemaal 0 klikken door posities 24-67. Bevestigt de 26 augustus-diagnose: geen content/targeting-probleem, een autoriteitsprobleem.
+
+**Trend is schijngroei**: klikken/vertoningen stijgen maand op maand (juni 150/1.461, juli 178/2.766, augustus 231/3.783), maar CTR daalt gelijktijdig (10,3% → 6,4% → 6,1%). Groei komt van meer lange-staart-vertoningen op slechte posities, niet van betere rankings.
+
+**De 30 nieuwe pagina's van deze sessie (Zeeland/Groningen/Valkenburg/Echt/Best/Terneuzen/Domburg/Renesse, 3 kennisbank-artikelen)**: vrijwel nog niet in GSC te zien (1 vertoning, 0 klikken totaal, op `/kennisbank/tips-freelance-bediening`). Verwacht en normaal gezien de leeftijd, te vroeg om te beoordelen, over 4-8 weken opnieuw meten.
+
+**.be-canonical-herstel (fix van 9 juli, zie eerdere bevinding "0a")**: nog steeds nagenoeg dood, 0 klikken werd 1 klik. Bij het volgende kwartaalmoment (eind september/begin oktober) is de fix dan 11-12 weken oud, aan het einde van het verwachte hersteltraject. Als er dan nog geen beweging is, moet dit als apart probleem opnieuw onderzocht worden, niet langer wegschrijven als "nog aan het herstellen".
+
+**Conclusie, eerlijk aan de klant gecommuniceerd**: contentwerk (deze sessie en de kwartalen ervoor) heeft nog geen meetbare niet-merk-vindbaarheid opgeleverd. Bevestigt, versterkt zelfs, de koerswijziging van 26 augustus naar backlinks als hoofdprioriteit. Op het moment van deze check staat backlink-uitvoering nog vroeg (1 directoryvermelding live: Gouden Gids BE, de rest van de kandidatenlijst grotendeels nog open), dus dit kwartaal is bewijs dat de pivot nodig was, niet dat hij al resultaat heeft gehad.
+
+- **Status**: analyse afgerond en direct met klant gedeeld. Vervolgstap: backlink-uitvoering versnellen (Federgon-lidmaatschap, Qwoted-profiel afmaken, Horeca Webservice-pitch, Knab-pitch, resterende directories), en over 4-8 weken zowel de nieuwe pagina's als .be-herstel opnieuw meten.
+
+---
+
 ## Regionale dekking Limburg, Noord-Brabant en Zeeland volledig gemaakt (31 augustus 2026)
 
 **Aanleiding**: expliciet klantverzoek om alle genoemde steden in Limburg, Noord-Brabant en Zeeland te dekken: Sittard, Kerkrade, Valkenburg, Echt, Roermond, Weert, Venlo, Tilburg, Breda, Eindhoven, Roosendaal, Waalwijk, Oss, Helmond, Best, Terneuzen, Vlissingen, Middelburg, Domburg, Goes, Renesse.
