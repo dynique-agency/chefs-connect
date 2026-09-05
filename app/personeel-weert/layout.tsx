@@ -39,7 +39,7 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Hoe snel kan Chefs Connect een kok leveren in Weert?',
+      name: 'Hoe snel kan Chefs Connect een kok voorstellen in Weert?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Weert en de regio Midden-Limburg.',
@@ -47,7 +47,7 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Welke koks kunnen jullie leveren in de regio Weert?',
+      name: 'Welke koks kunnen jullie voorstellen in de regio Weert?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en bedrijfscatering in en rond Weert.',

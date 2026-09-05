@@ -39,7 +39,7 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Hoe snel kan Chefs Connect een kok leveren in Kerkrade?',
+      name: 'Hoe snel kan Chefs Connect een kok voorstellen in Kerkrade?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Kerkrade en de regio Parkstad.',
@@ -47,7 +47,7 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Welke koks kunnen jullie leveren in de regio Kerkrade?',
+      name: 'Welke koks kunnen jullie voorstellen in de regio Kerkrade?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, zalen en evenementenlocaties in en rond Kerkrade, ook tijdens grote evenementen zoals het World Music Contest.',

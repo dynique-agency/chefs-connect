@@ -32,8 +32,8 @@ export default function PersoneelRoermondPage() {
         { href: '/zoek-personeel', label: "Alle regio's" },
       ]}
       faq={[
-        { question: 'Hoe snel kan Chefs Connect een kok leveren in Roermond?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Roermond en de regio Midden-Limburg.' },
-        { question: 'Welke koks kunnen jullie leveren in de regio Roermond?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in en rond Roermond, ook tijdens drukke periodes rond het outletcentrum.' },
+        { question: 'Hoe snel kan Chefs Connect een kok voorstellen in Roermond?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Roermond en de regio Midden-Limburg.' },
+        { question: 'Welke koks kunnen jullie voorstellen in de regio Roermond?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in en rond Roermond, ook tijdens drukke periodes rond het outletcentrum.' },
         { question: 'Is Chefs Connect ook actief buiten Roermond in Limburg?', answer: 'Ja, wij plaatsen ook in Weert en de bredere regio Midden-Limburg.' },
       ]}
     />

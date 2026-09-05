@@ -221,7 +221,7 @@ export default function PremiumFreelancerPopup({ showAfterMs = 4000 }: PremiumFr
                   Schrijf je in en krijg toegang tot{' '}
                   <span className="text-gold font-medium">kwalitatieve horeca-opdrachten</span>{' '}
                   die passen bij jouw niveau en agenda.{' '}
-                  <span className="text-cream/75 font-medium">Persoonlijke begeleiding</span>{' '}
+                  <span className="text-cream/75 font-medium">Persoonlijk contact</span>{' '}
                   inbegrepen.
                 </motion.p>
 

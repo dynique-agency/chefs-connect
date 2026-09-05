@@ -39,7 +39,7 @@ const faqSchema = {
       name: 'Wat verdien ik als freelancer via Chefs Connect?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Tarieven zijn afhankelijk van jouw functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn transparant over wat je kunt verwachten. Dit bespreken wij tijdens het kennismakingsgesprek.',
+        text: 'Tarieven worden bepaald door de opdrachtgever. Jij kunt dit vervolgens accepteren, weigeren of een tegenvoorstel doen. Jij bent en blijft de ondernemer.',
       },
     },
     {

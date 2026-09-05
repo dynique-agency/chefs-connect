@@ -31,8 +31,8 @@ export default function PersoneelRenessePage() {
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[
-        { question: 'Hoe snel kan Chefs Connect een kok leveren in Renesse?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Renesse en de regio Schouwen-Duiveland, ook op korte termijn in het hoogseizoen.' },
-        { question: 'Welke koks kunnen jullie leveren in Renesse?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, strandpaviljoens en horecazaken in Renesse.' },
+        { question: 'Hoe snel kan Chefs Connect een kok voorstellen in Renesse?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Renesse en de regio Schouwen-Duiveland, ook op korte termijn in het hoogseizoen.' },
+        { question: 'Welke koks kunnen jullie voorstellen in Renesse?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, strandpaviljoens en horecazaken in Renesse.' },
         { question: 'Is Chefs Connect ook actief buiten Renesse?', answer: 'Ja, wij plaatsen ook in Goes, Middelburg en de bredere regio Zeeland.' },
       ]}
     />

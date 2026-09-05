@@ -79,7 +79,7 @@ export default function OverOnsPage() {
                   Wat begon als een netwerk in Limburg, is uitgegroeid tot een premium platform dat actief is in heel Nederland en België.
                 </p>
                 <p className="text-brown/80 text-lg leading-loose">
-                  Met meer dan 350 freelance chefs en hospitality professionals, en ruim 50 vaste samenwerkingen met restaurants, hotels en cateraars.
+                  Met meer dan 350 freelance chefs en hospitality professionals, en meer dan 350 horecazaken waarmee we samenwerken, waaronder restaurants, hotels en cateraars.
                 </p>
               </div>
             </div>

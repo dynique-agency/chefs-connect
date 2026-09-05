@@ -101,7 +101,7 @@ export default function ZoekPersoneelPage() {
               <div className="h-px bg-gold/30 w-32" />
               
               <h1 className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-brown leading-[1.1]">
-                Koks en bediening <span className="text-gold italic">verbinden</span>
+                Wij connecten <span className="text-gold italic">koks en bedieningsmedewerkers</span>
               </h1>
 
               <div className="space-y-6 font-inter text-base md:text-lg text-brown-medium leading-relaxed max-w-xl">
@@ -114,7 +114,7 @@ export default function ZoekPersoneelPage() {
                   Bij Chefs Connect regelen we dat voor je.
                 </p>
                 <p>
-                  Wij bemiddelen <span className="font-semibold text-brown">chefs en bedieningsmedewerkers</span> op alle niveaus en kunnen zowel individuele professionals als complete horecateams leveren voor korte én lange periodes.
+                  Wij bemiddelen <span className="font-semibold text-brown">chefs en bedieningsmedewerkers</span> op alle niveaus en kunnen zowel individuele professionals als complete horecateams voorstellen voor korte én lange periodes.
                 </p>
               </div>
             </motion.div>
@@ -211,7 +211,7 @@ export default function ZoekPersoneelPage() {
             <div className="bg-cream/5 backdrop-blur-sm border border-cream/10 p-8 flex flex-col justify-center">
               <ChefHat className="w-16 h-16 text-gold mb-6" />
               <p className="font-inter text-lg text-cream/90 leading-relaxed">
-                Of het nu gaat om <span className="text-gold font-semibold">ziekte, seizoensdrukte, een nieuw concept</span> of <span className="text-gold font-semibold">structurele versterking</span>, wij schakelen snel en doeltreffend.
+                Of het nu gaat om <span className="text-gold font-semibold">ziekte, seizoensdrukte</span> of <span className="text-gold font-semibold">een nieuw concept</span>, wij schakelen snel en doeltreffend.
               </p>
             </div>
           </motion.div>
@@ -222,7 +222,7 @@ export default function ZoekPersoneelPage() {
       <section className="py-10 px-6 bg-gold">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
-            <p className="font-playfair text-xl md:text-2xl text-brown italic">Direct personeel nodig?</p>
+            <p className="font-playfair text-xl md:text-2xl text-brown italic">Direct een horecaprofessional nodig?</p>
             <p className="font-inter text-sm text-brown/70 mt-1">Wij schakelen vaak binnen 24 uur.</p>
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-3">
@@ -267,7 +267,7 @@ export default function ZoekPersoneelPage() {
               <div className="bg-brown/5 border border-brown/10 p-8 mb-8">
                 <h3 className="font-playfair text-2xl text-brown mb-6">Wat ons onderscheidt?</h3>
                 <p className="font-inter text-base text-brown-medium leading-relaxed mb-6">
-                  Wij hebben zelf meer dan <span className="font-semibold text-gold">30 jaar ervaring</span> als head chef in verschillende keukens. Wij kennen de druk van de service, de uitdagingen van planning en het belang van een sterk team.
+                  Wij hebben zelf meer dan <span className="font-semibold text-gold">30 jaar ervaring</span> als head chef in verschillende keukens. Wij kennen de druk van de service, de dynamiek van een goede keuken en het belang van een sterk team.
                 </p>
                 
                 <div className="space-y-3">
@@ -326,7 +326,7 @@ export default function ZoekPersoneelPage() {
             <h2 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-light text-cream mb-8">
               Complete ontzorging
               <br />
-              <span className="text-gold italic">van planning tot contracten</span>
+              <span className="text-gold italic">altijd DBA-proof</span>
             </h2>
             <p className="font-inter text-xl text-cream/80 max-w-3xl mx-auto leading-relaxed mb-4">
               Wanneer je denkt <span className="font-semibold text-gold whitespace-nowrap">"ik zoek horeca-freelancers"</span>, zoek je eigenlijk vooral <span className="font-semibold text-gold">rust</span>.
@@ -345,8 +345,8 @@ export default function ZoekPersoneelPage() {
           >
             {[
               'Selectie en screening',
-              'Planning en inzet',
-              'Contracten en administratie',
+              'Elk profiel op de juiste plaats',
+              'Samenwerkingsovereenkomsten',
               'Heldere en transparante afspraken',
               'Duidelijke communicatie'
             ].map((item, index) => (
@@ -405,7 +405,7 @@ export default function ZoekPersoneelPage() {
           >
             {[
               'Flexibele inzet voor korte periodes',
-              'Langdurige plaatsingen',
+              'Langdurige plaatsingen, DBA-proof geregeld',
               'Volledig samengestelde teams',
               'Ondersteuning bij opstart of reorganisatie'
             ].map((item, index) => (
@@ -430,7 +430,7 @@ export default function ZoekPersoneelPage() {
             transition={{ duration: 0.8 }}
             className="font-inter text-xl text-brown-medium text-center leading-relaxed"
           >
-            Zo ben je voorbereid op <span className="font-semibold text-gold">piekmomenten</span> én bouw je aan <span className="font-semibold text-gold">stabiliteit</span> op lange termijn.
+            Zo ben je voorbereid op <span className="font-semibold text-gold">piekmomenten</span> én bouw je aan <span className="font-semibold text-gold">stabiliteit</span>.
           </motion.p>
         </div>
       </section>

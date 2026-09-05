@@ -31,8 +31,8 @@ export default function PersoneelBergenOpZoomPage() {
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[
-        { question: 'Hoe snel kan Chefs Connect een kok leveren in Bergen op Zoom?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Bergen op Zoom en de regio West-Brabant.' },
-        { question: 'Welke koks kunnen jullie leveren in Bergen op Zoom?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in de historische binnenstad van Bergen op Zoom en daarbuiten.' },
+        { question: 'Hoe snel kan Chefs Connect een kok voorstellen in Bergen op Zoom?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Bergen op Zoom en de regio West-Brabant.' },
+        { question: 'Welke koks kunnen jullie voorstellen in Bergen op Zoom?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in de historische binnenstad van Bergen op Zoom en daarbuiten.' },
         { question: 'Is Chefs Connect ook actief buiten Bergen op Zoom?', answer: 'Ja, wij plaatsen ook in Roosendaal, Steenbergen en de bredere regio West-Brabant, tot aan de grens met Zeeland.' },
       ]}
     />

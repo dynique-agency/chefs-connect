@@ -31,8 +31,8 @@ export default function PersoneelLeuvenPage() {
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[
-        { question: 'Hoe snel kan Chefs Connect een kok leveren in Leuven?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Leuven.' },
-        { question: 'Welke koks kunnen jullie leveren in Leuven?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, cafés en studentenhoreca in Leuven.' },
+        { question: 'Hoe snel kan Chefs Connect een kok voorstellen in Leuven?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Leuven.' },
+        { question: 'Welke koks kunnen jullie voorstellen in Leuven?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, cafés en studentenhoreca in Leuven.' },
         { question: 'Is Chefs Connect ook actief buiten Leuven?', answer: 'Ja, wij plaatsen ook in Brussel, Mechelen en de bredere regio Vlaams-Brabant.' },
       ]}
     />

@@ -41,7 +41,7 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Hoe snel kan Chefs Connect een kok leveren in Waalwijk?',
+      name: 'Hoe snel kan Chefs Connect een kok voorstellen in Waalwijk?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Waalwijk en de regio Midden-Brabant.',
@@ -49,7 +49,7 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Welke koks kunnen jullie leveren in Waalwijk?',
+      name: 'Welke koks kunnen jullie voorstellen in Waalwijk?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Waalwijk.',

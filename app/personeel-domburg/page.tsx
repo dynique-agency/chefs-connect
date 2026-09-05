@@ -31,8 +31,8 @@ export default function PersoneelDomburgPage() {
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[
-        { question: 'Hoe snel kan Chefs Connect een kok leveren in Domburg?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Domburg en de regio Walcheren.' },
-        { question: 'Welke koks kunnen jullie leveren in Domburg?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor hotels, strandtenten en restaurants in Domburg, ook als de zomerdrukte om extra handen vraagt.' },
+        { question: 'Hoe snel kan Chefs Connect een kok voorstellen in Domburg?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Domburg en de regio Walcheren.' },
+        { question: 'Welke koks kunnen jullie voorstellen in Domburg?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor hotels, strandtenten en restaurants in Domburg, ook als de zomerdrukte om extra handen vraagt.' },
         { question: 'Is Chefs Connect ook actief buiten Domburg?', answer: 'Ja, wij plaatsen ook in Middelburg, Vlissingen en de bredere regio Walcheren.' },
       ]}
     />

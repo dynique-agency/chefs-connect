@@ -39,7 +39,7 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Hoe snel kan Chefs Connect een kok leveren in Roermond?',
+      name: 'Hoe snel kan Chefs Connect een kok voorstellen in Roermond?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Roermond en de regio Midden-Limburg.',
@@ -47,7 +47,7 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Welke koks kunnen jullie leveren in de regio Roermond?',
+      name: 'Welke koks kunnen jullie voorstellen in de regio Roermond?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in en rond Roermond, ook tijdens drukke periodes rond het outletcentrum.',

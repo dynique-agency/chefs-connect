@@ -200,7 +200,7 @@ export default function MaastrichtPage() {
               },
               {
                 title: 'Grote evenementen',
-                description: 'Congressen, galadineers en bedrijfsfeesten waarbij planning en uitvoering tot in de puntjes moeten kloppen.',
+                description: 'Congressen, galadineers en bedrijfsfeesten waarbij alles tot in de puntjes moet kloppen.',
               },
               {
                 title: 'Private dining',

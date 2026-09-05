@@ -32,8 +32,8 @@ export default function PersoneelHeerlenPage() {
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[
-        { question: 'Hoe snel kan Chefs Connect een kok leveren in Heerlen?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Heerlen en de Oostelijke Mijnstreek.' },
-        { question: 'Welke koks kunnen jullie leveren in de regio Heerlen?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en zakelijke locaties in en rond Heerlen.' },
+        { question: 'Hoe snel kan Chefs Connect een kok voorstellen in Heerlen?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Heerlen en de Oostelijke Mijnstreek.' },
+        { question: 'Welke koks kunnen jullie voorstellen in de regio Heerlen?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en zakelijke locaties in en rond Heerlen.' },
         { question: 'Is Chefs Connect ook actief buiten Heerlen in Limburg?', answer: 'Ja, wij plaatsen ook in Sittard-Geleen, Maastricht en de bredere regio Zuid-Limburg.' },
       ]}
     />

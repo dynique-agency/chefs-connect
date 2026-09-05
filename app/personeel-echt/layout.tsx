@@ -39,7 +39,7 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Hoe snel kan Chefs Connect een kok leveren in Echt?',
+      name: 'Hoe snel kan Chefs Connect een kok voorstellen in Echt?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Echt en de gemeente Echt-Susteren.',
@@ -47,7 +47,7 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Welke koks kunnen jullie leveren in Echt?',
+      name: 'Welke koks kunnen jullie voorstellen in Echt?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Wij bemiddelen zelfstandig werkende koks, plaatsvervangend keukenchefs en head chefs voor dorpsrestaurants, cafés en feestlocaties in en rond Echt, ook voor grotere gelegenheden zoals bruiloften en jubilea.',

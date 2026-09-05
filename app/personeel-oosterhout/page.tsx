@@ -30,8 +30,8 @@ export default function PersoneelOosterhoutPage() {
         { href: '/personeel-tilburg', label: 'Kok verbinden Tilburg' },
       ]}
       faq={[
-        { question: 'Hoe snel kan Chefs Connect een kok leveren in Oosterhout?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Oosterhout en de regio West-Brabant.' },
-        { question: 'Welke koks kunnen jullie leveren in Oosterhout?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Oosterhout.' },
+        { question: 'Hoe snel kan Chefs Connect een kok voorstellen in Oosterhout?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Oosterhout en de regio West-Brabant.' },
+        { question: 'Welke koks kunnen jullie voorstellen in Oosterhout?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Oosterhout.' },
         { question: 'Is Chefs Connect ook actief buiten Oosterhout?', answer: 'Ja, wij plaatsen ook in Breda en de bredere regio West-Brabant.' },
       ]}
     />

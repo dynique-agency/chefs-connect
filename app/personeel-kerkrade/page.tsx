@@ -32,8 +32,8 @@ export default function PersoneelKerkradePage() {
         { href: '/zoek-personeel', label: "Alle regio's" },
       ]}
       faq={[
-        { question: 'Hoe snel kan Chefs Connect een kok leveren in Kerkrade?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Kerkrade en de regio Parkstad.' },
-        { question: 'Welke koks kunnen jullie leveren in de regio Kerkrade?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, zalen en evenementenlocaties in en rond Kerkrade, ook tijdens grote evenementen zoals het World Music Contest.' },
+        { question: 'Hoe snel kan Chefs Connect een kok voorstellen in Kerkrade?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Kerkrade en de regio Parkstad.' },
+        { question: 'Welke koks kunnen jullie voorstellen in de regio Kerkrade?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, zalen en evenementenlocaties in en rond Kerkrade, ook tijdens grote evenementen zoals het World Music Contest.' },
         { question: 'Is Chefs Connect ook actief buiten Kerkrade in Limburg?', answer: 'Ja, wij plaatsen ook in Maastricht, Heerlen en de bredere regio Zuid-Limburg.' },
       ]}
     />

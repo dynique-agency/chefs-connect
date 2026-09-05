@@ -50,7 +50,7 @@ export interface CityFreelancerContent {
 const OPPORTUNITIES = [
   { title: 'Fine dining restaurants', description: 'Toplocaties waar vakmanschap centraal staat en gasten komen voor de ervaring.' },
   { title: 'Boetiekhotels', description: 'Hotels met karakter en een eigen identiteit, waar persoonlijke service het verschil maakt.' },
-  { title: 'Grote evenementen', description: 'Congressen, galadiners en bedrijfsfeesten waarbij planning en uitvoering tot in de puntjes kloppen.' },
+  { title: 'Grote evenementen', description: 'Congressen, galadiners en bedrijfsfeesten waarbij alles tot in de puntjes klopt.' },
   { title: 'Private dining', description: 'Exclusieve diners op bijzondere locaties, van een kasteel tot een privéplek.' },
   { title: "Brasseries en bistro's", description: 'Hoog tempo, een bredere doelgroep en ruimte voor persoonlijkheid achter het fornuis.' },
   { title: 'Bruiloften en feesten', description: 'Avonden die gasten bijblijven, waar de service net zo belangrijk is als het eten.' },

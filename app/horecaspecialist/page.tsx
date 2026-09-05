@@ -205,7 +205,7 @@ export default function HorecaSpecialistPage() {
             <div className="bg-cream/5 backdrop-blur-sm border border-cream/10 p-8 flex flex-col justify-center">
               <Calendar className="w-16 h-16 text-gold mb-6" />
               <p className="font-inter text-lg text-cream/90 leading-relaxed">
-                Of je nu <span className="text-gold font-semibold">extra opdrachten zoekt</span>, seizoenswerk wilt draaien of <span className="text-gold font-semibold">langdurige freelance samenwerkingen</span> ambieert, wij helpen je aan de juiste match.
+                Of je nu <span className="text-gold font-semibold">extra opdrachten zoekt</span>, seizoenswerk wilt draaien of <span className="text-gold font-semibold">een nieuwe samenwerking</span> ambieert, wij helpen je aan de juiste match.
               </p>
             </div>
           </motion.div>
@@ -436,9 +436,9 @@ export default function HorecaSpecialistPage() {
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
                   'Geen verrassingen',
-                  'Duidelijke planning',
+                  'Heldere afspraken',
                   'Snelle terugkoppeling',
-                  'Goede en eerlijke tarieven'
+                  'Tarief accepteren of zelf een tarief bepalen'
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0" />
@@ -478,11 +478,11 @@ export default function HorecaSpecialistPage() {
             {[
               'Groot netwerk van kwalitatieve opdrachtgevers',
               'Continue stroom van freelance opdrachten',
-              'Persoonlijke begeleiding',
+              'Bij ons ben jij een echte ondernemer',
               'Transparante werkwijze',
-              'Professioneel planningssysteem',
+              'Jij plant jezelf in',
               'Snelle plaatsingen',
-              'Focus op langdurige samenwerkingen'
+              'Top samenwerkingen'
             ].map((item, index) => (
               <motion.div
                 key={item}
@@ -505,7 +505,7 @@ export default function HorecaSpecialistPage() {
             transition={{ duration: 0.8 }}
             className="font-inter text-xl text-cream/90 text-center leading-relaxed"
           >
-            Wij helpen je niet alleen aan opdrachten, wij helpen je bouwen aan een <span className="font-semibold text-gold">stabiele en succesvolle freelance carrière</span> in de horeca.
+            Wij helpen je niet alleen aan een opdracht, we zorgen dat je als zelfstandig ondernemer <span className="font-semibold text-gold">relevante opdrachten blijft vinden</span> in de horeca.
           </motion.p>
         </div>
       </section>
@@ -756,7 +756,7 @@ export default function HorecaSpecialistPage() {
           },
           {
             question: 'Wat verdien ik als freelancer via Chefs Connect?',
-            answer: 'Tarieven zijn afhankelijk van jouw functie, ervaring en de opdracht. Wij werken met marktconforme tarieven en zijn transparant over wat je kunt verwachten. Dit bespreken wij tijdens het kennismakingsgesprek.',
+            answer: 'Tarieven worden bepaald door de opdrachtgever. Jij kunt dit vervolgens accepteren, weigeren of een tegenvoorstel doen. Jij bent en blijft de ondernemer.',
           },
           {
             question: 'Hoe snel krijg ik mijn eerste opdracht?',

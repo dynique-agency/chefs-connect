@@ -12,11 +12,11 @@ import FaqSection from '@/components/ui/FaqSection';
 
 const FAQ_ITEMS = [
   {
-    question: 'Hoe snel kan Chefs Connect een kok leveren in Eindhoven?',
+    question: 'Hoe snel kan Chefs Connect een kok voorstellen in Eindhoven?',
     answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Eindhoven en de regio Noord-Brabant.',
   },
   {
-    question: 'Welke koks kunnen jullie leveren in Eindhoven?',
+    question: 'Welke koks kunnen jullie voorstellen in Eindhoven?',
     answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Eindhoven.',
   },
   {

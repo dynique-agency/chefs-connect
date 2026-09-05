@@ -31,8 +31,8 @@ export default function PersoneelBruggePage() {
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[
-        { question: 'Hoe snel kan Chefs Connect een kok leveren in Brugge?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Brugge.' },
-        { question: 'Welke koks kunnen jullie leveren in Brugge?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor sterrenzaken, restaurants en hotels in Brugge.' },
+        { question: 'Hoe snel kan Chefs Connect een kok voorstellen in Brugge?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Brugge.' },
+        { question: 'Welke koks kunnen jullie voorstellen in Brugge?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor sterrenzaken, restaurants en hotels in Brugge.' },
         { question: 'Is Chefs Connect ook actief buiten Brugge?', answer: 'Ja, wij plaatsen ook in Gent, Brussel en de bredere regio West-Vlaanderen.' },
       ]}
     />

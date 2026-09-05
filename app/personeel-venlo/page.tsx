@@ -32,8 +32,8 @@ export default function PersoneelVenloPage() {
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[
-        { question: 'Hoe snel kan Chefs Connect een kok leveren in Venlo?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Venlo.' },
-        { question: 'Welke koks kunnen jullie leveren in Venlo?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Venlo.' },
+        { question: 'Hoe snel kan Chefs Connect een kok voorstellen in Venlo?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Venlo.' },
+        { question: 'Welke koks kunnen jullie voorstellen in Venlo?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Venlo.' },
         { question: 'Is Chefs Connect ook actief buiten Venlo in Limburg?', answer: 'Ja, wij plaatsen ook in Maastricht en de bredere regio Limburg.' },
       ]}
     />

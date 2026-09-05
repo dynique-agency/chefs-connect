@@ -31,8 +31,8 @@ export default function PersoneelGoesPage() {
         { href: '/zoek-personeel', label: 'Alle regio’s' },
       ]}
       faq={[
-        { question: 'Hoe snel kan Chefs Connect een kok leveren in Goes?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Goes en de regio Zuid-Beveland.' },
-        { question: 'Welke koks kunnen jullie leveren in Goes?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Goes.' },
+        { question: 'Hoe snel kan Chefs Connect een kok voorstellen in Goes?', answer: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Goes en de regio Zuid-Beveland.' },
+        { question: 'Welke koks kunnen jullie voorstellen in Goes?', answer: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in Goes.' },
         { question: 'Is Chefs Connect ook actief buiten Goes?', answer: 'Ja, wij plaatsen ook in Middelburg, Vlissingen en de bredere regio Zuid-Beveland en Walcheren.' },
       ]}
     />

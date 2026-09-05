@@ -7,9 +7,9 @@ const services = [
   'Menu-ontwikkeling op maat',
   'Professionele chefs en gastvrij serviceteam',
   'Styling en presentatie',
-  'Strakke planning',
+  'Vlekkeloze uitvoering',
   'Opbouw en afhandeling',
-  'Persoonlijke begeleiding',
+  'Persoonlijk aanspreekpunt',
 ];
 
 export default function CarefreeSection() {

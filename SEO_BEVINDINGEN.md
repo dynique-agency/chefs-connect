@@ -6,6 +6,27 @@ Andere trackers in deze map: [CONVERSIE_STRATEGIE.md](CONVERSIE_STRATEGIE.md) (c
 
 ---
 
+## DBA-check ronde 3: live feedback-sessie op de website + brede deepscan op "leveren"/"planning"/"begeleiding" (3 september 2026)
+
+**Aanleiding**: klant liep live door de site (mobiele screenshots) en stuurde tientallen losse correcties na elkaar op taal die nog naar schijnzelfstandigheid kon wijzen, vooral op `/zoek-personeel` en `/horecaspecialist`. Alles stuk voor stuk verwerkt zoals binnenkwam.
+
+**Belangrijkste wijzigingen**:
+- H1 zoek-personeel: "Koks en bediening verbinden" → "Wij connecten koks en bedieningsmedewerkers" (klant wil "connecten" i.p.v. "verbinden" voor nieuwe copy, verwijzend naar de merknaam Chefs Connect zelf; bestaande "verbinden"-teksten uit eerdere rondes zijn NIET met terugwerkende kracht aangepast, dat zou een aparte, grote herschrijving zijn)
+- "Planning" en "contracten" als woorden zijn nu expliciet verboden, overal vervangen door neutralere termen: "Contracten en administratie" → "Samenwerkingsovereenkomsten", "Professioneel planningssysteem" → "Jij plant jezelf in", "Duidelijke planning" → "Heldere afspraken"
+- Tarief-framing omgedraaid naar opdrachtgever-bepaalt / freelancer-beslist: "Goede en eerlijke tarieven" → "Tarief accepteren of zelf een tarief bepalen", FAQ "Wat verdien ik als freelancer?" volledig herschreven (opdrachtgever bepaalt tarief, jij accepteert/weigert/doet tegenvoorstel, jij bent de ondernemer)
+- "Langdurig(e)" en "vaste" als duurzaamheids-framing zoveel mogelijk verwijderd of expliciet gekoppeld aan DBA-proof: "Langdurige plaatsingen" → "Langdurige plaatsingen, DBA-proof geregeld", "ruim 50 vaste samenwerkingen" → "meer dan 350 horecazaken waarmee we samenwerken"
+- "Persoonlijke begeleiding" (impliceert supervisie/afhankelijkheid) vervangen door ondernemerschap-taal: "Bij ons ben jij een echte ondernemer", "Persoonlijk contact", "Persoonlijk aanspreekpunt"
+- **Grootste bevinding van de deepscan**: de FAQ-vraag "Hoe snel kan Chefs Connect een kok leveren in {stad}?" en "Welke koks kunnen jullie leveren in {stad}?" stond nog letterlijk op praktisch elke personeel-{stad}-pagina (92 treffers, gemist in de vorige DBA-ronde omdat toen alleen de FAQ-antwoorden zijn gecheckt, niet de vragen zelf). Sitebreed vervangen door "voorstellen".
+- "Uitdagingen van planning", "Strakke planning" (evenementenpagina) en "planning en uitvoering tot in de puntjes" (2 plekken) ook herschreven, ook al was de context hier client-facing (evenementlogistiek) in plaats van freelancer-aansturing, voor volledige consistentie met de strenge lijn van vandaag.
+
+**Bewust ongewijzigd gelaten (geen DBA-relevantie)**: "planning" in TeamStack.tsx (Marcels echte functietitel "Horeca Planner" en zijn eigen citaat), "sous chef" in Robins bio (zijn eigen carrièregeschiedenis), "leveren" in juridische/logistieke context zonder personeelsbetekenis (algemene voorwaarden, "product aanleveren", "niet inleveren op kwaliteit"), citaten in echte klantreviews (Reviews.tsx, niet zelf te herschrijven).
+
+**Nog openstaand**: cateringpartner-pagina ("vaste samenwerking", "aansturen van een keukenbrigade") is nog niet aangepast, hangt af van een feit dat nog niet is bevestigd: werken de chefs van Connect Events & Dining daar in loondienst (dan is dit geen DBA-kwestie) of ook als zzp'er.
+
+**Verificatie**: `npm run build` slaagt, em-dash-check schoon over de volledige `app/` en `components/` boom.
+
+---
+
 ## DBA-check ronde 2: strenge deepscan op schijnzelfstandigheid, "inhuren" uit alle zichtbare tekst (3 september 2026)
 
 **Aanleiding**: klant vroeg om een strenge, volledige deepscan op alles wat op schijnzelfstandigheid kan duiden, los van de eerste ronde (leveren/versterken/sous chef/commis kok, zie hierboven bij "DBA-proof gemaakt"). Eerst gerapporteerd, daarna op klantverzoek volledig doorgevoerd.

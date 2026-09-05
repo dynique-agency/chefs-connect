@@ -256,7 +256,7 @@ export default function ContactPage() {
                     <div>
                       <p className="font-inter text-xs uppercase tracking-wider text-brown/60 mb-1">Openingstijden</p>
                       <p className="font-inter text-base text-brown">
-                        Ma t/m vr: 09:00 - 15:00
+                        Ma t/m vr: 09:00 - 17:30
                       </p>
                     </div>
                   </div>

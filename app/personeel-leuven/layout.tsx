@@ -39,12 +39,12 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Hoe snel kan Chefs Connect een kok leveren in Leuven?',
+      name: 'Hoe snel kan Chefs Connect een kok voorstellen in Leuven?',
       acceptedAnswer: { '@type': 'Answer', text: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Leuven.' },
     },
     {
       '@type': 'Question',
-      name: 'Welke koks kunnen jullie leveren in Leuven?',
+      name: 'Welke koks kunnen jullie voorstellen in Leuven?',
       acceptedAnswer: { '@type': 'Answer', text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, cafés en studentenhoreca in Leuven.' },
     },
     {

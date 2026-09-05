@@ -39,7 +39,7 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Hoe snel kan Chefs Connect een kok leveren in Bergen op Zoom?',
+      name: 'Hoe snel kan Chefs Connect een kok voorstellen in Bergen op Zoom?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'In de meeste gevallen kunnen wij binnen 24 tot 48 uur een passende freelance kok voorstellen voor locaties in Bergen op Zoom en de regio West-Brabant.',
@@ -47,7 +47,7 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Welke koks kunnen jullie leveren in Bergen op Zoom?',
+      name: 'Welke koks kunnen jullie voorstellen in Bergen op Zoom?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Wij bemiddelen head chefs, plaatsvervangend keukenchefs, zelfstandig werkende koks en complete keukenbrigades voor restaurants, hotels en evenementenlocaties in de historische binnenstad van Bergen op Zoom en daarbuiten.',
