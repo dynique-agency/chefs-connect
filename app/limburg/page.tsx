@@ -49,7 +49,7 @@ const FAQ_ITEMS = [
   },
   {
     question: 'Hoe snel kan ik personeel of een opdracht krijgen in Limburg?',
-    answer: 'In de meeste gevallen binnen 24 tot 48 uur een passend voorstel, zowel voor werkgevers als voor freelancers.',
+    answer: 'In de meeste gevallen binnen 24 tot 48 uur een passend voorstel, zowel voor opdrachtgevers als voor freelancers.',
   },
 ];
 
@@ -98,7 +98,7 @@ export default function LimburgPage() {
             transition={{ duration: 1, delay: 0.4 }}
             className="font-inter text-lg md:text-xl text-cream/85 max-w-2xl mx-auto leading-relaxed"
           >
-            Van Maastricht, Valkenburg en Sittard-Geleen tot Heerlen, Kerkrade, Roermond, Weert, Echt en Venlo. Chefs Connect bemiddelt freelance koks en bediening door heel Limburg, voor werkgevers, freelancers en particulieren.
+            Van Maastricht, Valkenburg en Sittard-Geleen tot Heerlen, Kerkrade, Roermond, Weert, Echt en Venlo. Chefs Connect bemiddelt freelance koks en bediening door heel Limburg, voor opdrachtgevers, freelancers en particulieren.
           </motion.p>
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function LimburgPage() {
           >
             <Users className="w-8 h-8 text-gold mx-auto mb-6" />
             <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">
-              Voor werkgevers
+              Voor opdrachtgevers
             </span>
             <h2 className="font-playfair text-4xl md:text-5xl font-light text-cream mb-6">
               Ik zoek personeel

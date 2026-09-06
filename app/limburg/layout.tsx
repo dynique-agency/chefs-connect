@@ -62,7 +62,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'Hoe snel kan ik personeel of een opdracht krijgen in Limburg?',
-      acceptedAnswer: { '@type': 'Answer', text: 'In de meeste gevallen binnen 24 tot 48 uur een passend voorstel, zowel voor werkgevers als voor freelancers.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'In de meeste gevallen binnen 24 tot 48 uur een passend voorstel, zowel voor opdrachtgevers als voor freelancers.' },
     },
   ],
 };

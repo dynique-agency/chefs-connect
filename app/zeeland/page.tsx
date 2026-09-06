@@ -43,7 +43,7 @@ const FAQ_ITEMS = [
   },
   {
     question: 'Hoe snel kan ik personeel of een opdracht krijgen in Zeeland?',
-    answer: 'In de meeste gevallen binnen 24 tot 48 uur een passend voorstel, zowel voor werkgevers als voor freelancers.',
+    answer: 'In de meeste gevallen binnen 24 tot 48 uur een passend voorstel, zowel voor opdrachtgevers als voor freelancers.',
   },
 ];
 
@@ -93,7 +93,7 @@ export default function ZeelandPage() {
             transition={{ duration: 1, delay: 0.4 }}
             className="font-inter text-lg md:text-xl text-cream/85 max-w-2xl mx-auto leading-relaxed"
           >
-            Van Middelburg en Vlissingen tot Terneuzen, Domburg, Goes en Renesse. Chefs Connect bemiddelt freelance koks en bediening door heel Zeeland, voor werkgevers, freelancers en particulieren.
+            Van Middelburg en Vlissingen tot Terneuzen, Domburg, Goes en Renesse. Chefs Connect bemiddelt freelance koks en bediening door heel Zeeland, voor opdrachtgevers, freelancers en particulieren.
           </motion.p>
         </div>
       </section>
@@ -110,7 +110,7 @@ export default function ZeelandPage() {
           >
             <Users className="w-8 h-8 text-gold mx-auto mb-6" />
             <span className="font-inter text-xs uppercase tracking-[0.3em] text-gold block mb-6">
-              Voor werkgevers
+              Voor opdrachtgevers
             </span>
             <h2 className="font-playfair text-4xl md:text-5xl font-light text-cream mb-6">
               Ik zoek personeel

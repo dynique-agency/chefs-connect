@@ -9,7 +9,7 @@ const choices = [
   {
     id: 'recruit',
     title: 'Ik zoek een horeca professional',
-    subtitle: 'Voor Werkgevers',
+    subtitle: 'Voor Opdrachtgevers',
     description: 'Vind de perfecte match voor jouw culinaire team',
     image: '/chef-plating-vertical.png',
     href: '/zoek-personeel',

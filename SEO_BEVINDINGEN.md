@@ -6,6 +6,24 @@ Andere trackers in deze map: [CONVERSIE_STRATEGIE.md](CONVERSIE_STRATEGIE.md) (c
 
 ---
 
+## DBA-check ronde 4: volledige door-en-door deepscan op sterkere werkgeverschap-indicatoren (3 september 2026)
+
+**Aanleiding**: klant vroeg om nog een keer een volledige, strenge scan, na de eerdere 3 rondes (checklist, deepscan-rapport, live feedback-sweep). Dit keer specifiek gezocht op zwaardere juridische termen die nog niet eerder gecontroleerd waren: arbeidsovereenkomst, cao, proeftijd, opzegtermijn, salarisstrook, vakantiedagen, verlof, ziekteverzuim, functioneringsgesprek, instructies, werkgever, ons team.
+
+**Belangrijkste bevinding: "werkgever" als woord is structureel fout, ongeacht context.** "Werkgever" betekent letterlijk "employer", en de site gebruikte dit woord op 7 plekken om de opdrachtgever-doelgroep aan te duiden (secties "Voor Werkgevers" op de homepage, `/limburg` en `/zeeland`, plus FAQ-antwoorden en herotekst). Overal vervangen door "opdrachtgever", de term die al consequent elders op de site wordt gebruikt.
+
+**Wél gevonden, maar bewust NIET aangepast, met reden**:
+- `app/terms/page.tsx`: "Er bestaat geen arbeidsovereenkomst tussen ChefsConnect en de Freelancer" — dit is precies de juiste, expliciete disclaimer, een sterk punt, geen wijziging nodig.
+- `app/terms/page.tsx`: "De Freelancer verwerkt persoonsgegevens uitsluitend conform de AVG en instructies van ChefsConnect" — dit gaat over gegevensverwerking (een verplichte AVG-verwerkersovereenkomst-clausule), niet over het aansturen van kookwerk. Correct en verplicht, geen DBA-risico.
+- Kennisbank-artikel "freelancen-of-vast-in-de-horeca": bevat bewust woorden als "vakantiedagen", "salarisadministratie", "werkgever" en "doorbetaling bij ziekte", maar uitsluitend om het verschil met loondienst uit te leggen aan de lezer. Dit is precies het soort voorlichtende content dat DBA-bewustzijn juist aantoont, geen risico.
+- `vacature-instellingskok/page.tsx`: "Een vaste instellingskok die met verlof of ziek is" beschrijft de eigen, echte vaste medewerker van de OPDRACHTGEVER (de instelling), niet een Chefs Connect-freelancer. Correct gebruik.
+
+**Enige punt dat we niet zelf mogen oplossen, moet naar een jurist**: `app/terms/page.tsx`, regel 252: "Beide partijen kunnen de samenwerking te allen tijde beëindigen met een opzegtermijn van 1 maand." Een wettelijke opzegtermijn van 1 maand is een kenmerk dat traditioneel bij arbeidsovereenkomsten hoort (BW 7:672) en kan, samen met andere factoren, meewegen in een schijnzelfstandigheid-beoordeling. Dit staat in de Algemene Voorwaarden, een formeel juridisch document, dit is bewust niet zelf herschreven, dit hoort door een jurist beoordeeld te worden, niet door copy-aanpassingen.
+
+**Status**: alle overige gecontroleerde categorieën (proeftijd, cao, salarisstrook, ziekmelden, functioneringsgesprek, beoordelingsgesprek, functieomschrijving, rooster, "ons team"/"onze mensen") leverden geen nieuwe risico's op. Vier rondes DBA-taalcorrectie zijn nu afgerond; het enige nog openstaande punt is de opzegtermijn-clausule (jurist) en de eerdere cateringpartner-vraag (loondienst vs. zzp bij Connect Events & Dining, wacht op bevestiging van de klant).
+
+---
+
 ## DBA-check ronde 3: live feedback-sessie op de website + brede deepscan op "leveren"/"planning"/"begeleiding" (3 september 2026)
 
 **Aanleiding**: klant liep live door de site (mobiele screenshots) en stuurde tientallen losse correcties na elkaar op taal die nog naar schijnzelfstandigheid kon wijzen, vooral op `/zoek-personeel` en `/horecaspecialist`. Alles stuk voor stuk verwerkt zoals binnenkwam.
