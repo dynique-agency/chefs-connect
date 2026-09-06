@@ -37,7 +37,7 @@ const links = [
     external: false,
     accent: true,
     image: '/zoek-personeel-hero.png',
-    imageAlt: 'Zoek personeel',
+    imageAlt: 'Personeel verbinden',
   },
   {
     id: 3,

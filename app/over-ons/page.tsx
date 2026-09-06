@@ -169,6 +169,10 @@ export default function OverOnsPage() {
             <a href="tel:+31641875803" className="font-inter text-sm text-cream/60 hover:text-gold transition-colors duration-300">
               +31 6 41875803
             </a>
+            <span className="text-cream/20 hidden sm:block">·</span>
+            <a href="mailto:info@chefs-connect.nl" className="font-inter text-sm text-cream/60 hover:text-gold transition-colors duration-300">
+              info@chefs-connect.nl
+            </a>
           </div>
         </motion.div>
       </section>

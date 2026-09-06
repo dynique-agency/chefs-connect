@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ArrowUp, Phone, MapPin, Clock, Instagram, Facebook } from 'lucide-react';
+import { ArrowUp, Mail, Phone, MapPin, Clock, IdCard, Instagram, Facebook } from 'lucide-react';
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -68,6 +68,13 @@ export default function Footer() {
               </p>
               <div data-nosnippet className="flex flex-col gap-3">
                 <a
+                  href="mailto:info@chefs-connect.nl"
+                  className="flex items-center gap-3 font-inter text-sm text-cream/80 hover:text-gold transition-colors duration-300"
+                >
+                  <Mail className="w-4 h-4" />
+                  <span>info@chefs-connect.nl</span>
+                </a>
+                <a
                   href="tel:+31641875803"
                   className="flex items-center gap-3 font-inter text-sm text-cream/80 hover:text-gold transition-colors duration-300"
                 >
@@ -81,6 +88,10 @@ export default function Footer() {
                 <div className="flex items-center gap-3 font-inter text-sm text-cream/80">
                   <Clock className="w-4 h-4" />
                   <span>Ma t/m vr: 09:00 - 17:30</span>
+                </div>
+                <div className="flex items-center gap-3 font-inter text-sm text-cream/80">
+                  <IdCard className="w-4 h-4" />
+                  <span>Ondernemingsnummer: BE1017.734.787</span>
                 </div>
               </div>
               <div className="flex items-center gap-4 mt-6">
@@ -121,7 +132,7 @@ export default function Footer() {
                   href="/zoek-personeel"
                   className="font-inter text-sm text-cream/70 hover:text-gold transition-colors duration-300"
                 >
-                  Zoek Personeel
+                  Personeel Verbinden
                 </Link>
                 <Link
                   href="/horecaspecialist"

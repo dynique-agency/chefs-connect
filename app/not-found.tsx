@@ -41,7 +41,7 @@ export default function NotFound() {
 
         <div className="mt-16 grid grid-cols-3 gap-4 max-w-sm mx-auto">
           <Link href="/zoek-personeel" className="font-inter text-xs text-brown-medium hover:text-gold transition-colors duration-300 uppercase tracking-wider">
-            Zoek personeel
+            Personeel verbinden
           </Link>
           <Link href="/evenementen" className="font-inter text-xs text-brown-medium hover:text-gold transition-colors duration-300 uppercase tracking-wider">
             Evenementen

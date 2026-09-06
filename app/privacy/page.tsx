@@ -47,13 +47,14 @@ export default function PrivacyPage() {
                 <span className="text-gold">1.</span> Wie zijn wij?
               </h2>
               <p className="font-inter text-brown/80 leading-relaxed">
-                ChefsConnect is een arbeidsbemiddelingsbureau gespecialiseerd in de horecasector. Wij brengen werkgevers en zelfstandige professionals met elkaar in contact.
+                ChefsConnect is een arbeidsbemiddelingsbureau gespecialiseerd in de horecasector. Wij brengen opdrachtgevers en zelfstandige professionals met elkaar in contact.
               </p>
               <div className="mt-4 p-4 bg-white border border-brown/10">
                 <p className="font-inter text-sm text-brown mb-2"><strong>Bedrijfsnaam:</strong> ChefsConnect</p>
                 <p className="font-inter text-sm text-brown mb-2"><strong>Adres:</strong> Stationsstraat 2 Lanaken</p>
                 <p className="font-inter text-sm text-brown mb-2"><strong>Ondernemingsnummer (KBO):</strong> BE1017.734.787</p>
-                <p className="font-inter text-sm text-brown"><strong>BTW-nummer:</strong> BE1017.734.787</p>
+                <p className="font-inter text-sm text-brown mb-2"><strong>BTW-nummer:</strong> BE1017.734.787</p>
+                <p className="font-inter text-sm text-brown"><strong>E-mail:</strong> info@chefs-connect.nl</p>
               </div>
             </div>
 
@@ -241,7 +242,8 @@ export default function PrivacyPage() {
                   <p className="font-inter text-sm">
                     <strong>ChefsConnect</strong><br />
                     Stationsstraat 2 Lanaken<br />
-                    Telefoon: <a href="tel:+31641875803" className="text-gold-accessible underline">+31 6 41875803</a>
+                    Telefoon: <a href="tel:+31641875803" className="text-gold-accessible underline">+31 6 41875803</a><br />
+                    E-mail: <a href="mailto:info@chefs-connect.nl" className="text-gold-accessible underline">info@chefs-connect.nl</a>
                   </p>
                 </div>
               </div>
