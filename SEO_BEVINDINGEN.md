@@ -13,8 +13,8 @@ Andere trackers in deze map: [CONVERSIE_STRATEGIE.md](CONVERSIE_STRATEGIE.md) (c
 **Belangrijkste bevinding: "werkgever" als woord is structureel fout, ongeacht context.** "Werkgever" betekent letterlijk "employer", en de site gebruikte dit woord op 7 plekken om de opdrachtgever-doelgroep aan te duiden (secties "Voor Werkgevers" op de homepage, `/limburg` en `/zeeland`, plus FAQ-antwoorden en herotekst). Overal vervangen door "opdrachtgever", de term die al consequent elders op de site wordt gebruikt.
 
 **Wél gevonden, maar bewust NIET aangepast, met reden**:
-- `app/terms/page.tsx`: "Er bestaat geen arbeidsovereenkomst tussen ChefsConnect en de Freelancer" — dit is precies de juiste, expliciete disclaimer, een sterk punt, geen wijziging nodig.
-- `app/terms/page.tsx`: "De Freelancer verwerkt persoonsgegevens uitsluitend conform de AVG en instructies van ChefsConnect" — dit gaat over gegevensverwerking (een verplichte AVG-verwerkersovereenkomst-clausule), niet over het aansturen van kookwerk. Correct en verplicht, geen DBA-risico.
+- `app/terms/page.tsx`: "Er bestaat geen arbeidsovereenkomst tussen ChefsConnect en de Freelancer", dit is precies de juiste, expliciete disclaimer, een sterk punt, geen wijziging nodig.
+- `app/terms/page.tsx`: "De Freelancer verwerkt persoonsgegevens uitsluitend conform de AVG en instructies van ChefsConnect", dit gaat over gegevensverwerking (een verplichte AVG-verwerkersovereenkomst-clausule), niet over het aansturen van kookwerk. Correct en verplicht, geen DBA-risico.
 - Kennisbank-artikel "freelancen-of-vast-in-de-horeca": bevat bewust woorden als "vakantiedagen", "salarisadministratie", "werkgever" en "doorbetaling bij ziekte", maar uitsluitend om het verschil met loondienst uit te leggen aan de lezer. Dit is precies het soort voorlichtende content dat DBA-bewustzijn juist aantoont, geen risico.
 - `vacature-instellingskok/page.tsx`: "Een vaste instellingskok die met verlof of ziek is" beschrijft de eigen, echte vaste medewerker van de OPDRACHTGEVER (de instelling), niet een Chefs Connect-freelancer. Correct gebruik.
 
