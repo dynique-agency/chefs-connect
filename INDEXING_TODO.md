@@ -1,8 +1,10 @@
 # Indexering: nog te doen
 
-Bijgewerkt: 31 augustus 2026 (18 nieuwe URL's toegevoegd voor 6 nieuwe steden in Limburg, Noord-Brabant en Zeeland, op klantverzoek). Bijhouden zodra er weer wat is ingediend in Search Console.
+Bijgewerkt: 7 september 2026 (10 nieuwe URL's toegevoegd: evidence-based nieuwe aanbodpagina's). Bijhouden zodra er weer wat is ingediend in Search Console.
 
-**Nieuw op 31 augustus**: Valkenburg en Echt (Limburg), Best (Noord-Brabant), Terneuzen, Domburg en Renesse (Zeeland) gebouwd, elk personeel + vacature-kok + vacature-bediening, op klantverzoek om Limburg/Noord-Brabant/Zeeland volledig te dekken. `/limburg` en `/zeeland` provinciehubs bijgewerkt met de nieuwe steden.
+**Nieuw op 7 september**: 10 nieuwe pagina's gebouwd na gericht onderzoek naar onbenut zoekvolume: `kok-aan-huis-{stad}` voor Rotterdam, Breda, Den Haag, Amsterdam, Utrecht, Eindhoven en Groningen (7 nieuwe steden naast de bestaande 4), plus 3 nieuwe categorieën: `kok-aan-huis-kerst`, `sommelier-inhuren` en `barman-inhuren`. Alle 10 zijn particuliere of per-evenement boekingen (inherent DBA-veilig) en gebouwd met de DBA-taal uit de eerdere rondes. Zie SEO_BEVINDINGEN.md voor de volledige onderzoeksbasis.
+
+**Eerder, 31 augustus**: Valkenburg en Echt (Limburg), Best (Noord-Brabant), Terneuzen, Domburg en Renesse (Zeeland) gebouwd, elk personeel + vacature-kok + vacature-bediening, op klantverzoek om Limburg/Noord-Brabant/Zeeland volledig te dekken. `/limburg` en `/zeeland` provinciehubs bijgewerkt met de nieuwe steden.
 
 **Eerder, 29 augustus**: Middelburg, Vlissingen en Goes (personeel + vacature-kok + vacature-bediening, plus de provinciehub `/zeeland`) en Groningen (personeel + vacature-kok + vacature-bediening) zijn gebouwd. Zie SEO_BEVINDINGEN.md voor de onderzoeksbasis hiervoor.
 
@@ -13,10 +15,19 @@ Bijgewerkt: 31 augustus 2026 (18 nieuwe URL's toegevoegd voor 6 nieuwe steden in
 Voortgang .nl: alles t/m `vacature-bediening-heerlen` en `/limburg` is geïndexeerd, plus de volledige triplet voor Roermond, de personeel-pagina's van Weert, Kerkrade, Amsterdam, Rotterdam, Den Haag, Mechelen, Kortrijk en Genk, de vacature-kok/vacature-bediening-varianten van Weert, Kerkrade, Amsterdam en Rotterdam, en nu ook de personeel-pagina's van Middelburg, Vlissingen, Goes, Valkenburg, Echt, Best, Terneuzen, Domburg en Renesse. Volgende stap: Den Haag (vacature-kok/vacature-bediening), daarna Leuven.
 Voortgang .be: `/limburg` is geïndexeerd, plus nu `vacature-bediening-renesse`, de rest nog niet gestart.
 
-## .nl (42 resterend)
+## .nl (49 resterend)
 
-- [ ] https://chefs-connect.nl/vacature-kok-den-haag
-- [ ] https://chefs-connect.nl/vacature-bediening-den-haag
+- [ ] https://chefs-connect.nl/kok-aan-huis-rotterdam
+- [ ] https://chefs-connect.nl/kok-aan-huis-breda
+- [ ] https://chefs-connect.nl/kok-aan-huis-den-haag
+- [ ] https://chefs-connect.nl/kok-aan-huis-amsterdam
+- [ ] https://chefs-connect.nl/kok-aan-huis-utrecht
+- [ ] https://chefs-connect.nl/kok-aan-huis-eindhoven
+- [ ] https://chefs-connect.nl/kok-aan-huis-groningen
+- [ ] https://chefs-connect.nl/kok-aan-huis-kerst
+- [ ] https://chefs-connect.nl/sommelier-inhuren
+- [ ] https://chefs-connect.nl/barman-inhuren
+
 - [ ] https://chefs-connect.nl/personeel-leuven
 - [ ] https://chefs-connect.nl/vacature-kok-leuven
 - [ ] https://chefs-connect.nl/vacature-bediening-leuven
@@ -35,7 +46,6 @@ Voortgang .be: `/limburg` is geïndexeerd, plus nu `vacature-bediening-renesse`,
 - [ ] https://chefs-connect.nl/vacature-bediening-sint-niklaas
 - [ ] https://chefs-connect.nl/vacature-kok-genk
 - [ ] https://chefs-connect.nl/vacature-bediening-genk
-- [ ] https://chefs-connect.nl/zeeland
 - [ ] https://chefs-connect.nl/vacature-kok-middelburg
 - [ ] https://chefs-connect.nl/vacature-bediening-middelburg
 - [ ] https://chefs-connect.nl/vacature-kok-vlissingen

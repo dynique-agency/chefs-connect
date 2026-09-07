@@ -6,6 +6,32 @@ Andere trackers in deze map: [CONVERSIE_STRATEGIE.md](CONVERSIE_STRATEGIE.md) (c
 
 ---
 
+## Nieuwe, evidence-based aanbodpagina's: onderzoek en bouw van 10 pagina's (7 september 2026)
+
+**Aanleiding**: klant vroeg om 10 nieuwe pagina's die voor extra aanbod/klanten zorgen, expliciet DBA-proof vanaf het begin. Vooraf eerlijk aangegeven dat het laatste kwartaaloverzicht liet zien dat content niet de bottleneck is (autoriteit wel), maar op verzoek toch grondig onderzocht in plaats van blind gebouwd, met 4 parallelle onderzoekssporen.
+
+**Onderzoeksresultaten**:
+- **Kok-aan-huis (particulier) uitbreiden naar meer steden: sterkste vondst.** Van 11 geteste steden scoren 7 minstens zo sterk als onze zwakste bestaande stad (Maastricht, het ijkpunt): Rotterdam en Breda het sterkst (verschijnen zelfs spontaan in Google's landelijke autocomplete-top-10 voor "chef aan huis"), daarna Den Haag, Amsterdam, Utrecht, Eindhoven, Groningen. Antwerpen zit exact op het niveau van Maastricht (grensgeval, bewust niet meegenomen in deze ronde). Gent, Brussel en Hasselt scoren duidelijk zwakker, niet gebouwd.
+- **Nieuwe categorie: kerstdiner-aan-huis.** Sterk, herhaald autocomplete-signaal voor "kok/chef aan huis kerst", met bevestigde actieve betaalde advertenties van concurrenten (ChefMaison, DinnerByDaan). Verjaardag: te zwak signaal voor een eigen pagina (blijft een bullet op bestaande pagina's). Jubileum, oud-en-nieuw, babyshower/housewarming en rouwcatering: geen signaal, niet gebouwd. Belangrijke controle-bevinding: "catering + gelegenheid" zelf genereert NOOIT autocomplete-signaal (ook niet voor de al bestaande, verkeer-hebbende catering-bruiloft/catering-bedrijfsfeest), dus dat patroon is geen bruikbare test op zichzelf, wel de "kok/chef aan huis + X"-varianten.
+- **Specifieke functiepagina's**: sommelier en barman hebben een echt signaal (zowel "inhuren" als "freelance/vacature", multi-stad), gebouwd als generieke (niet stad-specifieke) evenement-pagina's. Patissier: signaal alleen via "freelance"/"vacature", niet "inhuren", vooral Belgisch, NIET gebouwd deze ronde (kandidaat voor later). Chef de partie: geen freelance-signaal, en de functie is inherent hiërarchisch (werkt onder een souschef in een vaste brigade), dus hoger DBA-risico, afgeraden. Banqueting chef: geen NL/BE-signaal, alleen Engelse/internationale ruis, afgewezen.
+- **Overige provincies/regio's (Overijssel, Gelderland buiten Nijmegen/Arnhem, Drenthe, Friesland, Groningen-ommeland, Flevoland, Waals-Brabant/Luik/Namen/Henegouwen)**: nul werkgeverssignaal over 27 geteste steden (150+ losse autocomplete-calls). Dit spoor is nu definitief afgesloten, geen verdere geografische personeel-{stad}-pagina's te verantwoorden. Zijdelingse bevinding: het kok-aan-huis-patroon (particulier) is wel degelijk aanwezig in bijna al deze steden, een mogelijke toekomstige uitbreiding als de kok-aan-huis-lijn verder wordt doorgetrokken, nu buiten scope gelaten.
+
+**Gebouwd (10 pagina's, alleen .nl, EventLandingPage-component hergebruikt)**:
+1-7. `kok-aan-huis-{stad}` voor Rotterdam, Breda, Den Haag, Amsterdam, Utrecht, Eindhoven, Groningen
+8. `kok-aan-huis-kerst` (nieuwe, landelijke gelegenheid-pagina, geen stad-specifieke pagina)
+9. `sommelier-inhuren` (nieuwe, generieke functie-pagina)
+10. `barman-inhuren` (nieuwe, generieke functie-pagina)
+
+**DBA-positionering**: alle 10 pagina's zijn inherent DBA-veilig, het zijn eenmalige particuliere boekingen (kok-aan-huis) of losse per-evenement opdrachten (sommelier, barman), geen doorlopende personeelsrelatie. Consistent met de rest van de site: "verbinden"/"boeken" als kernwerkwoorden in alle zichtbare tekst (bijvoorbeeld "Wij verbinden u met een ervaren sommelier"), geen "personeel", "inhuren" (behalve in de URL-slug/keywords, puur SEO-veld), "planning" of "contract" in zichtbare copy.
+
+**Uitvoeringsdetail**: 5 van de 10 pagina's (breda, utrecht, kok-aan-huis-kerst, sommelier-inhuren) liepen tijdens de workflow tegen een sessielimiet aan net voor de laatste verificatiestap, maar hadden hun bestanden al correct weggeschreven, op 2 ontbrekende bestanden na (`kok-aan-huis-kerst/layout.tsx` en de volledige `barman-inhuren`-pagina), die vervolgens handmatig zijn afgemaakt volgens exact hetzelfde sjabloon.
+
+**Wiring**: `app/sitemap.ts` (10 nieuwe URL's), `/kok-aan-huis`-hub bijgewerkt met alle 10 nieuwe relatedLinks, `INDEXING_TODO.md` (10 nieuwe URL's, alleen .nl).
+
+**Verificatie**: `npm run build` slaagt (alle 10 routes geprerenderd), em-dash-check schoon op alle 10 pagina's, FAQ-tekst programmatisch gecontroleerd op byte-identiteit tussen page.tsx en layout.tsx voor alle 10 pagina's.
+
+---
+
 ## DBA-check ronde 4: volledige door-en-door deepscan op sterkere werkgeverschap-indicatoren (3 september 2026)
 
 **Aanleiding**: klant vroeg om nog een keer een volledige, strenge scan, na de eerdere 3 rondes (checklist, deepscan-rapport, live feedback-sweep). Dit keer specifiek gezocht op zwaardere juridische termen die nog niet eerder gecontroleerd waren: arbeidsovereenkomst, cao, proeftijd, opzegtermijn, salarisstrook, vakantiedagen, verlof, ziekteverzuim, functioneringsgesprek, instructies, werkgever, ons team.
