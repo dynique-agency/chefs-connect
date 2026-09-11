@@ -7,7 +7,7 @@ import FloatingCTA from '@/components/ui/FloatingCTA';
 import LoadingScreen from '@/components/ui/LoadingScreen';
 import { LazyCustomCursor, LazyCookieBanner } from '@/lib/lazy-components';
 
-const STANDALONE_ROUTES = ['/links'];
+const STANDALONE_ROUTES = ['/links', '/bbb'];
 
 export default function ConditionalShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
