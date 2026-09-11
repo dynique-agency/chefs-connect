@@ -1,9 +1,19 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import Image from 'next/image';
-import { ArrowLeft, ArrowRight, Check, Facebook, Instagram } from 'lucide-react';
+import {
+  ArrowLeft,
+  ArrowRight,
+  Check,
+  ChefHat,
+  Facebook,
+  Instagram,
+  PartyPopper,
+  Sparkles,
+  UtensilsCrossed,
+} from 'lucide-react';
 import { submitToFormSubmit } from '@/lib/form-submit';
 import { submitToSheet } from '@/lib/sheet-submit';
 
@@ -38,9 +48,17 @@ const STEPS: Step[] = [
   },
 ];
 
+const CHOICE_ICONS: Record<string, typeof ChefHat> = {
+  Bediening: UtensilsCrossed,
+  Keuken: ChefHat,
+  'Events en catering': PartyPopper,
+  Anders: Sparkles,
+};
+
 type Values = Record<Step['id'], string>;
 
 const EMPTY_VALUES: Values = { naam: '', restaurant: '', telefoon: '', email: '', interesse: '' };
+const STORAGE_KEY = 'bbb-progress';
 
 function isValidValue(step: Step, value: string): boolean {
   if (step.type === 'choice') return true;
@@ -51,6 +69,16 @@ function isValidValue(step: Step, value: string): boolean {
   return trimmed.length >= 2;
 }
 
+function vibrate(pattern: number | number[]) {
+  if (typeof navigator !== 'undefined' && 'vibrate' in navigator) {
+    try {
+      navigator.vibrate(pattern);
+    } catch {
+      // Best-effort only, plenty of browsers/devices silently ignore this.
+    }
+  }
+}
+
 const EASE = [0.22, 1, 0.36, 1] as const;
 // Fast-in / expo-out pair for the character flip, matched to what two independent
 // Awwwards references (typeform-style reveals, kinetic-typography sites) use for
@@ -58,8 +86,16 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 const FLIP_EXIT_EASE = [0.55, 0, 1, 0.45] as const;
 const FLIP_ENTER_EASE = [0.16, 1, 0.3, 1] as const;
 
-function FlipChars({ text, mode }: { text: string; mode: 'exit' | 'enter' }) {
-  const chars = text.split('').map((c) => (c === ' ' ? ' ' : c));
+function FlipChars({
+  text,
+  mode,
+  reduceMotion,
+}: {
+  text: string;
+  mode: 'exit' | 'enter';
+  reduceMotion: boolean;
+}) {
+  const chars = text.split('').map((c) => (c === ' ' ? ' ' : c));
   return (
     <>
       {chars.map((char, i) =>
@@ -67,8 +103,8 @@ function FlipChars({ text, mode }: { text: string; mode: 'exit' | 'enter' }) {
           <motion.span
             key={i}
             initial={{ opacity: 1, rotateX: 0 }}
-            animate={{ opacity: 0, rotateX: -90 }}
-            transition={{ duration: 0.35, ease: FLIP_EXIT_EASE, delay: i * 0.02 }}
+            animate={{ opacity: 0, rotateX: reduceMotion ? 0 : -90 }}
+            transition={{ duration: reduceMotion ? 0.15 : 0.5, ease: FLIP_EXIT_EASE, delay: reduceMotion ? 0 : i * 0.022 }}
             style={{ display: 'inline-block', transformOrigin: '50% 100%' }}
           >
             {char}
@@ -76,9 +112,9 @@ function FlipChars({ text, mode }: { text: string; mode: 'exit' | 'enter' }) {
         ) : (
           <motion.span
             key={i}
-            initial={{ opacity: 0, rotateX: 90 }}
+            initial={{ opacity: 0, rotateX: reduceMotion ? 0 : 90 }}
             animate={{ opacity: 1, rotateX: 0 }}
-            transition={{ duration: 0.45, ease: FLIP_ENTER_EASE, delay: i * 0.02 }}
+            transition={{ duration: reduceMotion ? 0.15 : 0.6, ease: FLIP_ENTER_EASE, delay: reduceMotion ? 0 : i * 0.022 }}
             style={{ display: 'inline-block', transformOrigin: '50% 100%' }}
           >
             {char}
@@ -89,7 +125,28 @@ function FlipChars({ text, mode }: { text: string; mode: 'exit' | 'enter' }) {
   );
 }
 
-function IntroAnimation({ onComplete }: { onComplete: () => void }) {
+// Whole-headline flip, used on every step change. Deliberately NOT per-character
+// like the intro's FlipChars: a per-letter stagger on a full question sentence
+// would take the same motion signature and turn it into an annoying delay on
+// every single step, instead of a one-time hero moment. This carries the same
+// rotateX flip language through the whole flow at a fixed, fast duration.
+function HeadlineFlip({ text, reduceMotion }: { text: string; reduceMotion: boolean }) {
+  return (
+    <span style={{ perspective: reduceMotion ? undefined : 800, display: 'inline-block' }}>
+      <motion.span
+        key={text}
+        initial={{ opacity: 0, rotateX: reduceMotion ? 0 : 80 }}
+        animate={{ opacity: 1, rotateX: 0 }}
+        transition={{ duration: reduceMotion ? 0.2 : 0.45, ease: FLIP_ENTER_EASE }}
+        style={{ display: 'inline-block', transformOrigin: '50% 100%' }}
+      >
+        {text}
+      </motion.span>
+    </span>
+  );
+}
+
+function IntroAnimation({ onComplete, reduceMotion }: { onComplete: () => void; reduceMotion: boolean }) {
   const [showFirst, setShowFirst] = useState(true);
   const skippedRef = useRef(false);
 
@@ -98,10 +155,25 @@ function IntroAnimation({ onComplete }: { onComplete: () => void }) {
     const wait = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
     async function sequence() {
-      await wait(900);
+      // Reduced motion: skip the theatrics, show the end state briefly, move on.
+      if (reduceMotion) {
+        await wait(500);
+        if (cancelled) return;
+        setShowFirst(false);
+        await wait(400);
+        if (cancelled) return;
+        onComplete();
+        return;
+      }
+
+      // A held beat on "Let's connect" long enough to actually be read, then a
+      // slower, more deliberate flip, then a genuine pause on "ChefsConnect"
+      // before handing off. Previous timings (900ms / ~800ms flip / 700ms) read
+      // as rushed rather than considered, this is a conscious slow-down.
+      await wait(1500);
       if (cancelled) return;
       setShowFirst(false);
-      await wait(450 + 700);
+      await wait(900 + 1100);
       if (cancelled) return;
       onComplete();
     }
@@ -125,45 +197,100 @@ function IntroAnimation({ onComplete }: { onComplete: () => void }) {
       exit={{ opacity: 0, transition: { duration: 0.5, ease: EASE } }}
       onClick={handleSkip}
       role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleSkip();
+        }
+      }}
       aria-label="Sla de intro over"
     >
-      <div className="relative px-6 h-12 flex items-center justify-center" style={{ perspective: 1000 }}>
+      <div className="relative px-6 h-12 flex items-center justify-center" style={{ perspective: reduceMotion ? undefined : 1000 }}>
         {showFirst ? (
           <motion.p
-            initial={{ opacity: 0, scale: 1.08 }}
+            initial={{ opacity: 0, scale: reduceMotion ? 1 : 1.08 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, ease: EASE }}
+            transition={{ duration: reduceMotion ? 0.2 : 0.6, ease: EASE }}
             className="absolute font-playfair italic text-3xl sm:text-4xl text-cream text-center whitespace-nowrap"
           >
-            <FlipChars text="Let's connect" mode="exit" />
+            <FlipChars text="Let's connect" mode="exit" reduceMotion={reduceMotion} />
           </motion.p>
         ) : (
           <p className="absolute font-playfair text-3xl sm:text-4xl text-gold tracking-wide text-center whitespace-nowrap">
-            <FlipChars text="ChefsConnect" mode="enter" />
+            <FlipChars text="ChefsConnect" mode="enter" reduceMotion={reduceMotion} />
           </p>
         )}
       </div>
-      <span className="absolute bottom-10 left-1/2 -translate-x-1/2 font-inter text-[10px] uppercase tracking-[0.2em] text-cream/40">
+      <motion.span
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 font-inter text-[10px] uppercase tracking-[0.2em] text-cream/40"
+        animate={reduceMotion ? {} : { opacity: [0.4, 0.9, 0.4] }}
+        transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+      >
         Tik om over te slaan
-      </span>
+      </motion.span>
     </motion.div>
   );
 }
 
 export default function BbbExperience() {
+  const shouldReduceMotion = useReducedMotion();
+  const reduceMotion = Boolean(shouldReduceMotion);
+
   const [showIntro, setShowIntro] = useState(true);
   const [stepIndex, setStepIndex] = useState(0);
   const [direction, setDirection] = useState(1);
   const [values, setValues] = useState<Values>(EMPTY_VALUES);
   const [touched, setTouched] = useState(false);
+  const [shakeKey, setShakeKey] = useState(0);
   const [phase, setPhase] = useState<'active' | 'submitting' | 'success'>('active');
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [selectedInteresses, setSelectedInteresses] = useState<string[]>([]);
   const [andersText, setAndersText] = useState('');
   const [retryCooldown, setRetryCooldown] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const hydratedRef = useRef(false);
 
   const step = STEPS[stepIndex];
+
+  // Resume where a visitor left off if the tab got backgrounded/locked mid-flow
+  // (very plausible at a noisy trade-fair booth), rather than forcing a restart.
+  useEffect(() => {
+    try {
+      const saved = sessionStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed && typeof parsed === 'object') {
+          if (parsed.values) setValues((v) => ({ ...v, ...parsed.values }));
+          if (Array.isArray(parsed.selectedInteresses)) setSelectedInteresses(parsed.selectedInteresses);
+          if (typeof parsed.andersText === 'string') setAndersText(parsed.andersText);
+          if (typeof parsed.stepIndex === 'number' && parsed.stepIndex > 0 && parsed.stepIndex < STEPS.length) {
+            setStepIndex(parsed.stepIndex);
+          }
+        }
+      }
+    } catch {
+      // Best-effort only.
+    }
+    hydratedRef.current = true;
+  }, []);
+
+  useEffect(() => {
+    if (!hydratedRef.current) return;
+    if (phase === 'success') {
+      try {
+        sessionStorage.removeItem(STORAGE_KEY);
+      } catch {
+        // Best-effort only.
+      }
+      return;
+    }
+    try {
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ values, selectedInteresses, andersText, stepIndex }));
+    } catch {
+      // Best-effort only.
+    }
+  }, [values, selectedInteresses, andersText, stepIndex, phase]);
 
   useEffect(() => {
     if (!showIntro && phase === 'active' && step.type !== 'choice') {
@@ -188,6 +315,7 @@ export default function BbbExperience() {
       });
 
       if (result.success) {
+        vibrate([10, 40, 10]);
         setPhase('success');
       } else {
         setErrorMessage(result.error || 'Er is een fout opgetreden. Probeer het opnieuw.');
@@ -212,9 +340,11 @@ export default function BbbExperience() {
       const currentValue = overrideValue ?? values[step.id];
       if (!isValidValue(step, currentValue)) {
         setTouched(true);
+        setShakeKey((k) => k + 1);
         return;
       }
 
+      vibrate(8);
       setValues((v) => ({ ...v, [step.id]: currentValue }));
       setErrorMessage(null);
       setDirection(1);
@@ -225,6 +355,7 @@ export default function BbbExperience() {
   );
 
   const toggleChoice = useCallback((choice: string) => {
+    vibrate(8);
     setSelectedInteresses((prev) => (prev.includes(choice) ? prev.filter((c) => c !== choice) : [...prev, choice]));
   }, []);
 
@@ -239,6 +370,7 @@ export default function BbbExperience() {
 
   const goBack = useCallback(() => {
     if (stepIndex === 0) return;
+    vibrate(6);
     setDirection(-1);
     setTouched(false);
     setErrorMessage(null);
@@ -248,27 +380,53 @@ export default function BbbExperience() {
   const progress = phase === 'success' ? 100 : (stepIndex / STEPS.length) * 100;
   const showsError = touched && !isValidValue(step, values[step.id]);
 
-  const slideVariants = {
-    enter: (dir: number) => ({ x: dir > 0 ? 40 : -40, opacity: 0 }),
-    center: { x: 0, opacity: 1 },
-    exit: (dir: number) => ({ x: dir > 0 ? -40 : 40, opacity: 0 }),
+  const slideVariants = reduceMotion
+    ? {
+        enter: { opacity: 0 },
+        center: { opacity: 1 },
+        exit: { opacity: 0 },
+      }
+    : {
+        enter: (dir: number) => ({ x: dir > 0 ? 40 : -40, opacity: 0 }),
+        center: { x: 0, opacity: 1 },
+        exit: (dir: number) => ({ x: dir > 0 ? -40 : 40, opacity: 0 }),
+      };
+
+  const successContainerVariants = {
+    hidden: {},
+    show: { transition: { staggerChildren: reduceMotion ? 0 : 0.15, delayChildren: reduceMotion ? 0 : 0.1 } },
+  };
+  const successItemVariants = {
+    hidden: { opacity: 0, y: reduceMotion ? 0 : 16 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } },
   };
 
   return (
     <div className="fixed inset-0 h-[100dvh] w-full bg-brown overflow-hidden flex flex-col">
       {/* Ambient, heavily dimmed brand photo. Deliberately not a full hero image:
-          this is a form, legibility and focus matter more than atmosphere here. */}
-      <div className="absolute inset-0 opacity-[0.14]">
+          this is a form, legibility and focus matter more than atmosphere here.
+          A very slow Ken Burns pan keeps the screen from feeling dead at rest. */}
+      <motion.div
+        className="absolute inset-0 opacity-[0.14]"
+        animate={reduceMotion ? {} : { scale: [1, 1.06, 1] }}
+        transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+      >
         <Image src="/chef-action.png" alt="" fill priority className="object-cover" sizes="100vw" />
-      </div>
+      </motion.div>
       <div className="absolute inset-0 bg-gradient-to-b from-brown/50 via-brown/80 to-brown" />
 
       {/* Progress bar */}
-      <div className="relative z-10 h-[3px] w-full bg-cream/10 flex-shrink-0">
+      <div
+        className="relative z-10 h-[3px] w-full bg-cream/10 flex-shrink-0"
+        role="progressbar"
+        aria-valuenow={phase === 'success' ? STEPS.length : stepIndex + 1}
+        aria-valuemin={1}
+        aria-valuemax={STEPS.length}
+      >
         <motion.div
           className="h-full bg-gold"
           animate={{ width: `${progress}%` }}
-          transition={{ duration: 0.4, ease: EASE }}
+          transition={reduceMotion ? { duration: 0.2 } : { type: 'spring', stiffness: 120, damping: 18 }}
         />
       </div>
 
@@ -303,26 +461,27 @@ export default function BbbExperience() {
             {phase === 'success' ? (
               <motion.div
                 key="success"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: EASE }}
+                variants={successContainerVariants}
+                initial="hidden"
+                animate="show"
                 className="flex flex-col items-center text-center gap-5"
               >
                 <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: 'spring', stiffness: 260, damping: 18, delay: 0.1 }}
+                  variants={successItemVariants}
                   className="w-16 h-16 rounded-full bg-gold flex items-center justify-center"
+                  animate={{ scale: 1 }}
+                  initial={{ scale: 0 }}
+                  transition={{ type: 'spring', stiffness: 260, damping: 18, delay: reduceMotion ? 0 : 0.1 }}
                 >
                   <Check className="w-8 h-8 text-brown" strokeWidth={2.5} />
                 </motion.div>
-                <h2 className="font-playfair text-3xl text-cream">
+                <motion.h2 variants={successItemVariants} className="font-playfair text-3xl text-cream">
                   Bedankt{values.naam ? `, ${values.naam.split(' ')[0]}` : ''}!
-                </h2>
-                <p className="font-inter text-cream/70 leading-relaxed">
+                </motion.h2>
+                <motion.p variants={successItemVariants} className="font-inter text-cream/70 leading-relaxed">
                   We hebben je gegevens ontvangen en nemen na de beurs snel contact met je op.
-                </p>
-                <div className="flex flex-col items-center gap-3 mt-2">
+                </motion.p>
+                <motion.div variants={successItemVariants} className="flex flex-col items-center gap-3 mt-2">
                   <p className="font-inter text-[11px] uppercase tracking-[0.15em] text-cream/40">
                     Bekijk ons ook op social media
                   </p>
@@ -346,7 +505,7 @@ export default function BbbExperience() {
                       <Facebook className="w-5 h-5" />
                     </a>
                   </div>
-                </div>
+                </motion.div>
               </motion.div>
             ) : (
               <motion.div
@@ -359,13 +518,14 @@ export default function BbbExperience() {
                 transition={{ duration: 0.35, ease: EASE }}
               >
                 <h1 className="font-playfair text-2xl sm:text-3xl text-cream text-center leading-snug mb-8">
-                  {step.question}
+                  <HeadlineFlip text={step.question} reduceMotion={reduceMotion} />
                 </h1>
 
                 {step.type === 'choice' ? (
                   <div className="space-y-3">
                     {step.choices.map((choice) => {
                       const isSelected = selectedInteresses.includes(choice);
+                      const Icon = CHOICE_ICONS[choice];
                       return (
                         <motion.button
                           key={choice}
@@ -376,8 +536,12 @@ export default function BbbExperience() {
                             isSelected ? 'border-gold bg-gold/10 text-gold' : 'border-cream/20 text-cream hover:border-gold'
                           }`}
                         >
-                          <span>{choice}</span>
+                          <span className="flex items-center gap-3">
+                            {Icon && <Icon className="w-5 h-5 flex-shrink-0" strokeWidth={1.75} />}
+                            {choice}
+                          </span>
                           <span
+                            aria-hidden="true"
                             className={`w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
                               isSelected ? 'border-gold bg-gold' : 'border-cream/30'
                             }`}
@@ -416,29 +580,36 @@ export default function BbbExperience() {
                     </AnimatePresence>
                   </div>
                 ) : (
-                  <input
-                    ref={inputRef}
-                    type={step.type}
-                    inputMode={step.inputMode}
-                    autoComplete={step.autoComplete}
-                    value={values[step.id]}
-                    onChange={(e) => {
-                      setValues((v) => ({ ...v, [step.id]: e.target.value }));
-                      if (touched) setTouched(false);
-                    }}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter') {
-                        e.preventDefault();
-                        advance();
-                      }
-                    }}
-                    placeholder={step.placeholder}
-                    className="w-full bg-transparent border-0 border-b-2 border-cream/30 focus:border-gold focus:outline-none py-4 font-playfair text-2xl sm:text-3xl text-cream placeholder:text-cream/25 text-center transition-colors"
-                  />
+                  <motion.div
+                    key={shakeKey}
+                    animate={showsError && !reduceMotion ? { x: [0, -8, 8, -6, 6, 0] } : { x: 0 }}
+                    transition={{ duration: 0.4 }}
+                  >
+                    <input
+                      ref={inputRef}
+                      type={step.type}
+                      inputMode={step.inputMode}
+                      autoComplete={step.autoComplete}
+                      value={values[step.id]}
+                      onChange={(e) => {
+                        setValues((v) => ({ ...v, [step.id]: e.target.value }));
+                        if (touched) setTouched(false);
+                      }}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') {
+                          e.preventDefault();
+                          advance();
+                        }
+                      }}
+                      placeholder={step.placeholder}
+                      aria-invalid={showsError}
+                      className="w-full bg-transparent border-0 border-b-2 border-cream/30 focus:border-gold focus:outline-none py-4 font-playfair text-2xl sm:text-3xl text-cream placeholder:text-cream/25 text-center transition-colors"
+                    />
+                  </motion.div>
                 )}
 
                 {showsError && (
-                  <p className="mt-4 text-center font-inter text-sm text-gold">
+                  <p role="alert" className="mt-4 text-center font-inter text-sm text-gold">
                     {step.type === 'email'
                       ? 'Vul een geldig e-mailadres in'
                       : step.type === 'tel'
@@ -448,7 +619,9 @@ export default function BbbExperience() {
                 )}
 
                 {errorMessage && step.type === 'choice' && (
-                  <p className="mt-4 text-center font-inter text-sm text-gold">{errorMessage}</p>
+                  <p role="alert" className="mt-4 text-center font-inter text-sm text-gold">
+                    {errorMessage}
+                  </p>
                 )}
               </motion.div>
             )}
@@ -465,8 +638,21 @@ export default function BbbExperience() {
           <motion.button
             type="button"
             whileTap={{ scale: 0.96 }}
+            animate={
+              reduceMotion || phase === 'submitting' || retryCooldown
+                ? {}
+                : {
+                    boxShadow: [
+                      '0 0 0px rgba(201,169,97,0)',
+                      '0 0 18px rgba(201,169,97,0.45)',
+                      '0 0 0px rgba(201,169,97,0)',
+                    ],
+                  }
+            }
+            transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
             onClick={() => (step.type === 'choice' ? submitInteresse() : advance())}
             disabled={phase === 'submitting' || retryCooldown}
+            aria-busy={phase === 'submitting'}
             className="group w-full py-4 bg-gold hover:bg-gold-dark text-brown font-inter text-sm font-medium uppercase tracking-wider flex items-center justify-center gap-2 transition-colors disabled:opacity-60"
           >
             {phase === 'submitting'
@@ -491,7 +677,9 @@ export default function BbbExperience() {
         </div>
       )}
 
-      <AnimatePresence>{showIntro && <IntroAnimation onComplete={() => setShowIntro(false)} />}</AnimatePresence>
+      <AnimatePresence>
+        {showIntro && <IntroAnimation onComplete={() => setShowIntro(false)} reduceMotion={reduceMotion} />}
+      </AnimatePresence>
     </div>
   );
 }
