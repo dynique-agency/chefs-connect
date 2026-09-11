@@ -90,10 +90,17 @@ function FlipChars({
   text,
   mode,
   reduceMotion,
+  exiting,
 }: {
   text: string;
   mode: 'exit' | 'enter';
   reduceMotion: boolean;
+  /** Only meaningful for mode="exit": whether the flip-away should actually be
+   * playing right now. Without this gate the chars animated to invisible the
+   * instant they mounted, ignoring however long the caller meant to hold them
+   * on screen first, the text would flip away almost immediately regardless
+   * of any intended hold duration. */
+  exiting?: boolean;
 }) {
   const chars = text.split('').map((c) => (c === ' ' ? ' ' : c));
   return (
@@ -103,8 +110,10 @@ function FlipChars({
           <motion.span
             key={i}
             initial={{ opacity: 1, rotateX: 0 }}
-            animate={{ opacity: 0, rotateX: reduceMotion ? 0 : -90 }}
-            transition={{ duration: reduceMotion ? 0.15 : 0.5, ease: FLIP_EXIT_EASE, delay: reduceMotion ? 0 : i * 0.022 }}
+            animate={
+              exiting ? { opacity: 0, rotateX: reduceMotion ? 0 : -90 } : { opacity: 1, rotateX: 0 }
+            }
+            transition={{ duration: reduceMotion ? 0.15 : 0.5, ease: FLIP_EXIT_EASE, delay: reduceMotion || !exiting ? 0 : i * 0.022 }}
             style={{ display: 'inline-block', transformOrigin: '50% 100%' }}
           >
             {char}
@@ -148,6 +157,7 @@ function HeadlineFlip({ text, reduceMotion }: { text: string; reduceMotion: bool
 
 function IntroAnimation({ onComplete, reduceMotion }: { onComplete: () => void; reduceMotion: boolean }) {
   const [showFirst, setShowFirst] = useState(true);
+  const [exitingFirst, setExitingFirst] = useState(false);
   const skippedRef = useRef(false);
 
   useEffect(() => {
@@ -157,23 +167,29 @@ function IntroAnimation({ onComplete, reduceMotion }: { onComplete: () => void; 
     async function sequence() {
       // Reduced motion: skip the theatrics, show the end state briefly, move on.
       if (reduceMotion) {
-        await wait(500);
+        await wait(600);
+        if (cancelled) return;
+        setExitingFirst(true);
+        await wait(200);
         if (cancelled) return;
         setShowFirst(false);
-        await wait(400);
+        await wait(300);
         if (cancelled) return;
         onComplete();
         return;
       }
 
-      // A held beat on "Let's connect" long enough to actually be read, then a
-      // slower, more deliberate flip, then a genuine pause on "ChefsConnect"
-      // before handing off. Previous timings (900ms / ~800ms flip / 700ms) read
-      // as rushed rather than considered, this is a conscious slow-down.
-      await wait(1500);
+      // A held beat on "Let's connect", long enough to actually be read (not
+      // just glimpsed), then the flip-away only starts once that hold is
+      // over, then a slower flip in, then a genuine pause on "ChefsConnect"
+      // before handing off.
+      await wait(1800);
+      if (cancelled) return;
+      setExitingFirst(true);
+      await wait(850);
       if (cancelled) return;
       setShowFirst(false);
-      await wait(900 + 1100);
+      await wait(900 + 1300);
       if (cancelled) return;
       onComplete();
     }
@@ -214,7 +230,7 @@ function IntroAnimation({ onComplete, reduceMotion }: { onComplete: () => void; 
             transition={{ duration: reduceMotion ? 0.2 : 0.6, ease: EASE }}
             className="absolute font-playfair italic text-3xl sm:text-4xl text-cream text-center whitespace-nowrap"
           >
-            <FlipChars text="Let's connect" mode="exit" reduceMotion={reduceMotion} />
+            <FlipChars text="Let's connect" mode="exit" reduceMotion={reduceMotion} exiting={exitingFirst} />
           </motion.p>
         ) : (
           <p className="absolute font-playfair text-3xl sm:text-4xl text-gold tracking-wide text-center whitespace-nowrap">
