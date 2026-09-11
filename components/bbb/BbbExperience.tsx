@@ -102,7 +102,7 @@ function FlipChars({
    * of any intended hold duration. */
   exiting?: boolean;
 }) {
-  const chars = text.split('').map((c) => (c === ' ' ? ' ' : c));
+  const chars = text.split('');
   return (
     <>
       {chars.map((char, i) =>
@@ -113,20 +113,20 @@ function FlipChars({
             animate={
               exiting ? { opacity: 0, rotateX: reduceMotion ? 0 : -90 } : { opacity: 1, rotateX: 0 }
             }
-            transition={{ duration: reduceMotion ? 0.15 : 0.5, ease: FLIP_EXIT_EASE, delay: reduceMotion || !exiting ? 0 : i * 0.022 }}
+            transition={{ duration: reduceMotion ? 0.15 : 0.45, ease: FLIP_EXIT_EASE, delay: reduceMotion || !exiting ? 0 : i * 0.02 }}
             style={{ display: 'inline-block', transformOrigin: '50% 100%' }}
           >
-            {char}
+            {char === ' ' ? ' ' : char}
           </motion.span>
         ) : (
           <motion.span
             key={i}
             initial={{ opacity: 0, rotateX: reduceMotion ? 0 : 90 }}
             animate={{ opacity: 1, rotateX: 0 }}
-            transition={{ duration: reduceMotion ? 0.15 : 0.6, ease: FLIP_ENTER_EASE, delay: reduceMotion ? 0 : i * 0.022 }}
+            transition={{ duration: reduceMotion ? 0.15 : 0.54, ease: FLIP_ENTER_EASE, delay: reduceMotion ? 0 : i * 0.02 }}
             style={{ display: 'inline-block', transformOrigin: '50% 100%' }}
           >
-            {char}
+            {char === ' ' ? ' ' : char}
           </motion.span>
         )
       )}
@@ -182,14 +182,15 @@ function IntroAnimation({ onComplete, reduceMotion }: { onComplete: () => void; 
       // A held beat on "Let's connect", long enough to actually be read (not
       // just glimpsed), then the flip-away only starts once that hold is
       // over, then a slower flip in, then a genuine pause on "ChefsConnect"
-      // before handing off.
-      await wait(1800);
+      // before handing off. All timings here at 90% of their previous values
+      // (a deliberate 10% speed-up on top of the earlier slow-down).
+      await wait(1620);
       if (cancelled) return;
       setExitingFirst(true);
-      await wait(850);
+      await wait(765);
       if (cancelled) return;
       setShowFirst(false);
-      await wait(900 + 1300);
+      await wait(810 + 1170);
       if (cancelled) return;
       onComplete();
     }
@@ -210,7 +211,7 @@ function IntroAnimation({ onComplete, reduceMotion }: { onComplete: () => void; 
   return (
     <motion.div
       className="fixed inset-0 z-50 flex items-center justify-center bg-brown"
-      exit={{ opacity: 0, transition: { duration: 0.5, ease: EASE } }}
+      exit={{ opacity: 0, transition: { duration: 0.45, ease: EASE } }}
       onClick={handleSkip}
       role="button"
       tabIndex={0}
